@@ -1,0 +1,29 @@
+Chiffre Affaires = SUM(fact_sales[total_amount])
+
+Nombre Commandes = DISTINCTCOUNT(fact_sales[order_id])
+
+Nombre Clients = DISTINCTCOUNT(dim_customer[customer_id])
+
+Panier Moyen = DIVIDE([Chiffre Affaires], [Nombre Commandes])
+
+Taux Retour = DIVIDE(SUM(fact_sales[is_returned]), COUNTROWS(fact_sales))
+
+Délai Moyen Livraison = AVERAGE(fact_sales[delivery_delay_days])
+
+Montant Remboursé = SUM(fact_sales[refund_amount])
+
+Quantité Vendue = SUM(fact_sales[quantity])
+
+Nombre Retours = SUM(fact_sales[is_returned])
+
+CA Ramadan =
+CALCULATE(
+    [Chiffre Affaires],
+    dim_date[is_ramadan] = 1
+)
+
+Taux Échec Livraison =
+DIVIDE(
+    CALCULATE(COUNTROWS(fact_sales), dim_delivery[delivery_status] = "failed"),
+    COUNTROWS(fact_sales)
+)

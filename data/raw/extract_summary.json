@@ -1,0 +1,14 @@
+{
+  "extracted_at": "2026-05-30T11:50:09",
+  "source": "mysql+pymysql://mexora_user:***@127.0.0.1:3307/mexora_oltp",
+  "destination": "data/raw",
+  "tables": {
+    "customers": 1000,
+    "products": 300,
+    "orders": 5000,
+    "order_items": 9424,
+    "payments": 5000,
+    "deliveries": 5000,
+    "returns": 738
+  }
+}

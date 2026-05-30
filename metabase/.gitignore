@@ -1,0 +1,4 @@
+.metabase_env
+metabase.db
+metabase.log
+metabase.jar

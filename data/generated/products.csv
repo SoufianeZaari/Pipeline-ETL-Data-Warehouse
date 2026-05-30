@@ -1,0 +1,301 @@
+product_id,product_name,category,sub_category,brand,supplier,price,created_at
+1,DigiNord Smartphones 001,Electronics,Smartphones,AtlasTech,Atlas Wholesale,6708.52,2024-04-12
+2,AtlasTech Laptops 002,Electronics,Laptops,CasaMobile,MediSupplier,7962.26,03/10/2025
+3,MedConnect Headphones 003,Electronics,Headphones,AtlasTech,MediSupplier,605.67,03-06-2024
+4,DigiNord Smart Watches 004,Electronics,Smart Watches,AtlasTech,Tanger Supply,2350.99,13-04-2024
+5,DigiNord Accessories 005,Electronics,Accessories,DigiNord,Tanger Supply,222.95,06/08/2025
+6,UrbanSouk Shoes 006,Fashion,Shoes,TanjaStyle,Atlas Wholesale,1513.27,15/05/2024
+7,TanjaStyle T-Shirts 007,Fashion,T-Shirts,Nakhil,Tanger Supply,154.1,Nov 25 2025
+8,MedinaWear Jackets 008,Fashion,Jackets,UrbanSouk,Atlas Wholesale,394.38,Aug 18 2024
+9,Nakhil Bags 009,Fashion,Bags,Nakhil,Tanger Supply,333.03,02-08-2024
+10,TanjaStyle Traditional Clothes 010,Fashion,Traditional Clothes,MedinaWear,Maroc Distribution,2168.74,12/11/2024
+11,AtlasGourmet Dates 011,Food,Dates,SaharaTaste,Tanger Supply,133.94,Nov 04 2025
+12,RifBio Olive Oil 012,Food,Olive Oil,AgriMaroc,Atlas Wholesale,312.49,11-04-2024
+13,AgriMaroc Tea 013,Food,Tea,AgriMaroc,MediSupplier,55.27,Aug 01 2024
+14,RifBio Spices 014,Food,Spices,AgriMaroc,Atlas Wholesale,65.83,Feb 08 2025
+15,AtlasGourmet Biscuits 015,Food,Biscuits,AgriMaroc,Atlas Wholesale,79.83,18/06/2025
+16,RifBio Canned Food 016,Food,Canned Food,AgriMaroc,Atlas Wholesale,46.23,2024-11-06
+17,CasaMobile Smartphones 017,Electronics,Smartphones,DigiNord,Maroc Distribution,7643.66,25-01-2024
+18,DigiNord Laptops 018,Electronics,Laptops,CasaMobile,Maroc Distribution,14761.09,13-11-2024
+19,CasaMobile Headphones 019,Electronics,Headphones,AtlasTech,MediSupplier,2107.85,2024-03-13
+20,MedConnect Smart Watches 020,Electronics,Smart Watches,AtlasTech,Tanger Supply,3480.12,2025-12-01
+21,CasaMobile Accessories 021,Electronics,Accessories,CasaMobile,Tanger Supply,119.26,Jun 29 2024
+22,UrbanSouk Shoes 022,Fashion,Shoes,UrbanSouk,Atlas Wholesale,849.0,21-01-2025
+23,TanjaStyle T-Shirts 023,Fashion,T-Shirts,TanjaStyle,Atlas Wholesale,294.92,2024-06-30
+24,TanjaStyle Jackets 024,Fashion,Jackets,MedinaWear,Maroc Distribution,855.13,08/24/2024
+25,TanjaStyle Bags 025,Fashion,Bags,Nakhil,Maroc Distribution,1190.43,Feb 04 2024
+26,TanjaStyle Traditional Clothes 026,Fashion,Traditional Clothes,Nakhil,Atlas Wholesale,961.38,29/04/2025
+27,AtlasGourmet Dates 027,Food,Dates,SaharaTaste,Atlas Wholesale,75.5,18/06/2025
+28,SaharaTaste Olive Oil 028,Food,Olive Oil,AtlasGourmet,Maroc Distribution,394.53,10/13/2024
+29,AtlasGourmet Tea 029,Food,Tea,AtlasGourmet,Atlas Wholesale,39.43,01/12/2024
+30,AgriMaroc Spices 030,Food,Spices,SaharaTaste,Atlas Wholesale,143.73,08-06-2025
+31,SaharaTaste Biscuits 031,Food,Biscuits,RifBio,Atlas Wholesale,54.38,15/06/2024
+32,AgriMaroc Canned Food 032,Food,Canned Food,AtlasGourmet,Maroc Distribution,36.54,27-05-2024
+33,MedConnect Smartphones 033,Electronics,Smartphones,DigiNord,Maroc Distribution,4632.96,2025-12-10
+34,CasaMobile Laptops 034,Electronics,Laptops,DigiNord,Atlas Wholesale,5775.23,2025-11-23
+35,MedConnect Headphones 035,Electronics,Headphones,CasaMobile,Tanger Supply,-340.55,04-05-2025
+36,MedConnect Smart Watches 036,Electronics,Smart Watches,AtlasTech,Maroc Distribution,3688.39,03/12/2024
+37,DigiNord Accessories 037,Electronics,Accessories,MedConnect,Tanger Supply,296.21,Dec 19 2024
+38,Nakhil Shoes 038,Fashion,Shoes,TanjaStyle,Tanger Supply,283.49,28/10/2024
+39,UrbanSouk T-Shirts 039,Fashion,T-Shirts,Nakhil,Atlas Wholesale,465.39,03/12/2024
+40,UrbanSouk Jackets 040,Fashion,Jackets,TanjaStyle,Atlas Wholesale,1433.29,06/29/2025
+41,Nakhil Bags 041,Fashion,Bags,UrbanSouk,Tanger Supply,1155.38,05/05/2025
+42,TanjaStyle Traditional Clothes 042,Fashion,Traditional Clothes,Nakhil,Atlas Wholesale,2303.25,07/13/2025
+43,RifBio Dates 043,Food,Dates,RifBio,Maroc Distribution,80.86,Feb 19 2025
+44,RifBio Olive Oil 044,Food,Olive Oil,AgriMaroc,Tanger Supply,400.83,13/11/2025
+45,SaharaTaste Tea 045,Food,Tea,AgriMaroc,MediSupplier,194.62,2025-03-29
+46,AgriMaroc Spices 046,Food,Spices,AtlasGourmet,Tanger Supply,94.26,01/14/2025
+47,AgriMaroc Biscuits 047,Food,Biscuits,AtlasGourmet,Tanger Supply,49.79,Oct 21 2024
+48,RifBio Canned Food 048,Food,Canned Food,AtlasGourmet,Tanger Supply,41.29,05/04/2025
+49,DigiNord Smartphones 049,Electronics,Smartphones,DigiNord,MediSupplier,1748.49,23-04-2025
+50,AtlasTech Laptops 050,Electronics,Laptops,CasaMobile,Tanger Supply,9845.09,13/08/2024
+51,CasaMobile Headphones 051,Electronics,Headphones,AtlasTech,Atlas Wholesale,1453.77,Feb 04 2025
+52,AtlasTech Smart Watches 052,Electronics,Smart Watches,DigiNord,Atlas Wholesale,1311.34,Jun 19 2024
+53,CasaMobile Accessories 053,Electronics,Accessories,CasaMobile,MediSupplier,793.12,03-10-2025
+54,TanjaStyle Shoes 054,Fashion,Shoes,MedinaWear,Tanger Supply,711.8,29-03-2024
+55,MedinaWear T-Shirts 055,Fashion,T-Shirts,TanjaStyle,Maroc Distribution,479.93,03/10/2024
+56,Nakhil Jackets 056,Fashion,Jackets,Nakhil,MediSupplier,976.81,06/05/2025
+57,Nakhil Bags 057,Fashion,Bags,MedinaWear,Atlas Wholesale,184.44,11-05-2024
+58,UrbanSouk Traditional Clothes 058,Fashion,Traditional Clothes,UrbanSouk,Maroc Distribution,915.7,23-08-2025
+59,AgriMaroc Dates 059,Food,Dates,SaharaTaste,Tanger Supply,58.87,12/05/2025
+60,AtlasGourmet Olive Oil 060,Food,Olive Oil,RifBio,MediSupplier,79.88,03/09/2025
+61,AtlasGourmet Tea 061,Food,Tea,RifBio,Tanger Supply,101.33,08/21/2024
+62,RifBio Spices 062,Food,Spices,AgriMaroc,Atlas Wholesale,44.23,05-06-2025
+63,SaharaTaste Biscuits 063,Food,Biscuits,RifBio,Maroc Distribution,-33.06,2025-12-27
+64,AgriMaroc Canned Food 064,Food,Canned Food,SaharaTaste,Atlas Wholesale,31.83,23/03/2024
+65,AtlasTech Smartphones 065,Electronics,Smartphones,MedConnect,MediSupplier,8939.93,Jan 10 2025
+66,AtlasTech Laptops 066,Electronics,Laptops,CasaMobile,Maroc Distribution,14178.85,07-01-2026
+67,DigiNord Headphones 067,Electronics,Headphones,MedConnect,Maroc Distribution,1590.47,12/12/2025
+68,AtlasTech Smart Watches 068,Electronics,Smart Watches,MedConnect,Atlas Wholesale,2846.44,07/29/2025
+69,DigiNord Accessories 069,Electronics,Accessories,DigiNord,MediSupplier,403.11,31/01/2025
+70,UrbanSouk Shoes 070,Fashion,Shoes,UrbanSouk,Maroc Distribution,1052.84,03/27/2025
+71,TanjaStyle T-Shirts 071,Fashion,T-Shirts,Nakhil,Tanger Supply,194.11,17/05/2024
+72,Nakhil Jackets 072,Fashion,Jackets,UrbanSouk,Atlas Wholesale,339.62,04/07/2025
+73,Nakhil Bags 073,Fashion,Bags,UrbanSouk,Maroc Distribution,519.95,16/05/2024
+74,TanjaStyle Traditional Clothes 074,Fashion,Traditional Clothes,UrbanSouk,Maroc Distribution,360.71,31/05/2025
+75,SaharaTaste Dates 075,Food,Dates,RifBio,Atlas Wholesale,175.95,Jun 09 2025
+76,AgriMaroc Olive Oil 076,Food,Olive Oil,SaharaTaste,MediSupplier,328.77,Jan 01 2024
+77,AtlasGourmet Tea 077,Food,Tea,AgriMaroc,Tanger Supply,67.45,2025-10-09
+78,AgriMaroc Spices 078,Food,Spices,SaharaTaste,Tanger Supply,103.02,29/07/2024
+79,AgriMaroc Biscuits 079,Food,Biscuits,AgriMaroc,Tanger Supply,48.95,06/21/2025
+80,SaharaTaste Canned Food 080,Food,Canned Food,AtlasGourmet,MediSupplier,76.27,2026-01-05
+81,CasaMobile Smartphones 081,Electronics,Smartphones,CasaMobile,Atlas Wholesale,8651.64,08/08/2025
+82,CasaMobile Laptops 082,Electronics,Laptops,AtlasTech,Tanger Supply,6054.26,15/04/2025
+83,AtlasTech Headphones 083,Electronics,Headphones,AtlasTech,MediSupplier,1655.68,20/04/2025
+84,CasaMobile Smart Watches 084,Electronics,Smart Watches,AtlasTech,Atlas Wholesale,1880.91,02/10/2024
+85,CasaMobile Accessories 085,Electronics,Accessories,CasaMobile,Maroc Distribution,990.89,22/09/2025
+86,TanjaStyle Shoes 086,Fashion,Shoes,Nakhil,Tanger Supply,1379.23,Nov 13 2024
+87,MedinaWear T-Shirts 087,Fashion,T-Shirts,Nakhil,MediSupplier,323.54,07-12-2024
+88,UrbanSouk Jackets 088,Fashion,Jackets,Nakhil,Tanger Supply,813.54,Mar 15 2024
+89,Nakhil Bags 089,Fashion,Bags,TanjaStyle,Maroc Distribution,509.22,25-10-2024
+90,UrbanSouk Traditional Clothes 090,Fashion,Traditional Clothes,UrbanSouk,MediSupplier,800.23,16/12/2025
+91,SaharaTaste Dates 091,Food,Dates,AtlasGourmet,MediSupplier,69.62,Aug 03 2024
+92,AgriMaroc Olive Oil 092,Food,Olive Oil,SaharaTaste,Maroc Distribution,181.48,12/31/2025
+93,AtlasGourmet Tea 093,Food,Tea,AgriMaroc,Maroc Distribution,42.4,13-02-2024
+94,AtlasGourmet Spices 094,Food,Spices,RifBio,Maroc Distribution,112.7,12/11/2024
+95,SaharaTaste Biscuits 095,Food,Biscuits,RifBio,Atlas Wholesale,61.05,03/09/2024
+96,AgriMaroc Canned Food 096,Food,Canned Food,AgriMaroc,Maroc Distribution,105.01,16/04/2025
+97,MedConnect Smartphones 097,Electronics,Smartphones,MedConnect,MediSupplier,5604.02,04-08-2024
+98,DigiNord Laptops 098,Electronics,Laptops,MedConnect,Maroc Distribution,11981.75,2025-01-31
+99,MedConnect Headphones 099,Electronics,Headphones,MedConnect,Maroc Distribution,1511.92,02-11-2025
+100,DigiNord Smart Watches 100,Electronics,Smart Watches,DigiNord,Tanger Supply,2039.8,2024-02-25
+101,DigiNord Accessories 101,Electronics,Accessories,DigiNord,Maroc Distribution,1102.92,2025-10-05
+102,TanjaStyle Shoes 102,Fashion,Shoes,UrbanSouk,Maroc Distribution,1218.37,Feb 01 2025
+103,Nakhil T-Shirts 103,Fashion,T-Shirts,Nakhil,MediSupplier,432.75,11/10/2024
+104,MedinaWear Jackets 104,Fashion,Jackets,Nakhil,Maroc Distribution,1175.71,12/03/2025
+105,Nakhil Bags 105,Fashion,Bags,MedinaWear,MediSupplier,1230.09,06/05/2025
+106,MedinaWear Traditional Clothes 106,Fashion,Traditional Clothes,UrbanSouk,MediSupplier,1756.86,2025-05-29
+107,SaharaTaste Dates 107,Food,Dates,RifBio,Tanger Supply,114.75,15/08/2024
+108,AtlasGourmet Olive Oil 108,Food,Olive Oil,RifBio,Tanger Supply,497.99,06/05/2024
+109,RifBio Tea 109,Food,Tea,RifBio,Tanger Supply,217.34,04-03-2025
+110,SaharaTaste Spices 110,Food,Spices,SaharaTaste,Atlas Wholesale,60.8,29/06/2024
+111,RifBio Biscuits 111,Food,Biscuits,SaharaTaste,Maroc Distribution,22.05,08/04/2025
+112,AtlasGourmet Canned Food 112,Food,Canned Food,AtlasGourmet,Tanger Supply,19.04,03/30/2024
+113,CasaMobile Smartphones 113,Electronics,Smartphones,DigiNord,Tanger Supply,7107.56,14-03-2025
+114,DigiNord Laptops 114,Electronics,Laptops,AtlasTech,Maroc Distribution,12736.51,03-09-2024
+115,CasaMobile Headphones 115,Electronics,Headphones,CasaMobile,Maroc Distribution,878.92,02/14/2025
+116,AtlasTech Smart Watches 116,Electronics,Smart Watches,DigiNord,Atlas Wholesale,3913.39,Jan 01 2026
+117,MedConnect Accessories 117,Electronics,Accessories,MedConnect,Atlas Wholesale,188.39,2024-12-10
+118,TanjaStyle Shoes 118,Fashion,Shoes,TanjaStyle,MediSupplier,645.61,22/09/2024
+119,Nakhil T-Shirts 119,Fashion,T-Shirts,TanjaStyle,Atlas Wholesale,93.09,2025-02-05
+120,Nakhil Jackets 120,Fashion,Jackets,Nakhil,Atlas Wholesale,292.98,12/13/2025
+121,Nakhil Bags 121,Fashion,Bags,Nakhil,Tanger Supply,769.59,14-08-2025
+122,MedinaWear Traditional Clothes 122,Fashion,Traditional Clothes,Nakhil,Atlas Wholesale,1401.51,08-11-2025
+123,AgriMaroc Dates 123,Food,Dates,SaharaTaste,Atlas Wholesale,220.69,Jun 23 2024
+124,SaharaTaste Olive Oil 124,Food,Olive Oil,AtlasGourmet,Atlas Wholesale,94.56,09-10-2024
+125,RifBio Tea 125,Food,Tea,AgriMaroc,Atlas Wholesale,218.2,Jun 13 2025
+126,AgriMaroc Spices 126,Food,Spices,AgriMaroc,MediSupplier,24.58,2025-12-19
+127,AgriMaroc Biscuits 127,Food,Biscuits,AgriMaroc,Atlas Wholesale,45.09,2024-09-08
+128,AgriMaroc Canned Food 128,Food,Canned Food,RifBio,Tanger Supply,97.3,09/14/2025
+129,AtlasTech Smartphones 129,Electronics,Smartphones,DigiNord,Tanger Supply,7755.05,2024-06-22
+130,CasaMobile Laptops 130,Electronics,Laptops,AtlasTech,Atlas Wholesale,8789.33,2024-02-04
+131,AtlasTech Headphones 131,Electronics,Headphones,DigiNord,Atlas Wholesale,1047.56,2025-09-24
+132,CasaMobile Smart Watches 132,Electronics,Smart Watches,MedConnect,Atlas Wholesale,4270.61,08/07/2024
+133,MedConnect Accessories 133,Electronics,Accessories,AtlasTech,MediSupplier,1074.99,2025-05-18
+134,Nakhil Shoes 134,Fashion,Shoes,Nakhil,MediSupplier,514.47,24-09-2025
+135,UrbanSouk T-Shirts 135,Fashion,T-Shirts,TanjaStyle,Tanger Supply,487.76,Sep 06 2024
+136,MedinaWear Jackets 136,Fashion,Jackets,UrbanSouk,MediSupplier,406.04,2025-01-23
+137,UrbanSouk Bags 137,Fashion,Bags,TanjaStyle,Tanger Supply,1117.86,2024-05-01
+138,TanjaStyle Traditional Clothes 138,Fashion,Traditional Clothes,UrbanSouk,Maroc Distribution,1966.26,01/01/2025
+139,SaharaTaste Dates 139,Food,Dates,AtlasGourmet,Maroc Distribution,200.52,14-09-2024
+140,SaharaTaste Olive Oil 140,Food,Olive Oil,RifBio,Tanger Supply,296.74,02/10/2025
+141,AtlasGourmet Tea 141,Food,Tea,AtlasGourmet,Atlas Wholesale,202.51,07/10/2025
+142,AgriMaroc Spices 142,Food,Spices,AgriMaroc,Atlas Wholesale,73.7,Dec 01 2024
+143,AgriMaroc Biscuits 143,Food,Biscuits,SaharaTaste,Tanger Supply,34.07,2024-09-26
+144,RifBio Canned Food 144,Food,Canned Food,AtlasGourmet,Atlas Wholesale,64.66,May 12 2025
+145,CasaMobile Smartphones 145,Electronics,Smartphones,CasaMobile,Atlas Wholesale,5357.04,2024-12-30
+146,MedConnect Laptops 146,Electronics,Laptops,CasaMobile,Maroc Distribution,16770.36,12/11/2024
+147,DigiNord Headphones 147,Electronics,Headphones,CasaMobile,Tanger Supply,1807.29,2025-03-23
+148,DigiNord Smart Watches 148,Electronics,Smart Watches,CasaMobile,MediSupplier,892.19,Jun 11 2025
+149,AtlasTech Accessories 149,Electronics,Accessories,MedConnect,Atlas Wholesale,163.28,2024-08-31
+150,MedinaWear Shoes 150,Fashion,Shoes,UrbanSouk,Maroc Distribution,424.46,31/12/2024
+151,TanjaStyle T-Shirts 151,Fashion,T-Shirts,TanjaStyle,Maroc Distribution,276.9,May 01 2024
+152,UrbanSouk Jackets 152,Fashion,Jackets,TanjaStyle,MediSupplier,413.27,Jun 05 2024
+153,MedinaWear Bags 153,Fashion,Bags,TanjaStyle,Maroc Distribution,-432.36,01/23/2025
+154,TanjaStyle Traditional Clothes 154,Fashion,Traditional Clothes,Nakhil,Atlas Wholesale,1615.62,23-02-2024
+155,AtlasGourmet Dates 155,Food,Dates,RifBio,Maroc Distribution,112.73,26-10-2024
+156,AgriMaroc Olive Oil 156,Food,Olive Oil,AgriMaroc,Atlas Wholesale,322.91,Oct 28 2025
+157,RifBio Tea 157,Food,Tea,AtlasGourmet,Maroc Distribution,75.18,Mar 08 2024
+158,RifBio Spices 158,Food,Spices,AgriMaroc,MediSupplier,33.46,23-01-2024
+159,AtlasGourmet Biscuits 159,Food,Biscuits,AgriMaroc,Maroc Distribution,42.7,Jul 20 2024
+160,SaharaTaste Canned Food 160,Food,Canned Food,AgriMaroc,Tanger Supply,106.96,09/04/2025
+161,MedConnect Smartphones 161,Electronics,Smartphones,CasaMobile,Tanger Supply,5683.09,06/24/2025
+162,CasaMobile Laptops 162,Electronics,Laptops,CasaMobile,Maroc Distribution,17208.82,2024-11-09
+163,AtlasTech Headphones 163,Electronics,Headphones,MedConnect,Atlas Wholesale,729.43,2025-07-09
+164,AtlasTech Smart Watches 164,Electronics,Smart Watches,CasaMobile,Atlas Wholesale,4465.15,Apr 29 2024
+165,DigiNord Accessories 165,Electronics,Accessories,CasaMobile,MediSupplier,102.49,17-02-2024
+166,UrbanSouk Shoes 166,Fashion,Shoes,UrbanSouk,MediSupplier,667.72,Feb 20 2025
+167,MedinaWear T-Shirts 167,Fashion,T-Shirts,MedinaWear,Atlas Wholesale,225.07,12-02-2025
+168,UrbanSouk Jackets 168,Fashion,Jackets,MedinaWear,Maroc Distribution,1170.61,03/08/2024
+169,MedinaWear Bags 169,Fashion,Bags,TanjaStyle,Tanger Supply,-850.76,Nov 15 2024
+170,Nakhil Traditional Clothes 170,Fashion,Traditional Clothes,MedinaWear,MediSupplier,1454.33,Dec 06 2024
+171,SaharaTaste Dates 171,Food,Dates,SaharaTaste,Tanger Supply,156.03,04/06/2025
+172,SaharaTaste Olive Oil 172,Food,Olive Oil,AtlasGourmet,Maroc Distribution,181.33,2025-11-27
+173,SaharaTaste Tea 173,Food,Tea,AgriMaroc,Atlas Wholesale,219.17,19-06-2024
+174,SaharaTaste Spices 174,Food,Spices,SaharaTaste,Atlas Wholesale,121.96,02/03/2025
+175,AtlasGourmet Biscuits 175,Food,Biscuits,SaharaTaste,Maroc Distribution,65.27,2024-06-25
+176,AtlasGourmet Canned Food 176,Food,Canned Food,AgriMaroc,Maroc Distribution,41.71,Jul 16 2024
+177,MedConnect Smartphones 177,Electronics,Smartphones,AtlasTech,Atlas Wholesale,7713.6,2024-07-09
+178,MedConnect Laptops 178,Electronics,Laptops,AtlasTech,Tanger Supply,12694.28,02/15/2025
+179,MedConnect Headphones 179,Electronics,Headphones,DigiNord,MediSupplier,369.19,04/08/2024
+180,AtlasTech Smart Watches 180,Electronics,Smart Watches,MedConnect,MediSupplier,3511.89,11/11/2025
+181,CasaMobile Accessories 181,Electronics,Accessories,DigiNord,MediSupplier,505.21,13-02-2024
+182,UrbanSouk Shoes 182,Fashion,Shoes,MedinaWear,MediSupplier,849.6,06/19/2024
+183,Nakhil T-Shirts 183,Fashion,T-Shirts,Nakhil,Tanger Supply,346.9,10/18/2025
+184,Nakhil Jackets 184,Fashion,Jackets,TanjaStyle,MediSupplier,1006.66,16/08/2024
+185,MedinaWear Bags 185,Fashion,Bags,MedinaWear,MediSupplier,649.45,01/23/2026
+186,Nakhil Traditional Clothes 186,Fashion,Traditional Clothes,UrbanSouk,Tanger Supply,1466.76,09/07/2024
+187,RifBio Dates 187,Food,Dates,AgriMaroc,Tanger Supply,68.09,2024-06-13
+188,AtlasGourmet Olive Oil 188,Food,Olive Oil,AtlasGourmet,Maroc Distribution,127.75,2024-01-26
+189,AgriMaroc Tea 189,Food,Tea,AgriMaroc,MediSupplier,199.53,06/24/2025
+190,RifBio Spices 190,Food,Spices,AtlasGourmet,Atlas Wholesale,73.46,05-12-2025
+191,SaharaTaste Biscuits 191,Food,Biscuits,SaharaTaste,Maroc Distribution,27.69,29-01-2024
+192,SaharaTaste Canned Food 192,Food,Canned Food,AgriMaroc,MediSupplier,102.88,07-04-2024
+193,DigiNord Smartphones 193,Electronics,Smartphones,CasaMobile,Atlas Wholesale,5664.25,22-02-2024
+194,AtlasTech Laptops 194,Electronics,Laptops,MedConnect,Atlas Wholesale,13568.8,05/23/2025
+195,AtlasTech Headphones 195,Electronics,Headphones,MedConnect,Atlas Wholesale,855.05,Aug 26 2025
+196,MedConnect Smart Watches 196,Electronics,Smart Watches,MedConnect,MediSupplier,1133.38,11/04/2024
+197,MedConnect Accessories 197,Electronics,Accessories,CasaMobile,MediSupplier,850.94,09/06/2024
+198,MedinaWear Shoes 198,Fashion,Shoes,TanjaStyle,Maroc Distribution,526.5,08-03-2025
+199,UrbanSouk T-Shirts 199,Fashion,T-Shirts,MedinaWear,Tanger Supply,335.11,Jan 09 2024
+200,TanjaStyle Jackets 200,Fashion,Jackets,UrbanSouk,Maroc Distribution,726.97,Jul 29 2025
+201,TanjaStyle Bags 201,Fashion,Bags,Nakhil,Maroc Distribution,311.07,Apr 27 2025
+202,UrbanSouk Traditional Clothes 202,Fashion,Traditional Clothes,MedinaWear,Tanger Supply,2225.2,09/01/2024
+203,AtlasGourmet Dates 203,Food,Dates,RifBio,Tanger Supply,156.32,2024-11-24
+204,RifBio Olive Oil 204,Food,Olive Oil,SaharaTaste,Tanger Supply,134.01,02/12/2024
+205,SaharaTaste Tea 205,Food,Tea,AtlasGourmet,Atlas Wholesale,184.3,16-12-2025
+206,AgriMaroc Spices 206,Food,Spices,RifBio,MediSupplier,158.05,01/24/2025
+207,AgriMaroc Biscuits 207,Food,Biscuits,SaharaTaste,MediSupplier,30.23,04/10/2024
+208,RifBio Canned Food 208,Food,Canned Food,AgriMaroc,MediSupplier,50.56,10-06-2025
+209,MedConnect Smartphones 209,Electronics,Smartphones,CasaMobile,Maroc Distribution,7911.22,10-09-2025
+210,DigiNord Laptops 210,Electronics,Laptops,DigiNord,Atlas Wholesale,16338.09,Dec 12 2024
+211,AtlasTech Headphones 211,Electronics,Headphones,DigiNord,Tanger Supply,757.01,11/25/2024
+212,DigiNord Smart Watches 212,Electronics,Smart Watches,CasaMobile,Atlas Wholesale,2680.8,Sep 15 2025
+213,MedConnect Accessories 213,Electronics,Accessories,DigiNord,Tanger Supply,656.04,10-05-2024
+214,MedinaWear Shoes 214,Fashion,Shoes,UrbanSouk,Maroc Distribution,408.31,08-12-2025
+215,MedinaWear T-Shirts 215,Fashion,T-Shirts,MedinaWear,Atlas Wholesale,117.1,29/02/2024
+216,MedinaWear Jackets 216,Fashion,Jackets,MedinaWear,MediSupplier,1631.02,2025-07-03
+217,UrbanSouk Bags 217,Fashion,Bags,Nakhil,Tanger Supply,1285.78,Nov 30 2025
+218,TanjaStyle Traditional Clothes 218,Fashion,Traditional Clothes,MedinaWear,Tanger Supply,1530.41,28/12/2025
+219,SaharaTaste Dates 219,Food,Dates,AtlasGourmet,MediSupplier,129.14,2025-04-06
+220,AtlasGourmet Olive Oil 220,Food,Olive Oil,AgriMaroc,Atlas Wholesale,234.08,09-05-2024
+221,AtlasGourmet Tea 221,Food,Tea,AgriMaroc,MediSupplier,68.81,2024-08-06
+222,SaharaTaste Spices 222,Food,Spices,RifBio,Atlas Wholesale,21.81,Oct 27 2024
+223,RifBio Biscuits 223,Food,Biscuits,RifBio,MediSupplier,36.96,2025-10-22
+224,RifBio Canned Food 224,Food,Canned Food,AtlasGourmet,Atlas Wholesale,16.32,23/05/2025
+225,CasaMobile Smartphones 225,Electronics,Smartphones,MedConnect,Maroc Distribution,6827.22,12/02/2025
+226,AtlasTech Laptops 226,Electronics,Laptops,MedConnect,Maroc Distribution,14089.21,2024-11-09
+227,MedConnect Headphones 227,Electronics,Headphones,DigiNord,MediSupplier,-1658.25,08/27/2025
+228,DigiNord Smart Watches 228,Electronics,Smart Watches,MedConnect,MediSupplier,4035.35,May 01 2025
+229,CasaMobile Accessories 229,Electronics,Accessories,DigiNord,Tanger Supply,370.56,17/01/2026
+230,UrbanSouk Shoes 230,Fashion,Shoes,Nakhil,Maroc Distribution,1329.56,11/03/2024
+231,MedinaWear T-Shirts 231,Fashion,T-Shirts,Nakhil,Tanger Supply,479.83,08-08-2025
+232,Nakhil Jackets 232,Fashion,Jackets,TanjaStyle,Tanger Supply,1477.92,20/04/2024
+233,TanjaStyle Bags 233,Fashion,Bags,UrbanSouk,MediSupplier,267.57,16-10-2024
+234,TanjaStyle Traditional Clothes 234,Fashion,Traditional Clothes,UrbanSouk,Maroc Distribution,960.09,30/11/2024
+235,RifBio Dates 235,Food,Dates,AtlasGourmet,MediSupplier,196.83,08-11-2025
+236,SaharaTaste Olive Oil 236,Food,Olive Oil,RifBio,Maroc Distribution,79.7,2025-09-28
+237,AtlasGourmet Tea 237,Food,Tea,SaharaTaste,MediSupplier,105.43,10/17/2025
+238,AgriMaroc Spices 238,Food,Spices,SaharaTaste,Tanger Supply,141.41,Jun 22 2025
+239,RifBio Biscuits 239,Food,Biscuits,RifBio,Maroc Distribution,64.61,28/11/2024
+240,AtlasGourmet Canned Food 240,Food,Canned Food,AgriMaroc,Tanger Supply,53.77,2026-01-01
+241,CasaMobile Smartphones 241,Electronics,Smartphones,MedConnect,Maroc Distribution,4938.12,2024-09-14
+242,DigiNord Laptops 242,Electronics,Laptops,MedConnect,MediSupplier,14245.38,Apr 02 2025
+243,AtlasTech Headphones 243,Electronics,Headphones,CasaMobile,Maroc Distribution,1370.97,Jan 05 2025
+244,DigiNord Smart Watches 244,Electronics,Smart Watches,AtlasTech,MediSupplier,1718.49,30/09/2024
+245,DigiNord Accessories 245,Electronics,Accessories,CasaMobile,Atlas Wholesale,651.18,08/04/2024
+246,TanjaStyle Shoes 246,Fashion,Shoes,MedinaWear,MediSupplier,1257.43,2025-11-09
+247,TanjaStyle T-Shirts 247,Fashion,T-Shirts,TanjaStyle,Tanger Supply,285.55,29-10-2025
+248,UrbanSouk Jackets 248,Fashion,Jackets,UrbanSouk,MediSupplier,404.1,08/06/2025
+249,TanjaStyle Bags 249,Fashion,Bags,MedinaWear,Tanger Supply,811.86,04/04/2025
+250,Nakhil Traditional Clothes 250,Fashion,Traditional Clothes,UrbanSouk,Atlas Wholesale,1291.11,2025-08-22
+251,SaharaTaste Dates 251,Food,Dates,AgriMaroc,Tanger Supply,238.07,23-06-2025
+252,SaharaTaste Olive Oil 252,Food,Olive Oil,SaharaTaste,MediSupplier,418.01,03/22/2025
+253,SaharaTaste Tea 253,Food,Tea,AtlasGourmet,Maroc Distribution,45.52,09/05/2025
+254,RifBio Spices 254,Food,Spices,AtlasGourmet,Atlas Wholesale,46.26,21-02-2025
+255,AgriMaroc Biscuits 255,Food,Biscuits,AgriMaroc,Maroc Distribution,33.21,11/23/2025
+256,SaharaTaste Canned Food 256,Food,Canned Food,SaharaTaste,Atlas Wholesale,42.49,2024-02-28
+257,AtlasTech Smartphones 257,Electronics,Smartphones,DigiNord,Atlas Wholesale,3959.0,Jun 13 2024
+258,CasaMobile Laptops 258,Electronics,Laptops,DigiNord,MediSupplier,13578.86,Mar 19 2025
+259,MedConnect Headphones 259,Electronics,Headphones,CasaMobile,MediSupplier,235.22,03/10/2024
+260,MedConnect Smart Watches 260,Electronics,Smart Watches,AtlasTech,Atlas Wholesale,1308.26,10-12-2025
+261,AtlasTech Accessories 261,Electronics,Accessories,AtlasTech,Maroc Distribution,253.6,2025-05-23
+262,TanjaStyle Shoes 262,Fashion,Shoes,MedinaWear,Maroc Distribution,769.22,03/06/2024
+263,UrbanSouk T-Shirts 263,Fashion,T-Shirts,MedinaWear,MediSupplier,242.9,2025-07-07
+264,Nakhil Jackets 264,Fashion,Jackets,UrbanSouk,MediSupplier,915.01,04/12/2025
+265,TanjaStyle Bags 265,Fashion,Bags,Nakhil,Atlas Wholesale,875.96,2024-02-14
+266,TanjaStyle Traditional Clothes 266,Fashion,Traditional Clothes,TanjaStyle,Tanger Supply,2009.77,2024-10-22
+267,AtlasGourmet Dates 267,Food,Dates,AgriMaroc,Maroc Distribution,84.68,01/14/2024
+268,AtlasGourmet Olive Oil 268,Food,Olive Oil,RifBio,MediSupplier,443.2,16-06-2025
+269,AgriMaroc Tea 269,Food,Tea,AgriMaroc,Maroc Distribution,30.97,01/25/2024
+270,RifBio Spices 270,Food,Spices,AtlasGourmet,Atlas Wholesale,112.03,09/05/2025
+271,SaharaTaste Biscuits 271,Food,Biscuits,RifBio,Maroc Distribution,80.72,2024-11-20
+272,AtlasGourmet Canned Food 272,Food,Canned Food,AtlasGourmet,Atlas Wholesale,30.73,2025-05-24
+273,CasaMobile Smartphones 273,Electronics,Smartphones,DigiNord,Atlas Wholesale,5345.14,19-10-2024
+274,AtlasTech Laptops 274,Electronics,Laptops,DigiNord,Maroc Distribution,8830.42,07/20/2025
+275,MedConnect Headphones 275,Electronics,Headphones,AtlasTech,Atlas Wholesale,1571.67,Aug 30 2025
+276,CasaMobile Smart Watches 276,Electronics,Smart Watches,MedConnect,Tanger Supply,4224.36,Dec 10 2025
+277,MedConnect Accessories 277,Electronics,Accessories,MedConnect,Atlas Wholesale,280.07,2025-04-22
+278,Nakhil Shoes 278,Fashion,Shoes,MedinaWear,MediSupplier,1505.06,11-08-2024
+279,TanjaStyle T-Shirts 279,Fashion,T-Shirts,TanjaStyle,Atlas Wholesale,361.32,01-03-2024
+280,UrbanSouk Jackets 280,Fashion,Jackets,UrbanSouk,Atlas Wholesale,449.48,2024-04-09
+281,TanjaStyle Bags 281,Fashion,Bags,UrbanSouk,Atlas Wholesale,612.47,29/08/2025
+282,MedinaWear Traditional Clothes 282,Fashion,Traditional Clothes,MedinaWear,Tanger Supply,1794.57,Aug 21 2024
+283,RifBio Dates 283,Food,Dates,AtlasGourmet,Atlas Wholesale,209.52,02-03-2024
+284,AgriMaroc Olive Oil 284,Food,Olive Oil,AgriMaroc,Tanger Supply,110.94,16-03-2025
+285,AgriMaroc Tea 285,Food,Tea,SaharaTaste,Atlas Wholesale,156.26,06-05-2024
+286,AtlasGourmet Spices 286,Food,Spices,RifBio,Maroc Distribution,65.62,12/01/2025
+287,SaharaTaste Biscuits 287,Food,Biscuits,AtlasGourmet,MediSupplier,61.58,27-10-2025
+288,SaharaTaste Canned Food 288,Food,Canned Food,AtlasGourmet,MediSupplier,109.74,Nov 15 2025
+289,AtlasTech Smartphones 289,Electronics,Smartphones,AtlasTech,MediSupplier,3651.6,24/08/2024
+290,AtlasTech Laptops 290,Electronics,Laptops,AtlasTech,Tanger Supply,12615.85,2026-01-10
+291,CasaMobile Headphones 291,Electronics,Headphones,MedConnect,Atlas Wholesale,2144.3,16-05-2024
+292,MedConnect Smart Watches 292,Electronics,Smart Watches,AtlasTech,MediSupplier,1337.38,May 20 2025
+293,AtlasTech Accessories 293,Electronics,Accessories,AtlasTech,Tanger Supply,138.81,13/07/2025
+294,TanjaStyle Shoes 294,Fashion,Shoes,UrbanSouk,Atlas Wholesale,1042.83,20-11-2024
+295,Nakhil T-Shirts 295,Fashion,T-Shirts,UrbanSouk,Tanger Supply,336.13,Mar 01 2025
+296,TanjaStyle Jackets 296,Fashion,Jackets,UrbanSouk,Maroc Distribution,334.73,2024-03-08
+297,TanjaStyle Bags 297,Fashion,Bags,UrbanSouk,Tanger Supply,187.65,07/14/2024
+298,TanjaStyle Traditional Clothes 298,Fashion,Traditional Clothes,MedinaWear,Atlas Wholesale,295.61,02/02/2024
+299,RifBio Dates 299,Food,Dates,AgriMaroc,Maroc Distribution,224.62,11/08/2025
+300,AgriMaroc Olive Oil 300,Food,Olive Oil,RifBio,Atlas Wholesale,73.18,03-07-2025

@@ -1,0 +1,1560 @@
+table_name,record_id,issue_type,action,details
+customers,4,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,9,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,17,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,17,missing_city,corrected,Ville remplacée par Unknown.
+customers,22,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,68,missing_city,corrected,Ville remplacée par Unknown.
+customers,71,missing_city,corrected,Ville remplacée par Unknown.
+customers,79,missing_city,corrected,Ville remplacée par Unknown.
+customers,90,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,94,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,115,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,118,missing_city,corrected,Ville remplacée par Unknown.
+customers,124,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,131,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,137,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,144,missing_city,corrected,Ville remplacée par Unknown.
+customers,159,missing_city,corrected,Ville remplacée par Unknown.
+customers,164,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,164,missing_city,corrected,Ville remplacée par Unknown.
+customers,166,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,202,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,210,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,227,missing_city,corrected,Ville remplacée par Unknown.
+customers,247,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,258,missing_city,corrected,Ville remplacée par Unknown.
+customers,260,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,260,missing_city,corrected,Ville remplacée par Unknown.
+customers,263,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,264,missing_city,corrected,Ville remplacée par Unknown.
+customers,267,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,268,missing_city,corrected,Ville remplacée par Unknown.
+customers,268,missing_region,corrected,Région remplacée par Unknown.
+customers,269,missing_city,corrected,Ville remplacée par Unknown.
+customers,289,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,293,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,294,missing_city,corrected,Ville remplacée par Unknown.
+customers,296,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,303,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,305,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,313,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,316,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,318,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,319,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,323,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,328,missing_city,corrected,Ville remplacée par Unknown.
+customers,333,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,334,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,346,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,352,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,359,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,364,missing_city,corrected,Ville remplacée par Unknown.
+customers,367,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,380,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,392,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,402,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,418,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,421,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,426,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,432,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,437,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,445,missing_city,corrected,Ville remplacée par Unknown.
+customers,447,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,455,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,455,missing_city,corrected,Ville remplacée par Unknown.
+customers,458,missing_city,corrected,Ville remplacée par Unknown.
+customers,478,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,494,missing_city,corrected,Ville remplacée par Unknown.
+customers,495,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,496,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,504,missing_city,corrected,Ville remplacée par Unknown.
+customers,507,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,512,missing_city,corrected,Ville remplacée par Unknown.
+customers,515,missing_city,corrected,Ville remplacée par Unknown.
+customers,530,missing_city,corrected,Ville remplacée par Unknown.
+customers,557,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,559,missing_city,corrected,Ville remplacée par Unknown.
+customers,560,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,568,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,577,missing_city,corrected,Ville remplacée par Unknown.
+customers,578,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,592,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,595,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,603,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,604,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,615,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,622,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,625,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,634,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,635,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,640,missing_city,corrected,Ville remplacée par Unknown.
+customers,662,missing_city,corrected,Ville remplacée par Unknown.
+customers,665,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,666,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,675,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,680,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,685,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,689,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,692,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,695,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,709,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,729,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,737,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,740,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,764,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,774,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,781,missing_city,corrected,Ville remplacée par Unknown.
+customers,803,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,805,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,816,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,821,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,821,missing_city,corrected,Ville remplacée par Unknown.
+customers,822,missing_city,corrected,Ville remplacée par Unknown.
+customers,831,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,832,missing_city,corrected,Ville remplacée par Unknown.
+customers,834,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,834,missing_city,corrected,Ville remplacée par Unknown.
+customers,839,missing_city,corrected,Ville remplacée par Unknown.
+customers,840,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,841,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,848,missing_city,corrected,Ville remplacée par Unknown.
+customers,850,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,856,missing_city,corrected,Ville remplacée par Unknown.
+customers,857,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,864,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,867,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,908,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,924,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,925,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,935,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,935,missing_city,corrected,Ville remplacée par Unknown.
+customers,936,missing_city,corrected,Ville remplacée par Unknown.
+customers,945,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,946,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,948,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,953,missing_city,corrected,Ville remplacée par Unknown.
+customers,954,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,955,missing_city,corrected,Ville remplacée par Unknown.
+customers,961,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,962,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,963,missing_city,corrected,Ville remplacée par Unknown.
+customers,971,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,976,missing_or_invalid_email,corrected,Email remplacé par une valeur technique.
+customers,978,missing_city,corrected,Ville remplacée par Unknown.
+customers,980,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+customers,985,duplicate_email,corrected,Email dupliqué remplacé par une valeur unique.
+products,35,invalid_catalog_price,corrected,Prix catalogue négatif ou aberrant corrigé par la médiane de catégorie.
+products,63,invalid_catalog_price,corrected,Prix catalogue négatif ou aberrant corrigé par la médiane de catégorie.
+products,153,invalid_catalog_price,corrected,Prix catalogue négatif ou aberrant corrigé par la médiane de catégorie.
+products,169,invalid_catalog_price,corrected,Prix catalogue négatif ou aberrant corrigé par la médiane de catégorie.
+products,227,invalid_catalog_price,corrected,Prix catalogue négatif ou aberrant corrigé par la médiane de catégorie.
+order_items,9,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,32,invalid_quantity,removed,Quantité <= 0.
+order_items,47,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,51,invalid_quantity,removed,Quantité <= 0.
+order_items,61,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,125,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,210,invalid_quantity,removed,Quantité <= 0.
+order_items,214,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,227,invalid_quantity,removed,Quantité <= 0.
+order_items,228,invalid_quantity,removed,Quantité <= 0.
+order_items,360,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,393,invalid_quantity,removed,Quantité <= 0.
+order_items,396,invalid_quantity,removed,Quantité <= 0.
+order_items,406,invalid_quantity,removed,Quantité <= 0.
+order_items,467,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,490,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,516,invalid_quantity,removed,Quantité <= 0.
+order_items,517,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,529,invalid_quantity,removed,Quantité <= 0.
+order_items,535,invalid_quantity,removed,Quantité <= 0.
+order_items,550,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,551,invalid_quantity,removed,Quantité <= 0.
+order_items,552,invalid_quantity,removed,Quantité <= 0.
+order_items,572,invalid_quantity,removed,Quantité <= 0.
+order_items,652,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,665,invalid_quantity,removed,Quantité <= 0.
+order_items,731,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,740,invalid_quantity,removed,Quantité <= 0.
+order_items,746,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,752,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,758,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,759,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,766,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,803,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,868,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,882,invalid_quantity,removed,Quantité <= 0.
+order_items,909,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,930,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1005,invalid_quantity,removed,Quantité <= 0.
+order_items,1038,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1072,invalid_quantity,removed,Quantité <= 0.
+order_items,1081,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1086,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1097,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1122,invalid_quantity,removed,Quantité <= 0.
+order_items,1145,invalid_quantity,removed,Quantité <= 0.
+order_items,1155,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1156,invalid_quantity,removed,Quantité <= 0.
+order_items,1168,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1215,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1256,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1274,invalid_quantity,removed,Quantité <= 0.
+order_items,1286,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1295,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1297,invalid_quantity,removed,Quantité <= 0.
+order_items,1311,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1324,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1330,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1395,invalid_quantity,removed,Quantité <= 0.
+order_items,1496,invalid_quantity,removed,Quantité <= 0.
+order_items,1506,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1529,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1605,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1632,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1648,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1673,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1691,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1701,invalid_quantity,removed,Quantité <= 0.
+order_items,1726,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1740,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1774,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1785,invalid_quantity,removed,Quantité <= 0.
+order_items,1789,invalid_quantity,removed,Quantité <= 0.
+order_items,1793,invalid_quantity,removed,Quantité <= 0.
+order_items,1805,invalid_quantity,removed,Quantité <= 0.
+order_items,1937,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1964,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,1996,invalid_quantity,removed,Quantité <= 0.
+order_items,2017,invalid_quantity,removed,Quantité <= 0.
+order_items,2039,invalid_quantity,removed,Quantité <= 0.
+order_items,2045,invalid_quantity,removed,Quantité <= 0.
+order_items,2057,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2059,invalid_quantity,removed,Quantité <= 0.
+order_items,2085,invalid_quantity,removed,Quantité <= 0.
+order_items,2086,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2201,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2262,invalid_quantity,removed,Quantité <= 0.
+order_items,2277,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2311,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2349,invalid_quantity,removed,Quantité <= 0.
+order_items,2367,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2394,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2412,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2429,invalid_quantity,removed,Quantité <= 0.
+order_items,2440,invalid_quantity,removed,Quantité <= 0.
+order_items,2445,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2457,invalid_quantity,removed,Quantité <= 0.
+order_items,2538,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2544,invalid_quantity,removed,Quantité <= 0.
+order_items,2615,invalid_quantity,removed,Quantité <= 0.
+order_items,2641,invalid_quantity,removed,Quantité <= 0.
+order_items,2649,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2675,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2720,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2749,invalid_quantity,removed,Quantité <= 0.
+order_items,2766,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2802,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2836,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2846,invalid_quantity,removed,Quantité <= 0.
+order_items,2882,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2883,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2903,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,2916,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3049,invalid_quantity,removed,Quantité <= 0.
+order_items,3106,invalid_quantity,removed,Quantité <= 0.
+order_items,3108,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3111,invalid_quantity,removed,Quantité <= 0.
+order_items,3244,invalid_quantity,removed,Quantité <= 0.
+order_items,3258,invalid_quantity,removed,Quantité <= 0.
+order_items,3308,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3317,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3323,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3328,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3335,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3376,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3383,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3456,invalid_quantity,removed,Quantité <= 0.
+order_items,3461,invalid_quantity,removed,Quantité <= 0.
+order_items,3492,invalid_quantity,removed,Quantité <= 0.
+order_items,3499,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3503,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3511,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3594,invalid_quantity,removed,Quantité <= 0.
+order_items,3668,invalid_quantity,removed,Quantité <= 0.
+order_items,3673,invalid_quantity,removed,Quantité <= 0.
+order_items,3718,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3758,invalid_quantity,removed,Quantité <= 0.
+order_items,3785,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3792,invalid_quantity,removed,Quantité <= 0.
+order_items,3829,invalid_quantity,removed,Quantité <= 0.
+order_items,3837,invalid_quantity,removed,Quantité <= 0.
+order_items,3921,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3992,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,3997,invalid_quantity,removed,Quantité <= 0.
+order_items,3998,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4002,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4012,invalid_quantity,removed,Quantité <= 0.
+order_items,4032,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4050,invalid_quantity,removed,Quantité <= 0.
+order_items,4053,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4080,invalid_quantity,removed,Quantité <= 0.
+order_items,4081,invalid_quantity,removed,Quantité <= 0.
+order_items,4114,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4115,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4124,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4131,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4142,invalid_quantity,removed,Quantité <= 0.
+order_items,4154,invalid_quantity,removed,Quantité <= 0.
+order_items,4188,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4205,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4235,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4243,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4268,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4275,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4276,invalid_quantity,removed,Quantité <= 0.
+order_items,4296,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4318,invalid_quantity,removed,Quantité <= 0.
+order_items,4319,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4381,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4401,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4405,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4411,invalid_quantity,removed,Quantité <= 0.
+order_items,4419,invalid_quantity,removed,Quantité <= 0.
+order_items,4426,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4445,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4448,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4463,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4480,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4568,invalid_quantity,removed,Quantité <= 0.
+order_items,4569,invalid_quantity,removed,Quantité <= 0.
+order_items,4598,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4658,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4666,invalid_quantity,removed,Quantité <= 0.
+order_items,4677,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4709,invalid_quantity,removed,Quantité <= 0.
+order_items,4742,invalid_quantity,removed,Quantité <= 0.
+order_items,4754,invalid_quantity,removed,Quantité <= 0.
+order_items,4800,invalid_quantity,removed,Quantité <= 0.
+order_items,4834,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4840,invalid_quantity,removed,Quantité <= 0.
+order_items,4859,invalid_quantity,removed,Quantité <= 0.
+order_items,4864,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4868,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,4974,invalid_quantity,removed,Quantité <= 0.
+order_items,4975,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5116,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5129,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5135,invalid_quantity,removed,Quantité <= 0.
+order_items,5143,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5178,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5206,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5207,invalid_quantity,removed,Quantité <= 0.
+order_items,5225,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5229,invalid_quantity,removed,Quantité <= 0.
+order_items,5254,invalid_quantity,removed,Quantité <= 0.
+order_items,5269,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5271,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5274,invalid_quantity,removed,Quantité <= 0.
+order_items,5348,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5351,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5361,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5394,invalid_quantity,removed,Quantité <= 0.
+order_items,5402,invalid_quantity,removed,Quantité <= 0.
+order_items,5417,invalid_quantity,removed,Quantité <= 0.
+order_items,5418,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5441,invalid_quantity,removed,Quantité <= 0.
+order_items,5492,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5532,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5554,invalid_quantity,removed,Quantité <= 0.
+order_items,5563,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5613,invalid_quantity,removed,Quantité <= 0.
+order_items,5617,invalid_quantity,removed,Quantité <= 0.
+order_items,5637,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5661,invalid_quantity,removed,Quantité <= 0.
+order_items,5667,invalid_quantity,removed,Quantité <= 0.
+order_items,5734,invalid_quantity,removed,Quantité <= 0.
+order_items,5741,invalid_quantity,removed,Quantité <= 0.
+order_items,5795,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5810,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5824,invalid_quantity,removed,Quantité <= 0.
+order_items,5894,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,5955,invalid_quantity,removed,Quantité <= 0.
+order_items,5984,invalid_quantity,removed,Quantité <= 0.
+order_items,6017,invalid_quantity,removed,Quantité <= 0.
+order_items,6036,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6064,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6069,invalid_quantity,removed,Quantité <= 0.
+order_items,6072,invalid_quantity,removed,Quantité <= 0.
+order_items,6084,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6131,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6145,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6157,invalid_quantity,removed,Quantité <= 0.
+order_items,6170,invalid_quantity,removed,Quantité <= 0.
+order_items,6173,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6194,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6197,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6216,invalid_quantity,removed,Quantité <= 0.
+order_items,6219,invalid_quantity,removed,Quantité <= 0.
+order_items,6228,invalid_quantity,removed,Quantité <= 0.
+order_items,6245,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6276,invalid_quantity,removed,Quantité <= 0.
+order_items,6310,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6322,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6325,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6334,invalid_quantity,removed,Quantité <= 0.
+order_items,6359,invalid_quantity,removed,Quantité <= 0.
+order_items,6365,invalid_quantity,removed,Quantité <= 0.
+order_items,6370,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6404,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6429,invalid_quantity,removed,Quantité <= 0.
+order_items,6438,invalid_quantity,removed,Quantité <= 0.
+order_items,6451,invalid_quantity,removed,Quantité <= 0.
+order_items,6514,invalid_quantity,removed,Quantité <= 0.
+order_items,6519,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6521,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6694,invalid_quantity,removed,Quantité <= 0.
+order_items,6717,invalid_quantity,removed,Quantité <= 0.
+order_items,6750,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6762,invalid_quantity,removed,Quantité <= 0.
+order_items,6773,invalid_quantity,removed,Quantité <= 0.
+order_items,6809,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6876,invalid_quantity,removed,Quantité <= 0.
+order_items,6912,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6981,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,6988,invalid_quantity,removed,Quantité <= 0.
+order_items,7022,invalid_quantity,removed,Quantité <= 0.
+order_items,7025,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7044,invalid_quantity,removed,Quantité <= 0.
+order_items,7066,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7101,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7148,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7191,invalid_quantity,removed,Quantité <= 0.
+order_items,7209,invalid_quantity,removed,Quantité <= 0.
+order_items,7240,invalid_quantity,removed,Quantité <= 0.
+order_items,7250,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7267,invalid_quantity,removed,Quantité <= 0.
+order_items,7294,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7305,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7312,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7349,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7373,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7387,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7399,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7420,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7430,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7433,invalid_quantity,removed,Quantité <= 0.
+order_items,7463,invalid_quantity,removed,Quantité <= 0.
+order_items,7488,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7489,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7547,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7582,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7712,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7717,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7784,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7793,invalid_quantity,removed,Quantité <= 0.
+order_items,7861,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7912,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,7956,invalid_quantity,removed,Quantité <= 0.
+order_items,7990,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8021,invalid_quantity,removed,Quantité <= 0.
+order_items,8054,invalid_quantity,removed,Quantité <= 0.
+order_items,8055,invalid_quantity,removed,Quantité <= 0.
+order_items,8146,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8170,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8185,invalid_quantity,removed,Quantité <= 0.
+order_items,8199,invalid_quantity,removed,Quantité <= 0.
+order_items,8216,invalid_quantity,removed,Quantité <= 0.
+order_items,8258,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8293,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8295,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8298,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8351,invalid_quantity,removed,Quantité <= 0.
+order_items,8365,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8377,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8400,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8401,invalid_quantity,removed,Quantité <= 0.
+order_items,8445,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8464,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8480,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8510,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8520,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8566,invalid_quantity,removed,Quantité <= 0.
+order_items,8583,invalid_quantity,removed,Quantité <= 0.
+order_items,8585,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8586,invalid_quantity,removed,Quantité <= 0.
+order_items,8646,invalid_quantity,removed,Quantité <= 0.
+order_items,8679,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8712,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8723,invalid_quantity,removed,Quantité <= 0.
+order_items,8728,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8800,invalid_quantity,removed,Quantité <= 0.
+order_items,8819,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8825,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8848,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,8870,invalid_quantity,removed,Quantité <= 0.
+order_items,8980,invalid_quantity,removed,Quantité <= 0.
+order_items,9025,invalid_quantity,removed,Quantité <= 0.
+order_items,9032,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9061,invalid_quantity,removed,Quantité <= 0.
+order_items,9083,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9148,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9151,invalid_quantity,removed,Quantité <= 0.
+order_items,9154,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9200,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9216,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9289,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9296,invalid_quantity,removed,Quantité <= 0.
+order_items,9299,invalid_quantity,removed,Quantité <= 0.
+order_items,9302,invalid_quantity,removed,Quantité <= 0.
+order_items,9311,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9318,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+order_items,9348,invalid_quantity,removed,Quantité <= 0.
+order_items,9350,invalid_unit_price,removed,Prix unitaire négatif ou aberrant isolé.
+payments,6,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,22,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,32,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,55,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,61,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,62,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,84,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,92,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,94,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,105,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,121,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,128,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,131,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,156,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,203,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,229,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,235,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,252,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,284,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,294,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,355,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,382,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,390,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,396,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,400,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,453,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,476,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,481,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,485,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,491,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,514,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,519,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,522,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,525,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,532,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,534,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,537,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,568,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,592,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,601,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,618,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,638,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,652,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,657,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,661,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,677,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,693,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,696,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,707,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,730,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,738,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,741,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,752,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,756,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,778,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,852,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,881,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,950,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,975,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,991,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1001,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1009,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1015,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1022,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1051,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1115,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1135,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1136,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1225,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1233,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1249,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1257,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1264,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1265,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1277,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1287,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1301,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1343,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1352,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1404,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1427,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1439,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1491,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1501,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1510,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1511,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1517,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1519,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1547,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1576,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1599,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1632,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1638,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1668,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1671,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1687,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1728,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1747,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1750,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1773,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1776,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1780,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1787,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1796,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1808,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1810,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1818,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1820,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1825,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1828,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1846,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1848,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1916,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1918,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1922,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1924,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1935,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1938,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1959,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1974,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1997,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,1998,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2023,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2026,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2036,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2053,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2067,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2075,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2079,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2086,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2134,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2140,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2153,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2167,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2199,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2227,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2237,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2245,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2252,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2258,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2292,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2294,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2326,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2327,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2330,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2335,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2375,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2400,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2419,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2430,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2439,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2444,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2473,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2476,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2480,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2487,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2493,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2494,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2497,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2522,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2526,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2528,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2547,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2584,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2602,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2604,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2606,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2626,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2651,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2666,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2685,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2704,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2713,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2715,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2720,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2775,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2785,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2793,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2794,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2797,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2800,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2817,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2821,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2830,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2836,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2850,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2851,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2856,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2868,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2898,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2917,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2920,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2931,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2932,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2934,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2942,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2950,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,2973,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3013,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3032,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3038,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3081,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3117,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3145,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3158,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3191,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3196,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3211,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3227,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3233,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3241,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3252,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3289,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3297,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3356,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3368,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3369,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3394,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3418,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3430,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3446,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3500,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3516,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3525,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3556,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3640,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3653,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3692,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3693,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3696,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3706,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3739,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3745,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3758,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3770,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3784,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3802,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3806,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3819,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3888,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3892,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3981,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,3982,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4003,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4006,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4038,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4048,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4049,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4093,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4096,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4106,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4122,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4169,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4171,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4221,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4228,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4238,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4240,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4278,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4294,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4299,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4311,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4335,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4384,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4400,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4404,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4413,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4424,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4441,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4442,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4462,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4479,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4489,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4490,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4504,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4526,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4527,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4560,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4580,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4585,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4603,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4624,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4629,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4636,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4677,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4685,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4690,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4694,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4705,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4734,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4778,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4790,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4801,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4803,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4808,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4835,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4851,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4864,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4865,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4868,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4882,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4886,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4898,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4922,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4973,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4979,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4982,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4986,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+payments,4997,unclear_payment_status,corrected,Statut paiement remplacé par unknown.
+deliveries,13,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,13,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,20,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,24,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,40,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,40,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,47,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,53,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,72,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,79,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,99,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,100,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,100,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,106,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,106,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,123,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,138,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,149,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,169,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,171,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,181,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,181,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,186,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,196,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,197,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,199,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,210,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,241,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,252,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,299,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,300,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,300,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,305,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,305,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,310,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,333,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,333,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,335,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,335,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,343,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,350,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,359,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,366,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,380,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,385,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,401,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,409,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,409,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,420,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,421,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,421,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,427,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,427,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,437,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,438,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,467,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,474,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,486,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,488,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,488,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,511,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,511,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,523,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,536,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,536,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,544,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,544,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,564,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,564,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,575,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,594,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,594,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,626,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,641,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,641,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,647,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,647,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,655,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,655,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,676,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,676,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,684,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,684,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,689,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,696,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,698,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,705,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,727,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,727,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,728,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,733,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,743,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,745,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,754,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,754,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,755,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,766,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,784,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,799,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,799,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,801,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,801,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,803,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,808,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,809,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,812,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,813,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,816,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,821,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,835,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,836,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,836,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,845,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,846,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,852,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,855,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,855,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,869,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,869,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,873,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,879,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,880,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,888,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,896,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,915,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,923,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,924,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,924,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,925,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,925,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,926,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,933,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,943,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,943,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,945,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,962,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,962,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,963,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,963,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,964,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,964,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,989,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1006,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1009,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1009,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1011,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1011,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1029,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1056,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1077,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1089,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1092,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1092,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1097,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1112,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1124,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1124,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1139,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1139,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1144,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1144,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1152,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1155,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1157,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1157,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1169,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1179,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1179,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1201,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1201,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1207,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1207,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1211,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1227,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1232,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1234,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1239,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1257,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1257,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1267,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1267,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1292,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1292,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1293,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1295,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1295,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1299,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1299,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1301,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1301,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1319,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1369,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1380,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1387,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1393,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1413,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1414,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1417,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1426,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1430,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1432,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1432,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1433,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1442,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1451,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1452,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1466,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1466,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1468,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1477,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1483,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1483,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1486,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1486,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1499,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1516,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1534,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1539,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1548,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1548,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1565,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1572,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1572,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1588,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1600,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1600,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1612,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1626,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1626,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1632,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1632,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1639,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1639,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1640,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1640,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1641,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1650,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1654,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1654,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1662,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1662,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1666,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1675,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1675,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1683,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1683,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1689,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1696,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1703,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1717,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1720,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1723,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1723,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1729,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1742,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1742,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1748,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1748,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1761,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1764,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1777,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1790,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1790,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1810,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1810,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1833,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1834,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1834,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1835,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1840,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1840,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1857,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1870,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1870,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1871,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1876,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1876,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1892,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1892,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1894,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1921,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1921,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1932,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1935,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1935,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1948,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1953,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1953,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1959,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1963,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1963,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1970,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1970,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1977,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1977,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,1979,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,1979,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2000,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2000,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2011,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2011,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2021,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2021,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2023,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2023,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2028,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2033,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2033,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2039,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2049,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2049,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2053,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2053,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2054,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2054,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2064,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2067,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2072,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2081,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2084,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2095,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2097,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2097,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2106,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2106,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2111,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2119,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2119,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2124,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2124,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2125,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2131,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2131,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2136,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2136,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2148,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2152,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2152,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2178,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2181,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2211,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2239,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2246,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2255,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2271,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2274,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2295,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2295,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2299,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2299,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2331,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2335,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2347,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2355,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2355,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2364,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2368,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2379,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2383,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2384,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2388,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2400,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2400,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2424,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2434,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2442,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2453,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2461,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2471,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2471,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2479,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2484,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2485,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2486,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2486,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2493,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2493,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2513,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2520,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2545,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2550,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2567,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2567,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2569,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2570,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2575,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2581,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2588,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2591,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2591,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2602,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2609,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2609,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2613,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2613,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2619,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2619,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2623,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2629,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2647,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2656,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2660,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2661,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2661,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2667,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2678,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2701,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2701,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2704,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2704,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2705,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2705,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2711,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2718,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2718,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2723,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2723,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2730,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2746,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2746,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2774,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2776,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2779,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2789,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2790,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2790,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2797,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2805,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2807,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2824,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2848,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2848,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2852,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2852,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2853,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2853,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2858,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2865,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2865,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2870,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2870,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2877,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2885,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2917,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2917,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2931,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2931,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2946,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2946,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,2962,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2971,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,2971,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3013,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3046,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3060,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3060,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3069,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3071,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3077,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3077,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3087,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3089,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3098,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3098,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3102,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3122,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3128,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3133,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3133,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3145,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3147,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3159,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3159,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3163,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3163,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3172,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3189,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3199,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3201,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3203,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3204,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3204,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3223,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3226,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3226,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3228,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3231,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3246,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3261,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3261,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3276,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3276,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3282,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3282,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3287,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3308,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3336,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3338,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3355,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3356,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3357,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3357,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3361,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3373,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3373,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3396,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3396,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3400,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3407,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3419,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3423,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3423,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3428,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3461,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3474,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3475,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3475,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3477,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3487,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3487,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3502,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3508,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3508,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3515,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3545,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3545,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3552,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3552,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3557,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3557,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3562,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3562,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3564,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3564,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3573,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3592,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3601,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3623,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3630,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3630,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3638,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3638,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3642,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3642,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3643,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3644,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3644,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3652,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3662,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3663,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3696,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3705,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3705,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3706,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3717,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3731,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3735,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3751,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3764,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3768,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3775,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3790,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3792,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3793,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3811,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3825,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3825,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3826,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3826,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3830,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3830,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3843,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3845,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3845,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3859,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3859,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3861,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3861,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3864,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3873,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3873,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3879,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3888,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3894,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3894,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3899,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3904,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3904,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3922,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3922,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3949,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3960,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3962,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3989,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,3989,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,3990,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4005,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4011,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4025,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4025,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4033,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4034,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4055,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4058,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4065,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4065,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4067,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4068,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4072,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4074,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4074,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4075,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4075,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4077,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4077,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4092,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4100,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4104,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4128,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4128,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4148,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4157,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4180,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4185,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4195,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4197,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4210,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4210,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4229,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4229,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4239,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4242,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4244,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4257,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4258,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4258,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4259,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4261,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4261,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4267,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4284,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4319,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4330,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4330,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4331,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4333,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4333,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4342,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4355,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4368,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4368,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4369,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4373,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4373,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4374,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4374,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4376,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4385,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4387,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4391,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4391,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4396,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4402,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4408,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4413,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4418,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4431,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4431,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4438,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4440,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4440,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4461,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4465,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4465,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4493,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4500,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4502,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4503,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4503,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4514,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4520,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4521,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4530,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4547,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4547,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4561,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4572,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4580,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4581,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4587,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4587,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4589,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4591,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4596,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4607,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4614,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4643,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4648,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4648,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4661,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4679,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4698,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4723,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4723,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4753,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4753,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4818,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4831,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4856,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4856,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4857,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4860,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4860,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4869,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4875,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4884,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4889,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4892,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4911,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4916,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4916,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4918,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4918,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4929,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4929,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4936,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4936,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4952,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4962,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4962,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4970,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4970,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4973,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4973,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4974,shipped_before_order,corrected,Date d'expédition corrigée.
+deliveries,4980,delivered_before_order,corrected,Date de livraison corrigée.
+deliveries,4992,shipped_before_order,corrected,Date d'expédition corrigée.

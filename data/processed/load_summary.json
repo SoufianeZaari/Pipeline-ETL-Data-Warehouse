@@ -1,0 +1,23 @@
+{
+  "database": "mysql+pymysql://mexora_user:***@127.0.0.1:3307/mexora_dw",
+  "loaded_rows": {
+    "dim_customer": 1000,
+    "dim_product": 300,
+    "dim_date": 704,
+    "dim_region": 20,
+    "dim_payment": 17,
+    "dim_delivery": 309,
+    "quality_issues": 1559,
+    "fact_sales": 9061
+  },
+  "database_counts": {
+    "dim_customer": 1000,
+    "dim_product": 300,
+    "dim_date": 704,
+    "dim_region": 20,
+    "dim_payment": 17,
+    "dim_delivery": 309,
+    "quality_issues": 1559,
+    "fact_sales": 9061
+  }
+}

@@ -1,0 +1,21 @@
+region_key,city,region,country
+1,Agadir,Souss-Massa,Maroc
+2,Al Hoceïma,Tanger-Tétouan-Al Hoceïma,Maroc
+3,Casablanca,Casablanca-Settat,Maroc
+4,Fès,Fès-Meknès,Maroc
+5,Kénitra,Rabat-Salé-Kénitra,Maroc
+6,Marrakech,Marrakech-Safi,Maroc
+7,Meknès,Fès-Meknès,Maroc
+8,Nador,Oriental,Maroc
+9,Oujda,Oriental,Maroc
+10,Rabat,Rabat-Salé-Kénitra,Maroc
+11,Tanger,Tanger-Tétouan-Al Hoceïma,Maroc
+12,Tétouan,Tanger-Tétouan-Al Hoceïma,Maroc
+13,Unknown,Casablanca-Settat,Maroc
+14,Unknown,Fès-Meknès,Maroc
+15,Unknown,Marrakech-Safi,Maroc
+16,Unknown,Oriental,Maroc
+17,Unknown,Rabat-Salé-Kénitra,Maroc
+18,Unknown,Souss-Massa,Maroc
+19,Unknown,Tanger-Tétouan-Al Hoceïma,Maroc
+20,Unknown,Unknown,Maroc

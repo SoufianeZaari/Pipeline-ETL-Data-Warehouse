@@ -1,0 +1,18 @@
+payment_key,payment_method,payment_status
+1,Bank Transfer,failed
+2,Bank Transfer,paid
+3,Bank Transfer,pending
+4,Bank Transfer,unknown
+5,Cash on Delivery,failed
+6,Cash on Delivery,paid
+7,Cash on Delivery,pending
+8,Cash on Delivery,unknown
+9,Credit Card,failed
+10,Credit Card,paid
+11,Credit Card,pending
+12,Credit Card,unknown
+13,Unknown,unknown
+14,Wallet,failed
+15,Wallet,paid
+16,Wallet,pending
+17,Wallet,unknown

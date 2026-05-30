@@ -1,0 +1,82 @@
+erDiagram
+    DIM_CUSTOMER ||--o{ FACT_SALES : customer_key
+    DIM_PRODUCT ||--o{ FACT_SALES : product_key
+    DIM_DATE ||--o{ FACT_SALES : date_key
+    DIM_REGION ||--o{ FACT_SALES : region_key
+    DIM_PAYMENT ||--o{ FACT_SALES : payment_key
+    DIM_DELIVERY ||--o{ FACT_SALES : delivery_key
+
+    DIM_CUSTOMER {
+        int customer_key PK
+        int customer_id NK
+        string full_name
+        string age_group
+        string city
+        string region
+        string segment_client
+        date date_debut
+        date date_fin
+        boolean est_actif
+    }
+
+    DIM_PRODUCT {
+        int product_key PK
+        int product_id NK
+        string product_name
+        string category
+        string sub_category
+        string brand
+        string supplier
+        date date_debut
+        date date_fin
+        boolean est_actif
+    }
+
+    DIM_DATE {
+        int date_key PK
+        date full_date
+        int month
+        int quarter
+        int year
+        boolean is_weekend
+        boolean is_ramadan
+    }
+
+    DIM_REGION {
+        int region_key PK
+        string city
+        string region
+        string country
+    }
+
+    DIM_PAYMENT {
+        int payment_key PK
+        string payment_method
+        string payment_status
+    }
+
+    DIM_DELIVERY {
+        int delivery_key PK
+        string delivery_status
+        string shipping_company
+        string delivery_city
+        string delivery_region
+    }
+
+    FACT_SALES {
+        bigint sales_key PK
+        int order_id
+        int order_item_id
+        int customer_key FK
+        int product_key FK
+        int date_key FK
+        int region_key FK
+        int payment_key FK
+        int delivery_key FK
+        int quantity
+        decimal total_amount
+        decimal amount_paid
+        boolean is_returned
+        decimal refund_amount
+        decimal delivery_delay_days
+    }

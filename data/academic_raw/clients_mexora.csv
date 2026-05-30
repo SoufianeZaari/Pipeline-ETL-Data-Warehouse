@@ -1,0 +1,1001 @@
+id_client,nom,prenom,email,date_naissance,sexe,ville,telephone,date_inscription,canal_acquisition
+C00001,Fassi,Mehdi,mehdi.fassi1@mexora.ma,06/09/1987,Femme,Kénitra,0662698625,2024-05-25,Marketplace
+C00002,Fassi,Amine,amine.fassi2@mexora.ma,Feb 18 1967,Femme,Al Hoceïma,0654730347,14-05-2025,Web
+C00003,Rifi,Yassine,yassine.rifi3@mexora.ma,02/06/1975,1,Rabat,0628786239,27/05/2025,Web
+C00004,El Amrani,Hajar,amine.fassi2@mexora.ma,07-12-1988,f,Casablanca,0632827531,01/25/2025,Social Ads
+C00005,Alaoui,Mehdi,mehdi.alaoui5@mexora.ma,Mar 02 2002,0,Fès,0635601220,Oct 12 2024,Marketplace
+C00006,Tahiri,Omar,omar.tahiri6@mexora.ma,11/06/1987,f,Tanger,,02/16/2025,Referral
+C00007,Alaoui,Nadia,nadia.alaoui7@mexora.ma,17/06/1996,Female,Marrakech,0629223286,08-12-2024,Referral
+C00008,Ziani,Karim,karim.ziani8@mexora.ma,07/22/2006,1,Tétouan,0635774919,06-02-2025,Mobile
+C00009,El Amrani,Nadia,,Mar 11 1987,Homme,Casablanca,0658165429,Jul 30 2025,Social Ads
+C00010,Rifi,Karim,karim.rifi10@mexora.ma,Apr 25 1994,Femme,Marrakech,0666068691,01/17/2025,Marketplace
+C00011,Alaoui,Omar,omar.alaoui11@mexora.ma,Aug 26 1991,Homme,Marrakech,0627365390,2024-09-22,Web
+C00012,Bennani,Salma,salma.bennani12@mexora.ma,1977-05-08,m,Tétouan,0639257530,25/05/2024,Social Ads
+C00013,Alaoui,Imane,imane.alaoui13@mexora.ma,26-02-1982,Homme,Tanger,0696492290,10/14/2025,Mobile
+C00014,Berrada,Sara,sara.berrada14@mexora.ma,18-01-1973,Female,tanger,0679676487,Dec 02 2024,Social Ads
+C00015,Tazi,Yassine,yassine.tazi15@mexora.ma,05/18/1968,f,Agadir,0665020456,Mar 02 2026,Mobile
+C00016,Tazi,Amine,amine.tazi16@mexora.ma,07/19/1980,f,Rabat,0642064324,24-03-2026,Social Ads
+C00017,Tahiri,Yassine,yassine.tazi15mexora.ma,10-03-1960,,,0663136697,Aug 14 2024,Marketplace
+C00018,Ziani,Nadia,nadia.ziani18@mexora.ma,05/01/2003,Femme,TETOUAN,0623289786,Mar 16 2024,Social Ads
+C00019,Mansouri,Mehdi,mehdi.mansouri19@mexora.ma,08/12/2002,Homme,Al Hoceïma,0638768204,02/05/2024,Referral
+C00020,Fassi,Hajar,hajar.fassi20@mexora.ma,Sep 25 1981,Homme,Casablanca,0623866998,Mar 08 2024,Social Ads
+C00021,Bennani,Mehdi,mehdi.bennani21@mexora.ma,10/16/1978,Femme,Tanger,0676761470,08/15/2024,Marketplace
+C00022,El Amrani,Nadia,mehdi.alaoui5@mexora.ma,20/10/1979,m,Marrakech,0612402395,07/24/2024,Marketplace
+C00023,Alaoui,Nadia,nadia.alaoui23mexora.ma,26-03-1964,1,Casablanca,0617044268,06/16/2025,Social Ads
+C00024,Fassi,Mehdi,nadia.alaoui23mexora.ma,12/24/1993,0,tanger,0689329730,02/24/2026,Social Ads
+C00025,Tahiri,Sara,sara.tahiri25@mexora.ma,04/10/2002,1,Al Hoceïma,0693070547,May 21 2025,Web
+C00026,Ziani,Omar,omar.ziani26@mexora.ma,Feb 21 1997,f,rabat,0666615441,2025-05-16,Social Ads
+C00027,Ziani,Yassine,yassine.ziani27@mexora.ma,01/12/1998,1,Meknès,0624229083,2024-09-14,Social Ads
+C00028,Mansouri,Omar,omar.mansouri28@mexora.ma,Sep 14 1983,0,Casablanca,0610439092,Mar 23 2026,Marketplace
+C00029,Bennani,Karim,karim.bennani29@mexora.ma,10/06/1962,f,Fès,0628967002,07/15/2025,Referral
+C00030,Fassi,Amine,amine.fassi30@mexora.ma,21/06/1997,f,Casablanca,0631522316,2025-01-02,Mobile
+C00031,Tazi,Sara,sara.tazi31@mexora.ma,2006-11-25,Femme,Casablanca,0638519561,10/23/2024,Mobile
+C00032,Rifi,Yassine,yassine.rifi32@mexora.ma,Jun 20 1977,Femme,Fès,0613554715,Oct 30 2025,Web
+C00033,Alaoui,Nadia,nadia.alaoui33@mexora.ma,01/04/2003,Female,rabat,0611697872,28/07/2025,Mobile
+C00034,Mansouri,Imane,imane.mansouri34@mexora.ma,Dec 14 2002,m,Marrakech,0668025116,01/06/2024,Web
+C00035,Tahiri,Hajar,hajar.tahiri35@mexora.ma,03/26/1967,f,Tanger,0641230834,2025-09-14,Referral
+C00036,Mansouri,Mehdi,mehdi.mansouri36@mexora.ma,Apr 12 2003,1,Oujda,0652344904,Nov 05 2025,Referral
+C00037,Tahiri,Yassine,yassine.tahiri37@mexora.ma,Oct 10 1961,,rabat,0686904147,17-12-2024,Social Ads
+C00038,Bennani,Amine,amine.bennani38@mexora.ma,14-10-1975,m,casa,0666568218,02/04/2025,Web
+C00039,Tazi,Salma,salma.tazi39@mexora.ma,17-08-1987,Femme,Tanger,0620467563,2024-02-15,Social Ads
+C00040,Rifi,Imane,imane.rifi40@mexora.ma,07/20/1981,Homme,Tanger,0623809702,Sep 21 2025,Mobile
+C00041,Bennani,Nadia,nadia.bennani41@mexora.ma,13/01/1963,0,Tétouan,0620726493,Jan 22 2024,Marketplace
+C00042,Berrada,Imane,imane.berrada42@mexora.ma,Feb 01 1969,0,Oujda,0678320776,2025-06-11,Marketplace
+C00043,El Amrani,Nadia,nadia.elamrani43@mexora.ma,02-09-1990,0,Casablanca,0666241008,12-01-2024,Mobile
+C00044,Tazi,Salma,salma.tazi44@mexora.ma,17-08-1968,Femme,Casablanca,0627504420,Sep 12 2024,Marketplace
+C00045,Fassi,Hajar,hajar.fassi45@mexora.ma,06/20/1980,Homme,Agadir,0623658913,06-08-2024,Web
+C00046,Alaoui,Mehdi,mehdi.fassi1@mexora.ma,18-08-1978,m,Agadir,0630071455,2025-11-06,Referral
+C00047,Alaoui,Omar,omar.alaoui47@mexora.ma,04/17/1997,m,Oujda,0621369828,14/10/2024,Web
+C00048,Bennani,Mehdi,mehdi.bennani48@mexora.ma,25-10-1991,m,RABAT,0640624602,01-04-2025,Web
+C00049,El Amrani,Salma,salma.elamrani49@mexora.ma,16/06/1985,Homme,Tétouan,0611563004,16-09-2024,Social Ads
+C00050,El Amrani,Sara,sara.elamrani50@mexora.ma,25/06/1971,Homme,Agadir,0679474009,15/02/2026,Referral
+C00051,Tahiri,Yassine,yassine.tahiri51@mexora.ma,Jan 12 1979,Homme,Rabat,0633274764,2025-01-19,Referral
+C00052,Tahiri,Yassine,yassine.tahiri52@mexora.ma,13-04-1993,1,Rabat,0611049495,01-03-2026,Mobile
+C00053,Ziani,Salma,salma.ziani53@mexora.ma,23/07/2002,1,Marrakech,0631838618,Oct 01 2024,Mobile
+C00054,Alaoui,Salma,salma.alaoui54@mexora.ma,06/12/1961,1,Tanger,0682059742,20-02-2026,Web
+C00055,Bennani,Mehdi,mehdi.bennani55@mexora.ma,12/13/1975,Homme,Fès,0655793620,18/10/2025,Marketplace
+C00056,Mansouri,Yassine,salma.elamrani49@mexora.ma,21-02-1968,1,Fès,0663807123,Apr 29 2026,Marketplace
+C00057,Fassi,Nadia,nadia.fassi57@mexora.ma,12/07/2004,f,Oujda,0625064503,04/03/2025,Social Ads
+C00058,Mansouri,Amine,amine.mansouri58@mexora.ma,1976-04-11,Homme,Casablanca,0638972034,19/03/2025,Web
+C00059,Ziani,Imane,imane.ziani59@mexora.ma,1972-05-12,1,Marrakech,0619995816,10/03/2025,Marketplace
+C00060,Berrada,Omar,omar.berrada60@mexora.ma,2005-01-13,0,Tetouan,0617535500,30/11/2024,Mobile
+C00061,Bennani,Omar,omar.bennani61@mexora.ma,26/02/1984,0,Rabat,0697071984,31/05/2024,Referral
+C00062,Mansouri,Sara,sara.mansouri62@mexora.ma,18-07-1980,Homme,TETOUAN,0649058784,02/11/2024,Referral
+C00063,Tazi,Salma,salma.tazi63@mexora.ma,17-11-2003,1,Marrakech,0639777182,01/09/2025,Social Ads
+C00064,Ziani,Sara,sara.ziani64@mexora.ma,03-01-1982,Femme,Oujda,0628551507,2025-08-09,Marketplace
+C00065,Bennani,Yassine,yassine.bennani65@mexora.ma,28-05-1995,Femme,Tanger,0666062159,2024-03-16,Marketplace
+C00066,Berrada,Karim,karim.berrada66@mexora.ma,Nov 04 1969,m,Kénitra,0627710755,Mar 14 2026,Marketplace
+C00067,Fassi,Imane,imane.fassi67@mexora.ma,Feb 10 1977,Homme,Al Hoceïma,0616376718,2025-02-03,Referral
+C00068,Bennani,Amine,amine.bennani68@mexora.ma,05/26/1998,Femme,,0693691761,01/02/2025,Referral
+C00069,Berrada,Yassine,yassine.berrada69@mexora.ma,23/03/1986,m,Casablanca,0645522841,12/09/2024,Mobile
+C00070,Tahiri,Nadia,nadia.tahiri70@mexora.ma,03/03/1978,1,Meknès,0683693371,Mar 29 2025,Marketplace
+C00071,Alaoui,Mehdi,mehdi.alaoui71@mexora.ma,Oct 23 1982,m,,0642707321,22-01-2026,Mobile
+C00072,Tazi,Amine,amine.tazi72@mexora.ma,17-05-1995,Homme,Oujda,0680796038,03/14/2025,Mobile
+C00073,Fassi,Hajar,hajar.fassi73@mexora.ma,Jan 03 1970,f,Fès,0686286740,Jul 11 2025,Web
+C00074,Rifi,Imane,imane.rifi74@mexora.ma,03/02/1979,Male,Casablanca,0658220607,23-03-2024,Referral
+C00075,Tazi,Imane,imane.tazi75@mexora.ma,04-01-1964,0,Fès,0687937048,06/05/2026,Web
+C00076,Berrada,Mehdi,mehdi.berrada76@mexora.ma,03/04/1966,1,Nador,0668989222,09/11/2025,Referral
+C00077,Berrada,Nadia,nadia.berrada77@mexora.ma,10/06/1993,Female,CASABLANCA,0636962747,2026-04-14,Mobile
+C00078,Tahiri,Salma,salma.tahiri78@mexora.ma,23-12-2000,m,Tanger,0652121520,2024-04-16,Social Ads
+C00079,Alaoui,Sara,sara.alaoui79@mexora.ma,1961-07-20,Femme,,0667488399,17/09/2025,Referral
+C00080,Alaoui,Omar,omar.alaoui80@mexora.ma,Aug 11 1973,m,Fès,0698635696,2024-09-08,Referral
+C00081,Mansouri,Hajar,hajar.mansouri81@mexora.ma,02/16/1965,Homme,RABAT,0636072302,2024-12-29,Marketplace
+C00082,Tahiri,Yassine,yassine.tahiri82@mexora.ma,11/12/1994,0,Oujda,0663770443,09/24/2025,Mobile
+C00083,Alaoui,Karim,karim.alaoui83@mexora.ma,05/22/1988,m,Tanger,0676609391,Dec 19 2025,Mobile
+C00084,Mansouri,Nadia,imane.fassi67@mexora.ma,1981-11-14,1,Tetouan,0678125835,24/08/2024,Social Ads
+C00085,Tahiri,Amine,amine.tahiri85@mexora.ma,Oct 11 2001,Homme,Al Hoceïma,0633398133,21/02/2025,Social Ads
+C00086,Ziani,Mehdi,mehdi.ziani86@mexora.ma,09/08/1990,0,RABAT,0673648289,09/18/2025,Marketplace
+C00087,Rifi,Karim,karim.rifi87@mexora.ma,Sep 15 1996,M,Tanger,0687075241,27/06/2025,Marketplace
+C00088,El Amrani,Nadia,nadia.elamrani88@mexora.ma,Feb 24 1997,1,Marrakech,0673928197,28/01/2026,Social Ads
+C00089,El Amrani,Omar,salma.tahiri78@mexora.ma,Oct 01 1963,Femme,Fès,0638404029,2025-10-25,Mobile
+C00090,Bennani,Imane,imane.bennani90mexora.ma,11-08-1971,Femme,Meknès,0634543394,22/05/2025,Social Ads
+C00091,Mansouri,Sara,sara.mansouri91@mexora.ma,01/25/1966,f,AL HOCEIMA,0626163716,20/02/2026,Mobile
+C00092,El Amrani,Yassine,yassine.elamrani92@mexora.ma,14-06-1980,Female,Tétouan,0678791915,May 02 2025,Mobile
+C00093,Bennani,Omar,omar.bennani93@mexora.ma,23-02-1982,f,Kénitra,0692862649,25-09-2025,Social Ads
+C00094,Fassi,Yassine,,20/10/1978,m,rabat,0663916549,Oct 28 2024,Referral
+C00095,Bennani,Nadia,nadia.bennani95@mexora.ma,16-11-1998,0,Casablanca,0661881060,22/03/2026,Web
+C00096,Fassi,Yassine,yassine.fassi96@mexora.ma,25/09/1992,Homme,Tétouan,0681817463,Nov 14 2024,Mobile
+C00097,Bennani,Nadia,nadia.bennani97@mexora.ma,18/10/2004,Male,Casablanca,0657863716,Jan 17 2025,Social Ads
+C00098,Bennani,Mehdi,mehdi.bennani98@mexora.ma,06/17/1984,1,Rabat,0695956169,01/23/2025,Marketplace
+C00099,Berrada,Amine,amine.berrada99@mexora.ma,20/10/1969,Femme,Rabat,0694806958,27-02-2024,Mobile
+C00100,Alaoui,Amine,amine.alaoui100@mexora.ma,1989-04-08,1,Casablanca,0660055114,11-05-2024,Social Ads
+C00101,Rifi,Yassine,yassine.rifi101@mexora.ma,03/04/2003,f,Casablanca,0628090063,2024-08-21,Social Ads
+C00102,Bennani,Karim,karim.bennani102@mexora.ma,25/11/2004,Homme,Al Hoceïma,0670470912,07/10/2025,Marketplace
+C00103,Alaoui,Sara,sara.alaoui103@mexora.ma,Aug 20 1992,Femme,Rabat,0657930208,2025-11-03,Mobile
+C00104,Tahiri,Imane,imane.tahiri104@mexora.ma,1966-11-11,m,Marrakech,0653554562,12/22/2024,Web
+C00105,Rifi,Hajar,hajar.rifi105@mexora.ma,Apr 15 1962,0,Casablanca,0633249278,2025-11-03,Social Ads
+C00106,Mansouri,Salma,salma.mansouri106@mexora.ma,Sep 27 1965,1,Al Hoceïma,0685638166,Jan 14 2025,Referral
+C00107,Bennani,Karim,karim.bennani107@mexora.ma,08/04/1986,Homme,Kénitra,0623780470,04-05-2024,Marketplace
+C00108,Rifi,Salma,salma.rifi108@mexora.ma,06-12-1995,f,Oujda,0675953870,14-08-2025,Social Ads
+C00109,Bennani,Amine,amine.bennani109@mexora.ma,21-04-1974,Femme,Marrakech,0670775210,13-06-2025,Marketplace
+C00110,Tahiri,Salma,salma.tahiri110@mexora.ma,11/06/1986,0,Agadir,0636907552,03/09/2024,Social Ads
+C00111,Tazi,Sara,sara.tazi111@mexora.ma,1985-01-14,Female,rabat,,07/02/2024,Social Ads
+C00112,El Amrani,Yassine,yassine.elamrani112@mexora.ma,15/01/2006,Homme,Kénitra,0675755710,18-03-2025,Web
+C00113,Alaoui,Nadia,nadia.alaoui113@mexora.ma,19-06-1971,Femme,Casablanca,0674546186,05-11-2025,Mobile
+C00114,Berrada,Sara,sara.berrada114@mexora.ma,1982-11-06,Femme,Casablanca,0689131579,02/27/2026,Mobile
+C00115,Tahiri,Imane,sara.berrada114@mexora.ma,21/09/1963,m,Fès,0646866007,11/10/2024,Web
+C00116,Tazi,Amine,amine.tazi116mexora.ma,1996-01-04,0,Fès,0689159103,19/10/2024,Social Ads
+C00117,Mansouri,Yassine,yassine.mansouri117@mexora.ma,19/11/1978,Femme,Tanger,0626244271,29-03-2026,Referral
+C00118,Berrada,Salma,salma.berrada118@mexora.ma,04/18/1973,Homme,,0621389204,2024-06-27,Referral
+C00119,Bennani,Karim,karim.bennani119@mexora.ma,Dec 06 2006,f,Fès,0635630761,24-08-2025,Web
+C00120,El Amrani,Imane,imane.elamrani120@mexora.ma,03/23/1973,f,Oujda,0624033830,2024-01-13,Referral
+C00121,Fassi,Sara,sara.fassi121@mexora.ma,Mar 22 1961,Male,Tanger,0638270524,02/15/2025,Referral
+C00122,Tazi,Imane,imane.tazi122@mexora.ma,Jun 24 1962,0,Casablanca,0647924417,2026-02-06,Marketplace
+C00123,Bennani,Nadia,nadia.bennani123@mexora.ma,1976-08-04,0,Tanger,0644450656,Mar 19 2025,Web
+C00124,Tahiri,Salma,,1980-10-26,Male,Meknès,0655802758,08/09/2025,Referral
+C00125,Fassi,Hajar,hajar.fassi125@mexora.ma,Feb 10 1962,Homme,AL HOCEIMA,0671190661,2025-02-09,Mobile
+C00126,Rifi,Amine,amine.rifi126@mexora.ma,27/05/1974,m,Tanger,0677741413,08-10-2025,Social Ads
+C00127,Alaoui,Omar,omar.alaoui127@mexora.ma,2001-07-27,f,Casablanca,0638071465,Apr 24 2025,Marketplace
+C00128,Mansouri,Omar,omar.mansouri128@mexora.ma,13-02-2000,Femme,Tanger,0625705283,2026-02-19,Referral
+C00129,Alaoui,Omar,omar.alaoui129@mexora.ma,Mar 10 1980,m,Casablanca,0686137149,2024-09-08,Web
+C00130,El Amrani,Yassine,yassine.elamrani130@mexora.ma,18/05/1976,1,Casablanca,0651505334,15-06-2025,Marketplace
+C00131,Tahiri,Nadia,,1971-04-01,Femme,casa,0623370904,Jul 10 2025,Mobile
+C00132,El Amrani,Imane,imane.elamrani132@mexora.ma,06-04-1998,Femme,Marrakech,0628904250,2025-07-29,Mobile
+C00133,El Amrani,Yassine,yassine.elamrani133@mexora.ma,1977-10-07,Femme,Marrakech,0697188074,07-11-2024,Web
+C00134,El Amrani,Yassine,yassine.elamrani134@mexora.ma,06/15/1976,Homme,Tétouan,0661088996,Sep 30 2025,Mobile
+C00135,Fassi,Imane,imane.fassi135@mexora.ma,2006-12-11,m,Tétouan,0610121089,10/02/2024,Referral
+C00136,El Amrani,Nadia,nadia.elamrani136@mexora.ma,Aug 16 1985,m,Kénitra,0617939472,01/09/2026,Social Ads
+C00137,Ziani,Mehdi,,04/13/1999,Homme,Tétouan,0699486605,Jun 02 2025,Social Ads
+C00138,Tazi,Omar,omar.tazi138@mexora.ma,24-10-1988,M,Tnja,0618997122,Feb 11 2024,Marketplace
+C00139,Alaoui,Mehdi,mehdi.alaoui139mexora.ma,Jan 13 1996,0,Casablanca,0684753259,01/11/2024,Mobile
+C00140,Berrada,Sara,sara.berrada140@mexora.ma,28-04-1973,Female,Rabat,,Mar 18 2026,Social Ads
+C00141,Rifi,Imane,imane.rifi141@mexora.ma,10/11/1963,Homme,Kénitra,0625652833,05/17/2024,Social Ads
+C00142,Fassi,Karim,karim.fassi142@mexora.ma,27/06/2000,1,Rabat,0685623087,27/04/2024,Social Ads
+C00143,El Amrani,Imane,imane.elamrani143@mexora.ma,May 17 2005,1,Tetouan,0681230106,03/10/2024,Mobile
+C00144,Alaoui,Omar,omar.alaoui144@mexora.ma,10/16/1960,f,,0686058037,06-09-2025,Referral
+C00145,Alaoui,Sara,sara.alaoui145@mexora.ma,15-12-1967,m,Casablanca,,2026-04-04,Web
+C00146,Tahiri,Nadia,nadia.tahiri146@mexora.ma,28-09-1996,1,casa,0659359396,03/12/2024,Web
+C00147,Berrada,Karim,karim.berrada147@mexora.ma,11/25/1983,f,Agadir,0652831675,10/16/2025,Marketplace
+C00148,Mansouri,Mehdi,mehdi.mansouri148@mexora.ma,2006-03-10,Femme,Casablanca,0656298427,Jan 22 2026,Web
+C00149,Tazi,Mehdi,mehdi.tazi149@mexora.ma,01/15/1964,f,Nador,0692031198,02/02/2024,Referral
+C00150,Fassi,Yassine,yassine.fassi150@mexora.ma,Feb 01 1996,Femme,Marrakech,0610843900,06/25/2025,Mobile
+C00151,Bennani,Karim,karim.bennani151@mexora.ma,Nov 06 1988,Homme,Fès,0681162462,04/24/2026,Social Ads
+C00152,El Amrani,Karim,karim.elamrani152@mexora.ma,27/08/1981,f,Rabat,0610536990,30-07-2024,Mobile
+C00153,Tazi,Yassine,yassine.tazi153@mexora.ma,1996-11-03,Femme,Tanger,0614513865,18/05/2025,Mobile
+C00154,Ziani,Sara,sara.ziani154@mexora.ma,1996-01-14,Male,Meknès,0650760218,01-04-2025,Web
+C00155,Bennani,Hajar,hajar.bennani155@mexora.ma,Aug 27 1980,Homme,Rabat,0671793062,Mar 17 2026,Web
+C00156,Mansouri,Sara,sara.mansouri156@mexora.ma,Dec 27 2005,M,Agadir,0661077841,02/10/2026,Social Ads
+C00157,Bennani,Omar,omar.bennani157@mexora.ma,1987-08-26,Homme,Fès,0657840888,19-10-2024,Referral
+C00158,Rifi,Mehdi,mehdi.rifi158@mexora.ma,23-01-1985,Femme,Tanger,0685814743,03/01/2026,Mobile
+C00159,Ziani,Amine,amine.ziani159@mexora.ma,11/24/1962,f,,0652553854,Jan 23 2026,Marketplace
+C00160,Tahiri,Sara,sara.tahiri160@mexora.ma,Nov 22 1990,1,RABAT,0658974240,10/02/2025,Social Ads
+C00161,Fassi,Salma,salma.fassi161@mexora.ma,Sep 21 2006,m,Marrakech,0648667951,2024-06-30,Web
+C00162,Mansouri,Karim,karim.mansouri162@mexora.ma,Jan 02 1968,0,Marrakech,0633958974,06/08/2024,Web
+C00163,El Amrani,Sara,sara.elamrani163@mexora.ma,13-08-1985,Homme,Tanger,0676211909,2025-02-13,Web
+C00164,Alaoui,Salma,,2002-04-05,1,,0669684280,2024-05-15,Referral
+C00165,Fassi,Nadia,nadia.fassi165mexora.ma,15-07-2004,Femme,Tnja,0625112600,01/13/2026,Marketplace
+C00166,Bennani,Nadia,,08/20/1987,0,Rabat,0637246389,2026-04-29,Referral
+C00167,Ziani,Omar,omar.ziani167@mexora.ma,22/11/1968,1,Oujda,,22/07/2024,Referral
+C00168,Rifi,Mehdi,mehdi.rifi168@mexora.ma,22/10/1994,f,Casablanca,0646972466,09/01/2025,Marketplace
+C00169,Fassi,Sara,sara.fassi169@mexora.ma,Jan 12 1986,Homme,Fès,0634669387,09/02/2026,Mobile
+C00170,Ziani,Imane,imane.ziani170mexora.ma,1992-02-16,Femme,Agadir,0620939682,May 08 2025,Referral
+C00171,Tahiri,Omar,omar.tahiri171@mexora.ma,2003-05-24,Femme,Rabat,0653570966,20/01/2026,Marketplace
+C00172,Mansouri,Hajar,hajar.mansouri172@mexora.ma,17/01/1990,f,Rabat,0667185863,04/11/2026,Web
+C00173,Ziani,Nadia,nadia.ziani173@mexora.ma,Jan 13 1974,Female,Rabat,0679858710,01/19/2025,Referral
+C00174,Bennani,Yassine,yassine.bennani174@mexora.ma,1989-08-14,1,Tanger,0649251996,Nov 29 2025,Referral
+C00175,Fassi,Mehdi,mehdi.fassi175@mexora.ma,06-08-1975,1,Marrakech,0621749163,03/28/2025,Mobile
+C00176,Berrada,Yassine,yassine.berrada176@mexora.ma,Dec 05 1989,Homme,Fès,0628468923,02/20/2025,Social Ads
+C00177,Bennani,Nadia,nadia.bennani177@mexora.ma,20/05/1962,0,Meknès,0623001533,22/04/2024,Web
+C00178,El Amrani,Omar,omar.elamrani178@mexora.ma,1997-10-15,1,Meknès,0622063392,06-08-2024,Referral
+C00179,Fassi,Mehdi,mehdi.fassi179@mexora.ma,10/09/1961,Homme,Tanger,0694731816,18-08-2025,Marketplace
+C00180,Ziani,Hajar,hajar.ziani180@mexora.ma,May 17 1967,Femme,Casablanca,0626483991,2025-01-05,Referral
+C00181,Mansouri,Yassine,yassine.mansouri181@mexora.ma,Feb 22 1976,Homme,Rabat,0691027748,2025-01-15,Web
+C00182,Bennani,Salma,salma.bennani182@mexora.ma,1962-07-12,0,Rabat,0625628653,01-01-2025,Web
+C00183,Mansouri,Hajar,hajar.mansouri183@mexora.ma,02-01-1962,m,Agadir,,Oct 26 2024,Mobile
+C00184,Ziani,Hajar,hajar.ziani184@mexora.ma,08/21/1960,Femme,Casablanca,0612801313,Apr 29 2024,Mobile
+C00185,Rifi,Yassine,yassine.rifi185@mexora.ma,04/09/1983,f,Tanger,0620068460,07-04-2024,Mobile
+C00186,Tazi,Salma,salma.tazi186@mexora.ma,05/03/2002,Homme,Al Hoceïma,0660654123,2026-02-23,Marketplace
+C00187,Alaoui,Nadia,nadia.alaoui187@mexora.ma,24-03-2004,0,Tétouan,0647585370,2025-11-14,Mobile
+C00188,Mansouri,Mehdi,mehdi.mansouri188@mexora.ma,1970-06-23,0,Tanger,0686657695,2024-02-01,Social Ads
+C00189,Mansouri,Hajar,hajar.mansouri189@mexora.ma,06/18/1987,m,Fès,0695671876,Jun 21 2025,Mobile
+C00190,Ziani,Amine,amine.ziani190@mexora.ma,08-12-2000,1,Casablanca,0676177196,Apr 25 2025,Referral
+C00191,El Amrani,Yassine,yassine.elamrani191@mexora.ma,1964-11-07,1,Tanger,0633378949,05/14/2025,Mobile
+C00192,Tahiri,Yassine,yassine.tahiri192@mexora.ma,08-12-1994,1,Kénitra,0699865444,12/29/2025,Marketplace
+C00193,Berrada,Amine,amine.berrada193@mexora.ma,09/28/2003,1,Agadir,0699056100,2025-09-02,Mobile
+C00194,Alaoui,Omar,omar.alaoui194@mexora.ma,02/11/1962,1,Fès,0659182491,17-07-2025,Marketplace
+C00195,Tazi,Karim,sara.alaoui103@mexora.ma,25/05/1963,1,casa,0690616955,02/04/2026,Social Ads
+C00196,El Amrani,Imane,imane.elamrani196@mexora.ma,02/03/1969,f,Meknès,,04/10/2025,Social Ads
+C00197,Rifi,Omar,omar.rifi197@mexora.ma,08/15/1990,1,Marrakech,0624478394,05/26/2025,Referral
+C00198,Alaoui,Yassine,yassine.alaoui198@mexora.ma,15/11/1973,m,Agadir,0678819426,Nov 18 2024,Web
+C00199,Ziani,Mehdi,mehdi.ziani199@mexora.ma,07/25/1971,1,Casablanca,0698929194,04/01/2026,Social Ads
+C00200,Bennani,Sara,sara.bennani200@mexora.ma,2005-06-21,Femme,Casablanca,0657262456,2024-10-03,Social Ads
+C00201,Fassi,Salma,salma.fassi201@mexora.ma,Jun 17 2004,1,Fès,,2024-03-05,Social Ads
+C00202,Tahiri,Hajar,yassine.tahiri51@mexora.ma,Oct 08 1994,Femme,tanger,0689312152,02/13/2024,Marketplace
+C00203,Mansouri,Nadia,nadia.mansouri203@mexora.ma,1975-10-10,Homme,Tangier,0664312211,Jul 09 2024,Referral
+C00204,El Amrani,Mehdi,mehdi.elamrani204@mexora.ma,10/20/2005,f,Rabat,0691656204,03/16/2025,Social Ads
+C00205,Berrada,Sara,sara.berrada205@mexora.ma,14-07-1962,f,Meknès,0632142665,02/17/2024,Marketplace
+C00206,Fassi,Sara,sara.fassi206@mexora.ma,02-01-1966,Femme,CASABLANCA,,24-08-2024,Referral
+C00207,Tahiri,Mehdi,salma.tazi39@mexora.ma,Mar 18 1969,Homme,Tétouan,0650159831,05-12-2024,Referral
+C00208,El Amrani,Yassine,yassine.elamrani208@mexora.ma,Feb 23 1972,m,Tanger,0650561290,2024-06-04,Web
+C00209,Rifi,Imane,imane.rifi209@mexora.ma,18-04-2002,0,Rabat,0695995713,16/09/2025,Marketplace
+C00210,Tahiri,Amine,,Feb 10 1991,Homme,Tanger,0657788584,07/23/2025,Referral
+C00211,Fassi,Karim,karim.fassi211@mexora.ma,27-04-1991,Homme,Fès,0658924533,01/04/2024,Referral
+C00212,Tahiri,Imane,imane.tahiri212@mexora.ma,17-11-1968,m,Tetouan,0636347483,01/28/2024,Web
+C00213,Tahiri,Sara,hajar.ziani184@mexora.ma,28/11/2000,Femme,Agadir,0698343306,Nov 06 2024,Mobile
+C00214,Fassi,Omar,omar.fassi214@mexora.ma,1960-09-09,f,Oujda,0654343638,11/07/2025,Marketplace
+C00215,El Amrani,Omar,omar.elamrani215@mexora.ma,18-10-1972,0,Tétouan,0621943517,18-06-2025,Marketplace
+C00216,Mansouri,Yassine,yassine.mansouri216mexora.ma,17-04-1984,Femme,Oujda,0636130095,03/03/2024,Marketplace
+C00217,Rifi,Salma,salma.rifi217@mexora.ma,10/07/1983,0,Agadir,0645007088,2024-12-26,Marketplace
+C00218,Ziani,Sara,sara.ziani218@mexora.ma,1998-10-20,0,Al Hoceïma,0697988500,06-12-2025,Mobile
+C00219,Berrada,Imane,imane.berrada219@mexora.ma,1967-08-15,f,Tétouan,0663590537,Aug 09 2024,Social Ads
+C00220,Fassi,Mehdi,mehdi.fassi220@mexora.ma,05/12/1971,M,Tétouan,0689384087,Jun 07 2024,Marketplace
+C00221,Fassi,Imane,imane.fassi221@mexora.ma,Feb 13 1974,F,Fès,0633566357,29/10/2024,Mobile
+C00222,Tahiri,Salma,salma.tahiri222@mexora.ma,25-08-2004,Homme,Kénitra,0667015811,03/20/2025,Referral
+C00223,Bennani,Imane,imane.bennani223@mexora.ma,03-11-1974,Femme,Kénitra,0661424531,11/13/2024,Mobile
+C00224,Tazi,Yassine,yassine.tazi224@mexora.ma,02-12-1989,Homme,Fès,0678744137,14/07/2024,Web
+C00225,Berrada,Imane,imane.berrada225@mexora.ma,12/03/1981,1,Tanger,0612363385,31-10-2024,Mobile
+C00226,Bennani,Nadia,nadia.bennani226@mexora.ma,22-02-1985,Homme,CAS,0618223007,2024-09-10,Social Ads
+C00227,Alaoui,Karim,karim.alaoui227@mexora.ma,1966-07-23,F,,0612438091,Jan 14 2026,Mobile
+C00228,Berrada,Mehdi,mehdi.berrada228@mexora.ma,03-06-1990,1,Fès,0689213436,12-06-2024,Social Ads
+C00229,Mansouri,Nadia,nadia.mansouri229@mexora.ma,22/01/1966,f,Agadir,0641773220,2024-12-24,Marketplace
+C00230,Tahiri,Hajar,hajar.tahiri230@mexora.ma,1985-03-05,Homme,Agadir,0695839131,01-03-2024,Web
+C00231,Berrada,Mehdi,mehdi.berrada231@mexora.ma,03/07/1992,m,Rabat,,20-07-2025,Web
+C00232,Alaoui,Salma,salma.alaoui232@mexora.ma,05/10/1985,Homme,rabat,0689050155,17-04-2024,Web
+C00233,Tazi,Salma,salma.tazi233@mexora.ma,08/10/1969,f,Meknès,0669116536,03/01/2026,Web
+C00234,Ziani,Karim,karim.ziani234@mexora.ma,1967-06-15,f,Casablanca,0672946177,16/03/2026,Referral
+C00235,Mansouri,Imane,imane.mansouri235@mexora.ma,16-09-1984,Femme,Rabat,0629008154,17-08-2025,Mobile
+C00236,Ziani,Mehdi,mehdi.ziani236@mexora.ma,1976-03-21,f,Tanger,0682708031,2025-06-06,Marketplace
+C00237,Tahiri,Mehdi,mehdi.tahiri237@mexora.ma,Feb 23 1967,Femme,Casablanca,0650817287,Jan 22 2026,Mobile
+C00238,Bennani,Karim,karim.bennani238@mexora.ma,05/11/1975,F,Tétouan,0617156760,2025-05-24,Mobile
+C00239,Berrada,Mehdi,mehdi.berrada239@mexora.ma,10/02/1970,F,Agadir,0664464150,11/21/2025,Web
+C00240,El Amrani,Salma,salma.elamrani240@mexora.ma,23/05/1961,0,Rabat,0680489137,14-01-2026,Web
+C00241,Tazi,Nadia,nadia.tazi241mexora.ma,19-04-1999,m,Rabat,0638608716,2024-07-02,Social Ads
+C00242,Fassi,Amine,karim.rifi10@mexora.ma,08-01-1985,f,TANGER,0623136136,Mar 22 2026,Web
+C00243,Mansouri,Hajar,nadia.alaoui23mexora.ma,03/25/1976,m,CASABLANCA,0656273449,Sep 26 2025,Mobile
+C00244,Mansouri,Hajar,hajar.mansouri244@mexora.ma,1994-12-03,1,Tanger,0629682334,26/05/2025,Web
+C00245,Alaoui,Omar,omar.alaoui245@mexora.ma,14/08/1984,Homme,Casablanca,0616409641,2024-10-19,Marketplace
+C00246,Mansouri,Omar,omar.mansouri246@mexora.ma,Feb 25 1972,Homme,Tanger,0635302376,05/04/2025,Referral
+C00247,Mansouri,Nadia,,08/08/1965,Male,Tangier,0650993831,11-02-2024,Mobile
+C00248,Ziani,Mehdi,mehdi.ziani248@mexora.ma,15-05-1971,Homme,Fès,0687829395,19-06-2024,Web
+C00249,Alaoui,Imane,imane.alaoui249mexora.ma,Oct 16 1990,Homme,Tetouan,0647732315,27-01-2025,Social Ads
+C00250,Tahiri,Salma,salma.tahiri250@mexora.ma,13/12/1977,Homme,Casablanca,0615718830,2026-04-19,Web
+C00251,Ziani,Imane,imane.ziani251@mexora.ma,1967-12-05,Homme,Casablanca,0614953629,01/13/2026,Web
+C00252,Rifi,Nadia,nadia.rifi252@mexora.ma,04/05/1975,1,rabat,0637066857,07/10/2024,Web
+C00253,Mansouri,Karim,karim.mansouri253@mexora.ma,03/24/2004,m,Agadir,0676251515,24-02-2025,Social Ads
+C00254,Tahiri,Karim,karim.tahiri254@mexora.ma,1982-05-08,m,Casablanca,0676238555,02/24/2026,Mobile
+C00255,Tahiri,Omar,omar.tahiri255@mexora.ma,05/18/1963,Homme,Rabat,0621535648,Jan 30 2025,Referral
+C00256,Alaoui,Imane,imane.alaoui256@mexora.ma,09/18/1977,f,Casablanca,,2026-04-05,Marketplace
+C00257,Rifi,Karim,karim.rifi257@mexora.ma,04/20/1972,Homme,Tétouan,0629888717,03/15/2026,Mobile
+C00258,El Amrani,Nadia,nadia.elamrani258@mexora.ma,2000-09-08,0,,0684512398,Mar 18 2024,Marketplace
+C00259,Ziani,Nadia,nadia.ziani259@mexora.ma,2006-01-03,Male,Oujda,0628683822,01-08-2024,Web
+C00260,Mansouri,Karim,,Jul 06 1998,Homme,,0632929020,2024-03-11,Marketplace
+C00261,Bennani,Nadia,nadia.bennani261@mexora.ma,Jun 09 2006,Homme,rabat,0680066599,May 23 2025,Mobile
+C00262,Tazi,Omar,omar.tazi262@mexora.ma,01-07-1968,0,Meknès,0640102906,2025-02-02,Web
+C00263,El Amrani,Mehdi,mehdi.elamrani263mexora.ma,22/04/2005,Femme,Fès,0629295302,09/15/2024,Mobile
+C00264,Tahiri,Salma,salma.tahiri264@mexora.ma,01/09/1960,1,,0666562683,15-03-2024,Referral
+C00265,Tazi,Omar,omar.tazi265@mexora.ma,04-02-1983,Homme,Tanger,,12/01/2025,Mobile
+C00266,Rifi,Sara,sara.rifi266@mexora.ma,18/11/1966,m,Oujda,0675901801,2025-08-25,Referral
+C00267,Alaoui,Salma,,12-02-1969,Female,Marrakech,0693461448,21-10-2025,Referral
+C00268,Rifi,Yassine,yassine.rifi268@mexora.ma,Sep 26 1970,1,,0656639282,Jan 20 2025,Social Ads
+C00269,Mansouri,Imane,imane.mansouri269@mexora.ma,04/11/1996,f,,0637909584,10-03-2025,Marketplace
+C00270,Berrada,Mehdi,mehdi.berrada270@mexora.ma,11/16/1968,m,Agadir,0671827000,08/13/2025,Mobile
+C00271,Tazi,Sara,sara.tazi271@mexora.ma,Jun 06 1977,f,Agadir,0625393523,11/05/2025,Referral
+C00272,Mansouri,Karim,nadia.alaoui23mexora.ma,18/10/1960,M,Tétouan,0663289467,12/06/2025,Social Ads
+C00273,El Amrani,Nadia,nadia.elamrani273@mexora.ma,24-11-1988,Femme,Casablanca,0691009055,02/20/2026,Social Ads
+C00274,Tahiri,Karim,karim.tahiri274@mexora.ma,13/06/1993,Homme,casa,0644206305,2025-09-06,Mobile
+C00275,Alaoui,Mehdi,mehdi.alaoui275@mexora.ma,Feb 03 1965,m,Tanger,0678387420,03-12-2025,Mobile
+C00276,Berrada,Omar,omar.berrada276@mexora.ma,07/09/2000,Homme,Agadir,0668938257,2026-01-08,Web
+C00277,Alaoui,Mehdi,mehdi.alaoui277@mexora.ma,07-06-1992,Femme,Agadir,0657743548,Jun 15 2025,Social Ads
+C00278,Alaoui,Salma,salma.alaoui278@mexora.ma,06-09-1972,m,Oujda,0655613146,06/04/2026,Referral
+C00279,Tahiri,Amine,amine.tahiri279@mexora.ma,22/02/1993,1,Rabat,0639469355,08/15/2025,Social Ads
+C00280,Alaoui,Hajar,hajar.alaoui280@mexora.ma,12/28/1967,Femme,Rabat,0679332324,Mar 11 2026,Mobile
+C00281,El Amrani,Salma,salma.elamrani281@mexora.ma,Feb 03 1977,0,TNG,0624785539,2025-04-06,Web
+C00282,Rifi,Omar,omar.rifi282@mexora.ma,25-11-1961,f,Tangier,0653627833,Dec 25 2025,Social Ads
+C00283,Alaoui,Sara,sara.alaoui283@mexora.ma,10/17/1962,Femme,Tanger,0621828633,01/08/2025,Marketplace
+C00284,Tazi,Sara,sara.tazi284@mexora.ma,28/03/1998,Femme,Casablanca,0643004557,Aug 10 2024,Social Ads
+C00285,Alaoui,Yassine,yassine.alaoui285@mexora.ma,Apr 08 1976,0,Kénitra,0613379400,Mar 03 2026,Web
+C00286,Rifi,Imane,imane.rifi286@mexora.ma,1963-10-12,Femme,Marrakech,0653674784,Mar 06 2025,Social Ads
+C00287,Rifi,Nadia,nadia.rifi287@mexora.ma,21-09-2003,M,Oujda,0642203143,08-11-2024,Web
+C00288,Mansouri,Salma,salma.mansouri288@mexora.ma,08/02/2004,m,Marrakech,0669700815,27-09-2024,Social Ads
+C00289,Fassi,Karim,karim.fassi289mexora.ma,25-07-1968,Femme,Meknès,0637203604,13/03/2025,Web
+C00290,Tazi,Imane,imane.tazi290@mexora.ma,12/05/1996,Femme,Marrakech,,06-12-2025,Marketplace
+C00291,Ziani,Sara,sara.ziani291@mexora.ma,12-03-1982,1,Casablanca,,2025-06-01,Marketplace
+C00292,Mansouri,Mehdi,mehdi.mansouri292@mexora.ma,Jan 17 1961,1,Tétouan,0648418813,Aug 29 2025,Referral
+C00293,Tazi,Amine,,2000-08-21,Femme,Agadir,0649405830,05/13/2026,Mobile
+C00294,Ziani,Yassine,yassine.ziani294@mexora.ma,15/03/1969,0,,0615703667,11/11/2025,Mobile
+C00295,Berrada,Yassine,yassine.berrada295@mexora.ma,09-07-1993,Homme,Tnja,0671643027,2024-04-25,Web
+C00296,Berrada,Nadia,amine.tahiri85@mexora.ma,1968-09-08,m,Tanger,0654739781,Jan 26 2025,Referral
+C00297,Mansouri,Mehdi,mehdi.mansouri297@mexora.ma,13/04/1966,0,Agadir,0648067166,17-11-2025,Marketplace
+C00298,Bennani,Nadia,nadia.bennani298@mexora.ma,Jan 25 1985,m,TANGER,0646831490,24-06-2024,Referral
+C00299,Tahiri,Nadia,nadia.tahiri299@mexora.ma,04/05/1989,f,Oujda,0629645703,Oct 05 2024,Mobile
+C00300,Rifi,Amine,amine.rifi300@mexora.ma,May 07 1969,f,Fès,0693233165,Dec 12 2025,Referral
+C00301,Alaoui,Karim,karim.alaoui301@mexora.ma,06/13/1969,Homme,Al Hoceïma,0673111174,09/05/2026,Referral
+C00302,Bennani,Sara,sara.bennani302@mexora.ma,08/14/1996,Homme,Tanger,0639085856,2024-04-12,Marketplace
+C00303,Fassi,Karim,salma.tahiri78@mexora.ma,Oct 07 1982,0,Meknès,0627690122,08/05/2025,Mobile
+C00304,Fassi,Salma,salma.fassi304@mexora.ma,19/05/1962,Femme,Marrakech,0613173410,05/14/2026,Mobile
+C00305,Berrada,Nadia,omar.berrada276@mexora.ma,May 13 1987,f,Tanger,0695549325,23-01-2026,Web
+C00306,Tahiri,Sara,sara.tahiri306mexora.ma,1992-08-12,Male,CASABLANCA,0633605874,2024-06-04,Marketplace
+C00307,Ziani,Yassine,yassine.ziani307@mexora.ma,2004-02-07,1,TNG,,03-10-2025,Web
+C00308,Alaoui,Nadia,salma.alaoui232@mexora.ma,02/11/1962,Homme,Rabat,0680582579,14/09/2024,Marketplace
+C00309,Alaoui,Amine,amine.alaoui309@mexora.ma,12/02/1961,Homme,Al Hoceïma,0662794570,27/01/2025,Social Ads
+C00310,El Amrani,Yassine,yassine.elamrani310@mexora.ma,Apr 28 1982,m,Fès,0636082096,Nov 04 2024,Web
+C00311,Berrada,Sara,sara.berrada311@mexora.ma,09/09/1982,Femme,Rabat,0666611840,Oct 15 2025,Web
+C00312,Bennani,Omar,omar.bennani312@mexora.ma,Apr 01 1986,f,Agadir,0620114208,07-02-2026,Social Ads
+C00313,Bennani,Sara,,27/12/1972,Femme,Kénitra,0661226961,29-01-2026,Social Ads
+C00314,Tahiri,Yassine,yassine.tahiri314@mexora.ma,05/19/1980,0,Agadir,0644056512,01/29/2024,Web
+C00315,Rifi,Yassine,yassine.rifi315@mexora.ma,Nov 05 1984,m,Casablanca,0683428532,03/17/2026,Social Ads
+C00316,Rifi,Yassine,amine.berrada193@mexora.ma,1993-07-17,Femme,Kénitra,0682646234,05-02-2024,Referral
+C00317,Tazi,Imane,imane.tazi317@mexora.ma,Dec 08 1970,1,Al Hoceïma,0639554572,2025-01-03,Mobile
+C00318,Mansouri,Hajar,salma.fassi201@mexora.ma,Jul 27 1987,0,Casablanca,0680322969,04/01/2026,Web
+C00319,El Amrani,Amine,amine.bennani109@mexora.ma,28/07/1970,Femme,Al Hoceima,0695589626,2026-05-11,Social Ads
+C00320,Ziani,Sara,sara.ziani320@mexora.ma,1988-05-12,,Oujda,0627610052,Jul 12 2024,Social Ads
+C00321,Alaoui,Hajar,hajar.alaoui321@mexora.ma,1982-12-27,f,Nador,0665017423,2024-06-24,Social Ads
+C00322,Ziani,Imane,imane.ziani322@mexora.ma,09/23/1974,Femme,Tanger,0625078542,Feb 05 2024,Mobile
+C00323,Alaoui,Amine,yassine.rifi185@mexora.ma,Dec 06 2005,m,Tanger,0653659206,Sep 17 2024,Social Ads
+C00324,Tazi,Sara,sara.tazi324@mexora.ma,01/21/1965,m,Al Hoceïma,,03/02/2025,Marketplace
+C00325,Mansouri,Amine,amine.mansouri325@mexora.ma,10-07-1963,m,Casablanca,0638279707,01/20/2025,Referral
+C00326,Rifi,Nadia,nadia.rifi326@mexora.ma,11-03-2000,1,Tanger,0683437081,2026-04-23,Web
+C00327,Rifi,Hajar,hajar.rifi327@mexora.ma,Apr 03 1996,Femme,Tanger,0665449175,27-10-2025,Marketplace
+C00328,Mansouri,Nadia,nadia.mansouri328@mexora.ma,Mar 04 1961,Female,,,Mar 02 2026,Social Ads
+C00329,Fassi,Hajar,hajar.fassi329@mexora.ma,12-04-1963,m,Tanger,0619183337,01-08-2025,Referral
+C00330,El Amrani,Karim,karim.elamrani330@mexora.ma,28/04/1974,Homme,Kénitra,0650217039,10/04/2024,Social Ads
+C00331,Mansouri,Sara,sara.mansouri331@mexora.ma,12/10/1994,m,CAS,0618470833,2026-02-18,Social Ads
+C00332,Ziani,Hajar,hajar.ziani332@mexora.ma,Aug 13 1963,Femme,TETOUAN,0649616904,13/03/2024,Referral
+C00333,Berrada,Mehdi,,19-01-1967,,Tanger,0679985395,2024-05-14,Marketplace
+C00334,Bennani,Nadia,,24-07-1964,f,Tanger,0639989605,06/12/2024,Referral
+C00335,Berrada,Amine,amine.berrada335@mexora.ma,1992-03-06,Homme,Casablanca,0672600583,14/10/2024,Marketplace
+C00336,Berrada,Sara,sara.berrada336@mexora.ma,13/07/2006,m,Marrakech,0645653579,Apr 21 2025,Referral
+C00337,Mansouri,Nadia,nadia.tahiri131@mexora.ma,26/09/1978,Femme,Tanger,0661903844,2025-04-24,Marketplace
+C00338,Rifi,Sara,sara.rifi338@mexora.ma,01/02/1987,Homme,Tétouan,0620704100,Jul 24 2025,Marketplace
+C00339,Bennani,Mehdi,mehdi.bennani339@mexora.ma,02/15/2006,m,TNG,0627583753,Jan 12 2026,Referral
+C00340,Fassi,Nadia,nadia.fassi340@mexora.ma,07/06/1998,0,Rabat,0696903751,Apr 18 2026,Web
+C00341,Tazi,Yassine,yassine.tazi341@mexora.ma,15-01-1974,f,Rabat,0613270735,21/11/2025,Social Ads
+C00342,Tazi,Imane,imane.tazi342mexora.ma,1997-09-04,Homme,Casablanca,0677381734,11/20/2024,Web
+C00343,Tahiri,Mehdi,mehdi.tahiri343@mexora.ma,28-02-1966,Homme,Casablanca,0683137549,May 13 2026,Referral
+C00344,Rifi,Sara,sara.rifi344@mexora.ma,27-04-1964,f,Tanger,0686682979,Nov 17 2024,Web
+C00345,Bennani,Imane,imane.bennani345@mexora.ma,22-02-1974,1,CASABLANCA,0673913344,2025-01-20,Marketplace
+C00346,Mansouri,Sara,omar.tahiri255@mexora.ma,19-06-1977,0,Casablanca,0615426257,20/01/2026,Marketplace
+C00347,Tazi,Sara,sara.tazi347@mexora.ma,Feb 21 1964,m,Rabat,0624689169,08-12-2025,Web
+C00348,Berrada,Nadia,nadia.berrada348@mexora.ma,07/19/1976,f,Agadir,0672353181,25/07/2025,Social Ads
+C00349,Tahiri,Mehdi,mehdi.tahiri349@mexora.ma,04/09/1967,f,Marrakech,0641388200,Nov 07 2025,Social Ads
+C00350,Bennani,Sara,imane.alaoui13@mexora.ma,22-12-1987,1,Tanger,0618868496,12/06/2024,Web
+C00351,Berrada,Nadia,nadia.berrada351@mexora.ma,Aug 22 1986,Homme,Agadir,0639107606,16/12/2025,Marketplace
+C00352,Tazi,Amine,imane.rifi40@mexora.ma,07/28/1985,Femme,Tétouan,0674500390,Jan 02 2024,Marketplace
+C00353,El Amrani,Sara,sara.elamrani353@mexora.ma,03/17/1980,m,Tetouan,,Feb 02 2026,Web
+C00354,Tazi,Mehdi,mehdi.tazi354@mexora.ma,16-11-1963,m,Casablanca,0615084829,2026-03-16,Web
+C00355,Berrada,Omar,omar.berrada355@mexora.ma,08/04/2005,F,Kénitra,0672417187,06-09-2025,Referral
+C00356,El Amrani,Hajar,hajar.elamrani356mexora.ma,May 15 1996,f,casa,,Apr 28 2024,Web
+C00357,Berrada,Salma,salma.berrada357@mexora.ma,08/18/1965,m,Tanger,0667606898,25-09-2024,Web
+C00358,Tahiri,Imane,imane.tahiri358@mexora.ma,07/12/1965,1,Al Hoceïma,0641012575,2025-12-31,Web
+C00359,Berrada,Omar,yassine.ziani27@mexora.ma,16-07-2000,Femme,Kénitra,0681134864,2024-12-27,Marketplace
+C00360,Tahiri,Salma,salma.tahiri360@mexora.ma,22/06/1990,Femme,Kénitra,0651977991,03/14/2024,Mobile
+C00361,Rifi,Mehdi,mehdi.rifi361@mexora.ma,1977-09-27,Homme,Rabat,0668450857,2026-03-28,Referral
+C00362,Rifi,Yassine,yassine.rifi362@mexora.ma,25-02-2003,1,Kénitra,0611284001,10/26/2025,Marketplace
+C00363,Fassi,Omar,omar.fassi363@mexora.ma,Aug 03 1964,Femme,Casablanca,0615495176,24-08-2025,Referral
+C00364,Berrada,Yassine,yassine.berrada364@mexora.ma,21-10-1991,f,,0658766153,04/04/2026,Marketplace
+C00365,Alaoui,Salma,salma.alaoui365@mexora.ma,20-12-1992,Femme,Al Hoceima,0691386217,2025-07-21,Mobile
+C00366,Tazi,Omar,omar.tazi366@mexora.ma,Oct 11 2003,Homme,Marrakech,0694234101,2025-07-11,Social Ads
+C00367,Bennani,Hajar,,07/12/2003,0,Agadir,0661617424,19-01-2024,Social Ads
+C00368,Mansouri,Salma,salma.mansouri368@mexora.ma,1996-03-09,f,Tanger,0614668207,24/06/2025,Web
+C00369,Fassi,Salma,salma.fassi369@mexora.ma,Oct 20 1968,Homme,Nador,0693776661,07/02/2025,Mobile
+C00370,Alaoui,Omar,omar.tahiri6@mexora.ma,Sep 04 1972,Homme,Al Hoceïma,0692611188,2025-02-12,Social Ads
+C00371,Tahiri,Nadia,nadia.tahiri371@mexora.ma,04/04/1968,0,Meknès,0618832181,10/03/2024,Referral
+C00372,Tahiri,Mehdi,mehdi.tahiri372@mexora.ma,12-11-1979,Femme,Casablanca,0642342049,02/22/2026,Marketplace
+C00373,Tahiri,Omar,omar.tahiri373@mexora.ma,Jun 14 1960,Homme,AL HOCEIMA,0694744090,Feb 02 2025,Web
+C00374,El Amrani,Imane,imane.elamrani374@mexora.ma,25-11-1970,0,CASABLANCA,0639075609,2024-05-19,Social Ads
+C00375,Tahiri,Hajar,hajar.tahiri375@mexora.ma,03-10-1989,1,Casablanca,0639612991,2024-02-11,Mobile
+C00376,Alaoui,Salma,salma.alaoui376@mexora.ma,1995-05-15,Homme,Marrakech,0682438394,02/12/2025,Referral
+C00377,Bennani,Omar,omar.bennani377@mexora.ma,09/23/2003,Femme,Agadir,0613874472,27-10-2024,Social Ads
+C00378,Alaoui,Mehdi,mehdi.alaoui378@mexora.ma,1989-01-03,1,Oujda,0671182508,Apr 05 2026,Social Ads
+C00379,Tazi,Sara,sara.tazi379@mexora.ma,08/06/1983,Male,Casablanca,0697169222,10-11-2024,Marketplace
+C00380,Ziani,Mehdi,mehdi.ziani380mexora.ma,04-11-1987,m,Casablanca,0624746281,Jan 18 2025,Referral
+C00381,Tazi,Omar,omar.tazi381@mexora.ma,16-04-1991,f,Tanger,0624214841,21-05-2024,Mobile
+C00382,Bennani,Omar,omar.bennani382@mexora.ma,06/02/1991,M,rabat,0625878707,08-08-2024,Referral
+C00383,Tazi,Karim,karim.tazi383@mexora.ma,1965-10-23,f,Tanger,0643896774,24/08/2024,Referral
+C00384,Tazi,Sara,sara.tazi384@mexora.ma,02-05-1995,0,Tanger,0657433896,2024-05-09,Marketplace
+C00385,Fassi,Amine,amine.fassi385@mexora.ma,03/07/1965,Femme,Rabat,0634297242,22/04/2025,Marketplace
+C00386,Berrada,Salma,salma.berrada386@mexora.ma,Oct 11 1994,Homme,Tnja,0643943780,13-01-2026,Web
+C00387,El Amrani,Omar,omar.elamrani387@mexora.ma,1961-01-17,f,Marrakech,0659686559,2026-03-14,Web
+C00388,Alaoui,Mehdi,mehdi.alaoui388@mexora.ma,25-10-2006,Femme,Tanger,0640508673,Jan 12 2026,Referral
+C00389,Tahiri,Imane,imane.tahiri389@mexora.ma,11/03/1996,Female,Tétouan,0612787723,07/23/2024,Marketplace
+C00390,Bennani,Salma,salma.bennani390@mexora.ma,1963-11-07,Femme,Tanger,0677277105,2024-04-25,Web
+C00391,Rifi,Omar,omar.rifi391@mexora.ma,Sep 19 1970,0,AL HOCEIMA,0647984416,2024-10-26,Social Ads
+C00392,Fassi,Salma,,10/01/2002,1,CASABLANCA,0623261004,2025-01-07,Marketplace
+C00393,Ziani,Yassine,yassine.ziani393@mexora.ma,03/28/2001,Homme,Fès,0655829263,Jan 13 2026,Social Ads
+C00394,Berrada,Yassine,yassine.berrada394@mexora.ma,13-03-1975,1,Rabat,0697775383,04-04-2024,Social Ads
+C00395,Bennani,Hajar,salma.ziani53@mexora.ma,03/06/1997,Homme,Kénitra,0641637869,12-02-2024,Mobile
+C00396,Berrada,Hajar,hajar.berrada396@mexora.ma,Mar 12 1979,M,Casablanca,0692913411,06/30/2024,Web
+C00397,Berrada,Karim,karim.berrada397@mexora.ma,27/11/1986,m,TANGER,0613145714,2026-01-15,Social Ads
+C00398,Mansouri,Salma,salma.mansouri398@mexora.ma,04/21/1970,Femme,Kénitra,0662575126,12/28/2024,Referral
+C00399,El Amrani,Salma,salma.elamrani399@mexora.ma,12-09-1986,f,Tanger,0677552751,18-09-2025,Marketplace
+C00400,Alaoui,Yassine,yassine.alaoui400@mexora.ma,07/01/2006,0,Casablanca,0631361143,30-04-2024,Marketplace
+C00401,Tazi,Hajar,hajar.tazi401@mexora.ma,09/13/1993,1,rabat,0641333421,Sep 13 2024,Marketplace
+C00402,Ziani,Omar,karim.berrada147@mexora.ma,02/16/1967,m,Marrakech,0610344818,28/01/2024,Mobile
+C00403,Fassi,Mehdi,mehdi.fassi403@mexora.ma,24/11/1992,m,Rabat,0615857449,Jun 21 2025,Web
+C00404,Rifi,Nadia,nadia.rifi404@mexora.ma,09/16/1998,,Casablanca,0635428960,Feb 15 2025,Marketplace
+C00405,Rifi,Imane,imane.rifi405@mexora.ma,12/20/1990,0,Marrakech,0610051262,18/04/2024,Web
+C00406,Berrada,Karim,karim.berrada406@mexora.ma,18-03-1968,m,Rabat,0662247946,May 06 2026,Referral
+C00407,Mansouri,Yassine,yassine.mansouri407@mexora.ma,13-11-1976,1,CASABLANCA,0646756725,2024-05-12,Marketplace
+C00408,El Amrani,Imane,imane.elamrani408@mexora.ma,Jun 03 1964,m,Tanger,0671795673,2024-02-15,Marketplace
+C00409,Fassi,Mehdi,mehdi.fassi409@mexora.ma,07/28/2003,Homme,Meknès,0647331452,04-02-2024,Marketplace
+C00410,Tahiri,Karim,karim.tahiri410@mexora.ma,21-04-1967,1,Fès,0692526854,05/21/2025,Web
+C00411,Fassi,Nadia,nadia.fassi411@mexora.ma,28-08-1965,Femme,Al Hoceima,0651519098,03/18/2024,Social Ads
+C00412,Fassi,Hajar,hajar.fassi412mexora.ma,1968-12-04,Femme,Tétouan,0657615318,11/24/2024,Marketplace
+C00413,Mansouri,Hajar,hajar.mansouri413@mexora.ma,Dec 05 1995,m,Rabat,,2024-03-14,Referral
+C00414,Tahiri,Hajar,hajar.tahiri414@mexora.ma,Apr 26 1986,Femme,Al Hoceïma,0644255930,08/01/2024,Mobile
+C00415,Bennani,Sara,sara.bennani415@mexora.ma,09/19/2004,Femme,Rabat,0689279357,12/06/2025,Social Ads
+C00416,Fassi,Karim,karim.fassi416@mexora.ma,01-08-2006,Homme,Rabat,0699661346,2024-03-10,Web
+C00417,Ziani,Nadia,nadia.ziani417@mexora.ma,12/09/1995,Homme,Oujda,0691018400,2024-07-12,Referral
+C00418,Bennani,Hajar,karim.berrada147@mexora.ma,20-04-1996,Homme,Rabat,0673275759,Dec 19 2025,Social Ads
+C00419,Berrada,Sara,sara.berrada419@mexora.ma,Mar 28 1992,1,Rabat,0616522924,Apr 05 2024,Mobile
+C00420,Ziani,Sara,sara.ziani420@mexora.ma,07/17/1994,m,Meknès,0694892976,11/12/2024,Web
+C00421,Mansouri,Karim,karim.mansouri421mexora.ma,19/06/1997,Homme,Tétouan,0693023525,26/08/2024,Referral
+C00422,Bennani,Imane,imane.bennani422@mexora.ma,Jan 22 2000,f,Tétouan,0632854101,2024-12-23,Marketplace
+C00423,Tazi,Imane,imane.tazi423@mexora.ma,20/07/2003,m,Agadir,0675236206,11/24/2025,Mobile
+C00424,Ziani,Amine,amine.ziani424@mexora.ma,10/02/1999,m,Agadir,0679094927,Feb 01 2025,Mobile
+C00425,Berrada,Nadia,nadia.berrada425@mexora.ma,06-05-1994,0,Oujda,0679886583,21/12/2024,Mobile
+C00426,Ziani,Omar,,Jul 28 1967,Femme,Rabat,0614475736,23-04-2026,Web
+C00427,Tahiri,Hajar,hajar.tahiri427@mexora.ma,09/04/1979,Femme,Tnja,0641448175,2026-01-08,Mobile
+C00428,Tazi,Karim,karim.tazi428@mexora.ma,07-02-1965,Homme,Agadir,0694189539,2024-10-21,Mobile
+C00429,Bennani,Imane,imane.bennani429@mexora.ma,24/08/2002,Femme,Kénitra,0669520759,01/16/2024,Marketplace
+C00430,Tazi,Karim,karim.tazi430@mexora.ma,10/10/1972,f,rabat,0698001866,2025-07-23,Referral
+C00431,Berrada,Nadia,nadia.berrada431@mexora.ma,1988-07-06,m,Tanger,0668891904,18-10-2025,Mobile
+C00432,El Amrani,Mehdi,,2006-11-09,m,Al Hoceïma,0655022310,2024-06-06,Mobile
+C00433,Tahiri,Sara,sara.tahiri433@mexora.ma,18/02/2003,Femme,CAS,0685686751,04/10/2024,Referral
+C00434,Tazi,Salma,salma.tazi434@mexora.ma,2035-01-01,f,Casablanca,0673324409,29/05/2025,Marketplace
+C00435,Mansouri,Nadia,nadia.mansouri435@mexora.ma,12/08/1966,Femme,Marrakech,,31-03-2024,Web
+C00436,Tazi,Nadia,nadia.tazi436@mexora.ma,01/10/1985,,CASABLANCA,0614131947,Jul 28 2024,Social Ads
+C00437,Rifi,Mehdi,,16/08/1978,0,Tanger,0636746551,09/01/2026,Referral
+C00438,Alaoui,Salma,salma.alaoui438@mexora.ma,07/08/1964,m,Marrakech,0629726202,2025-06-13,Social Ads
+C00439,Ziani,Amine,amine.ziani439@mexora.ma,06/06/1972,Male,Rabat,0673040345,01-06-2024,Web
+C00440,Tazi,Imane,imane.tazi440@mexora.ma,09/11/1962,f,Casablanca,0610531907,2024-03-23,Web
+C00441,Fassi,Hajar,hajar.fassi441@mexora.ma,02/08/1961,m,Marrakech,0676230801,2024-12-31,Marketplace
+C00442,Alaoui,Mehdi,mehdi.alaoui442@mexora.ma,12-03-1973,1,Rabat,0640909313,14/03/2026,Mobile
+C00443,Tahiri,Salma,salma.tahiri443@mexora.ma,1992-12-25,0,Tanger,,29-02-2024,Web
+C00444,Rifi,Karim,karim.rifi444@mexora.ma,Jun 12 2006,1,Agadir,0621066060,01-01-2026,Web
+C00445,Mansouri,Karim,karim.mansouri445@mexora.ma,16/11/1976,Homme,,0627988766,12-03-2025,Mobile
+C00446,El Amrani,Sara,sara.elamrani446@mexora.ma,27-12-1961,0,Tanger,0654590491,06-01-2024,Mobile
+C00447,Ziani,Salma,salma.fassi369@mexora.ma,24/12/1990,Homme,Casablanca,0661873093,09/05/2025,Marketplace
+C00448,Berrada,Yassine,yassine.berrada448@mexora.ma,Mar 09 1993,0,Casablanca,0634910351,22-06-2024,Social Ads
+C00449,Tazi,Karim,karim.tazi449@mexora.ma,06-11-1962,Femme,Tanger,0674681610,04/17/2024,Marketplace
+C00450,Alaoui,Salma,salma.alaoui450@mexora.ma,04-09-2004,Female,Marrakech,0620390015,22-06-2025,Social Ads
+C00451,Tazi,Imane,imane.tazi451@mexora.ma,03/27/1980,f,Tanger,0638188664,05/01/2025,Marketplace
+C00452,Rifi,Hajar,hajar.rifi452@mexora.ma,25/10/1967,f,TNG,,05/14/2025,Social Ads
+C00453,Bennani,Yassine,yassine.bennani453@mexora.ma,1965-06-16,1,Agadir,0661420891,08/04/2025,Web
+C00454,Fassi,Amine,amine.fassi454@mexora.ma,18/09/1966,0,Marrakech,0647423367,18-07-2024,Mobile
+C00455,Fassi,Imane,hajar.berrada396mexora.ma,Jul 26 1971,m,,0612747842,14-01-2024,Social Ads
+C00456,Tazi,Karim,karim.tazi456@mexora.ma,11-05-1975,Femme,Tnja,0692848162,2025-04-06,Marketplace
+C00457,El Amrani,Nadia,hajar.mansouri81@mexora.ma,Oct 09 1978,Homme,Kénitra,0682109268,Jan 21 2025,Marketplace
+C00458,Mansouri,Omar,omar.mansouri458@mexora.ma,20/06/1974,M,,0650163811,28/05/2024,Web
+C00459,Fassi,Imane,imane.fassi459@mexora.ma,05/27/1977,Female,Marrakech,0663076683,2025-02-13,Marketplace
+C00460,El Amrani,Karim,karim.elamrani460@mexora.ma,23-12-1965,f,TNG,,13/09/2025,Web
+C00461,Alaoui,Karim,karim.alaoui461@mexora.ma,02/03/1963,Homme,Tanger,0625531190,2025-02-01,Referral
+C00462,Tahiri,Sara,sara.tahiri462@mexora.ma,17-11-1975,0,Rabat,0611431586,30/08/2024,Social Ads
+C00463,Tahiri,Amine,amine.tahiri463@mexora.ma,Jun 14 1973,f,Fès,0695259695,14/10/2024,Mobile
+C00464,Tazi,Amine,amine.tazi464@mexora.ma,09/06/1982,0,Casablanca,0656554062,2024-02-06,Web
+C00465,Mansouri,Karim,karim.mansouri465@mexora.ma,1977-12-20,Femme,Rabat,0644136181,27/05/2025,Web
+C00466,El Amrani,Amine,amine.elamrani466@mexora.ma,Sep 18 1997,Homme,Tetouan,0653780330,2024-05-24,Mobile
+C00467,Alaoui,Hajar,hajar.alaoui467@mexora.ma,May 08 1974,Homme,Casablanca,0685236467,2024-03-01,Mobile
+C00468,Fassi,Mehdi,mehdi.fassi468@mexora.ma,04/19/1962,m,Tangier,0694157845,03/04/2026,Mobile
+C00469,Tahiri,Karim,karim.tahiri469@mexora.ma,27-10-1970,Homme,TETOUAN,0655221042,03/31/2026,Social Ads
+C00470,Mansouri,Nadia,nadia.mansouri470@mexora.ma,12/27/2002,Male,Rabat,0695807506,27/06/2025,Social Ads
+C00471,El Amrani,Amine,amine.elamrani471@mexora.ma,10/19/1961,m,Rabat,0626424042,10/04/2025,Referral
+C00472,Berrada,Imane,imane.berrada472@mexora.ma,11/23/1986,Femme,Casablanca,0636021736,Dec 14 2024,Referral
+C00473,Berrada,Yassine,yassine.berrada473@mexora.ma,16/05/1970,1,tanger,0643494562,2024-06-09,Web
+C00474,Tahiri,Salma,salma.tahiri474@mexora.ma,11/07/1960,Homme,Casablanca,0689574001,Jun 22 2025,Web
+C00475,Rifi,Amine,amine.rifi475@mexora.ma,15/02/1996,f,Fès,0695236207,05/04/2025,Web
+C00476,Alaoui,Omar,omar.alaoui476@mexora.ma,Aug 08 1963,f,Rabat,0663481440,Jun 11 2024,Social Ads
+C00477,Fassi,Imane,imane.fassi477@mexora.ma,16-07-1979,f,Fès,0652037724,Mar 05 2025,Web
+C00478,Rifi,Yassine,sara.elamrani163@mexora.ma,08/03/1960,1,Oujda,0649241892,2025-10-31,Marketplace
+C00479,Bennani,Amine,amine.bennani479@mexora.ma,11/28/1967,f,TNG,0683743104,12/12/2025,Marketplace
+C00480,Ziani,Hajar,hajar.ziani480@mexora.ma,04/16/1987,F,Al Hoceima,0668827771,Mar 21 2026,Marketplace
+C00481,El Amrani,Amine,amine.elamrani481@mexora.ma,11/11/1990,f,Tétouan,0636605124,01/30/2026,Mobile
+C00482,Mansouri,Hajar,hajar.mansouri482@mexora.ma,26/02/1967,1,Oujda,0611469021,30/01/2024,Marketplace
+C00483,Alaoui,Karim,karim.alaoui483@mexora.ma,1979-02-05,0,Casablanca,0631702880,07/11/2025,Web
+C00484,Fassi,Imane,imane.fassi484@mexora.ma,08-05-1998,f,Casablanca,0649858618,18-04-2026,Mobile
+C00485,Mansouri,Mehdi,mehdi.mansouri485@mexora.ma,May 06 1970,0,Fès,0688650488,Nov 23 2025,Marketplace
+C00486,Rifi,Mehdi,mehdi.rifi486@mexora.ma,Feb 08 1978,Femme,Al Hoceïma,0684608420,15/05/2026,Marketplace
+C00487,Tazi,Yassine,yassine.tazi487@mexora.ma,08/21/2003,Homme,Rabat,,Aug 12 2025,Social Ads
+C00488,Rifi,Karim,karim.rifi488@mexora.ma,07-05-1983,Homme,Fès,0646287319,12/05/2024,Mobile
+C00489,Tahiri,Sara,sara.tahiri489@mexora.ma,24-09-1982,0,Marrakech,0629446894,Jun 30 2024,Referral
+C00490,Tazi,Mehdi,mehdi.tazi490@mexora.ma,07-10-1990,Female,Fès,0695712672,03/12/2025,Referral
+C00491,Rifi,Mehdi,mehdi.rifi491@mexora.ma,Feb 25 2006,1,Marrakech,0645103349,29-09-2025,Marketplace
+C00492,Mansouri,Nadia,nadia.mansouri492@mexora.ma,04-05-1971,1,Fès,0687952319,Feb 08 2025,Mobile
+C00493,Mansouri,Yassine,yassine.mansouri493@mexora.ma,Dec 04 1998,0,Agadir,0671668654,2024-04-26,Referral
+C00494,Ziani,Salma,salma.ziani494@mexora.ma,1965-07-10,,,0624553258,2024-09-23,Web
+C00495,Tazi,Mehdi,mehdi.tahiri343@mexora.ma,07/15/2006,Homme,Fès,0684176443,01/22/2024,Mobile
+C00496,Berrada,Yassine,yassine.berrada496mexora.ma,2035-01-01,f,Marrakech,,May 14 2026,Mobile
+C00497,Alaoui,Yassine,yassine.alaoui497@mexora.ma,09/02/1965,f,CASABLANCA,0636834442,Apr 24 2026,Social Ads
+C00498,Bennani,Hajar,hajar.bennani498@mexora.ma,Jul 24 1979,0,Nador,0653397041,06/06/2024,Marketplace
+C00499,El Amrani,Salma,salma.elamrani499@mexora.ma,08/06/1982,0,tanger,0623918223,08/22/2025,Social Ads
+C00500,Berrada,Imane,imane.berrada500mexora.ma,1975-06-15,Homme,Tanger,0635346062,2024-12-14,Referral
+C00501,Mansouri,Karim,karim.mansouri501@mexora.ma,22/01/1978,0,CAS,0611359408,2025-02-28,Web
+C00502,Ziani,Amine,amine.ziani502@mexora.ma,08/05/1967,1,Agadir,0698666221,Aug 25 2025,Mobile
+C00503,Alaoui,Yassine,yassine.alaoui503@mexora.ma,03-04-1996,Femme,Meknès,0665194646,22/04/2026,Referral
+C00504,Alaoui,Yassine,yassine.alaoui504@mexora.ma,2035-01-01,Male,,0642736995,29-04-2025,Social Ads
+C00505,Ziani,Imane,imane.ziani505@mexora.ma,28-10-1975,f,Rabat,0615325920,07-12-2024,Marketplace
+C00506,Tahiri,Nadia,nadia.tahiri506@mexora.ma,2003-10-03,Homme,Fès,0638329760,Feb 10 2024,Social Ads
+C00507,Tazi,Amine,,Dec 17 1989,0,Tanger,0625258551,14-12-2025,Mobile
+C00508,Tazi,Amine,amine.tazi508@mexora.ma,27/11/1975,Female,Casablanca,0654379277,2025-07-16,Social Ads
+C00509,Tahiri,Amine,amine.tahiri509@mexora.ma,19-04-2004,1,Marrakech,0654339246,Apr 17 2026,Social Ads
+C00510,Alaoui,Sara,sara.alaoui510@mexora.ma,25-12-1975,0,TNG,,Mar 21 2026,Social Ads
+C00511,Mansouri,Imane,imane.mansouri511@mexora.ma,09/16/1974,Homme,Marrakech,0663765041,2025-02-16,Mobile
+C00512,Rifi,Yassine,yassine.rifi512@mexora.ma,Jun 07 1962,f,,0642017349,15/01/2024,Social Ads
+C00513,Tazi,Yassine,yassine.tazi513@mexora.ma,16-06-1960,m,Agadir,0623000769,Apr 01 2025,Web
+C00514,El Amrani,Salma,salma.elamrani514@mexora.ma,07/27/1973,Femme,Agadir,0677708053,2025-02-21,Social Ads
+C00515,Alaoui,Hajar,hajar.alaoui515@mexora.ma,Aug 18 1970,0,,,12/11/2025,Referral
+C00516,Bennani,Mehdi,mehdi.bennani516@mexora.ma,04/10/1987,f,Tanger,0695566971,01-08-2024,Mobile
+C00517,Berrada,Amine,amine.berrada517@mexora.ma,2005-03-21,Male,Tanger,0699422308,06-01-2026,Social Ads
+C00518,Tahiri,Mehdi,mehdi.tahiri518@mexora.ma,19/04/1969,0,Tétouan,0633182428,27/08/2024,Mobile
+C00519,Fassi,Karim,karim.fassi519@mexora.ma,1993-07-22,Male,Marrakech,,2026-04-10,Marketplace
+C00520,Rifi,Salma,salma.rifi520@mexora.ma,28-10-1991,Femme,CASABLANCA,0629888416,14-01-2024,Web
+C00521,Bennani,Omar,omar.bennani521@mexora.ma,1978-04-11,0,Fès,0623469172,07/04/2024,Mobile
+C00522,Alaoui,Imane,imane.alaoui522@mexora.ma,2006-10-28,Homme,Agadir,,07-06-2025,Mobile
+C00523,Ziani,Hajar,hajar.ziani523@mexora.ma,1974-04-15,Femme,Fès,0689861207,02-01-2026,Social Ads
+C00524,Tazi,Imane,imane.tazi524@mexora.ma,2002-06-05,1,Kénitra,0664676192,Nov 23 2025,Referral
+C00525,Mansouri,Omar,omar.mansouri525@mexora.ma,Sep 01 1966,0,TANGER,0631248175,30-01-2025,Referral
+C00526,Tazi,Salma,salma.tazi526@mexora.ma,18/04/1967,Femme,Tanger,0656965732,06/07/2024,Web
+C00527,Ziani,Karim,karim.ziani527@mexora.ma,1974-01-21,,Rabat,0618778049,16-11-2025,Web
+C00528,Ziani,Hajar,hajar.ziani528@mexora.ma,09-09-1994,0,Tanger,0695519982,May 24 2025,Social Ads
+C00529,Bennani,Sara,sara.bennani529@mexora.ma,20/06/1983,Femme,Tanger,0659529366,Feb 27 2025,Marketplace
+C00530,Berrada,Amine,amine.berrada530@mexora.ma,10-06-1997,Femme,,0649251932,02-03-2026,Referral
+C00531,Alaoui,Yassine,yassine.alaoui531@mexora.ma,09/13/1965,1,tanger,0621383676,06/30/2024,Web
+C00532,Ziani,Sara,hajar.rifi327@mexora.ma,02/06/1992,f,Marrakech,0697813796,07/14/2024,Marketplace
+C00533,El Amrani,Salma,salma.elamrani533@mexora.ma,Feb 12 1983,0,Marrakech,0617610404,23/01/2024,Marketplace
+C00534,Tazi,Salma,salma.tazi534@mexora.ma,16-11-1964,0,Tanger,0641211771,2025-11-16,Marketplace
+C00535,Ziani,Imane,amine.mansouri325@mexora.ma,07/08/1963,0,Marrakech,0615530497,Nov 16 2025,Social Ads
+C00536,Mansouri,Sara,sara.mansouri536@mexora.ma,27-11-1999,f,Al Hoceïma,0699657083,05/11/2025,Referral
+C00537,Alaoui,Salma,salma.alaoui537@mexora.ma,Jan 05 1996,Femme,Casablanca,0671790429,08-01-2026,Social Ads
+C00538,El Amrani,Omar,omar.elamrani538@mexora.ma,Sep 01 2003,Femme,Kénitra,0684728083,Mar 27 2024,Referral
+C00539,Bennani,Nadia,nadia.bennani539@mexora.ma,08/16/1982,m,Fès,0661116272,06-12-2024,Marketplace
+C00540,Tahiri,Salma,salma.tahiri540@mexora.ma,Nov 13 1998,m,Rabat,0645546879,2025-11-22,Mobile
+C00541,Fassi,Amine,amine.fassi541@mexora.ma,01/11/2001,1,Nador,,16/08/2025,Marketplace
+C00542,Fassi,Omar,omar.fassi542mexora.ma,Aug 25 1997,1,CASABLANCA,0656745904,07/18/2025,Referral
+C00543,Bennani,Omar,omar.bennani543@mexora.ma,03/09/1960,Homme,Marrakech,0691605063,05/28/2024,Mobile
+C00544,Bennani,Yassine,yassine.bennani544@mexora.ma,09/10/1981,Homme,Nador,0662325734,02/25/2024,Referral
+C00545,Tazi,Omar,omar.tazi545@mexora.ma,14/10/1971,f,TANGER,0679425103,14-11-2025,Marketplace
+C00546,Rifi,Nadia,nadia.rifi546@mexora.ma,04-12-1987,m,Casablanca,0693009589,15-03-2026,Social Ads
+C00547,Tahiri,Nadia,nadia.tahiri547@mexora.ma,17/12/1984,f,tanger,0659729975,04/11/2024,Social Ads
+C00548,Ziani,Sara,sara.ziani548mexora.ma,2035-01-01,m,Tanger,0640280517,Aug 01 2024,Social Ads
+C00549,Alaoui,Salma,salma.alaoui549@mexora.ma,04/17/1992,Homme,Rabat,0657480614,Jul 06 2024,Referral
+C00550,Ziani,Salma,salma.ziani550@mexora.ma,14-09-1981,f,Oujda,,2024-04-04,Web
+C00551,Bennani,Karim,karim.bennani551@mexora.ma,01/09/2002,,Marrakech,0679937610,2024-10-14,Social Ads
+C00552,Tahiri,Sara,sara.tahiri552@mexora.ma,1966-06-08,f,Fès,0628822263,Feb 20 2024,Mobile
+C00553,Fassi,Yassine,yassine.fassi553@mexora.ma,02/25/1964,f,Tanger,0660992302,27/03/2026,Mobile
+C00554,Bennani,Hajar,hajar.bennani554@mexora.ma,04/01/1972,1,Tétouan,0622449636,2025-07-26,Referral
+C00555,El Amrani,Omar,omar.elamrani555@mexora.ma,08/24/2004,f,TNG,0692190938,05-10-2025,Marketplace
+C00556,Rifi,Imane,imane.rifi556@mexora.ma,03-05-2002,Homme,Kénitra,0645571564,19-02-2024,Referral
+C00557,Fassi,Mehdi,,Jun 05 1985,Homme,Tétouan,0653164836,29/01/2026,Referral
+C00558,Tahiri,Karim,karim.tahiri558@mexora.ma,10/08/1979,Homme,Meknès,0637412161,28-02-2026,Referral
+C00559,Ziani,Sara,sara.ziani559@mexora.ma,2006-09-08,M,,,20/10/2025,Social Ads
+C00560,Rifi,Imane,,1982-06-21,f,Nador,0693117711,30/11/2024,Mobile
+C00561,Rifi,Imane,imane.rifi561@mexora.ma,04/22/1987,0,Fès,,01/21/2024,Mobile
+C00562,Alaoui,Sara,sara.alaoui562@mexora.ma,Oct 04 1971,0,Rabat,0699406455,Dec 20 2025,Web
+C00563,Tazi,Mehdi,mehdi.tazi563@mexora.ma,15/09/1983,f,Marrakech,0683308334,Nov 29 2024,Web
+C00564,Ziani,Hajar,hajar.ziani564@mexora.ma,1983-07-05,f,Casablanca,0641026412,2025-02-06,Mobile
+C00565,El Amrani,Karim,karim.elamrani565@mexora.ma,Sep 05 1976,Femme,Oujda,0639410218,Jan 20 2024,Referral
+C00566,Tazi,Karim,karim.tazi566@mexora.ma,09-12-1963,Homme,Nador,0696249127,17/08/2025,Mobile
+C00567,Tahiri,Imane,imane.tahiri567@mexora.ma,1986-12-09,Femme,Tnja,0670050458,09/19/2024,Social Ads
+C00568,Bennani,Hajar,salma.bennani182@mexora.ma,08/12/1981,m,Fès,0693683185,Mar 11 2025,Mobile
+C00569,El Amrani,Sara,sara.elamrani569@mexora.ma,05-04-1989,Femme,casa,0636919118,01/06/2024,Referral
+C00570,Rifi,Salma,salma.rifi570@mexora.ma,06/02/1986,1,Meknès,0699526784,05-10-2025,Web
+C00571,Rifi,Sara,sara.rifi571@mexora.ma,26-06-2006,0,CASABLANCA,0637284143,14/12/2024,Social Ads
+C00572,Ziani,Salma,salma.ziani572@mexora.ma,17/07/1965,Homme,Casablanca,0637236265,Feb 23 2026,Web
+C00573,Tazi,Amine,amine.tazi573@mexora.ma,Sep 22 1969,1,Tanger,0669826242,Mar 07 2024,Marketplace
+C00574,Tahiri,Nadia,nadia.tahiri574@mexora.ma,1987-07-17,m,Rabat,0623908291,05/05/2024,Social Ads
+C00575,Ziani,Hajar,hajar.ziani575@mexora.ma,27-06-1981,F,Casablanca,,08-03-2026,Mobile
+C00576,El Amrani,Amine,amine.elamrani576@mexora.ma,14-05-1993,m,Casablanca,0688821727,05/05/2026,Referral
+C00577,Fassi,Salma,salma.fassi577@mexora.ma,04/12/2004,Homme,,0611421544,25-03-2025,Social Ads
+C00578,Bennani,Karim,karim.bennani578mexora.ma,21/07/1961,m,Agadir,0650717149,26-07-2024,Web
+C00579,Rifi,Amine,amine.rifi579@mexora.ma,11/06/1966,M,Oujda,0690316818,29-11-2025,Referral
+C00580,Tahiri,Sara,sara.tahiri580@mexora.ma,05/08/1977,f,Casablanca,0633758837,17/06/2025,Web
+C00581,Alaoui,Hajar,hajar.alaoui581@mexora.ma,2001-03-09,0,Tanger,0642157924,06/03/2024,Mobile
+C00582,Tahiri,Karim,karim.tahiri582@mexora.ma,1973-05-02,Femme,Agadir,0671983164,11/01/2025,Social Ads
+C00583,Ziani,Hajar,hajar.ziani583@mexora.ma,Nov 07 1963,1,Casablanca,0694777561,Oct 17 2025,Mobile
+C00584,Bennani,Sara,sara.bennani584mexora.ma,1966-06-20,m,Tanger,0615332639,Jun 16 2024,Mobile
+C00585,Tazi,Hajar,hajar.tazi585@mexora.ma,07/03/1971,0,Tétouan,0628713220,20/05/2024,Referral
+C00586,El Amrani,Omar,omar.elamrani586@mexora.ma,04/09/1974,Homme,Casablanca,0638905142,2025-08-04,Mobile
+C00587,El Amrani,Nadia,nadia.elamrani587mexora.ma,02/10/1997,f,Tanger,0617963855,Jun 01 2024,Web
+C00588,Alaoui,Nadia,nadia.alaoui588@mexora.ma,28-09-1986,Femme,Tanger,0676922457,23/04/2026,Web
+C00589,Berrada,Imane,imane.berrada589@mexora.ma,Oct 16 1972,Male,Tangier,0641109410,20-01-2025,Marketplace
+C00590,Tazi,Yassine,yassine.tazi590@mexora.ma,1993-10-26,f,Fès,0698411097,02/02/2026,Referral
+C00591,Bennani,Nadia,nadia.bennani591mexora.ma,Aug 23 1961,Male,Tétouan,0617027283,04-04-2024,Mobile
+C00592,Ziani,Amine,amine.ziani592mexora.ma,Mar 27 2004,m,Marrakech,0654169671,2024-07-19,Web
+C00593,Ziani,Amine,amine.ziani593@mexora.ma,06/08/1967,0,Kénitra,0617756814,12/15/2025,Referral
+C00594,Tazi,Karim,karim.tazi594@mexora.ma,15/04/1983,f,Casablanca,0641473244,16/02/2024,Web
+C00595,Bennani,Amine,mehdi.berrada239@mexora.ma,19/08/2004,Homme,Agadir,0634052670,02/28/2026,Mobile
+C00596,Berrada,Imane,salma.tahiri110@mexora.ma,13-10-1975,Femme,Al Hoceïma,0687533992,27/04/2024,Web
+C00597,Tazi,Imane,imane.tazi597@mexora.ma,2000-10-17,m,Tanger,0669482727,2026-03-09,Social Ads
+C00598,Rifi,Mehdi,mehdi.rifi598@mexora.ma,07/06/1991,m,Tanger,,02/05/2026,Social Ads
+C00599,El Amrani,Nadia,nadia.elamrani599@mexora.ma,1994-05-21,,CAS,0618110549,13-01-2024,Referral
+C00600,Alaoui,Yassine,yassine.alaoui600@mexora.ma,09/08/1993,Femme,Tanger,0663771900,May 15 2024,Mobile
+C00601,Berrada,Karim,karim.berrada601@mexora.ma,Mar 22 1984,1,Casablanca,0654680800,2024-03-25,Referral
+C00602,Rifi,Sara,sara.rifi602@mexora.ma,19/10/1996,Femme,Tanger,0639146958,05/12/2024,Web
+C00603,Tahiri,Nadia,,1977-12-22,Homme,rabat,0698315629,02-02-2026,Web
+C00604,Berrada,Karim,karim.berrada604mexora.ma,10-08-2000,Female,Tanger,0631928272,14-02-2024,Social Ads
+C00605,Bennani,Yassine,yassine.bennani605@mexora.ma,Oct 02 1984,Femme,Kénitra,0646214779,May 03 2024,Referral
+C00606,Ziani,Mehdi,mehdi.ziani606@mexora.ma,Mar 25 1975,Femme,Agadir,0693013082,02/05/2026,Referral
+C00607,Berrada,Hajar,hajar.berrada607@mexora.ma,Oct 01 1998,1,Rabat,0698062836,2024-04-18,Web
+C00608,Rifi,Karim,karim.rifi608@mexora.ma,11-09-1994,f,Tétouan,0625011168,13-10-2024,Marketplace
+C00609,Tazi,Amine,amine.tazi609@mexora.ma,Apr 02 1982,0,TETOUAN,0692139893,05/08/2026,Social Ads
+C00610,Bennani,Mehdi,mehdi.bennani610@mexora.ma,1997-01-06,f,Oujda,0634556567,Nov 28 2025,Marketplace
+C00611,Mansouri,Imane,imane.mansouri611@mexora.ma,1992-09-06,Homme,Rabat,0637651858,May 02 2024,Mobile
+C00612,Tazi,Yassine,yassine.tazi612@mexora.ma,04/08/1996,Femme,Oujda,0667351209,2024-06-25,Social Ads
+C00613,Bennani,Hajar,hajar.bennani613@mexora.ma,1963-02-22,1,Casablanca,0620767553,03/13/2025,Social Ads
+C00614,Berrada,Hajar,hajar.berrada614@mexora.ma,Sep 28 1980,Femme,Al Hoceïma,0657780284,2025-10-16,Referral
+C00615,Fassi,Sara,imane.tahiri358@mexora.ma,07/06/2002,Femme,Tanger,0643703703,Aug 15 2024,Social Ads
+C00616,Mansouri,Imane,imane.mansouri616@mexora.ma,1986-05-25,Homme,Agadir,0636412736,2025-09-23,Social Ads
+C00617,Tahiri,Mehdi,mehdi.tahiri617@mexora.ma,May 16 2001,Homme,Tanger,0688393541,07/05/2026,Mobile
+C00618,El Amrani,Hajar,hajar.elamrani618@mexora.ma,07/26/1963,0,Kénitra,0661995457,05/25/2024,Mobile
+C00619,Mansouri,Amine,amine.mansouri619@mexora.ma,23/06/2006,Femme,Casablanca,0629431123,2025-04-17,Referral
+C00620,Tahiri,Hajar,hajar.tahiri620@mexora.ma,1985-11-05,0,Tanger,0697830354,2024-06-02,Social Ads
+C00621,Berrada,Sara,sara.berrada621@mexora.ma,17-10-1984,1,Tangier,0696710105,2025-08-12,Web
+C00622,Fassi,Mehdi,mehdi.fassi622mexora.ma,Jan 08 1987,f,Fès,,Dec 05 2024,Marketplace
+C00623,Rifi,Karim,karim.rifi623@mexora.ma,07/10/1979,f,Rabat,0649912320,02/02/2024,Mobile
+C00624,Berrada,Salma,salma.berrada624@mexora.ma,1966-01-03,1,Casablanca,0621453435,04-11-2025,Marketplace
+C00625,Fassi,Yassine,karim.mansouri253mexora.ma,26-12-1972,f,Oujda,0691554305,17/12/2024,Web
+C00626,Tazi,Amine,amine.tazi626@mexora.ma,01/11/1982,Homme,Marrakech,0620055538,04/19/2024,Mobile
+C00627,Fassi,Hajar,hajar.fassi627@mexora.ma,Jul 03 1974,1,Casablanca,0666392861,2026-02-03,Web
+C00628,Ziani,Yassine,yassine.ziani628@mexora.ma,14-12-1998,Homme,Tétouan,0681862426,Sep 18 2024,Referral
+C00629,Fassi,Yassine,yassine.fassi629@mexora.ma,Oct 21 2002,Male,Casablanca,0614249078,03-04-2024,Social Ads
+C00630,Alaoui,Salma,salma.alaoui630@mexora.ma,08-04-1998,Homme,Marrakech,0675725263,Feb 25 2026,Referral
+C00631,Ziani,Karim,karim.ziani631@mexora.ma,19/01/1976,1,Fès,0693318039,2024-08-03,Marketplace
+C00632,Tazi,Omar,omar.tazi632@mexora.ma,12-11-1963,,Rabat,0666022721,29/08/2024,Web
+C00633,Bennani,Hajar,hajar.bennani633@mexora.ma,24-08-1968,0,Tétouan,0675247230,2025-07-16,Social Ads
+C00634,Bennani,Amine,salma.elamrani514@mexora.ma,1978-02-24,1,RABAT,0678997093,06/16/2025,Marketplace
+C00635,Berrada,Amine,nadia.mansouri435@mexora.ma,11-09-1977,Male,rabat,0683453772,2026-03-13,Mobile
+C00636,Fassi,Yassine,yassine.fassi636@mexora.ma,17/12/1978,Homme,Casablanca,0654068106,08-12-2025,Web
+C00637,Rifi,Karim,karim.rifi637@mexora.ma,18-04-2004,Femme,Kénitra,0657822036,2025-08-21,Marketplace
+C00638,Fassi,Amine,amine.fassi638@mexora.ma,16-05-1990,Homme,Meknès,0689561949,07/11/2024,Marketplace
+C00639,Rifi,Amine,imane.elamrani408@mexora.ma,1986-01-09,m,Marrakech,0651515957,Aug 06 2025,Referral
+C00640,El Amrani,Omar,omar.elamrani640@mexora.ma,1999-09-10,0,,0690887245,2026-04-02,Mobile
+C00641,Fassi,Mehdi,mehdi.fassi641@mexora.ma,07/27/1980,1,Tanger,0654097315,Feb 15 2024,Referral
+C00642,Tazi,Sara,sara.tazi642@mexora.ma,12/10/1960,0,rabat,0674943719,09-03-2025,Marketplace
+C00643,Alaoui,Yassine,yassine.alaoui643@mexora.ma,15-07-1979,1,Kénitra,0676949460,12/06/2025,Web
+C00644,Rifi,Omar,omar.rifi644@mexora.ma,12/23/2001,Femme,Fès,0640425272,2024-07-18,Mobile
+C00645,Berrada,Amine,amine.berrada645@mexora.ma,26/04/1976,F,Marrakech,,21/11/2025,Referral
+C00646,Berrada,Amine,amine.berrada646@mexora.ma,11/22/1962,Homme,Casablanca,0657963577,Oct 09 2025,Social Ads
+C00647,Alaoui,Mehdi,mehdi.alaoui647@mexora.ma,19-07-1961,f,Tétouan,0658501851,07/10/2024,Marketplace
+C00648,Berrada,Yassine,yassine.berrada648@mexora.ma,14-10-1999,f,Fès,0651262927,23/08/2025,Web
+C00649,Alaoui,Hajar,hajar.alaoui649@mexora.ma,07/03/2000,Femme,Tanger,0678069970,16/04/2026,Marketplace
+C00650,El Amrani,Sara,sara.elamrani650@mexora.ma,1970-01-26,Homme,Tanger,0646004374,05/11/2024,Mobile
+C00651,Alaoui,Karim,karim.alaoui651@mexora.ma,1988-06-28,f,Al Hoceïma,0653486732,02-09-2024,Referral
+C00652,Rifi,Nadia,nadia.rifi652@mexora.ma,12-11-1970,f,Kénitra,0651336979,Aug 09 2024,Social Ads
+C00653,Mansouri,Mehdi,mehdi.mansouri653@mexora.ma,Jun 03 1970,m,Tétouan,0637433996,Jan 11 2024,Social Ads
+C00654,Berrada,Mehdi,mehdi.berrada654@mexora.ma,21-12-1971,Homme,RABAT,0687454668,2026-02-02,Mobile
+C00655,Alaoui,Salma,salma.alaoui655@mexora.ma,09/26/1967,1,rabat,0655014718,14/09/2024,Web
+C00656,Alaoui,Salma,salma.alaoui656@mexora.ma,Nov 14 1969,1,Oujda,0612781007,Mar 12 2025,Referral
+C00657,El Amrani,Yassine,yassine.elamrani657@mexora.ma,03-03-1961,1,Tétouan,0682736867,2025-07-30,Mobile
+C00658,Bennani,Yassine,yassine.bennani658@mexora.ma,07/05/1998,f,Marrakech,0682369134,09/25/2024,Mobile
+C00659,Fassi,Mehdi,mehdi.fassi659@mexora.ma,1987-02-25,Femme,Rabat,0682285818,14-03-2026,Social Ads
+C00660,Fassi,Amine,amine.fassi660@mexora.ma,04/04/1994,Femme,Casablanca,0663514270,May 14 2025,Referral
+C00661,Berrada,Salma,salma.berrada661@mexora.ma,14/12/1960,1,Tétouan,0639359992,07/02/2026,Social Ads
+C00662,Ziani,Mehdi,mehdi.ziani662@mexora.ma,02/20/1965,0,,0619407704,04/03/2025,Marketplace
+C00663,Fassi,Sara,sara.fassi663@mexora.ma,Aug 18 1976,f,Rabat,0673301369,2026-04-23,Mobile
+C00664,Rifi,Sara,sara.rifi664mexora.ma,01/05/1990,Femme,Agadir,0642899564,2025-01-18,Marketplace
+C00665,Ziani,Nadia,hajar.bennani155@mexora.ma,1972-05-26,Femme,Casablanca,0686989470,03/22/2026,Social Ads
+C00666,Bennani,Karim,yassine.bennani658@mexora.ma,01/22/1965,Femme,Casablanca,0676871032,09/21/2024,Mobile
+C00667,El Amrani,Mehdi,mehdi.elamrani667@mexora.ma,22-03-1996,f,Casablanca,0640866344,30-03-2025,Mobile
+C00668,Rifi,Amine,amine.rifi668@mexora.ma,Jul 04 1966,Homme,RABAT,0647491386,2024-04-01,Marketplace
+C00669,Bennani,Yassine,yassine.bennani669@mexora.ma,03-12-1995,,Marrakech,0613866404,2025-06-13,Social Ads
+C00670,Berrada,Salma,salma.berrada670@mexora.ma,Apr 06 1992,f,Agadir,0613918942,Apr 03 2025,Marketplace
+C00671,Bennani,Omar,omar.bennani671@mexora.ma,21/03/1995,f,Casablanca,0645009768,09/06/2024,Social Ads
+C00672,El Amrani,Hajar,hajar.elamrani672@mexora.ma,03-10-1980,Homme,Rabat,0624484092,03/08/2025,Mobile
+C00673,Alaoui,Yassine,yassine.alaoui673@mexora.ma,2003-01-25,1,RABAT,0657455248,Apr 08 2025,Mobile
+C00674,Fassi,Yassine,yassine.fassi674@mexora.ma,1996-09-22,1,Casablanca,0639376483,10/06/2024,Social Ads
+C00675,Tazi,Salma,sara.tahiri462@mexora.ma,Jun 15 1966,f,Fès,0668555024,03-12-2024,Mobile
+C00676,Ziani,Amine,amine.ziani676@mexora.ma,01/11/1984,m,Fès,,02/07/2026,Web
+C00677,Bennani,Yassine,yassine.bennani677@mexora.ma,1984-03-26,M,Tetouan,0642848617,Aug 15 2024,Web
+C00678,Mansouri,Amine,amine.mansouri678@mexora.ma,05/24/1971,Homme,Fès,0619518748,25-07-2025,Marketplace
+C00679,Berrada,Salma,amine.tahiri210@mexora.ma,Feb 18 1981,1,Oujda,0687481583,2025-04-29,Web
+C00680,Ziani,Sara,,1972-02-08,f,Agadir,0685105207,05/26/2025,Web
+C00681,Bennani,Nadia,nadia.bennani681@mexora.ma,05/08/1992,M,Nador,0667179613,14-03-2026,Mobile
+C00682,Berrada,Hajar,hajar.berrada682@mexora.ma,1987-02-13,Female,Agadir,0638219855,03/29/2026,Web
+C00683,Fassi,Mehdi,mehdi.fassi683@mexora.ma,12/19/1976,Homme,Marrakech,0688375546,23/03/2024,Social Ads
+C00684,Bennani,Nadia,nadia.bennani684@mexora.ma,1965-03-10,Homme,Tanger,0617389316,24-12-2025,Mobile
+C00685,Tahiri,Yassine,yassine.tahiri685mexora.ma,10/06/1978,Homme,Fès,0672655623,24-07-2024,Mobile
+C00686,Tahiri,Nadia,nadia.tahiri686@mexora.ma,18-10-1971,Femme,Marrakech,0653116918,08/13/2024,Social Ads
+C00687,Mansouri,Sara,sara.mansouri687@mexora.ma,Feb 22 2005,Homme,Tétouan,0615127018,08/04/2024,Referral
+C00688,Fassi,Imane,imane.fassi688@mexora.ma,1989-11-15,m,Fès,0614380967,2026-03-31,Mobile
+C00689,Fassi,Amine,amine.fassi689mexora.ma,1965-05-18,m,rabat,0615503764,2024-01-29,Referral
+C00690,Tazi,Omar,omar.tazi690@mexora.ma,15-08-1977,1,CASABLANCA,0644181748,10/09/2025,Web
+C00691,Tazi,Sara,sara.tazi691@mexora.ma,27/05/1982,Homme,Tétouan,0667148296,06/03/2024,Web
+C00692,Tahiri,Hajar,karim.ziani234@mexora.ma,13-10-1985,Male,Fès,,06/03/2024,Marketplace
+C00693,Tahiri,Amine,amine.tahiri693@mexora.ma,1978-06-14,m,Rabat,0621226909,Dec 20 2025,Marketplace
+C00694,Rifi,Salma,salma.rifi694@mexora.ma,2035-01-01,0,Rabat,0625806102,03/10/2024,Referral
+C00695,Rifi,Yassine,omar.rifi391@mexora.ma,22/02/1995,1,Marrakech,0676622929,04/24/2025,Referral
+C00696,Tazi,Imane,imane.tazi696@mexora.ma,17/03/1973,0,RABAT,0621361192,Apr 16 2026,Social Ads
+C00697,Fassi,Yassine,yassine.fassi697@mexora.ma,Jun 26 1960,1,Casablanca,0699729696,26/02/2024,Web
+C00698,Berrada,Sara,sara.berrada698@mexora.ma,02/26/1986,f,Tétouan,0642700447,12/11/2025,Referral
+C00699,Alaoui,Sara,sara.alaoui699@mexora.ma,24/06/1965,Femme,Oujda,0615020222,2025-06-09,Mobile
+C00700,Berrada,Omar,omar.berrada700@mexora.ma,18/04/1963,,Oujda,0644270712,Aug 30 2025,Mobile
+C00701,El Amrani,Nadia,nadia.elamrani701@mexora.ma,1981-10-09,m,Tétouan,0639350652,24/02/2025,Social Ads
+C00702,Berrada,Nadia,nadia.berrada702mexora.ma,26/03/1987,m,Marrakech,0646781469,16-03-2024,Referral
+C00703,Berrada,Sara,sara.berrada703@mexora.ma,1994-02-25,Homme,Oujda,0640666087,Jan 16 2025,Mobile
+C00704,El Amrani,Hajar,hajar.elamrani704@mexora.ma,27/05/1990,m,Rabat,0614181082,11/25/2025,Mobile
+C00705,Berrada,Hajar,hajar.berrada705@mexora.ma,Dec 13 1969,Homme,Tetouan,0645260168,21/09/2024,Referral
+C00706,Alaoui,Sara,sara.alaoui706@mexora.ma,03-09-1960,0,Marrakech,0684979317,02/19/2026,Social Ads
+C00707,Fassi,Yassine,yassine.fassi707@mexora.ma,Sep 18 1980,f,Oujda,0616189130,2025-10-29,Mobile
+C00708,Ziani,Amine,amine.ziani708@mexora.ma,1997-12-14,1,Tanger,0682263341,2026-02-14,Marketplace
+C00709,Rifi,Karim,,2000-08-15,m,Agadir,0639845365,04-11-2024,Marketplace
+C00710,Tazi,Yassine,yassine.tazi710@mexora.ma,19-03-1972,m,Tanger,0624913224,08/06/2025,Marketplace
+C00711,Tazi,Nadia,nadia.tazi711@mexora.ma,1989-08-22,Homme,Oujda,0610637006,Oct 25 2024,Web
+C00712,Berrada,Omar,omar.berrada712@mexora.ma,12/25/1961,0,Marrakech,0649893725,Oct 10 2025,Web
+C00713,Berrada,Omar,omar.berrada713@mexora.ma,Nov 24 1994,m,Casablanca,0640323060,Jan 21 2024,Web
+C00714,Bennani,Hajar,hajar.bennani714@mexora.ma,01/08/1964,M,Casablanca,0677777062,17-09-2024,Marketplace
+C00715,Mansouri,Imane,imane.mansouri715@mexora.ma,26-09-1995,m,Casablanca,0670291440,2025-04-19,Web
+C00716,Ziani,Sara,sara.ziani716@mexora.ma,20-12-1987,1,Rabat,0633154338,Jun 24 2025,Social Ads
+C00717,Fassi,Salma,salma.fassi717@mexora.ma,1993-12-21,m,Agadir,0610892984,09-11-2025,Social Ads
+C00718,Mansouri,Hajar,hajar.mansouri718@mexora.ma,06/21/1963,,Rabat,0661939056,2025-03-02,Social Ads
+C00719,Berrada,Salma,salma.berrada719@mexora.ma,Jun 10 1968,0,Tétouan,0688114581,Sep 21 2025,Referral
+C00720,Alaoui,Amine,amine.alaoui720@mexora.ma,09/11/1990,F,Marrakech,0660558670,03/23/2024,Marketplace
+C00721,Rifi,Imane,nadia.ziani665@mexora.ma,Jan 13 1972,Homme,Oujda,,2025-10-09,Marketplace
+C00722,Fassi,Karim,karim.fassi722@mexora.ma,19-12-1970,Male,RABAT,0612024210,01-01-2026,Social Ads
+C00723,Ziani,Hajar,hajar.ziani723@mexora.ma,06/05/1985,,CASABLANCA,0651679989,25/02/2026,Mobile
+C00724,Berrada,Imane,imane.berrada724@mexora.ma,03-08-1999,1,Fès,0642560713,01/02/2024,Referral
+C00725,Ziani,Yassine,yassine.ziani725@mexora.ma,05/04/1988,1,Rabat,0677795218,Dec 08 2024,Social Ads
+C00726,Berrada,Imane,imane.berrada726@mexora.ma,Sep 05 2003,Homme,Nador,0676193344,08/08/2025,Social Ads
+C00727,Ziani,Salma,salma.ziani727@mexora.ma,Mar 04 1980,Femme,Casablanca,0665584764,2026-01-31,Marketplace
+C00728,Tazi,Mehdi,mehdi.tazi728@mexora.ma,11/05/1963,M,Kénitra,0670980877,2025-09-23,Web
+C00729,Berrada,Salma,nadia.tazi711@mexora.ma,Sep 17 1989,Homme,Oujda,0630543913,Jun 22 2024,Mobile
+C00730,Alaoui,Amine,amine.alaoui730@mexora.ma,Jul 18 1992,f,Oujda,0617043306,09-05-2026,Mobile
+C00731,Tazi,Salma,salma.tazi731@mexora.ma,27-09-1988,0,Fès,0610405353,2026-02-21,Marketplace
+C00732,Fassi,Mehdi,mehdi.fassi732@mexora.ma,16-12-1987,Male,Marrakech,0636594250,04-04-2026,Mobile
+C00733,Tazi,Karim,karim.tazi733@mexora.ma,Jan 20 1961,1,TANGER,0649061474,2025-06-11,Referral
+C00734,Fassi,Omar,omar.fassi734@mexora.ma,06-06-1960,F,Meknès,0667642578,Feb 24 2024,Web
+C00735,Ziani,Amine,imane.mansouri269@mexora.ma,28-07-2001,Male,Kénitra,0674542812,Oct 22 2024,Marketplace
+C00736,Berrada,Hajar,hajar.berrada736mexora.ma,Nov 13 1980,Femme,Rabat,0619440657,2024-05-18,Social Ads
+C00737,Bennani,Mehdi,,1974-06-28,M,Fès,0652123208,Mar 30 2026,Mobile
+C00738,El Amrani,Yassine,yassine.elamrani738@mexora.ma,09/26/1978,,CAS,0658995754,13-05-2026,Referral
+C00739,Bennani,Nadia,nadia.bennani739@mexora.ma,08/18/1983,1,Kénitra,0679240059,10/07/2025,Web
+C00740,Rifi,Yassine,,01/16/1975,m,rabat,0643760082,12/13/2024,Marketplace
+C00741,Tahiri,Karim,karim.tahiri741@mexora.ma,10/23/2002,m,Fès,0623524941,08/10/2024,Referral
+C00742,Bennani,Omar,omar.bennani742@mexora.ma,12-01-1983,1,Tanger,0638190696,18/03/2026,Social Ads
+C00743,Tahiri,Yassine,yassine.tahiri743@mexora.ma,04-08-1970,f,Casablanca,0611539980,Aug 11 2024,Marketplace
+C00744,Fassi,Omar,omar.fassi744@mexora.ma,12/08/1967,0,Tétouan,0612810077,Jun 14 2024,Marketplace
+C00745,Rifi,Karim,karim.rifi745@mexora.ma,05/17/1969,Homme,Meknès,0682992661,2025-03-31,Social Ads
+C00746,Mansouri,Karim,karim.mansouri746@mexora.ma,27-11-1988,Femme,Tetouan,0677006031,10/19/2024,Marketplace
+C00747,Alaoui,Karim,karim.alaoui747@mexora.ma,25/03/1965,0,tanger,0692759390,09/17/2025,Web
+C00748,Alaoui,Amine,amine.alaoui748@mexora.ma,Dec 01 1979,,Tétouan,0643985413,Nov 19 2024,Referral
+C00749,Berrada,Karim,karim.berrada749@mexora.ma,04/17/1969,f,Rabat,0659788712,03/30/2025,Web
+C00750,Fassi,Sara,sara.fassi750@mexora.ma,1984-06-06,m,Rabat,0686147149,08/29/2025,Marketplace
+C00751,Berrada,Sara,sara.berrada751@mexora.ma,20-03-1964,f,Rabat,0657834921,30/12/2024,Social Ads
+C00752,Bennani,Sara,sara.bennani752@mexora.ma,16-11-1977,0,Casablanca,0617148612,10/06/2024,Mobile
+C00753,Rifi,Salma,salma.rifi753@mexora.ma,27-09-1998,m,Al Hoceïma,0694781459,09/24/2025,Marketplace
+C00754,Alaoui,Hajar,hajar.alaoui754@mexora.ma,1992-05-15,m,TETOUAN,0678489368,20/02/2024,Web
+C00755,Bennani,Omar,omar.bennani755@mexora.ma,May 24 1992,f,Agadir,0692408713,07/11/2024,Mobile
+C00756,Tahiri,Hajar,hajar.tahiri756@mexora.ma,17/04/1966,m,Fès,0655935093,08-01-2026,Social Ads
+C00757,Tahiri,Hajar,hajar.tahiri757@mexora.ma,04-02-2001,Femme,Kénitra,0688293617,21-05-2024,Social Ads
+C00758,Rifi,Mehdi,mehdi.rifi758@mexora.ma,1963-06-10,1,Tanger,0678435373,21-07-2024,Marketplace
+C00759,Berrada,Imane,imane.berrada759@mexora.ma,06/11/1966,Homme,Tanger,0646692322,27-03-2024,Marketplace
+C00760,Tazi,Nadia,nadia.tazi760@mexora.ma,1982-11-14,f,Fès,0668904707,2026-03-02,Referral
+C00761,El Amrani,Karim,karim.elamrani761@mexora.ma,28-12-1963,1,CASABLANCA,0691141412,25-06-2024,Web
+C00762,Alaoui,Karim,karim.alaoui762@mexora.ma,1960-08-26,Femme,Rabat,0666124874,29/11/2024,Web
+C00763,Tazi,Nadia,nadia.tazi763@mexora.ma,12/05/1967,0,Marrakech,0632926216,2025-07-18,Social Ads
+C00764,Mansouri,Hajar,,1962-06-27,1,Rabat,0684787043,04/20/2026,Web
+C00765,El Amrani,Omar,omar.elamrani765@mexora.ma,28/08/1997,m,Casablanca,0611976465,Jul 28 2024,Social Ads
+C00766,Tahiri,Hajar,hajar.tahiri766@mexora.ma,09/11/1963,1,Oujda,0629705026,2024-06-17,Marketplace
+C00767,Tazi,Amine,amine.tazi767@mexora.ma,2000-11-09,f,Marrakech,0670183589,08-01-2024,Referral
+C00768,Berrada,Nadia,nadia.berrada768@mexora.ma,04-04-1994,Homme,Casablanca,0618770198,02/12/2024,Referral
+C00769,Mansouri,Mehdi,mehdi.mansouri769@mexora.ma,Dec 23 1965,Male,Rabat,0673880269,2025-05-15,Marketplace
+C00770,Bennani,Imane,yassine.tahiri82@mexora.ma,1988-11-04,f,Casablanca,0689162666,Jan 30 2024,Mobile
+C00771,Tazi,Omar,omar.tazi771@mexora.ma,03/06/1979,M,tanger,0682286770,21-11-2024,Web
+C00772,Rifi,Karim,karim.rifi772@mexora.ma,06/07/1992,Homme,Agadir,0625758726,Mar 07 2025,Web
+C00773,Alaoui,Karim,karim.alaoui773@mexora.ma,1990-12-26,Homme,Tnja,0642147686,07/24/2024,Web
+C00774,Rifi,Yassine,sara.tazi31@mexora.ma,08/07/1977,Femme,Al Hoceïma,0645210092,Jul 01 2025,Mobile
+C00775,Ziani,Salma,salma.ziani775@mexora.ma,22-09-1997,Homme,Oujda,0695455478,20-02-2026,Marketplace
+C00776,Berrada,Yassine,yassine.berrada776@mexora.ma,05/15/1980,0,Kénitra,0679823368,03/21/2026,Social Ads
+C00777,Rifi,Mehdi,mehdi.rifi777@mexora.ma,1968-10-24,Femme,rabat,0657740016,2025-08-24,Social Ads
+C00778,Tazi,Omar,omar.tazi778@mexora.ma,1997-01-22,Femme,Rabat,0661538598,2024-02-21,Web
+C00779,Alaoui,Amine,amine.alaoui779@mexora.ma,Jun 08 1986,1,Oujda,0630947346,10/12/2024,Mobile
+C00780,Tazi,Imane,imane.tazi780@mexora.ma,Jul 25 1993,m,Tétouan,0629519988,May 03 2026,Web
+C00781,El Amrani,Karim,karim.elamrani781@mexora.ma,Jul 17 1977,Homme,,0690481305,07/11/2025,Referral
+C00782,Bennani,Mehdi,mehdi.bennani782@mexora.ma,13-02-1999,f,Casablanca,0674350207,25/02/2024,Mobile
+C00783,Fassi,Amine,amine.fassi783@mexora.ma,1961-08-24,Femme,rabat,0684450234,Oct 08 2025,Mobile
+C00784,Alaoui,Imane,imane.alaoui784@mexora.ma,23/11/1981,0,Tetouan,0610289912,28/08/2025,Referral
+C00785,Bennani,Salma,salma.bennani785@mexora.ma,20/01/1996,Homme,Tnja,0632938225,01/24/2025,Referral
+C00786,Alaoui,Hajar,hajar.alaoui786@mexora.ma,17/01/1996,Femme,Casablanca,0671909200,2025-12-20,Social Ads
+C00787,Mansouri,Salma,salma.mansouri787@mexora.ma,2002-12-04,Femme,Marrakech,0610287044,01-06-2024,Mobile
+C00788,Berrada,Mehdi,mehdi.berrada788@mexora.ma,04-08-1979,Femme,Marrakech,,2024-02-15,Social Ads
+C00789,Ziani,Amine,amine.ziani789@mexora.ma,01/23/1984,f,Agadir,0696216103,2024-03-08,Marketplace
+C00790,Fassi,Salma,salma.fassi790@mexora.ma,06-02-1960,Homme,Meknès,0651417765,16-01-2024,Referral
+C00791,Rifi,Amine,amine.rifi791@mexora.ma,03/03/2002,m,TANGER,,20-02-2025,Marketplace
+C00792,Rifi,Karim,karim.rifi792@mexora.ma,May 21 1990,m,Tétouan,0678186355,01/06/2025,Mobile
+C00793,Tazi,Karim,karim.tazi793@mexora.ma,2035-01-01,Male,Nador,0650495430,17-12-2025,Referral
+C00794,Ziani,Sara,sara.ziani794@mexora.ma,04-12-1996,f,Tanger,0670112060,20/04/2025,Referral
+C00795,Mansouri,Karim,karim.mansouri795@mexora.ma,1963-12-04,Femme,Tnja,0675902387,11-07-2024,Referral
+C00796,Tahiri,Hajar,hajar.tahiri796@mexora.ma,13/02/1996,0,Fès,0660207736,06/03/2024,Social Ads
+C00797,Ziani,Salma,salma.ziani797@mexora.ma,1998-10-24,m,Agadir,0685524273,12/31/2024,Marketplace
+C00798,Ziani,Yassine,yassine.ziani798@mexora.ma,09-01-1978,Male,Rabat,0638162676,Oct 12 2024,Web
+C00799,El Amrani,Mehdi,mehdi.elamrani799@mexora.ma,23/05/2002,f,Meknès,0652751984,2024-07-20,Web
+C00800,El Amrani,Karim,karim.elamrani800@mexora.ma,24-07-1982,f,Rabat,0667568487,25-07-2025,Web
+C00801,El Amrani,Nadia,nadia.elamrani801@mexora.ma,10/02/1967,Femme,Fès,0616764471,2025-01-07,Mobile
+C00802,Bennani,Omar,omar.bennani802@mexora.ma,09/10/1980,Femme,Rabat,0666933856,06-01-2026,Social Ads
+C00803,Alaoui,Salma,,1973-11-01,m,Fès,0689365125,2024-03-18,Referral
+C00804,Bennani,Sara,sara.bennani804@mexora.ma,21-08-2000,m,Tnja,0653752156,2025-07-21,Mobile
+C00805,Alaoui,Karim,,22/03/1966,1,Casablanca,0640164951,2026-02-02,Web
+C00806,Ziani,Sara,sara.ziani806@mexora.ma,Jan 18 1994,m,Casablanca,0623255303,08-10-2025,Web
+C00807,Alaoui,Mehdi,mehdi.alaoui807@mexora.ma,04/06/1970,Femme,Fès,0678182145,04/20/2026,Mobile
+C00808,Mansouri,Amine,amine.mansouri808@mexora.ma,07/13/1984,Femme,Tanger,0627765444,17-03-2025,Marketplace
+C00809,Berrada,Omar,omar.berrada809@mexora.ma,1960-08-08,Homme,Nador,0675294770,07/15/2025,Social Ads
+C00810,El Amrani,Nadia,nadia.elamrani810@mexora.ma,Jan 22 2000,Femme,Tanger,0696000079,03/04/2024,Web
+C00811,Fassi,Salma,salma.fassi811@mexora.ma,04/08/2002,Femme,Agadir,0698260021,31/12/2024,Social Ads
+C00812,Ziani,Amine,amine.ziani812@mexora.ma,25/04/2004,1,Rabat,,2026-02-23,Web
+C00813,Tazi,Mehdi,mehdi.tazi813@mexora.ma,22-07-1965,Femme,Meknès,0663089747,11/04/2025,Referral
+C00814,Bennani,Yassine,yassine.bennani814@mexora.ma,Nov 13 2000,1,Tnja,0649058351,05/15/2024,Referral
+C00815,Mansouri,Salma,salma.mansouri815@mexora.ma,Apr 11 2004,f,Marrakech,0627884518,12-11-2025,Social Ads
+C00816,Fassi,Nadia,yassine.alaoui504@mexora.ma,03/19/1990,1,Agadir,0649160333,16-05-2025,Marketplace
+C00817,Berrada,Imane,imane.berrada817@mexora.ma,17-06-1966,f,CASABLANCA,0698197915,Dec 16 2025,Marketplace
+C00818,Tazi,Nadia,nadia.tazi818@mexora.ma,24-06-1977,0,CAS,0669291715,20-05-2025,Web
+C00819,Alaoui,Hajar,hajar.alaoui819@mexora.ma,01/10/2002,Femme,Al Hoceïma,0693266476,31-01-2026,Referral
+C00820,Fassi,Imane,imane.fassi820@mexora.ma,Aug 28 1982,f,RABAT,0641207484,27/05/2025,Web
+C00821,Rifi,Omar,nadia.rifi252@mexora.ma,16-11-1963,Homme,,0622794924,05/06/2025,Referral
+C00822,Mansouri,Nadia,nadia.mansouri822@mexora.ma,02/10/1971,Male,,,24-10-2025,Social Ads
+C00823,Alaoui,Karim,karim.alaoui823@mexora.ma,Aug 25 1989,f,Rabat,0654959339,Apr 25 2024,Web
+C00824,Alaoui,Salma,salma.alaoui824@mexora.ma,14-10-1984,0,Tanger,0636584166,Aug 21 2025,Web
+C00825,Rifi,Mehdi,mehdi.rifi825@mexora.ma,08/01/1988,M,Rabat,0679283583,04/02/2025,Mobile
+C00826,Ziani,Amine,amine.ziani826@mexora.ma,25-10-1981,Homme,Tanger,0665166935,2024-03-03,Mobile
+C00827,El Amrani,Salma,salma.elamrani827@mexora.ma,Dec 16 1994,f,Tanger,0665520433,08/26/2024,Social Ads
+C00828,Fassi,Yassine,yassine.fassi828@mexora.ma,05-04-1963,m,Casablanca,0611864124,05-03-2025,Web
+C00829,Mansouri,Mehdi,mehdi.mansouri829@mexora.ma,1979-09-24,m,Rabat,,29-01-2024,Marketplace
+C00830,Tazi,Omar,omar.tazi830@mexora.ma,18-10-1976,Homme,CASABLANCA,0693306383,26/10/2024,Social Ads
+C00831,Fassi,Nadia,nadia.fassi831mexora.ma,10-11-1973,m,Tanger,,May 10 2026,Web
+C00832,Rifi,Yassine,yassine.rifi832@mexora.ma,14/06/1982,Male,,0683785300,2026-05-02,Social Ads
+C00833,Fassi,Salma,salma.fassi833@mexora.ma,16/02/1963,m,Casablanca,0683475914,2024-07-03,Marketplace
+C00834,El Amrani,Omar,omar.bennani543@mexora.ma,Aug 06 1967,f,,0660956555,2024-04-14,Mobile
+C00835,Rifi,Yassine,yassine.rifi835@mexora.ma,11-10-1999,F,Tétouan,,2025-10-14,Referral
+C00836,Rifi,Mehdi,mehdi.rifi836@mexora.ma,05/11/1977,Female,Agadir,0649446426,18-06-2024,Mobile
+C00837,Mansouri,Salma,salma.mansouri837@mexora.ma,24-10-1998,Femme,Rabat,0675151440,30-05-2024,Marketplace
+C00838,Ziani,Hajar,hajar.ziani838@mexora.ma,01/14/1990,Homme,Casablanca,0636769000,2024-07-16,Web
+C00839,Mansouri,Sara,sara.mansouri839@mexora.ma,Aug 21 1991,Homme,,0631614058,Apr 03 2026,Mobile
+C00840,Ziani,Karim,hajar.berrada682@mexora.ma,11/01/1984,Femme,Fès,0632585131,2024-01-02,Marketplace
+C00841,Mansouri,Nadia,,18-07-1979,f,casa,0621049135,2025-04-15,Marketplace
+C00842,Tahiri,Nadia,nadia.tahiri842@mexora.ma,1965-03-15,Homme,Tétouan,0623851791,2025-02-11,Social Ads
+C00843,Fassi,Amine,amine.fassi843@mexora.ma,1999-02-03,Male,Fès,0650588742,2024-12-10,Mobile
+C00844,Alaoui,Hajar,hajar.alaoui844@mexora.ma,01-06-2005,0,CAS,0671733027,25-10-2024,Social Ads
+C00845,Mansouri,Nadia,nadia.mansouri845@mexora.ma,1975-04-24,Homme,Al Hoceïma,0644340043,Jul 21 2024,Social Ads
+C00846,Fassi,Amine,amine.fassi846@mexora.ma,May 09 1999,F,TNG,0640952988,19/02/2024,Marketplace
+C00847,Bennani,Salma,salma.bennani847@mexora.ma,Mar 06 1964,m,Agadir,0692972751,2024-03-08,Social Ads
+C00848,Bennani,Hajar,hajar.bennani848@mexora.ma,08/04/1977,Homme,,0619071345,18-08-2025,Referral
+C00849,Tazi,Imane,imane.tazi849@mexora.ma,Dec 20 1972,Femme,Tetouan,0658080125,2025-01-03,Marketplace
+C00850,Bennani,Sara,nadia.ziani259@mexora.ma,01/24/1992,0,TETOUAN,0611708160,04-10-2024,Social Ads
+C00851,Rifi,Omar,omar.rifi851mexora.ma,11-03-1985,Homme,Al Hoceima,,05/28/2025,Referral
+C00852,Tahiri,Amine,amine.tahiri852@mexora.ma,12-09-2003,f,casa,0622637778,2025-01-29,Social Ads
+C00853,Mansouri,Amine,amine.mansouri853@mexora.ma,06/13/1981,m,Oujda,0647090415,May 11 2025,Mobile
+C00854,Bennani,Imane,imane.bennani854@mexora.ma,Dec 20 1988,Femme,Rabat,0632877737,Apr 08 2024,Marketplace
+C00855,Ziani,Yassine,yassine.ziani855@mexora.ma,Oct 24 1976,m,Tetouan,0626876469,2025-05-05,Marketplace
+C00856,Bennani,Nadia,nadia.bennani856@mexora.ma,1994-06-02,f,,,11/16/2025,Referral
+C00857,Berrada,Hajar,,1979-05-02,Femme,Casablanca,0683486475,02/05/2026,Social Ads
+C00858,Ziani,Karim,karim.ziani858@mexora.ma,02/06/1970,Homme,CAS,0673044124,27-06-2024,Marketplace
+C00859,Tahiri,Omar,omar.tahiri859@mexora.ma,2001-03-17,Femme,Agadir,0691952166,Jul 28 2024,Referral
+C00860,El Amrani,Imane,imane.elamrani860@mexora.ma,23-03-1989,1,Kénitra,0667847470,26-04-2024,Marketplace
+C00861,Bennani,Omar,omar.bennani861@mexora.ma,Jun 05 1968,Femme,Marrakech,0653878054,06/07/2024,Social Ads
+C00862,Ziani,Omar,omar.ziani862@mexora.ma,02/18/2006,f,Agadir,0638204319,01/25/2024,Mobile
+C00863,Berrada,Sara,sara.berrada863@mexora.ma,1977-03-20,,Casablanca,0699686091,13/04/2024,Web
+C00864,Tazi,Sara,sara.tazi864mexora.ma,01/04/1963,1,Marrakech,0638723592,12/31/2024,Social Ads
+C00865,El Amrani,Imane,imane.elamrani865@mexora.ma,13-12-2001,m,Tanger,0679318892,12/11/2025,Web
+C00866,Mansouri,Nadia,nadia.mansouri866@mexora.ma,27/01/1971,m,Agadir,0627440651,2025-06-21,Mobile
+C00867,Ziani,Nadia,nadia.ziani867mexora.ma,05/02/1987,Female,CAS,0625236754,14/01/2026,Mobile
+C00868,Mansouri,Amine,amine.mansouri868@mexora.ma,06/18/1992,0,TETOUAN,0671776480,06/28/2025,Web
+C00869,El Amrani,Hajar,hajar.elamrani869@mexora.ma,09/06/1992,0,Rabat,0639183510,2025-11-24,Social Ads
+C00870,Tazi,Amine,amine.tazi870@mexora.ma,Dec 12 1960,Homme,rabat,0650078335,08/11/2025,Marketplace
+C00871,Berrada,Imane,imane.berrada871@mexora.ma,1960-07-17,Homme,Agadir,0674874976,Mar 27 2025,Mobile
+C00872,Mansouri,Imane,imane.mansouri872@mexora.ma,Aug 18 1967,1,Rabat,0651811464,11/15/2025,Referral
+C00873,Mansouri,Sara,sara.mansouri873@mexora.ma,08-03-1965,Femme,CASABLANCA,0680871369,02/12/2025,Referral
+C00874,El Amrani,Sara,sara.elamrani874@mexora.ma,01/08/1962,1,Marrakech,0682988311,May 06 2025,Mobile
+C00875,Rifi,Hajar,hajar.rifi875@mexora.ma,20-01-1985,Homme,Casablanca,0666433354,01/03/2025,Social Ads
+C00876,Alaoui,Salma,salma.alaoui876@mexora.ma,08/21/1963,f,Agadir,0649837691,01-06-2025,Mobile
+C00877,El Amrani,Karim,karim.elamrani877@mexora.ma,05/08/1995,f,Tétouan,0613171149,15-03-2024,Social Ads
+C00878,Tahiri,Imane,imane.tahiri878@mexora.ma,10/13/1985,Femme,Oujda,0613387011,08/22/2025,Web
+C00879,Ziani,Mehdi,mehdi.ziani879@mexora.ma,1999-04-15,Femme,Oujda,0610269947,25/01/2024,Mobile
+C00880,Ziani,Nadia,nadia.ziani880@mexora.ma,22-06-1976,f,Oujda,,11/14/2024,Social Ads
+C00881,Bennani,Yassine,yassine.bennani881@mexora.ma,Jan 02 1963,1,Marrakech,0636145195,08/14/2025,Referral
+C00882,Tahiri,Yassine,yassine.tahiri882@mexora.ma,1980-04-15,,Rabat,0692414290,03-03-2025,Web
+C00883,Bennani,Salma,salma.bennani883@mexora.ma,01/28/1971,f,Casablanca,0690272330,01/04/2026,Mobile
+C00884,Rifi,Salma,salma.rifi884@mexora.ma,Aug 12 1974,Femme,Tétouan,0660376320,Aug 14 2024,Referral
+C00885,Tazi,Salma,karim.fassi303@mexora.ma,1975-04-01,0,TNG,0644100176,Jan 26 2025,Marketplace
+C00886,Tahiri,Imane,imane.tahiri886@mexora.ma,03/10/1973,m,Tangier,0697452639,2026-01-09,Marketplace
+C00887,Bennani,Sara,sara.bennani887@mexora.ma,04/13/1985,Femme,Agadir,0695541648,04/26/2024,Marketplace
+C00888,Alaoui,Imane,imane.alaoui888@mexora.ma,12/09/1972,m,CAS,0684299212,10/24/2024,Social Ads
+C00889,Tahiri,Sara,sara.tahiri889@mexora.ma,26-12-1960,1,Agadir,0672290083,05/05/2025,Mobile
+C00890,Ziani,Omar,omar.ziani890@mexora.ma,02/06/2001,Femme,Casablanca,0650033811,15-01-2026,Social Ads
+C00891,Bennani,Hajar,hajar.bennani891@mexora.ma,21/06/2005,Homme,Tanger,0656820014,Mar 13 2026,Web
+C00892,Alaoui,Mehdi,mehdi.alaoui892@mexora.ma,10/20/2004,Femme,Meknès,0656440182,Jun 03 2024,Mobile
+C00893,Ziani,Hajar,hajar.ziani893@mexora.ma,01/09/1972,m,Meknès,0672898756,10/02/2024,Social Ads
+C00894,El Amrani,Nadia,nadia.elamrani894@mexora.ma,02-03-1995,Homme,Fès,0687665429,2024-12-09,Social Ads
+C00895,Berrada,Yassine,yassine.berrada895@mexora.ma,11/25/1998,Homme,Agadir,0625886326,23-04-2026,Marketplace
+C00896,El Amrani,Nadia,nadia.elamrani896@mexora.ma,06-09-1978,Homme,Agadir,0635918940,Apr 08 2025,Web
+C00897,Mansouri,Sara,sara.mansouri897@mexora.ma,1998-08-23,Homme,Tanger,0638180901,2026-03-05,Marketplace
+C00898,Ziani,Salma,salma.ziani898@mexora.ma,20/09/1989,1,Meknès,0627724139,Sep 01 2024,Mobile
+C00899,Bennani,Salma,salma.bennani899@mexora.ma,04/01/1975,,Marrakech,0679780148,08/08/2025,Social Ads
+C00900,Mansouri,Yassine,yassine.mansouri900@mexora.ma,Dec 12 1992,1,Rabat,0669815015,16-02-2025,Mobile
+C00901,Tahiri,Salma,salma.tahiri901@mexora.ma,Feb 06 1987,F,TANGER,0635133125,2024-01-18,Referral
+C00902,Rifi,Amine,mehdi.tazi495@mexora.ma,05-11-1971,m,TNG,0647635806,2024-02-26,Marketplace
+C00903,Bennani,Sara,sara.bennani903@mexora.ma,Apr 01 1966,Femme,Agadir,0649449045,Dec 22 2024,Mobile
+C00904,El Amrani,Karim,karim.elamrani904@mexora.ma,Jul 14 1983,m,Rabat,0658964292,16/01/2025,Social Ads
+C00905,Tazi,Karim,karim.tazi905@mexora.ma,10/25/1967,Femme,Fès,0688665941,May 27 2025,Web
+C00906,Tazi,Nadia,nadia.tazi906@mexora.ma,02/15/1990,Femme,Agadir,0686409043,2024-08-20,Social Ads
+C00907,Tahiri,Karim,karim.tahiri907@mexora.ma,2004-10-09,0,Tetouan,0650583269,30-10-2024,Mobile
+C00908,Rifi,Karim,imane.tazi597@mexora.ma,1967-08-03,0,Tanger,0648007131,2025-12-16,Web
+C00909,Fassi,Salma,salma.fassi909mexora.ma,21/04/1983,1,Fès,0677469274,Jul 05 2025,Marketplace
+C00910,Ziani,Hajar,hajar.ziani910@mexora.ma,1991-09-14,m,Tanger,0626090647,14/10/2025,Marketplace
+C00911,El Amrani,Salma,salma.elamrani911@mexora.ma,1975-03-27,Femme,Marrakech,0627600322,04/25/2024,Marketplace
+C00912,Tazi,Karim,karim.tazi912@mexora.ma,13/12/1986,Femme,Marrakech,0675105954,Nov 03 2024,Referral
+C00913,Fassi,Mehdi,mehdi.fassi913@mexora.ma,Aug 16 1966,,Fès,0654108191,19-12-2025,Referral
+C00914,El Amrani,Imane,imane.elamrani914@mexora.ma,02-08-1999,Femme,Kénitra,0652299581,12/12/2024,Web
+C00915,Ziani,Amine,amine.ziani915@mexora.ma,Oct 20 1977,1,tanger,0686864136,2026-01-10,Social Ads
+C00916,Bennani,Omar,omar.bennani916@mexora.ma,1976-07-09,1,Tanger,,2025-12-31,Web
+C00917,Tahiri,Mehdi,mehdi.tahiri917@mexora.ma,13/10/1968,Femme,RABAT,,Jan 31 2026,Mobile
+C00918,Ziani,Amine,amine.ziani918@mexora.ma,26/07/1976,m,Oujda,0698214218,29/04/2026,Referral
+C00919,Mansouri,Hajar,hajar.mansouri919@mexora.ma,Mar 11 1972,m,Marrakech,0692816130,03/27/2025,Mobile
+C00920,Rifi,Yassine,yassine.rifi920@mexora.ma,2035-01-01,0,Tétouan,0621526797,09/07/2024,Web
+C00921,El Amrani,Salma,salma.elamrani921@mexora.ma,Feb 01 1982,f,Tétouan,0619419689,Aug 14 2024,Marketplace
+C00922,El Amrani,Karim,karim.elamrani922@mexora.ma,2001-06-07,Femme,Fès,0692279171,27-04-2025,Referral
+C00923,Fassi,Omar,omar.fassi923@mexora.ma,Jan 10 1970,Male,Fès,0641199998,01/06/2024,Marketplace
+C00924,Ziani,Nadia,,25/01/1990,f,Tétouan,0645403541,27-11-2024,Marketplace
+C00925,Tahiri,Omar,amine.rifi579@mexora.ma,01/01/1973,0,Tanger,0653805932,06-07-2025,Social Ads
+C00926,Fassi,Salma,salma.fassi926@mexora.ma,10/13/2003,1,Rabat,0644936163,Apr 10 2025,Referral
+C00927,Mansouri,Sara,sara.mansouri927@mexora.ma,25/12/1974,0,Al Hoceïma,0690559851,07/12/2025,Mobile
+C00928,Tazi,Mehdi,mehdi.tazi928@mexora.ma,06/05/1982,Homme,Oujda,0634055794,2024-06-23,Social Ads
+C00929,Berrada,Sara,sara.berrada929mexora.ma,09/08/1979,0,Nador,0689110381,2025-11-19,Mobile
+C00930,Tazi,Yassine,yassine.tazi930@mexora.ma,21-08-1992,Femme,CASABLANCA,0664205314,05-10-2024,Social Ads
+C00931,Tazi,Karim,karim.tazi931@mexora.ma,Jul 13 1970,m,TNG,0618411751,14/12/2025,Social Ads
+C00932,El Amrani,Hajar,hajar.elamrani932@mexora.ma,01/17/1974,Femme,Agadir,0676035023,04/08/2026,Marketplace
+C00933,Fassi,Hajar,hajar.fassi933@mexora.ma,Nov 15 1999,f,Tanger,0688331722,15/07/2025,Social Ads
+C00934,Mansouri,Karim,karim.mansouri934@mexora.ma,2004-07-09,f,Tanger,0634347561,01/21/2024,Mobile
+C00935,Alaoui,Mehdi,amine.ziani812@mexora.ma,13-08-1974,0,,0636919424,2024-12-18,Social Ads
+C00936,Berrada,Amine,amine.berrada936@mexora.ma,03/06/1991,f,,,26/11/2024,Social Ads
+C00937,Rifi,Sara,sara.rifi937@mexora.ma,Jun 02 2002,0,Tanger,0692427600,29-12-2024,Mobile
+C00938,El Amrani,Omar,omar.elamrani938@mexora.ma,03/05/1962,0,Kénitra,0639154405,06/17/2024,Mobile
+C00939,Mansouri,Nadia,nadia.mansouri939@mexora.ma,27-05-1997,Femme,Casablanca,0660952949,Jul 26 2025,Mobile
+C00940,Mansouri,Sara,sara.mansouri940@mexora.ma,19/08/2001,f,Tetouan,0654736126,Aug 31 2024,Social Ads
+C00941,Bennani,Salma,salma.bennani941@mexora.ma,Mar 11 1990,Homme,Casablanca,0674812830,Sep 17 2024,Web
+C00942,Alaoui,Amine,amine.alaoui942@mexora.ma,26-08-1978,Homme,Fès,,Jul 20 2025,Social Ads
+C00943,Berrada,Nadia,nadia.berrada943@mexora.ma,02/20/1987,Femme,Tanger,0676268230,31/08/2024,Social Ads
+C00944,Fassi,Sara,sara.fassi944@mexora.ma,16/12/1983,f,Tanger,0657109731,10/10/2024,Web
+C00945,Tazi,Amine,mehdi.ziani662@mexora.ma,Dec 07 1997,m,Oujda,0689795065,13/08/2024,Marketplace
+C00946,Rifi,Imane,sara.bennani302@mexora.ma,04-07-1994,f,Casablanca,0667233889,Nov 09 2024,Marketplace
+C00947,Tahiri,Hajar,hajar.tahiri947@mexora.ma,04/04/1982,1,Oujda,0637713963,2026-04-24,Marketplace
+C00948,Tahiri,Salma,salma.tahiri948mexora.ma,Jan 15 2005,0,Tanger,0620120117,03/01/2025,Social Ads
+C00949,El Amrani,Hajar,hajar.elamrani949@mexora.ma,02-08-1983,Femme,Tanger,0633927517,02/25/2025,Mobile
+C00950,El Amrani,Yassine,yassine.elamrani950@mexora.ma,1984-12-23,Femme,Casablanca,0628245587,06/05/2025,Referral
+C00951,Tazi,Amine,amine.tazi951@mexora.ma,Jun 26 2000,Femme,Marrakech,0619779475,16/03/2025,Mobile
+C00952,Alaoui,Omar,omar.alaoui952@mexora.ma,Mar 13 1980,0,Rabat,0651625953,2025-02-03,Web
+C00953,Alaoui,Karim,karim.alaoui953@mexora.ma,24-04-1967,Femme,,0650312266,11/07/2025,Marketplace
+C00954,Fassi,Omar,omar.fassi954mexora.ma,04/18/2003,f,Kénitra,0663780822,16/09/2024,Mobile
+C00955,Bennani,Hajar,hajar.bennani955@mexora.ma,28-03-1984,0,,0623161304,23-05-2025,Web
+C00956,Tahiri,Mehdi,mehdi.tahiri956@mexora.ma,1997-03-12,Homme,Agadir,0628240046,Sep 05 2025,Social Ads
+C00957,Tazi,Imane,imane.tazi957@mexora.ma,1972-03-21,Homme,TANGER,0644768435,2024-05-29,Mobile
+C00958,Rifi,Omar,omar.rifi958@mexora.ma,2035-01-01,Homme,CAS,0689009129,12/21/2025,Mobile
+C00959,Tahiri,Hajar,hajar.tahiri959@mexora.ma,03/12/1988,f,TNG,0692191801,29-03-2025,Mobile
+C00960,Rifi,Yassine,yassine.rifi960@mexora.ma,24-11-1979,Female,Tanger,0616326221,Dec 14 2024,Web
+C00961,Berrada,Salma,salma.berrada961mexora.ma,Jan 04 1974,Homme,Tétouan,0650206512,2025-10-17,Social Ads
+C00962,El Amrani,Yassine,omar.rifi644@mexora.ma,19-11-1995,Femme,Tanger,0620222107,05/02/2024,Web
+C00963,El Amrani,Salma,salma.elamrani963@mexora.ma,12/07/1967,,,0675261523,11/27/2025,Web
+C00964,Alaoui,Sara,sara.alaoui964@mexora.ma,04/07/1975,0,Fès,0617679510,2024-10-20,Marketplace
+C00965,Rifi,Mehdi,mehdi.rifi965@mexora.ma,07/13/1973,Femme,Meknès,0644807164,04/08/2025,Web
+C00966,Rifi,Hajar,hajar.rifi966@mexora.ma,28-03-1980,m,Tanger,0661198104,02/22/2024,Web
+C00967,Rifi,Omar,omar.rifi967@mexora.ma,Mar 05 1964,1,Marrakech,0636049944,30-05-2024,Marketplace
+C00968,Alaoui,Yassine,yassine.alaoui968mexora.ma,21/05/1983,f,Agadir,0695382450,13/10/2024,Referral
+C00969,Berrada,Mehdi,mehdi.berrada969@mexora.ma,1987-07-13,Homme,Tétouan,0683842136,Jul 14 2024,Web
+C00970,Bennani,Yassine,yassine.bennani970@mexora.ma,1997-09-28,m,Rabat,0652089352,2025-11-26,Referral
+C00971,Berrada,Imane,amine.rifi579@mexora.ma,11-05-2004,Female,Tanger,0616710567,23-09-2024,Marketplace
+C00972,Fassi,Nadia,nadia.fassi972@mexora.ma,04-07-1975,0,Tétouan,0629320683,24/10/2024,Referral
+C00973,Berrada,Imane,imane.berrada973@mexora.ma,1961-02-01,m,CAS,0685682295,14/03/2026,Referral
+C00974,Berrada,Hajar,hajar.berrada974@mexora.ma,01/07/1988,1,CAS,0653326735,14-02-2026,Marketplace
+C00975,Fassi,Sara,sara.fassi975@mexora.ma,02-06-1962,f,Meknès,0639218070,24-04-2025,Web
+C00976,Tahiri,Karim,,06/10/1972,1,Meknès,0676699832,2025-03-09,Web
+C00977,Bennani,Salma,salma.bennani977@mexora.ma,15-03-2001,m,Casablanca,0687107160,Dec 02 2025,Marketplace
+C00978,Berrada,Hajar,hajar.berrada978@mexora.ma,08-11-1963,Femme,,0659682487,May 03 2025,Web
+C00979,Ziani,Hajar,hajar.ziani979@mexora.ma,24-04-1962,Femme,Fès,0643850393,15/06/2024,Referral
+C00980,Ziani,Nadia,imane.tahiri212@mexora.ma,Aug 06 1965,1,Al Hoceïma,0662574293,14-10-2025,Referral
+C00981,Mansouri,Salma,salma.mansouri981@mexora.ma,1971-08-02,Femme,Tétouan,0616190631,05/03/2024,Marketplace
+C00982,Ziani,Amine,amine.ziani982@mexora.ma,11-12-1996,0,Rabat,0643202774,03/01/2026,Web
+C00983,Mansouri,Yassine,yassine.mansouri983@mexora.ma,09/11/1994,Homme,Tanger,0611556121,01/08/2025,Marketplace
+C00984,Tazi,Mehdi,mehdi.tazi984@mexora.ma,1986-02-02,1,Tanger,0640325190,02-02-2025,Mobile
+C00985,Ziani,Omar,salma.bennani883@mexora.ma,06/11/1993,1,Kénitra,,21-03-2026,Social Ads
+C00986,Alaoui,Karim,sara.fassi169@mexora.ma,18-01-1973,m,Rabat,0690105768,05-09-2024,Social Ads
+C00987,El Amrani,Amine,amine.elamrani987@mexora.ma,1967-07-14,Femme,Rabat,0675942958,21/02/2024,Referral
+C00988,Fassi,Nadia,nadia.fassi988@mexora.ma,22/07/1982,m,Al Hoceïma,0648208661,12/25/2025,Web
+C00989,Bennani,Hajar,hajar.bennani989@mexora.ma,Oct 09 1990,m,Al Hoceïma,0623530318,07-09-2024,Social Ads
+C00990,Berrada,Yassine,yassine.berrada990@mexora.ma,Nov 21 1993,Homme,Tetouan,0634688676,23-10-2024,Referral
+C00991,Tahiri,Hajar,hajar.tahiri991@mexora.ma,15-02-1990,0,Rabat,,03/12/2025,Marketplace
+C00992,Mansouri,Hajar,hajar.mansouri992@mexora.ma,Oct 26 1981,m,TETOUAN,0656129905,Apr 19 2026,Mobile
+C00993,Bennani,Hajar,hajar.bennani993@mexora.ma,Jun 18 1996,1,Tanger,0667241869,09/30/2025,Mobile
+C00994,Mansouri,Yassine,yassine.mansouri994@mexora.ma,1999-09-26,1,casa,0636885613,12-02-2026,Marketplace
+C00995,Bennani,Omar,omar.bennani995@mexora.ma,19-06-1986,f,Marrakech,0694331071,10/02/2024,Mobile
+C00996,Alaoui,Yassine,yassine.alaoui996@mexora.ma,11/14/1997,Femme,Rabat,0652673544,05/25/2024,Marketplace
+C00997,Ziani,Omar,omar.ziani997@mexora.ma,17-06-1967,1,Casablanca,0698370409,04/04/2025,Web
+C00998,Tazi,Sara,sara.tazi998@mexora.ma,1972-12-22,0,RABAT,0623403966,2024-01-23,Mobile
+C00999,Bennani,Karim,karim.bennani999@mexora.ma,1980-04-11,m,Al Hoceïma,0628929443,01-02-2025,Mobile
+C01000,Tahiri,Mehdi,mehdi.tahiri1000@mexora.ma,1978-08-24,Homme,Tétouan,0661158010,06/29/2024,Social Ads

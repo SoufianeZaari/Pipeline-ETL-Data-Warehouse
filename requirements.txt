@@ -1,0 +1,10 @@
+pandas
+numpy
+faker
+sqlalchemy
+pymysql
+python-dotenv
+matplotlib
+plotly
+streamlit
+reportlab

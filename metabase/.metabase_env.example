@@ -1,0 +1,4 @@
+METABASE_URL=http://localhost:3000
+METABASE_EMAIL=your_metabase_email
+METABASE_PASSWORD=your_metabase_password
+METABASE_DATABASE_NAME=Mexora Data Warehouse
