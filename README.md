@@ -354,20 +354,9 @@ Dernière validation : 30 mai 2026.
 | quantités invalides dans `fact_sales` | 0 |
 | faits sans dimension correspondante | 0 |
 
-## Rapport PDF
-
-Le rapport académique est disponible dans :
-
-```text
-report/rapport_mexora.pdf
-```
-
-## Repository GitHub
-
-Repository GitHub : à compléter après publication.
 
 ## Auteur
 
 Étudiant : Soufiane ZAARI  
-Module : Business Intelligence / Data Warehouse  
+Module : Data Engeneer 
 Année universitaire : 2025-2026
