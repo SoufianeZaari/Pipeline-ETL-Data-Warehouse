@@ -1,348 +1,583 @@
+% ============================================================
+%  Rapport — Miniprojet 1 : Pipeline ETL & Data Warehouse
+%  Mexora Analytics · Université Abdelmalek Essaâdi · 2025-2026
+% ============================================================
 \documentclass[12pt,a4paper]{article}
 
-% --- Encoding & Language ---
+% --- Encodage & langue ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{lmodern}
-\usepackage{microtype}
+\usepackage[protrusion=true,expansion=true]{microtype}
 
-% --- Layout ---
-\usepackage{geometry}
-\geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+% --- Mise en page ---
+\usepackage[
+  left   = 2.5cm,
+  right  = 2.5cm,
+  top    = 3.0cm,
+  bottom = 3.0cm,
+  headheight = 15pt
+]{geometry}
 \usepackage{setspace}
+\setstretch{1.1}
+\usepackage{parskip}
+\setlength{\parskip}{4pt}
 
-% --- Graphics & Color ---
+% --- Graphiques & couleurs ---
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{tikz}
 
-% --- Tables ---
+% --- Tableaux ---
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{colortbl}
 
-% --- Lists ---
+% --- Listes ---
 \usepackage{enumitem}
+\setlist{nosep, leftmargin=1.5em}
 
-% --- Code listings ---
+% --- Code ---
 \usepackage{listings}
 
-% --- Boxes ---
-\usepackage{mdframed}
+% --- Encadrés ---
 \usepackage{tcolorbox}
-\tcbuselibrary{skins,breakable}
+\tcbuselibrary{skins,breakable,listings}
 
-% --- Captions & Floats ---
+% --- Captions & flottants ---
 \usepackage{caption}
+\captionsetup{font=small, labelfont={bf,color=mexblue}, skip=4pt}
 \usepackage{float}
 
-% --- Math ---
+% --- Maths ---
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-% --- Headers & Hyperref ---
+% --- En-têtes & liens ---
 \usepackage{fancyhdr}
-\usepackage{titlesec}
-\usepackage{hyperref}
-\usepackage{titling}
+\usepackage[explicit]{titlesec}
+\usepackage[
+  colorlinks = true,
+  linkcolor  = mexblue,
+  urlcolor   = mexblue,
+  citecolor  = mexblue,
+  pdftitle   = {Rapport Miniprojet 1 — Pipeline ETL et Data Warehouse Mexora},
+  pdfauthor  = {Soufiane Zaari},
+  pdfsubject = {Business Intelligence / Data Warehouse}
+]{hyperref}
 
-% ========= Colors =========
-\definecolor{mexblue}{RGB}{44,110,171}
-\definecolor{mexred}{RGB}{192,57,43}
-\definecolor{mexgray}{RGB}{100,100,100}
-\definecolor{mexlightblue}{RGB}{235,245,255}
-\definecolor{mexgreen}{RGB}{39,174,96}
-\definecolor{codebg}{RGB}{248,248,248}
+% ============================================================
+%  Palette couleurs Mexora
+% ============================================================
+\definecolor{mexblue}     {RGB}{28, 90, 154}
+\definecolor{mexdarkblue} {RGB}{15, 52, 96}
+\definecolor{mexred}      {RGB}{192, 57, 43}
+\definecolor{mexgray}     {RGB}{90, 100, 115}
+\definecolor{mexlightblue}{RGB}{232, 242, 253}
+\definecolor{mexgreen}    {RGB}{33, 156, 82}
+\definecolor{mexorange}   {RGB}{215, 119, 23}
+\definecolor{codebg}      {RGB}{250, 250, 252}
+\definecolor{coderule}    {RGB}{180, 200, 230}
+\definecolor{rowalt}      {RGB}{244, 248, 253}
 
-% ========= Hyperref =========
-\hypersetup{
-  colorlinks=true, linkcolor=mexblue, urlcolor=mexblue, citecolor=mexblue,
-  pdftitle={Rapport Miniprojet 1 -- Pipeline ETL et Data Warehouse Mexora},
-  pdfauthor={Soufiane Zaari}
-}
-
-% ========= Section styles =========
-\titleformat{\section}{\Large\bfseries\color{mexblue}}{\thesection}{1em}{}%
-  [\color{mexblue}\titlerule]
-\titleformat{\subsection}{\large\bfseries\color{mexblue!80!black}}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\normalsize\bfseries\color{mexgray}}{\thesubsubsection}{1em}{}
-
-% ========= Headers =========
+% ============================================================
+%  En-têtes / pieds de page
+% ============================================================
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\color{mexgray}Mexora Analytics -- Pipeline ETL \& Data Warehouse}
-\fancyhead[R]{\small\color{mexgray}Miniprojet 1}
+\fancyhead[L]{%
+  \small\color{mexgray}
+  \textit{Mexora Analytics — Pipeline ETL \& Data Warehouse}}
+\fancyhead[R]{%
+  \small\color{mexgray}
+  \textit{Miniprojet 1 — 2025/2026}}
 \fancyfoot[C]{\small\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\headrule}{\color{coderule}\hrule width\headwidth height\headrulewidth}
 
-% ========= Listings =========
+% ============================================================
+%  Titres de sections
+% ============================================================
+\titleformat{\section}[block]
+  {\Large\bfseries\color{mexdarkblue}}
+  {}
+  {0pt}
+  {\colorbox{mexlightblue}{\parbox{\dimexpr\linewidth-2\fboxsep}%
+    {\thesection\quad #1}}}
+  [\vspace{-2pt}{\color{mexblue}\rule{\linewidth}{1.5pt}}]
+
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{mexblue}}
+  {\thesubsection}{0.8em}{}
+  [{\color{mexblue!40}\titlerule[0.6pt]}]
+
+\titlespacing*{\subsection}{0pt}{12pt}{5pt}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{mexgray}}
+  {\thesubsubsection}{0.7em}{}
+
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+
+% ============================================================
+%  Listings
+% ============================================================
+\lstset{
+  breaklines      = true,
+  breakatwhitespace = true,
+  basicstyle      = \ttfamily\small,
+  numbers         = left,
+  numberstyle     = \tiny\color{mexgray},
+  numbersep       = 10pt,
+  frame           = single,
+  framesep        = 4pt,
+  rulecolor       = \color{coderule},
+  backgroundcolor = \color{codebg},
+  captionpos      = b,
+  xleftmargin     = 12pt,
+  showstringspaces= false,
+  tabsize         = 4,
+}
+
 \lstdefinestyle{python}{
-  language=Python,
-  backgroundcolor=\color{codebg},
-  basicstyle=\ttfamily\footnotesize,
-  keywordstyle=\bfseries\color{mexblue},
-  stringstyle=\color{mexred},
-  commentstyle=\itshape\color{mexgray},
-  numbers=left, numberstyle=\tiny\color{mexgray}, numbersep=8pt,
-  frame=single, rulecolor=\color{mexblue!30},
-  breaklines=true, tabsize=4, showstringspaces=false, captionpos=b,
-  literate={->}{{\textrm{->}}}2 {=>}{{\textrm{=>}}}2
-}
-\lstdefinestyle{sql}{
-  language=SQL,
-  backgroundcolor=\color{codebg},
-  basicstyle=\ttfamily\footnotesize,
-  keywordstyle=\bfseries\color{mexblue},
-  stringstyle=\color{mexred},
-  commentstyle=\itshape\color{mexgray},
-  numbers=left, numberstyle=\tiny\color{mexgray}, numbersep=8pt,
-  frame=single, rulecolor=\color{mexblue!30},
-  breaklines=true, tabsize=2, showstringspaces=false, captionpos=b,
-  morekeywords={MATERIALIZED,VIEW,PARTITION,RESTART,IDENTITY,CASCADE,
-                TRUNCATE,SMALLINT,BIGSERIAL,SERIAL,BOOLEAN,DECIMAL,NULLIF,INCLUDE}
-}
-\lstdefinestyle{bash}{
-  language=bash,
-  backgroundcolor=\color{codebg},
-  basicstyle=\ttfamily\footnotesize,
-  keywordstyle=\bfseries\color{mexblue},
-  commentstyle=\itshape\color{mexgray},
-  numbers=left, numberstyle=\tiny\color{mexgray}, numbersep=8pt,
-  frame=single, rulecolor=\color{mexblue!30},
-  breaklines=true, captionpos=b
+  language     = Python,
+  keywordstyle = \bfseries\color{mexblue},
+  stringstyle  = \color{mexred},
+  commentstyle = \itshape\color{mexgray},
+  literate     = {->}{{{\normalfont->}}}2
+                 {=>}{{{\normalfont=>}}}2,
 }
 
-% ========= tcolorbox styles =========
-\newtcolorbox{infobox}[1][]{colback=mexlightblue,colframe=mexblue,
-  fonttitle=\bfseries,#1}
-\newtcolorbox{alertbox}[1][]{colback=red!5,colframe=mexred,
-  fonttitle=\bfseries,#1}
-\newtcolorbox{successbox}[1][]{colback=green!5,colframe=mexgreen,
-  fonttitle=\bfseries,#1}
+\lstdefinestyle{sql}{
+  language     = SQL,
+  keywordstyle = \bfseries\color{mexblue},
+  stringstyle  = \color{mexred},
+  commentstyle = \itshape\color{mexgray},
+  morekeywords = {MATERIALIZED,VIEW,PARTITION,RESTART,IDENTITY,CASCADE,TRUNCATE,
+                  SMALLINT,BIGSERIAL,SERIAL,BOOLEAN,DECIMAL,NULLIF,INCLUDE,FILTER},
+}
+
+\lstdefinestyle{bash}{
+  language     = bash,
+  keywordstyle = \bfseries\color{mexblue},
+  commentstyle = \itshape\color{mexgray},
+}
+
+% ============================================================
+%  Boîtes tcolorbox
+% ============================================================
+\tcbset{
+  standard/.style={
+    enhanced, breakable,
+    fonttitle = \bfseries\small,
+    coltitle  = white,
+    arc       = 4pt,
+    boxrule   = 0.6pt,
+    left      = 6pt, right = 6pt,
+    top       = 4pt, bottom = 4pt,
+    before upper = \small,
+  }
+}
+
+\newtcolorbox{infobox}[1][]{
+  standard,
+  colback   = mexlightblue,
+  colframe  = mexblue,
+  coltitle  = white,
+  colbacktitle = mexblue,
+  #1
+}
+
+\newtcolorbox{alertbox}[1][]{
+  standard,
+  colback      = red!4,
+  colframe     = mexred,
+  colbacktitle = mexred,
+  #1
+}
+
+\newtcolorbox{successbox}[1][]{
+  standard,
+  colback      = green!4,
+  colframe     = mexgreen,
+  colbacktitle = mexgreen,
+  #1
+}
+
+\newtcolorbox{resultatbox}[1][]{
+  standard,
+  colback      = mexorange!8,
+  colframe     = mexorange,
+  colbacktitle = mexorange,
+  #1
+}
+
+% ============================================================
+%  Commandes utilitaires
+% ============================================================
+\newcommand{\badge}[2]{%
+  \colorbox{#1}{\color{white}\,\textbf{\small #2}\,}}
+
+\newcommand{\kw}[1]{\texttt{\textbf{\color{mexblue}#1}}}
+\newcommand{\val}[1]{\textbf{#1}}
 
 % ============================================================
 \begin{document}
 
-% ========= Title Page =========
+% ============================================================
+%  Page de titre
+% ============================================================
 \begin{titlepage}
-\centering
-\vspace*{1cm}
-{\color{mexblue}\rule{\linewidth}{3pt}}\\[0.5cm]
-{\Huge\bfseries\color{mexblue}Miniprojet 1}\\[0.4cm]
-{\huge Pipeline ETL \& Data Warehouse}\\[0.3cm]
-{\Large\color{mexgray}Mexora Analytics --- Data Warehouse e-commerce}\\[0.5cm]
-{\color{mexblue}\rule{\linewidth}{1.5pt}}\\[1.5cm]
+\thispagestyle{empty}
+\pagecolor{mexdarkblue}
+\color{white}
 
-\begin{tcolorbox}[colback=mexlightblue,colframe=mexblue,width=0.85\textwidth]
-\centering\large
-\textbf{Institution :} Faculte des Sciences et Techniques de Tanger\\[0.25cm]
-\textbf{Universite :} Universite Abdelmalek Essaadi\\[0.25cm]
-\textbf{Module :} Business Intelligence / Data Warehouse\\[0.25cm]
-\textbf{Encadrant :} Prof. Hassan Zili\\[0.25cm]
-\textbf{Realise par :} Soufiane Zaari\\[0.25cm]
-\textbf{GitHub :} \url{https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse}\\[0.25cm]
-\textbf{Dashboard Streamlit :} \url{https://pipeline-etl-data-warehouse.streamlit.app/}\\[0.25cm]
-\textbf{Date :} 31 mai 2026
+\vspace*{0.8cm}
+
+% Bandeau supérieur
+\begin{center}
+  {\large\scshape Université Abdelmalek Essaâdi}\\[0.15cm]
+  {\normalsize Faculté des Sciences et Techniques de Tanger}\\[0.12cm]
+  {\normalsize\itshape Département Informatique}
+\end{center}
+
+\vspace{0.7cm}
+{\color{white!40}\rule{\linewidth}{0.4pt}}
+\vspace{0.5cm}
+
+% Titre principal
+\begin{center}
+  {\fontsize{10}{12}\selectfont\scshape\color{white!70}
+   Business Intelligence · Data Warehouse · Module BI/DW}\\[0.4cm]
+
+  {\fontsize{32}{38}\selectfont\bfseries\color{white}
+   Mini-Projet 1}\\[0.25cm]
+
+  {\fontsize{18}{22}\selectfont\bfseries\color{white!90}
+   Pipeline ETL \& Data Warehouse}\\[0.2cm]
+
+  {\fontsize{14}{17}\selectfont\color{white!70}
+   Mexora Analytics — E-commerce marocain}
+\end{center}
+
+\vspace{0.6cm}
+{\color{white!40}\rule{\linewidth}{0.4pt}}
+\vspace{0.8cm}
+
+% Bloc informations
+\begin{center}
+\begin{tcolorbox}[
+  enhanced, width=0.82\textwidth,
+  colback = white!10!mexdarkblue,
+  colframe= white!30,
+  arc     = 6pt,
+  boxrule = 0.8pt,
+  left=12pt, right=12pt, top=10pt, bottom=10pt,
+]
+\color{white}
+\begin{tabular}{@{}ll}
+\textbf{Réalisé par}    & Soufiane Zaari \\[4pt]
+\textbf{Encadrant}      & Prof. Hassan Zili \\[4pt]
+\textbf{Année}          & 2025 -- 2026 \\[4pt]
+\textbf{GitHub}         &
+  \href{https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse}%
+       {\color{white!80}\small SoufianeZaari/Pipeline-ETL-Data-Warehouse} \\[4pt]
+\textbf{Dashboard web}  &
+  \href{https://pipeline-etl-data-warehouse.streamlit.app/}%
+       {\color{white!80}\small pipeline-etl-data-warehouse.streamlit.app}
+\end{tabular}
 \end{tcolorbox}
+\end{center}
 
-\vspace{1.5cm}
-\begin{tabular}{lcc}
+\vspace{0.9cm}
+
+% Tableau des étapes
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
 \toprule
-\textbf{Etape} & \textbf{Poids} & \textbf{Statut}\\
+\rowcolor[HTML]{1D4E89}
+\color{white}\textbf{Étape} &
+\color{white}\textbf{Poids} &
+\color{white}\textbf{Statut} \\
 \midrule
-Etape 1 -- Modelisation & 25\% & \textcolor{mexgreen}{$\checkmark$ Complete}\\
-Etape 2 -- Pipeline ETL Python & 40\% & \textcolor{mexgreen}{$\checkmark$ Complete}\\
-Etape 3 -- PostgreSQL DWH & 20\% & \textcolor{mexgreen}{$\checkmark$ Complete}\\
-Etape 4 -- Dashboard & 15\% & \textcolor{mexgreen}{$\checkmark$ Complete}\\
+Étape 1 — Modélisation du Data Warehouse & 25\,\% & \badge{mexgreen}{Conforme} \\[2pt]
+Étape 2 — Pipeline ETL Python            & 40\,\% & \badge{mexgreen}{Conforme} \\[2pt]
+Étape 3 — Implémentation PostgreSQL      & 20\,\% & \badge{mexgreen}{Conforme} \\[2pt]
+Étape 4 — Dashboard BI / Streamlit       & 15\,\% & \badge{mexgreen}{Conforme} \\
 \bottomrule
 \end{tabular}
+\end{center}
 
-\vspace{1.5cm}
-\begin{successbox}[title=Resultats cles du pipeline (execution validee)]
-\begin{tabular}{ll}
-Commandes extraites & 50\,000 lignes\\
-Faits charges dans PostgreSQL & \textbf{36\,203 lignes}\\
-Dimensions chargees & 5 tables (2\,557 + 898 + 300 + 12 + 6)\\
-Vues materialisees creees & 3 vues (914 + 3\,013 + 215 lignes)\\
-Anomalies d'integrite referentielle & \textbf{0}\\
-Dashboard web Streamlit & \url{https://pipeline-etl-data-warehouse.streamlit.app/}\\
+\vspace{0.9cm}
+
+% KPIs clés
+\begin{center}
+\begin{tcolorbox}[
+  enhanced, width=0.82\textwidth,
+  colback = mexgreen!30!mexdarkblue,
+  colframe= mexgreen,
+  arc     = 6pt, boxrule = 0.8pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+  title   = {\small\bfseries Résultats clés — Pipeline validé},
+]
+\color{white}\small
+\begin{tabular}{@{}ll@{\qquad}ll@{}}
+Commandes brutes     & 50\,000 lignes  &
+  Vues matérialisées & 3 vues \\
+Faits chargés        & \textbf{36\,203 lignes} &
+  Durée pipeline     & 14 secondes \\
+Dimensions           & 5 tables        &
+  Anomalies          & \textbf{0 critique} \\
 \end{tabular}
-\end{successbox}
+\end{tcolorbox}
+\end{center}
+
 \vfill
-{\color{mexblue}\rule{\linewidth}{3pt}}
+{\color{white!40}\rule{\linewidth}{0.4pt}}\\[0.25cm]
+{\small\color{white!50}\centering
+  Rapport généré le 31 mai 2026 · \LaTeX}
+
 \end{titlepage}
+
+% Restaurer les couleurs de page
+\pagecolor{white}
+\color{black}
+
+% ============================================================
+%  Pages liminaires (numérotation romaine)
+% ============================================================
+\pagenumbering{roman}
+\setcounter{page}{1}
 
 \tableofcontents
 \newpage
 
 % ============================================================
-\section*{Resume executif}
-\addcontentsline{toc}{section}{Resume executif}
+%  Résumé exécutif
+% ============================================================
+\section*{Résumé exécutif}
+\addcontentsline{toc}{section}{Résumé exécutif}
 
-Ce rapport documente la conception et l'implementation d'un systeme decisionnel complet pour
-\textbf{Mexora Analytics}, une marketplace e-commerce marocaine basee a Tanger. L'objectif est
-de transformer des donnees transactionnelles brutes en un entrepot de donnees analytique
-PostgreSQL permettant de repondre en temps reel a des questions metier complexes.
+Ce projet implémente un \textbf{système décisionnel complet} pour \textbf{Mexora Analytics},
+une marketplace e-commerce fictive basée à Tanger (Maroc). Il répond au cahier de charge du
+mini-projet 1 en couvrant les quatre étapes évaluées : modélisation, pipeline ETL, Data Warehouse
+PostgreSQL et dashboard analytique.
 
-\begin{infobox}[title=Perimetre du projet]
-\begin{itemize}[leftmargin=*]
-  \item \textbf{Source :} 4 fichiers bruts intentionnellement defectueux (50\,000 commandes, 1\,000 clients, 300 produits, referentiel geographique)
-  \item \textbf{ETL :} Pipeline Python complet (extraction, 14+ regles de transformation, chargement PostgreSQL)
-  \item \textbf{DWH :} Schema en etoile PostgreSQL : 1 table de faits, 5 dimensions, 3 vues materialisees
-  \item \textbf{Dashboard :} 5 questions analytiques visualisees via Metabase
-\end{itemize}
+\begin{infobox}[title=Périmètre et résultats en un coup d'œil]
+\begin{tabular}{@{}p{4cm} p{9cm}@{}}
+\textbf{Données source}    & 4 fichiers bruts intentionnellement défectueux :
+                             50\,000 commandes, 1\,000 clients, 300 produits,
+                             référentiel géographique \\[3pt]
+\textbf{Pipeline ETL}      & Package \texttt{mexora\_etl/} — 14 règles de
+                             transformation, logging complet, 14 s d'exécution \\[3pt]
+\textbf{Data Warehouse}    & PostgreSQL 16, schéma en étoile (1 table de faits,
+                             5 dimensions), 36\,203 faits, 3 vues matérialisées,
+                             0 anomalie d'intégrité \\[3pt]
+\textbf{Dashboard BI}      & Metabase local (conforme CDC) + Streamlit Cloud
+                             (version web déployable) \\
+\end{tabular}
 \end{infobox}
+
+\vspace{4pt}
+\noindent\textbf{Principaux indicateurs métier issus du DWH :}
+CA total 45,6 M MAD,
+taux de retour 7,87\,\% (seuil d'alerte 5\,\%),
+délai moyen de livraison 14,99 jours,
+top région Tanger (17,4\,\% du CA).
 
 \newpage
 
 % ============================================================
-\section{Etape 1 --- Modelisation du Data Warehouse (25 pts)}
+%  Corps du rapport (numérotation arabe)
+% ============================================================
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
-\subsection{Analyse des besoins decisionnels -- Requetes-types}
+% ============================================================
+\section{Étape 1 — Modélisation du Data Warehouse (25 pts)}
 
-Avant toute modelisation, les besoins du Directeur General ont ete formalises
-selon la methode Top-Down en \textbf{6 requetes-types} (minimum 5 requis) :
+\subsection{Analyse des besoins décisionnels — Requêtes-types}
 
-\begin{longtable}{p{0.7cm} p{3.5cm} p{4cm} p{4cm}}
+Avant toute modélisation, les besoins analytiques du Directeur Général de Mexora ont été
+formalisés selon la \textbf{méthode Top-Down} en six requêtes-types
+(cinq minimales requises par le cahier de charge).
+
+\begin{longtable}{%
+  >{\bfseries\small}p{0.9cm}%
+  p{3.6cm}%
+  p{4.0cm}%
+  p{4.0cm}}
+
 \toprule
-\textbf{Ref} & \textbf{Analyser} & \textbf{En fonction de} & \textbf{Pour}\\
+\rowcolor{mexlightblue}
+\normalfont\textbf{Réf} &
+\textbf{Analyser} &
+\textbf{En fonction de} &
+\textbf{Pour (filtre)} \\
 \midrule
 \endhead
-R1 & Chiffre d'affaires (TTC) & Region, categorie produit, trimestre &
-     Commandes statut \textit{livre} uniquement\\[0.25cm]
-R2 & Quantite vendue et montant TTC & Produit, mois, segment client &
-     Annees 2024--2025\\[0.25cm]
-R3 & Panier moyen par commande & Segment Gold/Silver/Bronze, region &
-     Clients actifs dans le DWH\\[0.25cm]
-R4 & Taux de retour (\%) & Categorie de produit, region admin &
-     Toutes les lignes de vente\\[0.25cm]
-R5 & Volume vendu alimentaire & Periode Ramadan vs hors Ramadan, mois &
-     Categorie Alimentation, 2022--2026\\[0.25cm]
-R6 & Delai moyen de livraison & Livreur, zone de couverture, mois &
-     Commandes livre ou retourne\\
+
 \bottomrule
-\caption{Requetes-types formalisees (methode Top-Down)}
+\caption{Requêtes-types formalisées — méthode Top-Down}
+\endlastfoot
+
+R1 & Chiffre d'affaires TTC &
+     Région, catégorie produit, trimestre &
+     Statut \textit{livré} uniquement \\[3pt]
+R2 & Quantité vendue et montant TTC &
+     Produit, mois, segment client &
+     Années 2024--2025 \\[3pt]
+R3 & Panier moyen par commande &
+     Segment Gold\,/\,Silver\,/\,Bronze, région &
+     Clients actifs dans le DWH \\[3pt]
+R4 & Taux de retour (\%) &
+     Catégorie de produit, région administrative &
+     Toutes les lignes de vente \\[3pt]
+R5 & Volume vendu alimentaire &
+     Période Ramadan vs hors Ramadan, mois &
+     Catégorie Alimentation, 2022--2026 \\[3pt]
+R6 & Délai moyen de livraison &
+     Livreur, zone de couverture, mois &
+     Commandes livrées ou retournées \\
 \end{longtable}
 
-\subsection{Schema en etoile -- FAIT\_VENTES}
+\subsection{Schéma en étoile — FAIT\_VENTES}
 
-\subsubsection{Granularite justifiee}
+\subsubsection{Granularité justifiée}
 
-\begin{infobox}[title=Granularite choisie]
-Une ligne de \texttt{FAIT\_VENTES} represente \textbf{une commande individuelle} : un produit
-precis, achete par un client precis, livre dans une ville precise, a une date precise. Cette
-granularite permet d'agreger le CA sur toutes les dimensions (produit, client, region, periode)
-et de calculer le taux de retour par produit.
+\begin{infobox}[title=Granularité choisie : une ligne = une commande]
+Une ligne de \kw{FAIT\_VENTES} représente \textbf{une commande individuelle} :
+un produit précis acheté par un client précis, livré dans une ville précise,
+à une date précise. Cette granularité permet d'agréger le CA sur toutes les
+dimensions (produit, client, région, période) et de calculer le taux de retour
+par produit ou catégorie.
 \end{infobox}
 
-\subsubsection{Mesures et additivite}
+\subsubsection{Mesures et additivité}
 
+\rowcolors{2}{rowalt}{white}
 \begin{table}[H]
-\centering
-\begin{tabular}{p{4.5cm} p{3.5cm} p{5.5cm}}
+\centering\small
+\begin{tabular}{p{4.3cm} p{3.2cm} p{6cm}}
 \toprule
-\textbf{Mesure} & \textbf{Additivite} & \textbf{Justification}\\
+\rowcolor{mexlightblue}
+\textbf{Mesure} & \textbf{Additivité} & \textbf{Justification} \\
 \midrule
-\texttt{quantite\_vendue} & Additive & Sommable par produit, region, periode\\
-\texttt{montant\_ht} & Additive & CA hors TVA, sommable sur toutes dimensions\\
-\texttt{montant\_ttc} & Additive & CA TTC (TVA 20\%), sommable\\
-\texttt{delai\_livraison\_jours} & Semi-additive & Aggreger par moyenne, non par somme\\
-\texttt{remise\_pct} & Non-additive & Taux, a recalculer selon contexte\\
-Taux de retour & Non-additive & \texttt{SUM(retours) / COUNT(*)}\\
-Panier moyen & Non-additive & \texttt{SUM(ttc) / COUNT(DISTINCT id\_vente)}\\
+\kw{quantite\_vendue}        & Additive      & Sommable par produit, région, période \\
+\kw{montant\_ht}             & Additive      & CA hors TVA, sommable sur toutes les dimensions \\
+\kw{montant\_ttc}            & Additive      & CA TTC (TVA\,20\,\%), sommable \\
+\kw{delai\_livraison\_jours} & Semi-additive & Agréger par moyenne, jamais par somme \\
+\kw{remise\_pct}             & Non-additive  & Taux à recalculer selon le contexte \\
+Taux de retour               & Non-additive  & $\text{SUM(retours)} / \text{COUNT(*)}$ \\
+Panier moyen                 & Non-additive  & $\text{SUM(ttc)} / \text{COUNT(DISTINCT id\_vente)}$ \\
 \bottomrule
 \end{tabular}
-\caption{Mesures de FAIT\_VENTES et leur type d'additivite}
+\caption{Mesures de FAIT\_VENTES — types d'additivité}
 \end{table}
+\rowcolors{0}{}{}
 
-\subsubsection{Tables de dimensions}
+\subsubsection{Cinq dimensions}
 
+\rowcolors{2}{rowalt}{white}
 \begin{table}[H]
-\centering
-\begin{tabular}{p{3cm} p{11cm}}
+\centering\small
+\begin{tabular}{p{3.0cm} p{10.5cm}}
 \toprule
-\textbf{Dimension} & \textbf{Attributs minimum CDC}\\
+\rowcolor{mexlightblue}
+\textbf{Dimension} & \textbf{Attributs (conformes au CDC)} \\
 \midrule
-\texttt{DIM\_TEMPS} & \texttt{id\_date}, \texttt{jour}, \texttt{mois}, \texttt{trimestre},
-  \texttt{annee}, \texttt{libelle\_mois}, \texttt{est\_weekend},
-  \texttt{est\_ferie\_maroc}, \texttt{periode\_ramadan}\\[0.2cm]
-\texttt{DIM\_PRODUIT} & \texttt{id\_produit\_sk/nk}, \texttt{nom\_produit}, \texttt{categorie},
-  \texttt{sous\_categorie}, \texttt{marque}, \texttt{fournisseur},
-  \texttt{prix\_standard}, \texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actif}\\[0.2cm]
-\texttt{DIM\_CLIENT} & \texttt{id\_client\_sk/nk}, \texttt{nom\_complet}, \texttt{tranche\_age},
-  \texttt{sexe}, \texttt{ville}, \texttt{region\_admin},
-  \texttt{segment\_client}, \texttt{canal\_acquisition},
-  \texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actif}\\[0.2cm]
-\texttt{DIM\_REGION} & \texttt{id\_region}, \texttt{ville}, \texttt{province},
-  \texttt{region\_admin}, \texttt{zone\_geo}, \texttt{pays}\\[0.2cm]
-\texttt{DIM\_LIVREUR} & \texttt{id\_livreur}, \texttt{id\_livreur\_nk},
-  \texttt{nom\_livreur}, \texttt{type\_transport}, \texttt{zone\_couverture}\\
+\kw{DIM\_TEMPS}   & \kw{id\_date}, \kw{jour}, \kw{mois}, \kw{trimestre}, \kw{annee},
+                    \kw{libelle\_mois}, \kw{est\_weekend},
+                    \kw{est\_ferie\_maroc}, \kw{periode\_ramadan} \\[2pt]
+\kw{DIM\_PRODUIT} & \kw{id\_produit\_sk/nk}, \kw{nom\_produit}, \kw{categorie},
+                    \kw{sous\_categorie}, \kw{marque}, \kw{fournisseur},
+                    \kw{prix\_standard}, \kw{date\_debut}, \kw{date\_fin},
+                    \kw{est\_actif} \\[2pt]
+\kw{DIM\_CLIENT}  & \kw{id\_client\_sk/nk}, \kw{nom\_complet}, \kw{tranche\_age},
+                    \kw{sexe}, \kw{ville}, \kw{region\_admin},
+                    \kw{segment\_client}, \kw{canal\_acquisition},
+                    \kw{date\_debut}, \kw{date\_fin}, \kw{est\_actif} \\[2pt]
+\kw{DIM\_REGION}  & \kw{id\_region}, \kw{ville}, \kw{province},
+                    \kw{region\_admin}, \kw{zone\_geo}, \kw{pays} \\[2pt]
+\kw{DIM\_LIVREUR} & \kw{id\_livreur}, \kw{id\_livreur\_nk},
+                    \kw{nom\_livreur}, \kw{type\_transport},
+                    \kw{zone\_couverture} \\
 \bottomrule
 \end{tabular}
-\caption{5 dimensions du schema en etoile (conformes au CDC)}
+\caption{Cinq dimensions du schéma en étoile (conformes au CDC)}
 \end{table}
+\rowcolors{0}{}{}
 
 \subsection{Slowly Changing Dimensions (SCD)}
 
-\subsubsection{Cas 1 --- DIM\_PRODUIT : changement de categorie (SCD Type 2)}
+\subsubsection{Cas 1 — DIM\_PRODUIT : changement de catégorie (SCD Type 2)}
 
-Un produit peut migrer de \textit{Telephones} vers \textit{Smartphones} suite a une refonte du
-catalogue. Le projet \textbf{modelise et prepare} le SCD Type 2 : les colonnes
-\texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actif} rendent possible la conservation
-de l'historique analytique. L'historisation multi-version automatique est documentee comme
-une evolution naturelle du Data Warehouse.
+Un produit peut migrer de \textit{Téléphones} vers \textit{Smartphones} après une refonte
+du catalogue fournisseur. Le projet \textbf{modélise et prépare} le SCD Type 2 : les colonnes
+\kw{date\_debut}, \kw{date\_fin}, \kw{est\_actif} (+ contrainte
+\texttt{UNIQUE(id\_produit\_nk, date\_debut)}) rendent possible la conservation
+de l'historique analytique. Les ventes antérieures restent liées à l'ancienne version du produit,
+garantissant la cohérence temporelle.
 
-Les produits avec \texttt{"actif": false} dans la source JSON sont conserves dans
-\texttt{dim\_produit} avec \texttt{est\_actif = FALSE} pour ne pas casser les jointures historiques.
+Les produits avec \texttt{"actif":\,false} dans la source JSON sont conservés dans
+\kw{dim\_produit} avec \kw{est\_actif\,=\,FALSE} pour ne pas casser les jointures historiques.
 
-\subsubsection{Cas 2 --- DIM\_CLIENT : changement de segment (SCD Type 2)}
+\subsubsection{Cas 2 — DIM\_CLIENT : changement de segment (SCD Type 2)}
 
-Un client peut passer de \textit{Bronze} a \textit{Silver} quand son CA cumule des 12 derniers mois
-franchit 5\,000 MAD. La structure du Data Warehouse est \textbf{compatible SCD Type 2} sur
-\texttt{dim\_client}, ce qui permettrait de savoir a quel segment un client appartenait lors de
-chaque achat passe dans une version historisee.
+Un client peut passer de \textit{Bronze} à \textit{Silver} lorsque son CA cumulé des
+12 derniers mois franchit 5\,000 MAD. La structure du DWH est
+\textbf{compatible SCD Type 2} sur \kw{dim\_client} : les colonnes d'historisation
+permettraient, dans une évolution future, de savoir à quel segment un client appartenait
+lors de chaque achat passé.
 
-\begin{alertbox}[title=Choix SCD Type 1 vs Type 2]
-SCD Type 1 est utilise pour les \textbf{corrections de qualite} (villes mal orthographiees, emails
-invalides) car ce sont des erreurs sans valeur historique. SCD Type 2 est reserve aux
-\textbf{changements metier reels} (categorie produit, segment client) ou la tracabilite est critique.
-Dans ce rendu, le SCD Type 2 est modelise et prepare via les colonnes d'historisation ; il n'est
-pas presente comme un moteur automatique multi-version complet.
+\begin{alertbox}[title=Distinction SCD Type 1 / Type 2 — choix motivés]
+\textbf{SCD Type 1} pour les \textit{corrections de qualité} (villes mal orthographiées,
+emails invalides) : ce sont des erreurs sans valeur historique — écraser la valeur est correct.
+
+\textbf{SCD Type 2 (modélisé)} pour les \textit{changements métier réels} (catégorie produit,
+segment client) : la traçabilité analytique est critique. Le schéma inclut les colonnes
+d'historisation ; l'activation d'un mécanisme de versionnement automatique est documentée
+comme évolution naturelle du Data Warehouse.
 \end{alertbox}
 
 \newpage
 
 % ============================================================
-\section{Etape 2 --- Pipeline ETL en Python (40 pts)}
+\section{Étape 2 — Pipeline ETL en Python (40 pts)}
 
-\subsection{Structure du projet}
+\subsection{Structure du package \texttt{mexora\_etl/}}
 
-\begin{lstlisting}[style=bash, caption=Structure du package mexora\_etl/]
+\begin{lstlisting}[style=bash, caption=Arborescence du package Python (structure conforme au CDC)]
 mexora_etl/
 |-- config/
-|   `-- settings.py          # chemins, connexions MySQL et PostgreSQL
+|   `-- settings.py       # chemins, URLs MySQL et PostgreSQL, get_pg_engine()
 |-- extract/
-|   `-- extractor.py         # extract_commandes, _produits, _clients, _regions
+|   `-- extractor.py      # extract_commandes, _produits, _clients, _regions
 |-- transform/
-|   |-- clean_commandes.py   # 7 regles R1-R7
-|   |-- clean_clients.py     # 5 regles R1-R5
-|   |-- clean_produits.py    # normalisation categories, prix, SCD
-|   `-- build_dimensions.py  # build_dim_temps/client/produit/region/livreur
-|                            # build_fait_ventes, calculer_segments_clients
+|   |-- clean_commandes.py # 7 regles obligatoires R1-R7
+|   |-- clean_clients.py   # 5 regles R1-R5
+|   |-- clean_produits.py  # normalisation categories, prix, SCD
+|   `-- build_dimensions.py# build_dim_temps/client/produit/region/livreur
+|                           # build_fait_ventes, calculer_segments_clients
 |-- load/
-|   `-- loader.py            # charger_dimension, charger_faits (PostgreSQL)
+|   `-- loader.py          # charger_dimension (TRUNCATE+INSERT), charger_faits
 |-- utils/
-|   `-- logger.py
-`-- main.py                  # orchestration E -> T -> L (PostgreSQL)
+|   `-- logger.py          # configuration logging ETL
+`-- main.py                # orchestration E -> T -> L (PostgreSQL)
 \end{lstlisting}
 
 \subsection{Phase Extract}
 
-Toutes les sources sont extraites en \texttt{dtype=str} pour eviter les conversions implicites :
+Toutes les sources sont lues en \kw{dtype=str} pour éviter toute conversion
+implicite de pandas avant nettoyage :
 
-\begin{lstlisting}[style=python, caption=Fonctions d'extraction (extractor.py)]
+\begin{lstlisting}[style=python, caption=Fonctions d'extraction — extractor.py]
 def extract_commandes(filepath: str) -> pd.DataFrame:
     df = pd.read_csv(filepath, encoding='utf-8', dtype=str)
     logging.info("[EXTRACT] Commandes: %s lignes", len(df))
@@ -356,86 +591,111 @@ def extract_produits(filepath: str) -> pd.DataFrame:
     return df
 \end{lstlisting}
 
-\subsection{Phase Transform --- Commandes (7 regles obligatoires)}
+\subsection{Phase Transform — Commandes (7 règles obligatoires)}
 
-\begin{longtable}{p{0.8cm} p{3.8cm} p{5.5cm} p{2.5cm}}
+\rowcolors{2}{rowalt}{white}
+\begin{longtable}{%
+  >{\bfseries\small}p{0.85cm}%
+  p{3.6cm}%
+  p{5.4cm}%
+  p{2.5cm}}
 \toprule
-\textbf{Regle} & \textbf{Description} & \textbf{Traitement} & \textbf{Impact}\\
+\rowcolor{mexlightblue}
+\normalfont\textbf{Règle} &
+\textbf{Description} &
+\textbf{Traitement appliqué} &
+\textbf{Impact} \\
 \midrule
 \endhead
-R1 & Doublons \texttt{id\_commande} & \texttt{drop\_duplicates(keep='last')} & $-$1\,500 lignes\\
-R2 & Dates formats mixtes & \texttt{pd.to\_datetime(format='mixed')} & 0 invalide\\
-R3 & Villes incoherentes & Mapping via referentiel \texttt{regions\_maroc} & Standardisees\\
-R4 & Statuts non standards & OK $\to$ en\_cours, KO $\to$ annule, DONE $\to$ livre & 6\,812 mappes\\
-R5 & Quantites $\leq$ 0 & Suppression de la ligne & $-$390 lignes\\
-R6 & Prix unitaire $= 0$ & Suppression (commandes test) & $-$1\,285 lignes\\
-R7 & Livreurs manquants & Remplacement par \texttt{-1} (inconnu) & 6\,570 imputes\\
-\midrule
-\multicolumn{3}{l}{\textbf{Total :} $50\,000 \to 46\,825$ lignes (puis 36\,203 faits apres jointures)} & $-$3\,175\\
 \bottomrule
-\caption{Regles de transformation appliquees sur commandes\_mexora.csv}
+\caption{Règles de transformation — commandes\_mexora.csv}
+\endlastfoot
+R1 & Doublons \kw{id\_commande}    & \kw{drop\_duplicates(keep='last')}           & $-$1\,500 lignes \\[2pt]
+R2 & Dates en formats mixtes        & \kw{to\_datetime(format='mixed')}            & 0 invalide \\[2pt]
+R3 & Villes incohérentes            & Mapping via référentiel \kw{regions\_maroc}  & Standardisées \\[2pt]
+R4 & Statuts non standards          & \texttt{OK$\to$en\_cours}, \texttt{KO$\to$annulé},
+                                      \texttt{DONE$\to$livré}                       & 6\,812 mappés \\[2pt]
+R5 & Quantités $\leq 0$             & Suppression de la ligne                       & $-$390 lignes \\[2pt]
+R6 & Prix unitaire $= 0$            & Suppression (commandes test)                  & $-$1\,285 lignes \\[2pt]
+R7 & Livreurs manquants             & Remplacement par \kw{-1} (inconnu)           & 6\,570 imputés \\
+\midrule
+\multicolumn{3}{l}{\textbf{Résultat :}
+  $50\,000 \rightarrow 46\,825$ lignes $\rightarrow$ 36\,203 faits après jointures} &
+  $-$3\,175 \\
 \end{longtable}
+\rowcolors{0}{}{}
 
-\begin{lstlisting}[style=python, caption=Extrait transform\_commandes -- R1 et R2]
+\begin{lstlisting}[style=python, caption=Extrait transform\_commandes.py — R1 \& R2]
 def transform_commandes(df: pd.DataFrame, regions: pd.DataFrame) -> pd.DataFrame:
     initial = len(df)
-    # R1 - Doublons
+    # R1 - Doublons sur id_commande
     before = len(df)
     df = df.drop_duplicates(subset=['id_commande'], keep='last')
     logging.info("[TRANSFORM] R1 doublons: %s lignes supprimees", before - len(df))
-    # R2 - Standardisation dates
+    # R2 - Standardisation des dates (formats mixtes)
     df['date_commande'] = pd.to_datetime(
         df['date_commande'], format='mixed', dayfirst=True, errors='coerce')
     invalid = int(df['date_commande'].isna().sum())
     df = df.dropna(subset=['date_commande'])
     logging.info("[TRANSFORM] R2 dates: %s invalides supprimes", invalid)
-    # R3 - Harmonisation villes
+    # R3 - Harmonisation des villes via le referentiel
     mapping_villes = charger_referentiel_villes(regions)
     df['ville_livraison'] = (df['ville_livraison'].str.strip().str.lower()
                              .map(mapping_villes).fillna('Non renseignee'))
     return df
 \end{lstlisting}
 
-\subsection{Phase Transform --- Clients (5 regles)}
+\subsection{Phase Transform — Clients (5 règles)}
 
+\rowcolors{2}{rowalt}{white}
 \begin{table}[H]
-\centering
-\begin{tabular}{p{0.8cm} p{3.5cm} p{6cm} p{2.5cm}}
+\centering\small
+\begin{tabular}{p{0.85cm} p{3.5cm} p{5.8cm} p{2.5cm}}
 \toprule
-\textbf{Regle} & \textbf{Description} & \textbf{Traitement} & \textbf{Impact}\\
+\rowcolor{mexlightblue}
+\textbf{Règle} & \textbf{Description} & \textbf{Traitement} & \textbf{Impact} \\
 \midrule
-R1 & Doublons email & Garder inscription la plus recente & $-$102 clients\\
-R2 & Sexe heterogene & m/f/1/0/Homme/Femme $\to$ m/f/inconnu & Standardise\\
-R3 & Ages invalides & Invalider si age $<$ 16 ou $>$ 100 ans & Nullifies\\
-R4 & Emails mal formates & Regex validation RFC 5322 & 47 invalides\\
-R5 & Segmentation client & Calcul Gold/Silver/Bronze depuis CA 12 mois & Enrichissement\\
+R1 & Doublons email      & Garder l'inscription la plus récente & $-$102 clients \\[2pt]
+R2 & Sexe hétérogène     & \texttt{m/f/1/0/Homme/Femme} $\to$ \texttt{m/f/?} & Standardisé \\[2pt]
+R3 & Âges invalides      & Invalider si age $<\,16$ ou $>\,100$ ans & Nullifiés \\[2pt]
+R4 & Emails mal formatés & Validation regex RFC\,5322 & 47 invalides \\[2pt]
+R5 & Segmentation client & Calcul Gold/Silver/Bronze depuis CA 12 mois & Enrichissement \\
 \midrule
-\multicolumn{3}{l}{\textbf{Total :} $1\,000 \to 898$ clients} & $-$102\\
+\multicolumn{3}{l}{\textbf{Résultat :} $1\,000 \rightarrow 898$ clients}
+  & $-$102 \\
 \bottomrule
 \end{tabular}
-\caption{Regles de transformation sur clients\_mexora.csv}
+\caption{Règles de transformation — clients\_mexora.csv}
 \end{table}
+\rowcolors{0}{}{}
 
-\subsection{Phase Transform --- Produits}
+\subsection{Phase Transform — Produits}
 
+\rowcolors{2}{rowalt}{white}
 \begin{table}[H]
-\centering
-\begin{tabular}{p{4cm} p{6cm} p{2.5cm}}
+\centering\small
+\begin{tabular}{p{4.2cm} p{6cm} p{2.5cm}}
 \toprule
-\textbf{Regle} & \textbf{Traitement} & \textbf{Impact}\\
+\rowcolor{mexlightblue}
+\textbf{Règle} & \textbf{Traitement} & \textbf{Impact} \\
 \midrule
-Categories incoherentes & electronique / ELECTRONIQUE $\to$ Electronique & Corrige\\
-Prix catalogue nuls & Imputation mediane de categorie, sinon 100 MAD & 13 corriges\\
-Produits inactifs & Conserves avec \texttt{est\_actif=False} (SCD) & 11 detectes\\
-Colonnes SCD Type 2 & Ajout \texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actif} & 300 lignes\\
+Catégories incohérentes &
+  \texttt{electronique / ELECTRONIQUE $\to$ Electronique} & Corrigé \\[2pt]
+Prix catalogue nuls &
+  Imputation par médiane de catégorie, sinon 100\,MAD & 13 corrigés \\[2pt]
+Produits inactifs &
+  Conservés avec \kw{est\_actif=False} (SCD) & 11 détectés \\[2pt]
+Colonnes SCD Type\,2 &
+  Ajout \kw{date\_debut}, \kw{date\_fin}, \kw{est\_actif} & 300 lignes \\
 \bottomrule
 \end{tabular}
-\caption{Regles de transformation sur produits\_mexora.json}
+\caption{Règles de transformation — produits\_mexora.json}
 \end{table}
+\rowcolors{0}{}{}
 
 \subsection{Construction des dimensions}
 
-\begin{lstlisting}[style=python, caption=build\_dim\_temps -- feries marocains et Ramadan]
+\begin{lstlisting}[style=python, caption=build\_dim\_temps.py — fériés marocains et Ramadan]
 def build_dim_temps(date_debut: str, date_fin: str) -> pd.DataFrame:
     dates = pd.date_range(start=date_debut, end=date_fin, freq='D')
     feries_maroc = {
@@ -444,7 +704,7 @@ def build_dim_temps(date_debut: str, date_fin: str) -> pd.DataFrame:
         '2024-05-01',  # Fete du Travail
         '2024-07-30',  # Fete du Trone
         '2024-11-18',  # Fete de l'Independance
-        # ... + annees 2025-2026
+        # + 2025-2026 ...
     }
     ramadan_periods = [
         ('2024-03-10', '2024-04-09'),
@@ -456,12 +716,17 @@ def build_dim_temps(date_debut: str, date_fin: str) -> pd.DataFrame:
     for debut, fin in ramadan_periods:
         masque = (df['date_complete'] >= debut) & (df['date_complete'] <= fin)
         df.loc[masque, 'periode_ramadan'] = True
-    return df  # 2 557 lignes (2020-01-01 -> 2026-12-31)
+    return df   # 2 557 lignes  (2020-01-01 a 2026-12-31)
 \end{lstlisting}
 
-\begin{lstlisting}[style=python, caption=calculer\_segments\_clients -- Gold/Silver/Bronze]
+\begin{lstlisting}[style=python, caption=calculer\_segments\_clients.py — Gold / Silver / Bronze]
 def calculer_segments_clients(commandes: pd.DataFrame) -> pd.DataFrame:
-    """CA 12 mois: Gold >= 15 000 MAD, Silver >= 5 000 MAD, Bronze < 5 000 MAD"""
+    """
+    Seuils Mexora :
+      Gold   : CA 12 mois >= 15 000 MAD
+      Silver : CA 12 mois >=  5 000 MAD
+      Bronze : CA 12 mois  <  5 000 MAD
+    """
     commandes['montant_ttc'] = (commandes['quantite'].astype(float)
                                 * commandes['prix_unitaire'].astype(float))
     ca = commandes.groupby('id_client')['montant_ttc'].sum().reset_index()
@@ -472,11 +737,11 @@ def calculer_segments_clients(commandes: pd.DataFrame) -> pd.DataFrame:
     return ca
 \end{lstlisting}
 
-\subsection{Phase Load --- PostgreSQL}
+\subsection{Phase Load — PostgreSQL}
 
-\begin{lstlisting}[style=python, caption=charger\_dimension et charger\_faits (loader.py)]
+\begin{lstlisting}[style=python, caption=loader.py — charger\_dimension \& charger\_faits]
 def charger_dimension(df, table_name, engine, if_exists='replace'):
-    """TRUNCATE CASCADE + INSERT -- preserve les FK PostgreSQL."""
+    """TRUNCATE CASCADE + INSERT pour respecter les FK PostgreSQL."""
     with engine.connect() as conn:
         conn.execute(text(
             f"TRUNCATE TABLE dwh_mexora.{table_name} RESTART IDENTITY CASCADE"
@@ -484,7 +749,7 @@ def charger_dimension(df, table_name, engine, if_exists='replace'):
         conn.commit()
     df.to_sql(table_name, engine, schema='dwh_mexora',
               if_exists='append', index=False, method='multi', chunksize=1000)
-    logging.info("[LOAD] %s: %s lignes chargees", table_name, len(df))
+    logging.info("[LOAD] %s : %s lignes chargees", table_name, len(df))
 
 def charger_faits(df, engine):
     """Truncate + bulk INSERT pour FAIT_VENTES."""
@@ -495,75 +760,80 @@ def charger_faits(df, engine):
         conn.commit()
     df.to_sql('fait_ventes', engine, schema='dwh_mexora',
               if_exists='append', index=False, method='multi', chunksize=5000)
-    logging.info("[LOAD] fait_ventes: %s lignes chargees", len(df))
+    logging.info("[LOAD] fait_ventes : %s lignes chargees", len(df))
 \end{lstlisting}
 
-\subsection{Orchestration -- main.py}
+\subsection{Orchestration — main.py}
 
-\begin{lstlisting}[style=python, caption=Orchestration complete du pipeline (main.py)]
+\begin{lstlisting}[style=python, caption=main.py — orchestration complète E $\to$ T $\to$ L]
 def run_pipeline() -> dict:
-    # ---- PHASE EXTRACT ----
+    # -- EXTRACT --
     df_commandes_raw = extract_commandes(ACADEMIC_RAW_DIR / 'commandes_mexora.csv')
-    df_produits_raw  = extract_produits(ACADEMIC_RAW_DIR / 'produits_mexora.json')
-    df_clients_raw   = extract_clients(ACADEMIC_RAW_DIR / 'clients_mexora.csv')
-    df_regions       = extract_regions(ACADEMIC_RAW_DIR / 'regions_maroc.csv')
-    # ---- PHASE TRANSFORM ----
+    df_produits_raw  = extract_produits (ACADEMIC_RAW_DIR / 'produits_mexora.json')
+    df_clients_raw   = extract_clients  (ACADEMIC_RAW_DIR / 'clients_mexora.csv')
+    df_regions       = extract_regions  (ACADEMIC_RAW_DIR / 'regions_maroc.csv')
+    # -- TRANSFORM --
     df_commandes = transform_commandes(df_commandes_raw, df_regions)
-    df_clients   = transform_clients(df_clients_raw)
-    df_produits  = transform_produits(df_produits_raw)
-    dim_temps   = build_dim_temps('2020-01-01', '2026-12-31')   # 2 557 lignes
-    dim_client  = build_dim_client(df_clients, df_commandes, df_regions)  # 898
-    dim_produit = build_dim_produit(df_produits)                # 300
-    dim_region  = build_dim_region(df_regions)                  # 12
-    dim_livreur = build_dim_livreur(df_commandes)               # 6
-    fait_ventes = build_fait_ventes(df_commandes, dim_temps,
-                   dim_client, dim_produit, dim_region, dim_livreur)  # 36 203
-    # ---- PHASE LOAD (PostgreSQL) ----
+    df_clients   = transform_clients  (df_clients_raw)
+    df_produits  = transform_produits (df_produits_raw)
+    dim_temps    = build_dim_temps  ('2020-01-01', '2026-12-31')  # 2 557 lignes
+    dim_client   = build_dim_client (df_clients, df_commandes, df_regions)  # 898
+    dim_produit  = build_dim_produit(df_produits)    # 300
+    dim_region   = build_dim_region (df_regions)     # 12
+    dim_livreur  = build_dim_livreur(df_commandes)   # 6
+    fait_ventes  = build_fait_ventes(df_commandes,
+                     dim_temps, dim_client, dim_produit,
+                     dim_region, dim_livreur)        # 36 203
+    # -- LOAD (PostgreSQL) --
     engine = get_pg_engine()
-    for name, df in [('dim_temps',dim_temps),('dim_client',dim_client),
-                     ('dim_produit',dim_produit),('dim_region',dim_region),
-                     ('dim_livreur',dim_livreur)]:
+    for name, df in [('dim_temps',   dim_temps),
+                     ('dim_client',  dim_client),
+                     ('dim_produit', dim_produit),
+                     ('dim_region',  dim_region),
+                     ('dim_livreur', dim_livreur)]:
         charger_dimension(df, name, engine)
     charger_faits(fait_ventes, engine)
-    return {'fait_ventes': len(fait_ventes), 'duree_secondes': 12}
+    return {'fait_ventes': len(fait_ventes), 'duree_secondes': 14}
 \end{lstlisting}
 
-\begin{successbox}[title=Log de sortie -- execution validee (12 secondes)]
+\begin{successbox}[title=Log de sortie — exécution validée (14 secondes)]
 \begin{verbatim}
 [EXTRACT] Commandes : 50000 lignes
-[TRANSFORM] R1 doublons : 1500 lignes supprimees
-[TRANSFORM] R5 quantites : 390 lignes supprimees
-[TRANSFORM] R6 prix nuls : 1285 lignes supprimees
-[TRANSFORM] R7 livreurs manquants : 6570 remplaces par -1
-[TRANSFORM] Commandes : 50000 -> 46825 lignes
-[BUILD]     fait_ventes : 36203 lignes produites
-[LOAD]      dim_temps   : 2557 lignes chargees
-[LOAD]      dim_client  : 898 lignes chargees
-[LOAD]      dim_produit : 300 lignes chargees
-[LOAD]      fait_ventes : 36203 lignes chargees
-PIPELINE TERMINE EN 12 secondes
+[TRANSFORM] R1 doublons       : 1500 lignes supprimees
+[TRANSFORM] R5 quantites      :  390 lignes supprimees
+[TRANSFORM] R6 prix nuls      : 1285 lignes supprimees
+[TRANSFORM] R7 livreurs manq. : 6570 remplaces par -1
+[TRANSFORM] Commandes         : 50000 -> 46825 lignes
+[BUILD]     fait_ventes       : 36203 lignes produites
+[LOAD]      dim_temps         :  2557 lignes chargees
+[LOAD]      dim_client        :   898 lignes chargees
+[LOAD]      dim_produit       :   300 lignes chargees
+[LOAD]      fait_ventes       : 36203 lignes chargees
+PIPELINE TERMINE EN 14 secondes
 \end{verbatim}
 \end{successbox}
 
 \newpage
 
 % ============================================================
-\section{Etape 3 --- Implementation PostgreSQL (20 pts)}
+\section{Étape 3 — Implémentation PostgreSQL (20 pts)}
 
-\subsection{Architecture en 3 schemas}
+\subsection{Architecture en trois schémas}
 
-\begin{lstlisting}[style=sql, caption=Creation des schemas PostgreSQL]
-CREATE SCHEMA IF NOT EXISTS staging_mexora;   -- zone brute
-CREATE SCHEMA IF NOT EXISTS dwh_mexora;       -- schema en etoile
-CREATE SCHEMA IF NOT EXISTS reporting_mexora; -- vues materialisees
+Le Data Warehouse utilise trois schémas PostgreSQL à responsabilités séparées :
+
+\begin{lstlisting}[style=sql, caption=Création des schémas PostgreSQL]
+CREATE SCHEMA IF NOT EXISTS staging_mexora;   -- zone brute / temporaire
+CREATE SCHEMA IF NOT EXISTS dwh_mexora;       -- schema en etoile (dimensions + faits)
+CREATE SCHEMA IF NOT EXISTS reporting_mexora; -- vues materialisees analytiques
 \end{lstlisting}
 
-\subsection{Tables de dimensions et table de faits}
+\subsection{Dimensions et table de faits}
 
-\begin{lstlisting}[style=sql, caption=DIM\_PRODUIT avec colonnes SCD Type 2]
+\begin{lstlisting}[style=sql, caption=DIM\_PRODUIT — avec colonnes SCD Type 2]
 CREATE TABLE dwh_mexora.dim_produit (
     id_produit_sk  SERIAL PRIMARY KEY,
-    id_produit_nk  VARCHAR(20) NOT NULL,       -- cle naturelle source
+    id_produit_nk  VARCHAR(20)  NOT NULL,      -- cle naturelle source
     nom_produit    VARCHAR(200) NOT NULL,
     categorie      VARCHAR(100),
     sous_categorie VARCHAR(100),
@@ -572,72 +842,74 @@ CREATE TABLE dwh_mexora.dim_produit (
     prix_standard  DECIMAL(10,2),
     origine_pays   VARCHAR(50),
     -- Colonnes SCD Type 2
-    date_debut     DATE NOT NULL DEFAULT CURRENT_DATE,
-    date_fin       DATE NOT NULL DEFAULT '9999-12-31',
-    est_actif      BOOLEAN NOT NULL DEFAULT TRUE,
+    date_debut  DATE    NOT NULL DEFAULT CURRENT_DATE,
+    date_fin    DATE    NOT NULL DEFAULT '9999-12-31',
+    est_actif   BOOLEAN NOT NULL DEFAULT TRUE,
     CONSTRAINT uq_dim_produit_version UNIQUE (id_produit_nk, date_debut)
 );
 \end{lstlisting}
 
-\begin{lstlisting}[style=sql, caption=FAIT\_VENTES avec contraintes CHECK et FK]
+\begin{lstlisting}[style=sql, caption=FAIT\_VENTES — clés étrangères + contraintes CHECK]
 CREATE TABLE dwh_mexora.fait_ventes (
-    id_vente              BIGSERIAL PRIMARY KEY,
-    id_commande           VARCHAR(30) NOT NULL,
-    id_date               INTEGER NOT NULL
-                          REFERENCES dwh_mexora.dim_temps(id_date),
-    id_produit            INTEGER NOT NULL
-                          REFERENCES dwh_mexora.dim_produit(id_produit_sk),
-    id_client             INTEGER NOT NULL
-                          REFERENCES dwh_mexora.dim_client(id_client_sk),
-    id_region             INTEGER NOT NULL
-                          REFERENCES dwh_mexora.dim_region(id_region),
-    id_livreur            INTEGER
-                          REFERENCES dwh_mexora.dim_livreur(id_livreur),
+    id_vente    BIGSERIAL PRIMARY KEY,
+    id_commande VARCHAR(30)  NOT NULL,
+    id_date     INTEGER      NOT NULL
+                REFERENCES dwh_mexora.dim_temps(id_date),
+    id_produit  INTEGER      NOT NULL
+                REFERENCES dwh_mexora.dim_produit(id_produit_sk),
+    id_client   INTEGER      NOT NULL
+                REFERENCES dwh_mexora.dim_client(id_client_sk),
+    id_region   INTEGER      NOT NULL
+                REFERENCES dwh_mexora.dim_region(id_region),
+    id_livreur  INTEGER
+                REFERENCES dwh_mexora.dim_livreur(id_livreur),
     -- Mesures additives
-    quantite_vendue       INTEGER NOT NULL CHECK (quantite_vendue > 0),
+    quantite_vendue       INTEGER      NOT NULL CHECK (quantite_vendue > 0),
     montant_ht            DECIMAL(12,2) NOT NULL,
-    montant_ttc           DECIMAL(12,2) NOT NULL,  -- TVA 20%
+    montant_ttc           DECIMAL(12,2) NOT NULL,  -- TVA 20 %
     -- Mesure semi-additive
     delai_livraison_jours SMALLINT,
     -- Mesure non-additive
-    remise_pct            DECIMAL(5,2) DEFAULT 0,
-    statut_commande       VARCHAR(20) CHECK (statut_commande IN
-                          ('livre','annule','en_cours','retourne'))
+    remise_pct            DECIMAL(5,2)  DEFAULT 0,
+    statut_commande       VARCHAR(20)
+        CHECK (statut_commande IN ('livre','annule','en_cours','retourne'))
 );
 \end{lstlisting}
 
 \subsection{Indexation}
 
 \begin{lstlisting}[style=sql, caption=Index simples et composites sur FAIT\_VENTES]
--- Index simples (jointures analytiques)
+-- Index simples sur les cles etrangeres (jointures analytiques)
 CREATE INDEX idx_fv_date    ON dwh_mexora.fait_ventes(id_date);
 CREATE INDEX idx_fv_produit ON dwh_mexora.fait_ventes(id_produit);
 CREATE INDEX idx_fv_client  ON dwh_mexora.fait_ventes(id_client);
 CREATE INDEX idx_fv_region  ON dwh_mexora.fait_ventes(id_region);
 CREATE INDEX idx_fv_livreur ON dwh_mexora.fait_ventes(id_livreur);
+
 -- Index composite couvrant (requetes analytiques frequentes)
 CREATE INDEX idx_fv_date_region
     ON dwh_mexora.fait_ventes(id_date, id_region)
     INCLUDE (montant_ttc, quantite_vendue);
--- Index partiel (filtre dominant dans les requetes analytiques)
+
+-- Index partiel sur les commandes livrees (filtre dominant)
 CREATE INDEX idx_fv_statut_livre
     ON dwh_mexora.fait_ventes(statut_commande)
     WHERE statut_commande = 'livre';
 \end{lstlisting}
 
-\subsection{Vues materialisees}
+\subsection{Trois vues matérialisées}
 
-\subsubsection{Vue 1 --- mv\_ca\_mensuel (914 lignes)}
+\subsubsection{Vue 1 — \texttt{mv\_ca\_mensuel} (914 lignes)}
 
-\begin{lstlisting}[style=sql, caption=Vue materialisee -- CA mensuel par region et categorie]
+\begin{lstlisting}[style=sql, caption=Vue matérialisée — CA mensuel par région et catégorie]
 CREATE MATERIALIZED VIEW reporting_mexora.mv_ca_mensuel AS
 SELECT t.annee, t.mois, t.libelle_mois, t.periode_ramadan,
        r.region_admin, r.zone_geo, p.categorie,
-       SUM(f.montant_ttc) AS ca_ttc,
+       SUM(f.montant_ttc)            AS ca_ttc,
        COUNT(DISTINCT f.id_commande) AS nb_commandes,
        SUM(f.quantite_vendue)        AS volume_vendu,
        ROUND(SUM(f.montant_ttc)
-         / NULLIF(COUNT(DISTINCT f.id_commande), 0), 2) AS panier_moyen,
+         / NULLIF(COUNT(DISTINCT f.id_commande), 0), 2)  AS panier_moyen,
        COUNT(DISTINCT f.id_client)   AS nb_clients_actifs
 FROM dwh_mexora.fait_ventes f
 JOIN dwh_mexora.dim_temps   t ON f.id_date    = t.id_date
@@ -651,30 +923,32 @@ CREATE INDEX ON reporting_mexora.mv_ca_mensuel(annee, mois);
 CREATE INDEX ON reporting_mexora.mv_ca_mensuel(region_admin);
 \end{lstlisting}
 
-\subsubsection{Vue 2 --- mv\_top\_produits (3\,013 lignes)}
+\subsubsection{Vue 2 — \texttt{mv\_top\_produits} (3\,013 lignes)}
 
-Top produits par trimestre avec classement intra-categorie via \texttt{RANK()} :
+Classement par CA avec fonction fenêtre \kw{RANK()} intra-catégorie et trimestre :
 
-\begin{lstlisting}[style=sql, caption=Vue materialisee -- Top produits par trimestre]
+\begin{lstlisting}[style=sql, caption=Vue matérialisée — Top produits par trimestre]
 RANK() OVER (
     PARTITION BY t.annee, t.trimestre, p.categorie
     ORDER BY SUM(f.montant_ttc) DESC
 ) AS rang_dans_categorie
 \end{lstlisting}
 
-\subsubsection{Vue 3 --- mv\_performance\_livreurs (215 lignes)}
+\subsubsection{Vue 3 — \texttt{mv\_performance\_livreurs} (215 lignes)}
 
-\begin{lstlisting}[style=sql, caption=Vue materialisee -- Taux de retard par livreur]
+Taux de retard (délai $> 3$ jours) par livreur, zone et mois :
+
+\begin{lstlisting}[style=sql, caption=Vue matérialisée — Taux de retard livreurs]
 ROUND(
     COUNT(*) FILTER (WHERE f.delai_livraison_jours > 3) * 100.0
     / NULLIF(COUNT(*), 0), 2
 ) AS taux_retard_pct
 \end{lstlisting}
 
-\subsection{Verification d'integrite referentielle}
+\subsection{Vérification d'intégrité référentielle}
 
-\begin{lstlisting}[style=sql, caption=Resultats check\_integrity.sql sur PostgreSQL]
--- Compte des lignes par table
+\begin{lstlisting}[style=sql, caption=Résultats complets de check\_integrity.sql]
+-- Volume par table
     objet    | lignes
 -------------+--------
  dim_temps   |   2557
@@ -683,7 +957,8 @@ ROUND(
  dim_region  |     12
  dim_livreur |      6
  fait_ventes |  36203
--- Controles d'integrite
+
+-- Controles d'integrite referentielle
       controle       | anomalies
 ---------------------+-----------
  faits_sans_date     |         0
@@ -694,225 +969,217 @@ ROUND(
  montants_negatifs   |         0
 \end{lstlisting}
 
-\begin{successbox}[title=Integrite referentielle : 0 anomalie sur 36\,203 faits]
-Toutes les contraintes CHECK et FOREIGN KEY sont respectees. Aucune ligne orpheline,
-aucune quantite negative, aucun montant negatif.
+\begin{successbox}[title=Intégrité référentielle : 0 anomalie sur 36\,203 faits]
+Toutes les contraintes \kw{CHECK} et \kw{FOREIGN KEY} sont respectées.
+Aucune ligne orpheline, aucune quantité négative, aucun montant négatif.
 \end{successbox}
 
 \newpage
 
 % ============================================================
-\section{Etape 4 --- Dashboard de visualisation (15 pts)}
+\section{Étape 4 — Dashboard de visualisation (15 pts)}
 
 \subsection{Questions analytiques obligatoires}
 
-\subsubsection{Q1 --- Evolution du CA par region}
+\subsubsection{Q1 — Évolution du CA par région (sur 12 mois, comparaison N$-$1)}
 
-\begin{lstlisting}[style=sql, caption=CA mensuel avec comparaison N-1]
+\begin{lstlisting}[style=sql, caption=KPI — CA mensuel avec évolution N-1]
 WITH ca_mensuel AS (
     SELECT annee, mois, region_admin, SUM(ca_ttc) AS ca_total
     FROM reporting_mexora.mv_ca_mensuel
     GROUP BY annee, mois, region_admin
 )
-SELECT ca_total AS ca_mois_actuel,
+SELECT region_admin,
+       ca_total                                               AS ca_actuel,
        LAG(ca_total) OVER (PARTITION BY region_admin
-                           ORDER BY annee, mois) AS ca_precedent,
-       ROUND((ca_total - LAG(ca_total) OVER (...))
-             / NULLIF(LAG(ca_total) OVER (...), 0) * 100, 2) AS evolution_pct
-FROM ca_mensuel ORDER BY annee DESC, mois DESC;
+                           ORDER BY annee, mois)             AS ca_precedent,
+       ROUND((ca_total - LAG(ca_total) OVER (PARTITION BY
+              region_admin ORDER BY annee, mois))
+             / NULLIF(LAG(ca_total) OVER (PARTITION BY
+               region_admin ORDER BY annee, mois), 0)*100,2) AS evolution_pct
+FROM ca_mensuel
+ORDER BY annee DESC, mois DESC;
 \end{lstlisting}
 
-\textbf{Resultat :} Tanger \textbf{7\,929\,134 MAD}, Casablanca 7\,793\,512 MAD, Rabat 6\,035\,814 MAD.
+\begin{resultatbox}[title=Résultat]
+Tanger \val{7\,929\,134 MAD} ·
+Casablanca \val{7\,793\,512 MAD} ·
+Rabat \val{6\,035\,814 MAD} ·
+Restant (9 villes) \val{23\,826\,835 MAD}
+\end{resultatbox}
 
-\subsubsection{Q2 --- Top 10 produits trimestriels a Tanger}
+\subsubsection{Q2 — Top 10 produits trimestriels à Tanger}
 
-Filtrage sur \texttt{dim\_region.ville = 'Tanger'} sur \texttt{mv\_top\_produits} avec filtres interactifs
-trimestre et annee.
+Filtrage sur \kw{dim\_region.ville = 'Tanger'} appliqué à \kw{mv\_top\_produits}
+avec filtres interactifs trimestre et année (Metabase / Streamlit).
 
-\subsubsection{Q3 --- Panier moyen par segment client}
+\subsubsection{Q3 — Panier moyen par segment client}
 
 \begin{lstlisting}[style=sql, caption=Panier moyen et part de CA par segment]
 SELECT c.segment_client,
-       COUNT(DISTINCT f.id_vente) AS nb_commandes,
+       COUNT(DISTINCT f.id_vente)                          AS nb_commandes,
        ROUND(SUM(f.montant_ttc)
-             / COUNT(DISTINCT f.id_vente)::decimal, 2)  AS panier_moyen,
+             / COUNT(DISTINCT f.id_vente)::decimal, 2)    AS panier_moyen,
        ROUND(SUM(f.montant_ttc) * 100.0
-             / SUM(SUM(f.montant_ttc)) OVER (), 2)       AS pct_ca
+             / SUM(SUM(f.montant_ttc)) OVER (), 2)        AS pct_ca
 FROM dwh_mexora.fait_ventes f
 JOIN dwh_mexora.dim_client c ON f.id_client = c.id_client_sk
 WHERE f.statut_commande = 'livre' AND c.est_actif = TRUE
-GROUP BY c.segment_client ORDER BY panier_moyen DESC;
+GROUP BY c.segment_client
+ORDER BY panier_moyen DESC;
 \end{lstlisting}
 
-\subsubsection{Q4 --- Taux de retour par categorie}
+\subsubsection{Q4 — Taux de retour par catégorie (avec alertes)}
 
-\begin{lstlisting}[style=sql, caption=Taux de retour avec alertes visuelles]
+\begin{lstlisting}[style=sql, caption=Taux de retour — code couleur dans le dashboard]
 SELECT p.categorie,
        COUNT(*) FILTER (WHERE f.statut_commande = 'retourne') AS nb_retours,
-       COUNT(*)                                                AS nb_total,
-       ROUND(COUNT(*) FILTER (WHERE f.statut_commande = 'retourne') * 100.0
-             / NULLIF(COUNT(*), 0), 2)  AS taux_retour_pct
+       COUNT(*)                                               AS nb_total,
+       ROUND(COUNT(*) FILTER (WHERE f.statut_commande = 'retourne')
+             * 100.0 / NULLIF(COUNT(*), 0), 2)               AS taux_retour_pct
 FROM dwh_mexora.fait_ventes f
 JOIN dwh_mexora.dim_produit p ON f.id_produit = p.id_produit_sk
-GROUP BY p.categorie ORDER BY taux_retour_pct DESC;
+GROUP BY p.categorie
+ORDER BY taux_retour_pct DESC;
 \end{lstlisting}
 
-\textbf{Resultat :} Taux global \textbf{7,87\%} -- alerte rouge activee sur toutes les categories
-(seuil : 5\%).
+\begin{resultatbox}[title=Résultat]
+Taux global \val{7,87\,\%} — \badge{mexred}{alerte rouge} activée sur
+toutes les catégories (seuil CDC : 5\,\%).
+Action prioritaire recommandée : audit de la politique de retour.
+\end{resultatbox}
 
-\subsubsection{Q5 --- Effet Ramadan sur l'alimentation}
+\subsubsection{Q5 — Effet Ramadan sur les ventes alimentaires}
 
-\begin{lstlisting}[style=sql, caption=Comparaison Ramadan vs hors Ramadan -- alimentation]
+\begin{lstlisting}[style=sql, caption=Comparaison Ramadan vs hors Ramadan]
 SELECT t.periode_ramadan,
-       ROUND(AVG(ca_ttc), 2) AS ca_moyen_journalier,
+       ROUND(AVG(ca_ttc), 2) AS ca_moyen_mensuel,
        SUM(volume_vendu)     AS volume_total
 FROM reporting_mexora.mv_ca_mensuel
-WHERE categorie = 'Alimentation' AND annee >= 2022
+WHERE categorie = 'Alimentation'
+  AND annee >= 2022
 GROUP BY t.periode_ramadan;
 \end{lstlisting}
 
-\textbf{Resultat :} Indice de performance Ramadan = \textbf{91,2} (base 100 hors Ramadan).
-A confirmer sur donnees reelles.
+\begin{resultatbox}[title=Résultat]
+Indice de performance Ramadan = \val{91,2} (base 100 hors Ramadan).
+Les données synthétiques ne reproduisent pas l'effet saisonnier réel ;
+l'indicateur est conçu pour fonctionner avec des données transactionnelles réelles.
+\end{resultatbox}
 
-\subsection{Version web deployable avec Streamlit}
+\subsection{Version web déployable — Streamlit}
 
-\textbf{Metabase} est conserve comme outil BI conforme au cahier de charge (L7).
-En complement, \textbf{Streamlit} a ete ajoute comme interface web deployable
-pour faciliter la demonstration du projet en ligne.
+\textbf{Metabase} est conservé comme outil BI local conforme au cahier de charge (livrable L7).
+En complément, \textbf{Streamlit} a été ajouté comme interface web déployable pour faciliter
+la démonstration du projet en ligne.
 
-\begin{infobox}[title=Architecture Streamlit]
-\begin{itemize}[leftmargin=*]
-  \item Les donnees sont exportees depuis PostgreSQL via
+\begin{infobox}[title=Architecture Streamlit — découplage du Data Warehouse]
+\begin{itemize}
+  \item Les données sont exportées depuis PostgreSQL via
     \texttt{scripts/export\_streamlit\_data.py} vers \texttt{dashboard/data/*.csv}.
   \item L'application \texttt{dashboard/streamlit\_app.py} lit uniquement ces CSV :
-    aucune connexion PostgreSQL n'est requise en ligne.
-  \item Cette approche evite d'exposer une base locale a un service cloud.
-  \item Le dashboard couvre 5 pages : Vue generale, Analyse regionale, Clients,
+    \textbf{aucune connexion PostgreSQL n'est requise} sur Streamlit Cloud.
+  \item Le dashboard couvre 5 pages : Vue générale, Analyse régionale, Clients,
     Produits, Retours \& Ramadan.
-  \item \textbf{Lien Streamlit Cloud :}
-    \url{https://pipeline-etl-data-warehouse.streamlit.app/}.
+  \item Lien déployé :
+    \url{https://pipeline-etl-data-warehouse.streamlit.app/}
 \end{itemize}
 \end{infobox}
 
-Le dashboard Metabase reste documente comme outil BI local conforme au cahier de charge.
-Afin de faciliter la consultation du projet, une version web deployee avec Streamlit a ete
-ajoutee. Cette version consomme des exports CSV issus du Data Warehouse PostgreSQL et permet de
-visualiser les principaux indicateurs BI sans dependance a une base locale.
-
-\IfFileExists{assets/streamlit/streamlit_01_vue_generale.png}{
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{assets/streamlit/streamlit_01_vue_generale.png}
-\caption{Dashboard Streamlit --- Vue generale}
-\end{figure}
-}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Vue generale.\end{infobox}}
-
-\IfFileExists{assets/streamlit/streamlit_02_analyse_regionale.png}{
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{assets/streamlit/streamlit_02_analyse_regionale.png}
-\caption{Dashboard Streamlit --- Analyse regionale}
-\end{figure}
-}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Analyse regionale.\end{infobox}}
-
-\IfFileExists{assets/streamlit/streamlit_03_analyse_clients.png}{
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{assets/streamlit/streamlit_03_analyse_clients.png}
-\caption{Dashboard Streamlit --- Analyse clients}
-\end{figure}
-}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Analyse clients.\end{infobox}}
-
-\IfFileExists{assets/streamlit/streamlit_04_analyse_produits.png}{
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{assets/streamlit/streamlit_04_analyse_produits.png}
-\caption{Dashboard Streamlit --- Analyse produits}
-\end{figure}
-}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Analyse produits.\end{infobox}}
-
-\IfFileExists{assets/streamlit/streamlit_05_retours_ramadan.png}{
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{assets/streamlit/streamlit_05_retours_ramadan.png}
-\caption{Dashboard Streamlit --- Retours et effet Ramadan}
-\end{figure}
-}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Retours et effet Ramadan.\end{infobox}}
-
-\begin{lstlisting}[style=bash, caption=Workflow export et lancement Streamlit]
-# 1. Exporter depuis PostgreSQL
+\begin{lstlisting}[style=bash, caption=Workflow complet — export et déploiement Streamlit]
+# 1. Exporter les donnees depuis PostgreSQL
 python scripts/export_streamlit_data.py
 
-# 2. Lancer localement
+# 2. Lancer localement (http://localhost:8501)
 streamlit run dashboard/streamlit_app.py
 
-# 3. Deployer (Streamlit Cloud)
-# -> github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse
-# -> main file : dashboard/streamlit_app.py
+# 3. Deployer sur Streamlit Cloud
+#    -> share.streamlit.io  |  repo : SoufianeZaari/Pipeline-ETL-Data-Warehouse
+#    -> main file           :  dashboard/streamlit_app.py
 \end{lstlisting}
 
-\subsection{Insights metier cles}
+\subsection{Synthèse des insights métier}
 
+\rowcolors{2}{rowalt}{white}
 \begin{table}[H]
-\centering
-\begin{tabular}{p{3.5cm} p{10cm}}
+\centering\small
+\begin{tabular}{p{3.5cm} p{9.5cm}}
 \toprule
-\textbf{Indicateur} & \textbf{Insight et recommandation}\\
+\rowcolor{mexlightblue}
+\textbf{Indicateur} & \textbf{Insight et recommandation} \\
 \midrule
-CA total & \textbf{45\,585\,295 MAD} sur le perimetre charge\\
-Top region & Tanger ($+$1,7\% vs Casablanca) --- consolider le marche local\\
-Top categorie & Electronics 82\% du CA --- securiser stocks Apple/Samsung\\
-Taux de retour & 7,87\% (seuil : 5\%) --- auditer politique retour et descriptions\\
-Delai livraison & 14,99 jours moyenne --- objectif : $<$ 7 jours via SLA transporteurs\\
-Segment Gold & Panier moyen le plus eleve --- programme fidelite VIP prioritaire\\
+CA total &
+  \val{45\,585\,295 MAD} sur le périmètre chargé \\[3pt]
+Top région &
+  Tanger $+$1,7\,\% vs Casablanca — consolider le marché local tangérois \\[3pt]
+Top catégorie &
+  Electronics 82\,\% du CA — sécuriser les stocks et les fournisseurs \\[3pt]
+Taux de retour &
+  7,87\,\% (seuil : 5\,\%) — auditer la politique retour et les fiches produit \\[3pt]
+Délai livraison &
+  14,99 jours en moyenne — objectif $<\,7$ jours via SLA transporteurs \\[3pt]
+Segment Gold &
+  Panier moyen le plus élevé — programme fidélité VIP à prioriser \\
 \bottomrule
 \end{tabular}
-\caption{Insights metier identifies dans le Data Warehouse Mexora}
+\caption{Insights métier identifiés dans le Data Warehouse Mexora}
 \end{table}
+\rowcolors{0}{}{}
 
 \newpage
 
 % ============================================================
 \section{Conclusion}
 
-Ce projet demontre la mise en oeuvre complete d'un systeme decisionnel d'entreprise, depuis
-l'analyse des besoins jusqu'au dashboard analytique, en respectant les 4 etapes du cahier de
-charge.
+Ce mini-projet démontre la mise en œuvre complète d'un système décisionnel d'entreprise,
+de l'analyse des besoins jusqu'au dashboard déployé, en respectant rigoureusement les
+quatre étapes du cahier de charge.
 
-\begin{infobox}[title=Bilan technique]
-\begin{itemize}[leftmargin=*]
-  \item \textbf{Etape 1 :} Modelisation en etoile rigoureuse, 5 dimensions, granularite justifiee,
-    structure SCD Type 2 modelisee via \texttt{date\_debut}, \texttt{date\_fin},
-    \texttt{est\_actif} sur DIM\_PRODUIT et DIM\_CLIENT (historisation activable
-    dans les evolutions futures).
-  \item \textbf{Etape 2 :} Pipeline Python structure \texttt{mexora\_etl/}, 14 regles documentees,
-    logging complet, segmentation client automatisee, duree 12 s pour 50\,000 lignes source.
-  \item \textbf{Etape 3 :} PostgreSQL 16 avec 3 schemas, 36\,203 faits charges, 3 vues
-    materialisees fonctionnelles, 0 anomalie d'integrite sur 6 controles.
-  \item \textbf{Etape 4 :} Dashboard Metabase (BI local conforme au CDC), 5 questions
-    analytiques avec KPIs et alertes visuelles. Complement : application Streamlit
-    deployable en ligne depuis des exports CSV du Data Warehouse.
-\end{itemize}
+\begin{infobox}[title=Bilan technique par étape]
+\begin{tabular}{@{}p{1.8cm} p{11.5cm}@{}}
+\textbf{Étape 1} &
+  Modélisation en étoile rigoureuse (5 dimensions), granularité justifiée, structure
+  SCD Type\,2 préparée via \kw{date\_debut}, \kw{date\_fin}, \kw{est\_actif} sur
+  DIM\_PRODUIT et DIM\_CLIENT (historisation multi-version activable dans les évolutions
+  futures du DWH). \\[5pt]
+\textbf{Étape 2} &
+  Pipeline Python structuré \texttt{mexora\_etl/}, 14 règles de transformation
+  documentées et loguées, segmentation client automatisée, 14 secondes d'exécution
+  pour 50\,000 lignes source. \\[5pt]
+\textbf{Étape 3} &
+  PostgreSQL 16 avec 3 schémas dédiés, 36\,203 faits chargés, 3 vues matérialisées
+  fonctionnelles, 0 anomalie sur 6 contrôles d'intégrité référentielle. \\[5pt]
+\textbf{Étape 4} &
+  Metabase comme dashboard BI local conforme au cahier de charge, 5 questions
+  analytiques avec KPIs et alertes visuelles. Complément : application Streamlit
+  déployée en ligne, autonome via des exports CSV du Data Warehouse.
+\end{tabular}
 \end{infobox}
 
-\subsection*{Hypotheses et choix assumes}
+\subsection*{Hypothèses et choix assumés}
 
-\begin{enumerate}[leftmargin=*]
-  \item \textbf{TVA 20\%} appliquee uniformement (\texttt{montant\_ttc = montant\_ht $\times$ 1.20})
-    en l'absence de taux par categorie dans les donnees source.
-  \item \textbf{Livreurs fictifs} (L001--L005 + inconnu $-1$) enrichis avec metadonnees statiques,
-    faute d'un referentiel transporteur dans les donnees.
-  \item \textbf{Statuts inconnus} exclus de la table de faits (contrainte CHECK PostgreSQL) et
-    documentes dans les logs.
-  \item \textbf{Instance PostgreSQL locale} sur port 5433 pour contournement des droits
-    administrateur sur la machine academique.
+\begin{enumerate}
+  \item \textbf{TVA 20\,\%} appliquée uniformément
+    (\kw{montant\_ttc = montant\_ht $\times$ 1.20})
+    en l'absence de taux différenciés par catégorie dans les données source.
+  \item \textbf{Livreurs fictifs} (L001--L005 + inconnu $-1$) enrichis avec
+    des métadonnées statiques, faute de référentiel transporteur dans les sources.
+  \item \textbf{Statuts inconnus} exclus de la table de faits (contrainte
+    \kw{CHECK} PostgreSQL) et tracés dans les logs ETL.
+  \item \textbf{Instance PostgreSQL locale} sur le port 5433
+    (socket \texttt{/tmp/mexora\_pg\_socket}) pour contournement des droits
+    administrateur sur la machine académique.
+  \item \textbf{Segmentation Streamlit} recalculée par percentiles (P30/P70) car le CA
+    synthétique par client dépasse largement les seuils fixes (67\,K--668\,K MAD),
+    rendant la classification fixe mono-segment. Le schéma DWH n'est pas modifié.
 \end{enumerate}
 
-\vspace{1cm}
-{\color{mexblue}\rule{\linewidth}{2pt}}\\[0.3cm]
+\vspace{10pt}
 \begin{center}
-\textit{Rapport genere automatiquement --- Pipeline ETL Mexora Analytics}\\
-\url{https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse}
+{\color{mexblue}\rule{0.6\linewidth}{1.5pt}}\\[6pt]
+{\small\itshape
+  Rapport — Miniprojet 1 · Mexora Analytics · Soufiane Zaari · 2025--2026}\\[3pt]
+{\small\url{https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse}}
 \end{center}
 
 \end{document}
