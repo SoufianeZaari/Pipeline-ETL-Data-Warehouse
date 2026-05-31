@@ -1,4 +1,4 @@
-"""Mexora BI Dashboard — version web déployable (Streamlit).
+"""Mexora BI Dashboard - version web deployable (Streamlit).
 
 Lit les CSV de dashboard/data/ générés par scripts/export_streamlit_data.py.
 Ne nécessite aucune connexion PostgreSQL en production / sur Streamlit Cloud.
@@ -23,7 +23,7 @@ import streamlit as st
 # ── Config page ──────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Mexora BI Dashboard",
-    page_icon="📊",
+    page_icon="MX",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -33,6 +33,52 @@ DATA_DIR = Path(__file__).parent / "data"
 # ── CSS ──────────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
+:root {
+  --mexora-navy:#102A43;
+  --mexora-blue:#2563A9;
+  --mexora-light:#F5F8FC;
+  --mexora-border:#D8E2EF;
+  --mexora-muted:#62748A;
+}
+.block-container {
+  padding-top: 1.6rem;
+}
+.main-header {
+  background: linear-gradient(135deg, #102A43 0%, #1D4E89 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow:0 8px 24px rgba(16,42,67,.15);
+}
+.main-header h1 {
+  font-size: 2rem;
+  margin: 0 0 .25rem 0;
+  letter-spacing: 0;
+}
+.main-header p {
+  margin: 0;
+  color: #DDEAF7;
+  font-size: 1rem;
+}
+.academic-card {
+  background: var(--mexora-light);
+  border: 1px solid var(--mexora-border);
+  border-left: 4px solid var(--mexora-blue);
+  border-radius: 8px;
+  padding: .85rem 1rem;
+  color: var(--mexora-navy);
+  margin-bottom: 1rem;
+}
+.academic-card strong {
+  color: var(--mexora-navy);
+}
+.link-row a {
+  color: var(--mexora-blue);
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 1rem;
+}
 .kpi-card {
   background:#ffffff; border-left:4px solid #2C6EAB;
   border-radius:6px; padding:.9rem 1.1rem;
@@ -42,13 +88,16 @@ st.markdown("""
              text-transform:uppercase; letter-spacing:.06em; margin-bottom:.1rem; }
 .kpi-value { font-size:1.5rem; font-weight:700; color:#1A1A2E; }
 .kpi-unit  { font-size:.74rem; color:#6b7280; margin-left:.15rem; }
+section[data-testid="stSidebar"] {
+  background: #F7FAFD;
+}
 </style>
 """, unsafe_allow_html=True)
 
 # ── Constantes ───────────────────────────────────────────────────────────────
 PALETTE = ["#2C6EAB", "#C0392B", "#27AE60", "#E67E22", "#8E44AD", "#16A085"]
 NO_DATA = (
-    "⚠️ Fichiers CSV manquants dans `dashboard/data/`.\n\n"
+    "Fichiers CSV manquants dans `dashboard/data/`.\n\n"
     "Exécutez d'abord :\n```bash\npython scripts/export_streamlit_data.py\n```"
 )
 
@@ -80,10 +129,33 @@ def fmt_mad(v: float) -> str:
 
 def retour_badge(pct: float) -> str:
     if pct > 5:
-        return f"🔴 {pct:.1f}%"
+        return f"Rouge - {pct:.1f}%"
     if pct >= 3:
-        return f"🟠 {pct:.1f}%"
-    return f"🟢 {pct:.1f}%"
+        return f"Orange - {pct:.1f}%"
+    return f"Vert - {pct:.1f}%"
+
+
+def render_header() -> None:
+    st.markdown(
+        """
+        <div class="main-header">
+          <h1>Mexora BI Dashboard</h1>
+          <p>Pipeline ETL &amp; Data Warehouse - E-commerce Analytics</p>
+        </div>
+        <div class="academic-card">
+          <strong>Faculte des Sciences et Techniques de Tanger</strong><br>
+          Universite Abdelmalek Essaadi<br>
+          Module : Business Intelligence / Data Warehouse<br>
+          Encadrant : Prof. Hassan Zili<br>
+          Realise par : Soufiane Zaari
+          <div class="link-row" style="margin-top:.55rem;">
+            <a href="https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse" target="_blank">GitHub</a>
+            <a href="https://pipeline-etl-data-warehouse.streamlit.app/" target="_blank">Streamlit deploye</a>
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 # ── Guard: data must exist ────────────────────────────────────────────────────
@@ -96,16 +168,18 @@ kpis = kpis_df.iloc[0]
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 📊 Mexora BI")
-    st.markdown("*Data Warehouse e-commerce*")
+    st.markdown("## Mexora BI")
+    st.markdown("*Data Engineering & BI Project*")
     st.markdown("---")
     page = st.radio(
         "Navigation",
-        ["🏠 Vue générale",
-         "🗺️ Analyse régionale",
-         "👥 Clients & Segments",
-         "📦 Produits",
-         "↩️ Retours & Ramadan"],
+        [
+            "Page 1 — Vue générale",
+            "Page 2 — Analyse régionale",
+            "Page 3 — Analyse clients",
+            "Page 4 — Analyse produits",
+            "Page 5 — Retours & Ramadan",
+        ],
         label_visibility="collapsed",
     )
     st.markdown("---")
@@ -114,13 +188,14 @@ with st.sidebar:
         "[GitHub](https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse)"
     )
 
+render_header()
 
 # ════════════════════════════════════════════════════════════════════════════
 # PAGE 1 — Vue générale
 # ════════════════════════════════════════════════════════════════════════════
-if page == "🏠 Vue générale":
-    st.title("📊 Mexora BI Dashboard")
-    st.markdown("**Data Warehouse e-commerce — Pipeline ETL & Analytics**")
+if page == "Page 1 — Vue générale":
+    st.title("Page 1 — Vue générale")
+    st.markdown("Vue synthétique des performances commerciales issues du Data Warehouse.")
     st.markdown("---")
 
     c1, c2, c3, c4, c5, c6 = st.columns(6)
@@ -173,8 +248,8 @@ if page == "🏠 Vue générale":
 # ════════════════════════════════════════════════════════════════════════════
 # PAGE 2 — Analyse régionale
 # ════════════════════════════════════════════════════════════════════════════
-elif page == "🗺️ Analyse régionale":
-    st.title("🗺️ Analyse régionale")
+elif page == "Page 2 — Analyse régionale":
+    st.title("Page 2 — Analyse régionale")
     st.markdown("---")
 
     reg_df = load("ca_region.csv")
@@ -239,8 +314,8 @@ elif page == "🗺️ Analyse régionale":
 # ════════════════════════════════════════════════════════════════════════════
 # PAGE 3 — Clients & Segments
 # ════════════════════════════════════════════════════════════════════════════
-elif page == "👥 Clients & Segments":
-    st.title("👥 Clients & Segments Gold / Silver / Bronze")
+elif page == "Page 3 — Analyse clients":
+    st.title("Page 3 — Analyse clients")
     st.markdown("---")
 
     seg_df = load("segments_clients.csv")
@@ -304,8 +379,8 @@ elif page == "👥 Clients & Segments":
 # ════════════════════════════════════════════════════════════════════════════
 # PAGE 4 — Produits
 # ════════════════════════════════════════════════════════════════════════════
-elif page == "📦 Produits":
-    st.title("📦 Analyse Produits")
+elif page == "Page 4 — Analyse produits":
+    st.title("Page 4 — Analyse produits")
     st.markdown("---")
 
     prod_df = load("top_produits_tanger.csv")
@@ -365,8 +440,8 @@ elif page == "📦 Produits":
 # ════════════════════════════════════════════════════════════════════════════
 # PAGE 5 — Retours & Ramadan
 # ════════════════════════════════════════════════════════════════════════════
-elif page == "↩️ Retours & Ramadan":
-    st.title("↩️ Retours, Ramadan & Livraison")
+elif page == "Page 5 — Retours & Ramadan":
+    st.title("Page 5 — Retours & Ramadan")
     st.markdown("---")
 
     ret_df = load("taux_retour_categorie.csv")
@@ -402,7 +477,7 @@ elif page == "↩️ Retours & Ramadan":
             fig.update_layout(margin=dict(l=0, r=0, t=10, b=0),
                               coloraxis_showscale=False)
             st.plotly_chart(fig, use_container_width=True)
-        st.caption("🔴 > 5% · 🟠 3–5% · 🟢 < 3%")
+        st.caption("Seuils d'alerte : Rouge > 5% · Orange 3-5% · Vert < 3%")
 
     st.markdown("---")
     col_l, col_r = st.columns(2)
@@ -476,7 +551,7 @@ st.markdown("---")
 st.markdown(
     "<p style='text-align:center;font-size:.75rem;color:#9ca3af;'>"
     "Dashboard généré à partir du Data Warehouse PostgreSQL Mexora · "
-    "Version déployable Streamlit · "
+    "Version web déployée avec Streamlit · "
     "<a href='https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse'"
     " target='_blank'>GitHub</a>"
     "</p>",

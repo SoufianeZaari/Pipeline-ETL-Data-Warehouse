@@ -2,6 +2,18 @@
 
 Projet BI/Data Warehouse complet pour **Mexora**, marketplace e-commerce fictive basée à Tanger.
 
+## Informations académiques
+
+| Élément | Valeur |
+|---|---|
+| Institution | Faculté des Sciences et Techniques de Tanger |
+| Université | Université Abdelmalek Essaâdi |
+| Module | Business Intelligence / Data Warehouse |
+| Encadrant | Prof. Hassan Zili |
+| Étudiant | Soufiane Zaari |
+| GitHub | https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse |
+| Dashboard Streamlit | https://pipeline-etl-data-warehouse.streamlit.app/ |
+
 ## Description
 
 Ce projet implémente une chaîne décisionnelle complète :
@@ -153,6 +165,11 @@ psql -h /tmp/mexora_pg_socket -p 5433 -U $USER mexora_dwh \
 > **Note :** Streamlit ne remplace pas Metabase. C'est une version web déployable
 > qui consomme des exports CSV issus du Data Warehouse PostgreSQL.
 
+Lien public :
+https://pipeline-etl-data-warehouse.streamlit.app/
+
+Le dashboard Streamlit est une version web déployable permettant de consulter les principaux indicateurs BI issus du Data Warehouse PostgreSQL. Metabase reste documenté comme outil BI local conforme au cahier de charge ; Streamlit facilite la démonstration et le partage du dashboard.
+
 ### 1. Générer les données depuis PostgreSQL
 
 ```bash
@@ -170,11 +187,11 @@ streamlit run dashboard/streamlit_app.py
 ```
 
 Ouvre `http://localhost:8501` — 5 pages :
-- 🏠 Vue générale (KPIs + CA mensuel + répartition catégories)
-- 🗺️ Analyse régionale (CA par ville, évolution mensuelle)
-- 👥 Clients & Segments (Gold/Silver/Bronze, panier moyen)
-- 📦 Produits (top Tanger, CA catégorie)
-- ↩️ Retours & Ramadan (alertes retours, effet Ramadan, livreurs)
+- Page 1 — Vue générale (KPIs + CA mensuel + répartition catégories)
+- Page 2 — Analyse régionale (CA par ville, évolution mensuelle)
+- Page 3 — Analyse clients (Gold/Silver/Bronze, panier moyen)
+- Page 4 — Analyse produits (top Tanger, CA catégorie)
+- Page 5 — Retours & Ramadan (alertes retours, effet Ramadan, livreurs)
 
 ### 3. Déployer sur Streamlit Cloud
 

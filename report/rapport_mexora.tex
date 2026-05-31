@@ -132,13 +132,18 @@
 {\color{mexblue}\rule{\linewidth}{3pt}}\\[0.5cm]
 {\Huge\bfseries\color{mexblue}Miniprojet 1}\\[0.4cm]
 {\huge Pipeline ETL \& Data Warehouse}\\[0.3cm]
-{\Large\color{mexgray}Mexora Analytics --- Construire l'entrepot de donnees from scratch}\\[0.5cm]
+{\Large\color{mexgray}Mexora Analytics --- Data Warehouse e-commerce}\\[0.5cm]
 {\color{mexblue}\rule{\linewidth}{1.5pt}}\\[1.5cm]
 
 \begin{tcolorbox}[colback=mexlightblue,colframe=mexblue,width=0.85\textwidth]
 \centering\large
-\textbf{Etudiant :} Soufiane Zaari\\[0.3cm]
-\textbf{GitHub :} \texttt{SoufianeZaari/Pipeline-ETL-Data-Warehouse}\\[0.3cm]
+\textbf{Institution :} Faculte des Sciences et Techniques de Tanger\\[0.25cm]
+\textbf{Universite :} Universite Abdelmalek Essaadi\\[0.25cm]
+\textbf{Module :} Business Intelligence / Data Warehouse\\[0.25cm]
+\textbf{Encadrant :} Prof. Hassan Zili\\[0.25cm]
+\textbf{Realise par :} Soufiane Zaari\\[0.25cm]
+\textbf{GitHub :} \url{https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse}\\[0.25cm]
+\textbf{Dashboard Streamlit :} \url{https://pipeline-etl-data-warehouse.streamlit.app/}\\[0.25cm]
 \textbf{Date :} 31 mai 2026
 \end{tcolorbox}
 
@@ -162,7 +167,7 @@ Faits charges dans PostgreSQL & \textbf{36\,203 lignes}\\
 Dimensions chargees & 5 tables (2\,557 + 898 + 300 + 12 + 6)\\
 Vues materialisees creees & 3 vues (914 + 3\,013 + 215 lignes)\\
 Anomalies d'integrite referentielle & \textbf{0}\\
-Dashboard web Streamlit & a completer apres deploiement Cloud\\
+Dashboard web Streamlit & \url{https://pipeline-etl-data-warehouse.streamlit.app/}\\
 \end{tabular}
 \end{successbox}
 \vfill
@@ -284,23 +289,27 @@ Panier moyen & Non-additive & \texttt{SUM(ttc) / COUNT(DISTINCT id\_vente)}\\
 \subsubsection{Cas 1 --- DIM\_PRODUIT : changement de categorie (SCD Type 2)}
 
 Un produit peut migrer de \textit{Telephones} vers \textit{Smartphones} suite a une refonte du
-catalogue. Le projet choisit \textbf{SCD Type 2} : les colonnes
-\texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actif} permettent de conserver l'historique
-analytique. Les ventes anterieures restent associees a l'ancienne version, assurant la coherence.
+catalogue. Le projet \textbf{modelise et prepare} le SCD Type 2 : les colonnes
+\texttt{date\_debut}, \texttt{date\_fin}, \texttt{est\_actif} rendent possible la conservation
+de l'historique analytique. L'historisation multi-version automatique est documentee comme
+une evolution naturelle du Data Warehouse.
 
 Les produits avec \texttt{"actif": false} dans la source JSON sont conserves dans
 \texttt{dim\_produit} avec \texttt{est\_actif = FALSE} pour ne pas casser les jointures historiques.
 
 \subsubsection{Cas 2 --- DIM\_CLIENT : changement de segment (SCD Type 2)}
 
-Un client peut passer de \textit{Bronze} a \textit{Silver} quand son CA cumulé des 12 derniers mois
-franchit 5\,000 MAD. Le projet applique egalement \textbf{SCD Type 2} sur \texttt{dim\_client},
-permettant de savoir a quel segment un client appartenait lors de chaque achat passe.
+Un client peut passer de \textit{Bronze} a \textit{Silver} quand son CA cumule des 12 derniers mois
+franchit 5\,000 MAD. La structure du Data Warehouse est \textbf{compatible SCD Type 2} sur
+\texttt{dim\_client}, ce qui permettrait de savoir a quel segment un client appartenait lors de
+chaque achat passe dans une version historisee.
 
 \begin{alertbox}[title=Choix SCD Type 1 vs Type 2]
 SCD Type 1 est utilise pour les \textbf{corrections de qualite} (villes mal orthographiees, emails
 invalides) car ce sont des erreurs sans valeur historique. SCD Type 2 est reserve aux
 \textbf{changements metier reels} (categorie produit, segment client) ou la tracabilite est critique.
+Dans ce rendu, le SCD Type 2 est modelise et prepare via les colonnes d'historisation ; il n'est
+pas presente comme un moteur automatique multi-version complet.
 \end{alertbox}
 
 \newpage
@@ -780,10 +789,55 @@ pour faciliter la demonstration du projet en ligne.
   \item Cette approche evite d'exposer une base locale a un service cloud.
   \item Le dashboard couvre 5 pages : Vue generale, Analyse regionale, Clients,
     Produits, Retours \& Ramadan.
-  \item \textbf{Lien Streamlit Cloud :} a completer apres deploiement sur
-    \texttt{share.streamlit.io}.
+  \item \textbf{Lien Streamlit Cloud :}
+    \url{https://pipeline-etl-data-warehouse.streamlit.app/}.
 \end{itemize}
 \end{infobox}
+
+Le dashboard Metabase reste documente comme outil BI local conforme au cahier de charge.
+Afin de faciliter la consultation du projet, une version web deployee avec Streamlit a ete
+ajoutee. Cette version consomme des exports CSV issus du Data Warehouse PostgreSQL et permet de
+visualiser les principaux indicateurs BI sans dependance a une base locale.
+
+\IfFileExists{assets/streamlit/streamlit_01_vue_generale.png}{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/streamlit/streamlit_01_vue_generale.png}
+\caption{Dashboard Streamlit --- Vue generale}
+\end{figure}
+}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Vue generale.\end{infobox}}
+
+\IfFileExists{assets/streamlit/streamlit_02_analyse_regionale.png}{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/streamlit/streamlit_02_analyse_regionale.png}
+\caption{Dashboard Streamlit --- Analyse regionale}
+\end{figure}
+}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Analyse regionale.\end{infobox}}
+
+\IfFileExists{assets/streamlit/streamlit_03_analyse_clients.png}{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/streamlit/streamlit_03_analyse_clients.png}
+\caption{Dashboard Streamlit --- Analyse clients}
+\end{figure}
+}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Analyse clients.\end{infobox}}
+
+\IfFileExists{assets/streamlit/streamlit_04_analyse_produits.png}{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/streamlit/streamlit_04_analyse_produits.png}
+\caption{Dashboard Streamlit --- Analyse produits}
+\end{figure}
+}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Analyse produits.\end{infobox}}
+
+\IfFileExists{assets/streamlit/streamlit_05_retours_ramadan.png}{
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{assets/streamlit/streamlit_05_retours_ramadan.png}
+\caption{Dashboard Streamlit --- Retours et effet Ramadan}
+\end{figure}
+}{\begin{infobox}[title=Capture Streamlit]\centering Capture Streamlit a inserer : Retours et effet Ramadan.\end{infobox}}
 
 \begin{lstlisting}[style=bash, caption=Workflow export et lancement Streamlit]
 # 1. Exporter depuis PostgreSQL
