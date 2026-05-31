@@ -1,28 +1,31 @@
+# Environnements Python
 .env
 .venv/
 venv/
 env/
 
+# Cache Python
 __pycache__/
 **/__pycache__/
 *.pyc
 *.pyo
 
+# Bases de données locales
 *.sqlite
 *.sqlite3
 *.db
 
+# Logs
 logs/
 *.log
 
-data/generated/*.sqlite
-data/processed/*.sqlite
-
+# Metabase local (secrets + binaire)
 metabase/.metabase_env
 metabase/metabase.db
 metabase/metabase.log
 metabase/metabase.jar
 
+# LaTeX intermédiaires
 report/*.html
 report/*.tmp
 report/*.aux
@@ -33,3 +36,23 @@ report/*.fls
 report/*.fdb_latexmk
 report/*.synctex.gz
 report/*.dvi
+
+# Assets rapport (images non essentielles, régénérables)
+report/assets/
+
+# Ancienne version markdown du rapport
+report/rapport_mexora.md
+
+# Données générées / extraites (régénérables via scripts)
+data/raw/
+data/generated/
+data/processed/
+
+# Fichier brut lourd (4,2 Mo — régénérable avec generate_academic_assets.py)
+data/academic_raw/commandes_mexora.csv
+
+# Fichier parasite
+scripts/.write_test
+
+# Audit interne
+AUDIT_FINAL_CONFORMITE.md
