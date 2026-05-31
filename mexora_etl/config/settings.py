@@ -16,7 +16,7 @@ LOG_DIR = PROJECT_ROOT / "logs"
 
 
 def load_settings() -> dict[str, str]:
-    """Load environment variables used by the validated MySQL pipeline."""
+    """Load environment variables for both MySQL (legacy) and PostgreSQL (DWH) pipelines."""
     load_dotenv(PROJECT_ROOT / ".env")
     return {
         "mysql_host": os.getenv("MYSQL_HOST", "127.0.0.1"),
@@ -32,5 +32,16 @@ def load_settings() -> dict[str, str]:
             "MEXORA_DW_URL",
             "mysql+pymysql://mexora_user:mexora_pass@127.0.0.1:3307/mexora_dw",
         ),
+        "pg_url": os.getenv(
+            "MEXORA_PG_URL",
+            f"postgresql+psycopg2://{os.getenv('USER', 'soufiane')}@/mexora_dwh?host=/tmp/mexora_pg_socket&port=5433",
+        ),
     }
+
+
+def get_pg_engine() -> "sqlalchemy.engine.Engine":
+    """Return a SQLAlchemy engine connected to the PostgreSQL DWH."""
+    import sqlalchemy  # local import to avoid hard dependency when not used
+    settings = load_settings()
+    return sqlalchemy.create_engine(settings["pg_url"])
 
