@@ -1,0 +1,915 @@
+annee,mois,libelle_mois,periode_ramadan,region_admin,zone_geo,categorie,ca_ttc,nb_commandes,volume_vendu,panier_moyen,nb_clients_actifs
+2024,1,January,False,Casablanca-Settat,Centre-Ouest,Alimentation,4857.6,9,23,539.73,9
+2024,1,January,False,Casablanca-Settat,Centre-Ouest,Electronique,194210.92,13,36,14939.3,13
+2024,1,January,False,Casablanca-Settat,Centre-Ouest,Mode,31833.31,13,43,2448.72,13
+2024,1,January,False,Fès-Meknès,Centre,Alimentation,12720.56,25,72,508.82,24
+2024,1,January,False,Fès-Meknès,Centre,Electronique,456643.11,22,58,20756.51,22
+2024,1,January,False,Fès-Meknès,Centre,Mode,66971.61,20,46,3348.58,20
+2024,1,January,False,Marrakech-Safi,Centre-Sud,Alimentation,21383.04,14,45,1527.36,14
+2024,1,January,False,Marrakech-Safi,Centre-Sud,Electronique,108050.32,10,32,10805.03,10
+2024,1,January,False,Marrakech-Safi,Centre-Sud,Mode,33116.11,9,31,3679.57,9
+2024,1,January,False,Oriental,Est,Alimentation,3642.4,7,26,520.34,7
+2024,1,January,False,Oriental,Est,Electronique,303021.24,12,35,25251.77,12
+2024,1,January,False,Oriental,Est,Mode,26778.87,10,22,2677.89,10
+2024,1,January,False,Oriental,Nord-Est,Alimentation,25248.56,17,45,1485.21,17
+2024,1,January,False,Oriental,Nord-Est,Electronique,306839.4,11,37,27894.49,11
+2024,1,January,False,Oriental,Nord-Est,Mode,25700.57,9,23,2855.62,9
+2024,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,13863.72,26,62,533.22,26
+2024,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,381890.6,19,59,20099.51,19
+2024,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,52145.57,17,54,3067.39,17
+2024,1,January,False,Souss-Massa,Sud,Alimentation,10415.27,15,51,694.35,15
+2024,1,January,False,Souss-Massa,Sud,Electronique,339411.46,21,68,16162.45,21
+2024,1,January,False,Souss-Massa,Sud,Mode,25866.02,6,11,4311.0,6
+2024,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,62290.99,38,112,1639.24,36
+2024,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,452717.95,26,73,17412.23,26
+2024,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,155845.68,31,103,5027.28,30
+2024,2,February,False,Casablanca-Settat,Centre-Ouest,Alimentation,7051.14,9,34,783.46,9
+2024,2,February,False,Casablanca-Settat,Centre-Ouest,Electronique,71705.25,15,46,4780.35,15
+2024,2,February,False,Casablanca-Settat,Centre-Ouest,Mode,88830.24,14,45,6345.02,14
+2024,2,February,False,Fès-Meknès,Centre,Alimentation,38041.63,21,74,1811.51,21
+2024,2,February,False,Fès-Meknès,Centre,Electronique,181125.87,14,52,12937.56,14
+2024,2,February,False,Fès-Meknès,Centre,Mode,65877.4,23,64,2864.23,23
+2024,2,February,False,Marrakech-Safi,Centre-Sud,Alimentation,4322.33,12,38,360.19,12
+2024,2,February,False,Marrakech-Safi,Centre-Sud,Electronique,130433.37,6,18,21738.9,6
+2024,2,February,False,Marrakech-Safi,Centre-Sud,Mode,17148.27,7,15,2449.75,7
+2024,2,February,False,Oriental,Est,Alimentation,6766.66,10,30,676.67,10
+2024,2,February,False,Oriental,Est,Electronique,33094.25,4,11,8273.56,4
+2024,2,February,False,Oriental,Est,Mode,33755.14,13,39,2596.55,13
+2024,2,February,False,Oriental,Nord-Est,Alimentation,6125.22,10,33,612.52,10
+2024,2,February,False,Oriental,Nord-Est,Electronique,124978.45,11,38,11361.68,11
+2024,2,February,False,Oriental,Nord-Est,Mode,30950.13,11,27,2813.65,11
+2024,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,17274.12,23,71,751.05,22
+2024,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,447617.43,26,92,17216.06,26
+2024,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,101491.02,29,93,3499.69,28
+2024,2,February,False,Souss-Massa,Sud,Alimentation,2934.31,11,27,266.76,10
+2024,2,February,False,Souss-Massa,Sud,Electronique,129803.89,8,24,16225.49,8
+2024,2,February,False,Souss-Massa,Sud,Mode,33676.85,10,29,3367.69,10
+2024,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,15065.02,39,117,386.28,38
+2024,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,608889.28,35,103,17396.84,35
+2024,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,87875.03,23,73,3820.65,23
+2024,3,March,False,Casablanca-Settat,Centre-Ouest,Alimentation,3980.97,5,12,796.19,5
+2024,3,March,False,Casablanca-Settat,Centre-Ouest,Electronique,207327.77,5,19,41465.55,5
+2024,3,March,False,Casablanca-Settat,Centre-Ouest,Mode,3615.21,2,5,1807.61,2
+2024,3,March,False,Fès-Meknès,Centre,Alimentation,13174.64,4,13,3293.66,4
+2024,3,March,False,Fès-Meknès,Centre,Electronique,27978.5,7,16,3996.93,7
+2024,3,March,False,Fès-Meknès,Centre,Mode,7523.1,4,10,1880.78,4
+2024,3,March,False,Marrakech-Safi,Centre-Sud,Alimentation,3507.29,5,19,701.46,5
+2024,3,March,False,Marrakech-Safi,Centre-Sud,Electronique,6269.68,2,2,3134.84,2
+2024,3,March,False,Marrakech-Safi,Centre-Sud,Mode,18170.47,5,17,3634.09,5
+2024,3,March,False,Oriental,Est,Alimentation,2114.88,5,18,422.98,5
+2024,3,March,False,Oriental,Est,Electronique,12362.86,2,9,6181.43,2
+2024,3,March,False,Oriental,Est,Mode,18229.33,6,18,3038.22,6
+2024,3,March,False,Oriental,Nord-Est,Alimentation,2599.43,3,12,866.48,3
+2024,3,March,False,Oriental,Nord-Est,Electronique,78368.87,3,7,26122.96,3
+2024,3,March,False,Oriental,Nord-Est,Mode,14491.68,2,8,7245.84,2
+2024,3,March,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,7038.48,11,36,639.86,11
+2024,3,March,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,213680.47,11,34,19425.5,11
+2024,3,March,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,13267.88,5,14,2653.58,5
+2024,3,March,False,Souss-Massa,Sud,Alimentation,1324.14,1,5,1324.14,1
+2024,3,March,False,Souss-Massa,Sud,Electronique,50241.47,2,8,25120.74,2
+2024,3,March,False,Souss-Massa,Sud,Mode,2759.59,3,8,919.86,3
+2024,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,2039.22,8,24,254.9,8
+2024,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,97777.81,9,29,10864.2,9
+2024,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,24223.64,5,17,4844.73,5
+2024,3,March,True,Casablanca-Settat,Centre-Ouest,Alimentation,5333.3,9,33,592.59,9
+2024,3,March,True,Casablanca-Settat,Centre-Ouest,Electronique,111009.58,10,26,11100.96,10
+2024,3,March,True,Casablanca-Settat,Centre-Ouest,Mode,38806.46,11,34,3527.86,11
+2024,3,March,True,Fès-Meknès,Centre,Alimentation,51235.17,21,71,2439.77,20
+2024,3,March,True,Fès-Meknès,Centre,Electronique,295957.64,21,60,14093.22,21
+2024,3,March,True,Fès-Meknès,Centre,Mode,41928.25,15,44,2795.22,15
+2024,3,March,True,Marrakech-Safi,Centre-Sud,Alimentation,16606.61,8,27,2075.83,8
+2024,3,March,True,Marrakech-Safi,Centre-Sud,Electronique,102334.45,6,19,17055.74,6
+2024,3,March,True,Marrakech-Safi,Centre-Sud,Mode,47501.6,14,42,3392.97,14
+2024,3,March,True,Oriental,Est,Alimentation,2485.65,6,13,414.28,6
+2024,3,March,True,Oriental,Est,Electronique,62793.55,6,14,10465.59,6
+2024,3,March,True,Oriental,Est,Mode,55548.29,16,55,3471.77,16
+2024,3,March,True,Oriental,Nord-Est,Alimentation,4973.56,9,28,552.62,9
+2024,3,March,True,Oriental,Nord-Est,Electronique,213458.44,15,47,14230.56,15
+2024,3,March,True,Oriental,Nord-Est,Mode,20634.28,10,29,2063.43,10
+2024,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,38870.37,15,49,2591.36,15
+2024,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,248505.04,13,31,19115.77,13
+2024,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Mode,53863.7,16,51,3366.48,16
+2024,3,March,True,Souss-Massa,Sud,Alimentation,3895.59,10,28,389.56,10
+2024,3,March,True,Souss-Massa,Sud,Electronique,249012.09,18,55,13834.01,18
+2024,3,March,True,Souss-Massa,Sud,Mode,21932.43,7,22,3133.2,7
+2024,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,30720.55,21,69,1462.88,20
+2024,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,419529.85,28,74,14983.21,27
+2024,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Mode,112619.16,31,105,3632.88,31
+2024,4,April,False,Casablanca-Settat,Centre-Ouest,Alimentation,5401.43,9,29,600.16,9
+2024,4,April,False,Casablanca-Settat,Centre-Ouest,Electronique,108823.99,8,18,13603.0,8
+2024,4,April,False,Casablanca-Settat,Centre-Ouest,Mode,45453.69,13,45,3496.44,13
+2024,4,April,False,Fès-Meknès,Centre,Alimentation,3024.72,12,26,252.06,12
+2024,4,April,False,Fès-Meknès,Centre,Electronique,154632.8,12,28,12886.07,12
+2024,4,April,False,Fès-Meknès,Centre,Mode,42087.85,13,37,3237.53,13
+2024,4,April,False,Marrakech-Safi,Centre-Sud,Alimentation,2544.28,6,13,424.05,6
+2024,4,April,False,Marrakech-Safi,Centre-Sud,Electronique,139474.46,7,20,19924.92,7
+2024,4,April,False,Marrakech-Safi,Centre-Sud,Mode,26736.46,10,35,2673.65,10
+2024,4,April,False,Oriental,Est,Alimentation,21974.96,7,16,3139.28,7
+2024,4,April,False,Oriental,Est,Electronique,71148.04,7,17,10164.01,7
+2024,4,April,False,Oriental,Est,Mode,19366.76,8,27,2420.85,8
+2024,4,April,False,Oriental,Nord-Est,Alimentation,25841.13,7,24,3691.59,7
+2024,4,April,False,Oriental,Nord-Est,Electronique,121296.66,8,24,15162.08,8
+2024,4,April,False,Oriental,Nord-Est,Mode,22567.36,8,23,2820.92,8
+2024,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,5053.72,14,39,360.98,14
+2024,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,333094.07,15,55,22206.27,15
+2024,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,85593.2,15,46,5706.21,15
+2024,4,April,False,Souss-Massa,Sud,Alimentation,23443.24,14,42,1674.52,13
+2024,4,April,False,Souss-Massa,Sud,Electronique,158475.45,10,23,15847.55,10
+2024,4,April,False,Souss-Massa,Sud,Mode,18573.81,8,29,2321.73,7
+2024,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,60202.81,25,80,2408.11,24
+2024,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,532817.43,22,67,24218.97,22
+2024,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,49676.77,20,55,2483.84,20
+2024,4,April,True,Casablanca-Settat,Centre-Ouest,Alimentation,2589.48,5,18,517.9,5
+2024,4,April,True,Casablanca-Settat,Centre-Ouest,Electronique,91278.96,4,12,22819.74,4
+2024,4,April,True,Casablanca-Settat,Centre-Ouest,Mode,11403.98,4,11,2851.0,4
+2024,4,April,True,Fès-Meknès,Centre,Alimentation,1450.97,7,17,207.28,7
+2024,4,April,True,Fès-Meknès,Centre,Electronique,143385.22,10,28,14338.52,10
+2024,4,April,True,Fès-Meknès,Centre,Mode,21050.9,6,20,3508.48,6
+2024,4,April,True,Marrakech-Safi,Centre-Sud,Alimentation,1020.9,3,10,340.3,3
+2024,4,April,True,Marrakech-Safi,Centre-Sud,Electronique,29546.65,4,14,7386.66,4
+2024,4,April,True,Marrakech-Safi,Centre-Sud,Mode,3877.49,1,2,3877.49,1
+2024,4,April,True,Oriental,Est,Alimentation,38842.67,6,17,6473.78,6
+2024,4,April,True,Oriental,Est,Electronique,22201.68,3,15,7400.56,3
+2024,4,April,True,Oriental,Est,Mode,19781.69,3,14,6593.9,3
+2024,4,April,True,Oriental,Nord-Est,Alimentation,812.61,3,10,270.87,3
+2024,4,April,True,Oriental,Nord-Est,Electronique,9162.04,2,6,4581.02,2
+2024,4,April,True,Oriental,Nord-Est,Mode,969.84,1,2,969.84,1
+2024,4,April,True,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,3309.6,8,21,413.7,8
+2024,4,April,True,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,97801.13,8,24,12225.14,8
+2024,4,April,True,Rabat-Salé-Kénitra,Nord-Ouest,Mode,15106.83,6,16,2517.81,6
+2024,4,April,True,Souss-Massa,Sud,Alimentation,187.24,1,1,187.24,1
+2024,4,April,True,Souss-Massa,Sud,Electronique,18905.94,4,14,4726.49,4
+2024,4,April,True,Souss-Massa,Sud,Mode,28177.77,5,23,5635.55,5
+2024,4,April,True,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,9619.64,10,34,961.96,10
+2024,4,April,True,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,114478.82,10,31,11447.88,10
+2024,4,April,True,Tanger-Tétouan-Al Hoceïma,Nord,Mode,23478.33,7,20,3354.05,7
+2024,5,May,False,Casablanca-Settat,Centre-Ouest,Alimentation,50953.67,20,59,2547.68,19
+2024,5,May,False,Casablanca-Settat,Centre-Ouest,Electronique,279713.05,15,42,18647.54,15
+2024,5,May,False,Casablanca-Settat,Centre-Ouest,Mode,54089.11,12,45,4507.43,12
+2024,5,May,False,Fès-Meknès,Centre,Alimentation,9222.84,29,79,318.03,29
+2024,5,May,False,Fès-Meknès,Centre,Electronique,272233.33,23,63,11836.23,23
+2024,5,May,False,Fès-Meknès,Centre,Mode,35355.91,17,45,2079.76,17
+2024,5,May,False,Marrakech-Safi,Centre-Sud,Alimentation,2674.85,10,29,267.49,10
+2024,5,May,False,Marrakech-Safi,Centre-Sud,Electronique,235438.34,15,45,15695.89,15
+2024,5,May,False,Marrakech-Safi,Centre-Sud,Mode,27983.67,12,31,2331.97,12
+2024,5,May,False,Oriental,Est,Alimentation,44349.32,10,32,4434.93,10
+2024,5,May,False,Oriental,Est,Electronique,250386.47,11,31,22762.41,11
+2024,5,May,False,Oriental,Est,Mode,34378.54,16,41,2148.66,16
+2024,5,May,False,Oriental,Nord-Est,Alimentation,10026.19,14,40,716.16,14
+2024,5,May,False,Oriental,Nord-Est,Electronique,78378.86,11,35,7125.35,11
+2024,5,May,False,Oriental,Nord-Est,Mode,25740.98,11,30,2340.09,11
+2024,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,36116.18,29,96,1245.39,26
+2024,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,303300.03,22,48,13786.37,22
+2024,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,128339.48,17,51,7549.38,17
+2024,5,May,False,Souss-Massa,Sud,Alimentation,23452.75,10,26,2345.28,10
+2024,5,May,False,Souss-Massa,Sud,Electronique,181298.55,12,36,15108.21,12
+2024,5,May,False,Souss-Massa,Sud,Mode,41859.82,11,35,3805.44,11
+2024,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,21015.08,37,110,567.98,35
+2024,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,217510.19,26,68,8365.78,26
+2024,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,142206.93,34,100,4182.56,32
+2024,6,June,False,Casablanca-Settat,Centre-Ouest,Alimentation,4914.29,7,25,702.04,7
+2024,6,June,False,Casablanca-Settat,Centre-Ouest,Electronique,58111.78,7,15,8301.68,7
+2024,6,June,False,Casablanca-Settat,Centre-Ouest,Mode,38533.15,13,44,2964.09,13
+2024,6,June,False,Fès-Meknès,Centre,Alimentation,17633.39,27,84,653.09,27
+2024,6,June,False,Fès-Meknès,Centre,Electronique,438083.13,25,63,17523.33,25
+2024,6,June,False,Fès-Meknès,Centre,Mode,64141.29,23,80,2788.75,23
+2024,6,June,False,Marrakech-Safi,Centre-Sud,Alimentation,8362.61,10,28,836.26,10
+2024,6,June,False,Marrakech-Safi,Centre-Sud,Electronique,326329.45,9,27,36258.83,9
+2024,6,June,False,Marrakech-Safi,Centre-Sud,Mode,56012.49,14,35,4000.89,14
+2024,6,June,False,Oriental,Est,Alimentation,3480.34,15,35,232.02,15
+2024,6,June,False,Oriental,Est,Electronique,37136.83,8,26,4642.1,8
+2024,6,June,False,Oriental,Est,Mode,74162.25,12,43,6180.19,12
+2024,6,June,False,Oriental,Nord-Est,Alimentation,5988.24,12,29,499.02,12
+2024,6,June,False,Oriental,Nord-Est,Electronique,282236.84,18,59,15679.82,18
+2024,6,June,False,Oriental,Nord-Est,Mode,42356.13,15,44,2823.74,15
+2024,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,7103.12,19,57,373.85,19
+2024,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,248372.46,25,70,9934.9,25
+2024,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,109331.93,18,52,6074.0,18
+2024,6,June,False,Souss-Massa,Sud,Alimentation,3635.25,13,32,279.63,13
+2024,6,June,False,Souss-Massa,Sud,Electronique,59860.2,9,22,6651.13,9
+2024,6,June,False,Souss-Massa,Sud,Mode,31103.57,6,21,5183.93,6
+2024,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,33388.88,29,81,1151.34,28
+2024,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,429055.36,32,93,13407.98,32
+2024,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,80056.93,26,77,3079.11,26
+2024,7,July,False,Casablanca-Settat,Centre-Ouest,Alimentation,4358.28,9,26,484.25,9
+2024,7,July,False,Casablanca-Settat,Centre-Ouest,Electronique,107210.79,10,23,10721.08,10
+2024,7,July,False,Casablanca-Settat,Centre-Ouest,Mode,45049.52,13,45,3465.35,13
+2024,7,July,False,Fès-Meknès,Centre,Alimentation,8539.35,22,66,388.15,22
+2024,7,July,False,Fès-Meknès,Centre,Electronique,437439.21,27,73,16201.45,26
+2024,7,July,False,Fès-Meknès,Centre,Mode,83879.58,27,72,3106.65,27
+2024,7,July,False,Marrakech-Safi,Centre-Sud,Alimentation,8350.84,11,28,759.17,11
+2024,7,July,False,Marrakech-Safi,Centre-Sud,Electronique,174571.17,11,28,15870.11,11
+2024,7,July,False,Marrakech-Safi,Centre-Sud,Mode,71864.38,10,38,7186.44,10
+2024,7,July,False,Oriental,Est,Alimentation,22500.01,16,43,1406.25,16
+2024,7,July,False,Oriental,Est,Electronique,168958.49,13,37,12996.81,12
+2024,7,July,False,Oriental,Est,Mode,43506.67,9,33,4834.07,9
+2024,7,July,False,Oriental,Nord-Est,Alimentation,9776.59,16,56,611.04,15
+2024,7,July,False,Oriental,Nord-Est,Electronique,189529.19,10,31,18952.92,10
+2024,7,July,False,Oriental,Nord-Est,Mode,17464.37,10,31,1746.44,10
+2024,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,14082.25,24,68,586.76,24
+2024,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,167485.48,14,48,11963.25,14
+2024,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,82438.36,24,65,3434.93,24
+2024,7,July,False,Souss-Massa,Sud,Alimentation,6654.47,14,44,475.32,14
+2024,7,July,False,Souss-Massa,Sud,Electronique,146618.98,8,24,18327.37,8
+2024,7,July,False,Souss-Massa,Sud,Mode,61416.92,9,28,6824.1,9
+2024,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,63527.63,40,114,1588.19,40
+2024,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,408674.29,30,86,13622.48,30
+2024,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,89845.27,29,84,3098.11,29
+2024,8,August,False,Casablanca-Settat,Centre-Ouest,Alimentation,7113.31,18,57,395.18,17
+2024,8,August,False,Casablanca-Settat,Centre-Ouest,Electronique,217675.74,19,51,11456.62,19
+2024,8,August,False,Casablanca-Settat,Centre-Ouest,Mode,26641.61,8,24,3330.2,8
+2024,8,August,False,Fès-Meknès,Centre,Alimentation,102267.58,30,87,3408.92,30
+2024,8,August,False,Fès-Meknès,Centre,Electronique,418055.65,25,78,16722.23,24
+2024,8,August,False,Fès-Meknès,Centre,Mode,121678.01,23,68,5290.35,23
+2024,8,August,False,Marrakech-Safi,Centre-Sud,Alimentation,29766.48,9,33,3307.39,9
+2024,8,August,False,Marrakech-Safi,Centre-Sud,Electronique,183521.1,16,44,11470.07,15
+2024,8,August,False,Marrakech-Safi,Centre-Sud,Mode,53434.83,15,48,3562.32,15
+2024,8,August,False,Oriental,Est,Alimentation,9944.36,19,56,523.39,18
+2024,8,August,False,Oriental,Est,Electronique,150179.66,11,34,13652.7,11
+2024,8,August,False,Oriental,Est,Mode,22086.86,10,29,2208.69,10
+2024,8,August,False,Oriental,Nord-Est,Alimentation,43230.42,9,27,4803.38,9
+2024,8,August,False,Oriental,Nord-Est,Electronique,461877.49,19,59,24309.34,19
+2024,8,August,False,Oriental,Nord-Est,Mode,45119.01,13,38,3470.69,13
+2024,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,30930.86,20,53,1546.54,20
+2024,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,212718.68,17,38,12512.86,17
+2024,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,113399.67,25,72,4535.99,25
+2024,8,August,False,Souss-Massa,Sud,Alimentation,6879.58,13,41,529.2,13
+2024,8,August,False,Souss-Massa,Sud,Electronique,189781.19,12,39,15815.1,12
+2024,8,August,False,Souss-Massa,Sud,Mode,31398.87,13,40,2415.3,13
+2024,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,64689.55,38,127,1702.36,38
+2024,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,513007.68,28,87,18321.7,28
+2024,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,77609.19,32,86,2425.29,32
+2024,9,September,False,Casablanca-Settat,Centre-Ouest,Alimentation,11648.88,18,53,647.16,18
+2024,9,September,False,Casablanca-Settat,Centre-Ouest,Electronique,52152.77,8,16,6519.1,8
+2024,9,September,False,Casablanca-Settat,Centre-Ouest,Mode,45551.3,12,29,3795.94,12
+2024,9,September,False,Fès-Meknès,Centre,Alimentation,44174.25,19,61,2324.96,19
+2024,9,September,False,Fès-Meknès,Centre,Electronique,299294.73,20,53,14964.74,20
+2024,9,September,False,Fès-Meknès,Centre,Mode,41054.9,12,45,3421.24,12
+2024,9,September,False,Marrakech-Safi,Centre-Sud,Alimentation,8221.99,15,52,548.13,15
+2024,9,September,False,Marrakech-Safi,Centre-Sud,Electronique,354049.63,16,45,22128.1,16
+2024,9,September,False,Marrakech-Safi,Centre-Sud,Mode,27820.86,10,24,2782.09,10
+2024,9,September,False,Oriental,Est,Alimentation,6553.1,14,45,468.08,14
+2024,9,September,False,Oriental,Est,Electronique,56956.34,8,23,7119.54,8
+2024,9,September,False,Oriental,Est,Mode,40070.7,14,43,2862.19,14
+2024,9,September,False,Oriental,Nord-Est,Alimentation,26572.83,16,43,1660.8,16
+2024,9,September,False,Oriental,Nord-Est,Electronique,399501.14,20,66,19975.06,20
+2024,9,September,False,Oriental,Nord-Est,Mode,35189.46,11,36,3199.04,11
+2024,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,28917.18,29,81,997.14,28
+2024,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,196345.81,17,53,11549.75,17
+2024,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,24662.1,10,33,2466.21,10
+2024,9,September,False,Souss-Massa,Sud,Alimentation,15432.21,13,38,1187.09,13
+2024,9,September,False,Souss-Massa,Sud,Electronique,127504.64,11,29,11591.33,11
+2024,9,September,False,Souss-Massa,Sud,Mode,36462.94,11,39,3314.81,11
+2024,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,49425.62,37,121,1335.83,35
+2024,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,447488.65,26,81,17211.1,25
+2024,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,158619.32,32,97,4956.85,32
+2024,10,October,False,Casablanca-Settat,Centre-Ouest,Alimentation,6110.32,11,43,555.48,11
+2024,10,October,False,Casablanca-Settat,Centre-Ouest,Electronique,214237.38,12,35,17853.12,12
+2024,10,October,False,Casablanca-Settat,Centre-Ouest,Mode,14862.59,5,15,2972.52,5
+2024,10,October,False,Fès-Meknès,Centre,Alimentation,30059.23,26,77,1156.12,25
+2024,10,October,False,Fès-Meknès,Centre,Electronique,174578.25,18,62,9698.79,18
+2024,10,October,False,Fès-Meknès,Centre,Mode,153919.76,25,76,6156.79,25
+2024,10,October,False,Marrakech-Safi,Centre-Sud,Alimentation,40867.61,16,43,2554.23,16
+2024,10,October,False,Marrakech-Safi,Centre-Sud,Electronique,212281.47,9,30,23586.83,9
+2024,10,October,False,Marrakech-Safi,Centre-Sud,Mode,37587.04,8,23,4698.38,8
+2024,10,October,False,Oriental,Est,Alimentation,13962.23,10,33,1396.22,10
+2024,10,October,False,Oriental,Est,Electronique,182936.89,11,27,16630.63,11
+2024,10,October,False,Oriental,Est,Mode,57776.24,9,28,6419.58,9
+2024,10,October,False,Oriental,Nord-Est,Alimentation,4472.11,15,39,298.14,15
+2024,10,October,False,Oriental,Nord-Est,Electronique,133265.01,8,22,16658.13,8
+2024,10,October,False,Oriental,Nord-Est,Mode,102398.83,15,44,6826.59,14
+2024,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,11770.83,28,84,420.39,28
+2024,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,327194.19,31,85,10554.65,29
+2024,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,93568.61,25,64,3742.74,25
+2024,10,October,False,Souss-Massa,Sud,Alimentation,43989.63,14,40,3142.12,14
+2024,10,October,False,Souss-Massa,Sud,Electronique,211769.02,10,29,21176.9,10
+2024,10,October,False,Souss-Massa,Sud,Mode,38498.54,8,29,4812.32,8
+2024,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,58506.66,33,113,1772.93,32
+2024,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,570272.15,42,122,13577.91,42
+2024,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,56808.2,22,62,2582.19,22
+2024,11,November,False,Casablanca-Settat,Centre-Ouest,Alimentation,21560.58,19,58,1134.77,19
+2024,11,November,False,Casablanca-Settat,Centre-Ouest,Electronique,86735.53,6,15,14455.92,6
+2024,11,November,False,Casablanca-Settat,Centre-Ouest,Mode,33124.82,14,41,2366.06,14
+2024,11,November,False,Fès-Meknès,Centre,Alimentation,36184.04,24,75,1507.67,22
+2024,11,November,False,Fès-Meknès,Centre,Electronique,250153.66,19,55,13165.98,19
+2024,11,November,False,Fès-Meknès,Centre,Mode,116787.49,20,59,5839.37,20
+2024,11,November,False,Marrakech-Safi,Centre-Sud,Alimentation,3564.49,10,23,356.45,10
+2024,11,November,False,Marrakech-Safi,Centre-Sud,Electronique,143557.28,10,36,14355.73,10
+2024,11,November,False,Marrakech-Safi,Centre-Sud,Mode,53389.12,18,46,2966.06,18
+2024,11,November,False,Oriental,Est,Alimentation,56492.34,18,55,3138.46,18
+2024,11,November,False,Oriental,Est,Electronique,141865.86,13,33,10912.76,13
+2024,11,November,False,Oriental,Est,Mode,93779.65,13,40,7213.82,13
+2024,11,November,False,Oriental,Nord-Est,Alimentation,49799.08,11,39,4527.19,11
+2024,11,November,False,Oriental,Nord-Est,Electronique,212399.87,14,43,15171.42,14
+2024,11,November,False,Oriental,Nord-Est,Mode,37333.95,13,39,2871.84,13
+2024,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,16033.4,24,85,668.06,24
+2024,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,273995.54,17,49,16117.38,17
+2024,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,79037.5,13,46,6079.81,13
+2024,11,November,False,Souss-Massa,Sud,Alimentation,4853.09,14,41,346.65,14
+2024,11,November,False,Souss-Massa,Sud,Electronique,145719.0,13,36,11209.15,13
+2024,11,November,False,Souss-Massa,Sud,Mode,43787.86,11,30,3980.71,11
+2024,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,30000.06,40,110,750.0,38
+2024,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,488796.6,26,80,18799.87,24
+2024,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,97554.81,32,89,3048.59,29
+2024,12,December,False,Casablanca-Settat,Centre-Ouest,Alimentation,34422.11,18,49,1912.34,18
+2024,12,December,False,Casablanca-Settat,Centre-Ouest,Electronique,169377.04,12,44,14114.75,12
+2024,12,December,False,Casablanca-Settat,Centre-Ouest,Mode,29113.69,9,33,3234.85,9
+2024,12,December,False,Fès-Meknès,Centre,Alimentation,29148.44,21,67,1388.02,21
+2024,12,December,False,Fès-Meknès,Centre,Electronique,641170.91,20,73,32058.55,20
+2024,12,December,False,Fès-Meknès,Centre,Mode,75996.62,21,74,3618.89,21
+2024,12,December,False,Marrakech-Safi,Centre-Sud,Alimentation,14504.39,16,51,906.52,16
+2024,12,December,False,Marrakech-Safi,Centre-Sud,Electronique,117191.59,10,30,11719.16,10
+2024,12,December,False,Marrakech-Safi,Centre-Sud,Mode,48733.28,10,29,4873.33,10
+2024,12,December,False,Oriental,Est,Alimentation,10165.4,19,60,535.02,18
+2024,12,December,False,Oriental,Est,Electronique,430917.1,13,40,33147.47,13
+2024,12,December,False,Oriental,Est,Mode,50929.34,13,40,3917.64,13
+2024,12,December,False,Oriental,Nord-Est,Alimentation,5912.29,9,33,656.92,9
+2024,12,December,False,Oriental,Nord-Est,Electronique,357629.52,17,54,21037.03,17
+2024,12,December,False,Oriental,Nord-Est,Mode,18862.99,7,18,2694.71,7
+2024,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,22399.59,31,77,722.57,29
+2024,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,416548.94,20,46,20827.45,20
+2024,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,106164.11,25,69,4246.56,24
+2024,12,December,False,Souss-Massa,Sud,Alimentation,66757.03,21,59,3178.91,21
+2024,12,December,False,Souss-Massa,Sud,Electronique,115293.5,8,28,14411.69,8
+2024,12,December,False,Souss-Massa,Sud,Mode,27806.98,8,26,3475.87,8
+2024,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,46086.8,43,121,1071.79,40
+2024,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,339215.44,33,88,10279.26,32
+2024,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,178923.05,36,104,4970.08,35
+2025,1,January,False,Casablanca-Settat,Centre-Ouest,Alimentation,41486.16,11,35,3771.47,11
+2025,1,January,False,Casablanca-Settat,Centre-Ouest,Electronique,208989.03,12,43,17415.75,12
+2025,1,January,False,Casablanca-Settat,Centre-Ouest,Mode,14874.09,6,20,2479.02,6
+2025,1,January,False,Fès-Meknès,Centre,Alimentation,12959.29,27,84,479.97,26
+2025,1,January,False,Fès-Meknès,Centre,Electronique,376871.13,15,53,25124.74,15
+2025,1,January,False,Fès-Meknès,Centre,Mode,83762.97,24,64,3490.12,24
+2025,1,January,False,Marrakech-Safi,Centre-Sud,Alimentation,42935.79,14,41,3066.84,14
+2025,1,January,False,Marrakech-Safi,Centre-Sud,Electronique,144289.33,10,26,14428.93,10
+2025,1,January,False,Marrakech-Safi,Centre-Sud,Mode,49682.77,14,49,3548.77,14
+2025,1,January,False,Oriental,Est,Alimentation,15552.48,8,19,1944.06,8
+2025,1,January,False,Oriental,Est,Electronique,139148.7,8,22,17393.59,8
+2025,1,January,False,Oriental,Est,Mode,31686.88,12,41,2640.57,12
+2025,1,January,False,Oriental,Nord-Est,Alimentation,23034.59,14,38,1645.33,14
+2025,1,January,False,Oriental,Nord-Est,Electronique,152218.38,8,24,19027.3,8
+2025,1,January,False,Oriental,Nord-Est,Mode,41142.69,10,32,4114.27,10
+2025,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,67966.89,30,86,2265.56,30
+2025,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,384556.3,21,66,18312.2,20
+2025,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,70089.44,26,78,2695.75,24
+2025,1,January,False,Souss-Massa,Sud,Alimentation,5222.89,16,38,326.43,16
+2025,1,January,False,Souss-Massa,Sud,Electronique,121622.53,12,29,10135.21,12
+2025,1,January,False,Souss-Massa,Sud,Mode,39857.22,15,35,2657.15,14
+2025,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,18809.65,41,124,458.77,39
+2025,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,308407.75,32,98,9637.74,32
+2025,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,112401.01,40,115,2810.03,38
+2025,2,February,False,Casablanca-Settat,Centre-Ouest,Alimentation,2783.31,7,19,397.62,7
+2025,2,February,False,Casablanca-Settat,Centre-Ouest,Electronique,57259.44,5,18,11451.89,5
+2025,2,February,False,Casablanca-Settat,Centre-Ouest,Mode,48760.78,12,40,4063.4,12
+2025,2,February,False,Fès-Meknès,Centre,Alimentation,23164.93,17,53,1362.64,17
+2025,2,February,False,Fès-Meknès,Centre,Electronique,299201.25,18,58,16622.29,18
+2025,2,February,False,Fès-Meknès,Centre,Mode,71673.89,19,56,3772.31,19
+2025,2,February,False,Marrakech-Safi,Centre-Sud,Alimentation,47453.1,8,26,5931.64,8
+2025,2,February,False,Marrakech-Safi,Centre-Sud,Electronique,111592.79,7,21,15941.83,7
+2025,2,February,False,Marrakech-Safi,Centre-Sud,Mode,27263.08,10,28,2726.31,10
+2025,2,February,False,Oriental,Est,Alimentation,11847.21,12,30,987.27,11
+2025,2,February,False,Oriental,Est,Electronique,224463.93,10,35,22446.39,10
+2025,2,February,False,Oriental,Est,Mode,57913.28,13,38,4454.87,13
+2025,2,February,False,Oriental,Nord-Est,Alimentation,3516.44,14,33,251.17,14
+2025,2,February,False,Oriental,Nord-Est,Electronique,117326.3,11,34,10666.03,11
+2025,2,February,False,Oriental,Nord-Est,Mode,48765.08,13,41,3751.16,13
+2025,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,42244.92,28,96,1508.75,28
+2025,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,291456.24,17,58,17144.48,17
+2025,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,92497.01,20,59,4624.85,20
+2025,2,February,False,Souss-Massa,Sud,Alimentation,40146.59,16,50,2509.16,16
+2025,2,February,False,Souss-Massa,Sud,Electronique,80140.69,7,16,11448.67,7
+2025,2,February,False,Souss-Massa,Sud,Mode,28654.47,16,39,1790.9,16
+2025,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,19115.29,36,112,530.98,36
+2025,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,303074.63,25,76,12122.99,25
+2025,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,92217.49,32,90,2881.8,32
+2025,3,March,False,Casablanca-Settat,Centre-Ouest,Mode,703.15,1,2,703.15,1
+2025,3,March,False,Fès-Meknès,Centre,Alimentation,250.63,1,3,250.63,1
+2025,3,March,False,Fès-Meknès,Centre,Electronique,16576.89,2,2,8288.45,2
+2025,3,March,False,Fès-Meknès,Centre,Mode,3520.22,1,2,3520.22,1
+2025,3,March,False,Oriental,Est,Electronique,4514.18,1,2,4514.18,1
+2025,3,March,False,Oriental,Nord-Est,Alimentation,1500.13,2,6,750.07,2
+2025,3,March,False,Oriental,Nord-Est,Electronique,61135.25,1,4,61135.25,1
+2025,3,March,False,Oriental,Nord-Est,Mode,5280.34,1,3,5280.34,1
+2025,3,March,False,Souss-Massa,Sud,Alimentation,126.52,1,1,126.52,1
+2025,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,680.81,3,7,226.94,3
+2025,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,2196.02,1,2,2196.02,1
+2025,3,March,True,Casablanca-Settat,Centre-Ouest,Alimentation,10973.05,13,44,844.08,13
+2025,3,March,True,Casablanca-Settat,Centre-Ouest,Electronique,120975.97,12,28,10081.33,12
+2025,3,March,True,Casablanca-Settat,Centre-Ouest,Mode,55471.57,13,50,4267.04,13
+2025,3,March,True,Fès-Meknès,Centre,Alimentation,32870.43,27,95,1217.42,26
+2025,3,March,True,Fès-Meknès,Centre,Electronique,270540.28,18,53,15030.02,18
+2025,3,March,True,Fès-Meknès,Centre,Mode,57904.7,22,64,2632.03,22
+2025,3,March,True,Marrakech-Safi,Centre-Sud,Alimentation,22384.96,16,41,1399.06,16
+2025,3,March,True,Marrakech-Safi,Centre-Sud,Electronique,117843.05,6,20,19640.51,6
+2025,3,March,True,Marrakech-Safi,Centre-Sud,Mode,41747.19,11,31,3795.2,11
+2025,3,March,True,Oriental,Est,Alimentation,5206.59,10,37,520.66,10
+2025,3,March,True,Oriental,Est,Electronique,190352.34,11,38,17304.76,11
+2025,3,March,True,Oriental,Est,Mode,32583.04,13,34,2506.39,13
+2025,3,March,True,Oriental,Nord-Est,Alimentation,37465.54,15,52,2497.7,14
+2025,3,March,True,Oriental,Nord-Est,Electronique,294128.52,14,48,21009.18,14
+2025,3,March,True,Oriental,Nord-Est,Mode,111828.15,16,54,6989.26,16
+2025,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,8344.07,12,36,695.34,12
+2025,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,602017.65,25,92,24080.71,25
+2025,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Mode,35708.55,13,34,2746.81,12
+2025,3,March,True,Souss-Massa,Sud,Alimentation,7565.78,10,27,756.58,9
+2025,3,March,True,Souss-Massa,Sud,Electronique,114803.56,8,20,14350.45,8
+2025,3,March,True,Souss-Massa,Sud,Mode,20585.01,10,28,2058.5,10
+2025,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,116519.85,37,108,3149.19,37
+2025,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,555022.18,39,114,14231.34,38
+2025,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Mode,132192.29,27,94,4896.01,27
+2025,4,April,False,Casablanca-Settat,Centre-Ouest,Alimentation,44996.44,16,43,2812.28,16
+2025,4,April,False,Casablanca-Settat,Centre-Ouest,Electronique,56154.83,6,18,9359.14,6
+2025,4,April,False,Casablanca-Settat,Centre-Ouest,Mode,22844.08,9,26,2538.23,9
+2025,4,April,False,Fès-Meknès,Centre,Alimentation,9303.17,21,64,443.01,21
+2025,4,April,False,Fès-Meknès,Centre,Electronique,380363.74,23,58,16537.55,23
+2025,4,April,False,Fès-Meknès,Centre,Mode,80136.79,22,68,3642.58,22
+2025,4,April,False,Marrakech-Safi,Centre-Sud,Alimentation,24515.23,16,47,1532.2,16
+2025,4,April,False,Marrakech-Safi,Centre-Sud,Electronique,220679.39,9,28,24519.93,9
+2025,4,April,False,Marrakech-Safi,Centre-Sud,Mode,18664.3,7,25,2666.33,7
+2025,4,April,False,Oriental,Est,Alimentation,8772.89,13,41,674.84,13
+2025,4,April,False,Oriental,Est,Electronique,163859.72,9,25,18206.64,9
+2025,4,April,False,Oriental,Est,Mode,25185.41,7,28,3597.92,7
+2025,4,April,False,Oriental,Nord-Est,Alimentation,5257.81,13,35,404.45,13
+2025,4,April,False,Oriental,Nord-Est,Electronique,8411.25,3,8,2803.75,3
+2025,4,April,False,Oriental,Nord-Est,Mode,39389.8,14,40,2813.56,14
+2025,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,56910.95,27,78,2107.81,27
+2025,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,322905.54,23,82,14039.37,23
+2025,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,107760.93,25,83,4310.44,25
+2025,4,April,False,Souss-Massa,Sud,Alimentation,74196.15,16,49,4637.26,16
+2025,4,April,False,Souss-Massa,Sud,Electronique,205655.35,12,35,17137.95,12
+2025,4,April,False,Souss-Massa,Sud,Mode,28674.25,10,35,2867.43,10
+2025,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,21285.55,51,148,417.36,50
+2025,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,466940.13,31,107,15062.58,31
+2025,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,53371.71,16,49,3335.73,16
+2025,5,May,False,Casablanca-Settat,Centre-Ouest,Alimentation,52455.0,14,41,3746.79,14
+2025,5,May,False,Casablanca-Settat,Centre-Ouest,Electronique,162538.39,10,30,16253.84,10
+2025,5,May,False,Casablanca-Settat,Centre-Ouest,Mode,42607.19,16,43,2662.95,16
+2025,5,May,False,Fès-Meknès,Centre,Alimentation,37711.66,26,65,1450.45,24
+2025,5,May,False,Fès-Meknès,Centre,Electronique,457345.39,18,65,25408.08,18
+2025,5,May,False,Fès-Meknès,Centre,Mode,126887.12,28,83,4531.68,26
+2025,5,May,False,Marrakech-Safi,Centre-Sud,Alimentation,4389.4,13,37,337.65,13
+2025,5,May,False,Marrakech-Safi,Centre-Sud,Electronique,236785.15,20,62,11839.26,20
+2025,5,May,False,Marrakech-Safi,Centre-Sud,Mode,35223.8,15,48,2348.25,15
+2025,5,May,False,Oriental,Est,Alimentation,9105.86,9,29,1011.76,9
+2025,5,May,False,Oriental,Est,Electronique,80942.01,6,15,13490.34,6
+2025,5,May,False,Oriental,Est,Mode,41416.5,10,34,4141.65,10
+2025,5,May,False,Oriental,Nord-Est,Alimentation,4908.9,10,34,490.89,10
+2025,5,May,False,Oriental,Nord-Est,Electronique,197892.34,9,24,21988.04,9
+2025,5,May,False,Oriental,Nord-Est,Mode,46372.78,18,60,2576.27,18
+2025,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,28163.55,27,69,1043.09,27
+2025,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,403669.67,27,90,14950.73,27
+2025,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,161164.66,31,111,5198.86,31
+2025,5,May,False,Souss-Massa,Sud,Alimentation,21136.51,11,32,1921.5,11
+2025,5,May,False,Souss-Massa,Sud,Electronique,140829.55,7,17,20118.51,7
+2025,5,May,False,Souss-Massa,Sud,Mode,56212.86,16,49,3513.3,16
+2025,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,21386.25,25,71,855.45,25
+2025,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,419149.18,35,107,11975.69,34
+2025,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,119940.05,36,95,3331.67,34
+2025,6,June,False,Casablanca-Settat,Centre-Ouest,Alimentation,2291.73,11,28,208.34,11
+2025,6,June,False,Casablanca-Settat,Centre-Ouest,Electronique,23202.36,4,17,5800.59,4
+2025,6,June,False,Casablanca-Settat,Centre-Ouest,Mode,44308.17,12,42,3692.35,11
+2025,6,June,False,Fès-Meknès,Centre,Alimentation,14378.8,25,69,575.15,23
+2025,6,June,False,Fès-Meknès,Centre,Electronique,644593.71,31,106,20793.35,31
+2025,6,June,False,Fès-Meknès,Centre,Mode,75584.28,17,54,4446.13,17
+2025,6,June,False,Marrakech-Safi,Centre-Sud,Alimentation,7629.19,15,42,508.61,15
+2025,6,June,False,Marrakech-Safi,Centre-Sud,Electronique,71034.13,10,27,7103.41,10
+2025,6,June,False,Marrakech-Safi,Centre-Sud,Mode,41112.5,13,40,3162.5,13
+2025,6,June,False,Oriental,Est,Alimentation,9153.42,11,30,832.13,11
+2025,6,June,False,Oriental,Est,Electronique,88796.02,8,23,11099.5,8
+2025,6,June,False,Oriental,Est,Mode,43426.02,11,32,3947.82,11
+2025,6,June,False,Oriental,Nord-Est,Alimentation,20690.88,10,36,2069.09,10
+2025,6,June,False,Oriental,Nord-Est,Electronique,42783.31,6,12,7130.55,6
+2025,6,June,False,Oriental,Nord-Est,Mode,14291.74,5,11,2858.35,5
+2025,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,102195.54,31,88,3296.63,30
+2025,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,284442.67,18,58,15802.37,18
+2025,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,107218.08,27,89,3971.04,27
+2025,6,June,False,Souss-Massa,Sud,Alimentation,42124.23,14,47,3008.87,14
+2025,6,June,False,Souss-Massa,Sud,Electronique,89249.2,9,27,9916.58,9
+2025,6,June,False,Souss-Massa,Sud,Mode,15844.63,8,23,1980.58,8
+2025,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,15343.81,39,122,393.43,38
+2025,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,750009.07,48,147,15625.19,46
+2025,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,67344.15,32,91,2104.5,32
+2025,7,July,False,Casablanca-Settat,Centre-Ouest,Alimentation,16011.49,9,19,1779.05,9
+2025,7,July,False,Casablanca-Settat,Centre-Ouest,Electronique,154509.61,9,33,17167.73,9
+2025,7,July,False,Casablanca-Settat,Centre-Ouest,Mode,65600.49,12,29,5466.71,12
+2025,7,July,False,Fès-Meknès,Centre,Alimentation,43529.3,28,92,1554.62,28
+2025,7,July,False,Fès-Meknès,Centre,Electronique,482384.62,34,95,14187.78,33
+2025,7,July,False,Fès-Meknès,Centre,Mode,128262.18,23,72,5576.62,22
+2025,7,July,False,Marrakech-Safi,Centre-Sud,Alimentation,64473.33,19,59,3393.33,19
+2025,7,July,False,Marrakech-Safi,Centre-Sud,Electronique,240570.97,17,53,14151.23,17
+2025,7,July,False,Marrakech-Safi,Centre-Sud,Mode,44133.57,15,42,2942.24,15
+2025,7,July,False,Oriental,Est,Alimentation,12288.06,12,33,1024.01,12
+2025,7,July,False,Oriental,Est,Electronique,141087.41,9,31,15676.38,9
+2025,7,July,False,Oriental,Est,Mode,55359.55,13,42,4258.43,13
+2025,7,July,False,Oriental,Nord-Est,Alimentation,116030.55,21,76,5525.26,21
+2025,7,July,False,Oriental,Nord-Est,Electronique,231211.97,11,34,21019.27,11
+2025,7,July,False,Oriental,Nord-Est,Mode,39290.8,9,34,4365.64,9
+2025,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,38407.8,30,91,1280.26,30
+2025,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,490523.78,28,92,17518.71,28
+2025,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,106597.91,26,72,4099.92,26
+2025,7,July,False,Souss-Massa,Sud,Alimentation,11270.62,15,47,751.37,15
+2025,7,July,False,Souss-Massa,Sud,Electronique,400352.77,22,71,18197.85,21
+2025,7,July,False,Souss-Massa,Sud,Mode,83037.27,20,55,4151.86,20
+2025,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,82715.94,41,123,2017.46,41
+2025,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,481462.77,34,96,14160.67,32
+2025,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,117122.38,32,105,3660.07,30
+2025,8,August,False,Casablanca-Settat,Centre-Ouest,Alimentation,3405.2,7,23,486.46,7
+2025,8,August,False,Casablanca-Settat,Centre-Ouest,Electronique,270485.99,9,30,30054.0,8
+2025,8,August,False,Casablanca-Settat,Centre-Ouest,Mode,51647.95,13,44,3972.92,13
+2025,8,August,False,Fès-Meknès,Centre,Alimentation,10497.85,19,55,552.52,19
+2025,8,August,False,Fès-Meknès,Centre,Electronique,519442.22,22,64,23611.01,22
+2025,8,August,False,Fès-Meknès,Centre,Mode,62186.51,21,58,2961.26,21
+2025,8,August,False,Marrakech-Safi,Centre-Sud,Alimentation,13416.26,20,59,670.81,20
+2025,8,August,False,Marrakech-Safi,Centre-Sud,Electronique,107250.1,5,11,21450.02,5
+2025,8,August,False,Marrakech-Safi,Centre-Sud,Mode,18966.47,10,24,1896.65,10
+2025,8,August,False,Oriental,Est,Alimentation,7978.3,14,37,569.88,14
+2025,8,August,False,Oriental,Est,Electronique,214757.3,13,34,16519.79,13
+2025,8,August,False,Oriental,Est,Mode,36462.12,10,29,3646.21,10
+2025,8,August,False,Oriental,Nord-Est,Alimentation,11311.66,15,54,754.11,15
+2025,8,August,False,Oriental,Nord-Est,Electronique,156473.69,14,39,11176.69,14
+2025,8,August,False,Oriental,Nord-Est,Mode,84685.03,17,46,4981.47,17
+2025,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,78404.29,24,74,3266.85,24
+2025,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,364327.55,19,65,19175.13,18
+2025,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,104795.54,26,75,4030.6,25
+2025,8,August,False,Souss-Massa,Sud,Alimentation,6075.85,15,54,405.06,15
+2025,8,August,False,Souss-Massa,Sud,Electronique,289051.21,11,40,26277.38,11
+2025,8,August,False,Souss-Massa,Sud,Mode,34292.33,9,25,3810.26,9
+2025,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,58381.11,33,95,1769.12,31
+2025,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,321027.72,24,70,13376.16,24
+2025,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,146590.7,43,128,3409.09,40
+2025,9,September,False,Casablanca-Settat,Centre-Ouest,Alimentation,13500.31,10,31,1350.03,10
+2025,9,September,False,Casablanca-Settat,Centre-Ouest,Electronique,176090.96,7,22,25155.85,7
+2025,9,September,False,Casablanca-Settat,Centre-Ouest,Mode,45859.48,11,37,4169.04,11
+2025,9,September,False,Fès-Meknès,Centre,Alimentation,39762.08,22,63,1807.37,22
+2025,9,September,False,Fès-Meknès,Centre,Electronique,240353.52,17,48,14138.44,17
+2025,9,September,False,Fès-Meknès,Centre,Mode,72029.5,25,60,2881.18,25
+2025,9,September,False,Marrakech-Safi,Centre-Sud,Alimentation,22992.8,11,36,2090.25,11
+2025,9,September,False,Marrakech-Safi,Centre-Sud,Electronique,202267.49,13,38,15559.04,13
+2025,9,September,False,Marrakech-Safi,Centre-Sud,Mode,17042.43,5,20,3408.49,5
+2025,9,September,False,Oriental,Est,Alimentation,14293.4,18,61,794.08,18
+2025,9,September,False,Oriental,Est,Electronique,264758.15,14,49,18911.3,14
+2025,9,September,False,Oriental,Est,Mode,48292.83,10,29,4829.28,10
+2025,9,September,False,Oriental,Nord-Est,Alimentation,8635.67,16,43,539.73,15
+2025,9,September,False,Oriental,Nord-Est,Electronique,195327.67,12,37,16277.31,12
+2025,9,September,False,Oriental,Nord-Est,Mode,46360.64,11,37,4214.6,10
+2025,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,19782.68,31,82,638.15,31
+2025,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,310974.66,20,62,15548.73,20
+2025,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,93308.39,25,80,3732.34,25
+2025,9,September,False,Souss-Massa,Sud,Alimentation,2062.88,8,26,257.86,8
+2025,9,September,False,Souss-Massa,Sud,Electronique,276602.83,15,42,18440.19,15
+2025,9,September,False,Souss-Massa,Sud,Mode,66120.25,16,39,4132.52,16
+2025,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,58263.44,35,120,1664.67,35
+2025,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,359878.53,26,79,13841.48,26
+2025,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,194879.28,41,121,4753.15,40
+2025,10,October,False,Casablanca-Settat,Centre-Ouest,Alimentation,13474.95,11,25,1225.0,11
+2025,10,October,False,Casablanca-Settat,Centre-Ouest,Electronique,101108.91,11,35,9191.72,11
+2025,10,October,False,Casablanca-Settat,Centre-Ouest,Mode,37858.92,12,36,3154.91,12
+2025,10,October,False,Fès-Meknès,Centre,Alimentation,17911.25,21,64,852.92,21
+2025,10,October,False,Fès-Meknès,Centre,Electronique,332539.32,27,78,12316.27,26
+2025,10,October,False,Fès-Meknès,Centre,Mode,106371.29,25,65,4254.85,25
+2025,10,October,False,Marrakech-Safi,Centre-Sud,Alimentation,3635.97,10,30,363.6,10
+2025,10,October,False,Marrakech-Safi,Centre-Sud,Electronique,62420.54,8,17,7802.57,8
+2025,10,October,False,Marrakech-Safi,Centre-Sud,Mode,35470.07,14,31,2533.58,14
+2025,10,October,False,Oriental,Est,Alimentation,15862.63,19,57,834.88,19
+2025,10,October,False,Oriental,Est,Electronique,256935.57,6,21,42822.6,6
+2025,10,October,False,Oriental,Est,Mode,44139.27,12,32,3678.27,12
+2025,10,October,False,Oriental,Nord-Est,Alimentation,27886.09,13,41,2145.08,13
+2025,10,October,False,Oriental,Nord-Est,Electronique,120857.09,13,38,9296.7,13
+2025,10,October,False,Oriental,Nord-Est,Mode,81579.63,18,60,4532.2,18
+2025,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,11605.91,27,74,429.85,26
+2025,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,296298.65,22,76,13468.12,22
+2025,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,33071.16,13,40,2543.94,13
+2025,10,October,False,Souss-Massa,Sud,Alimentation,16986.62,13,42,1306.66,13
+2025,10,October,False,Souss-Massa,Sud,Electronique,128369.81,11,31,11669.98,11
+2025,10,October,False,Souss-Massa,Sud,Mode,21365.95,9,27,2373.99,9
+2025,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,86088.79,49,133,1756.91,46
+2025,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,524902.84,44,118,11929.61,41
+2025,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,98990.67,30,77,3299.69,30
+2025,11,November,False,Casablanca-Settat,Centre-Ouest,Alimentation,23457.16,12,32,1954.76,11
+2025,11,November,False,Casablanca-Settat,Centre-Ouest,Electronique,4337.94,3,9,1445.98,3
+2025,11,November,False,Casablanca-Settat,Centre-Ouest,Mode,5726.21,4,6,1431.55,4
+2025,11,November,False,Fès-Meknès,Centre,Alimentation,41762.83,27,88,1546.77,26
+2025,11,November,False,Fès-Meknès,Centre,Electronique,260265.46,13,37,20020.42,13
+2025,11,November,False,Fès-Meknès,Centre,Mode,81993.01,19,55,4315.42,18
+2025,11,November,False,Marrakech-Safi,Centre-Sud,Alimentation,36829.02,15,45,2455.27,15
+2025,11,November,False,Marrakech-Safi,Centre-Sud,Electronique,129432.14,10,29,12943.21,10
+2025,11,November,False,Marrakech-Safi,Centre-Sud,Mode,51396.85,16,47,3212.3,16
+2025,11,November,False,Oriental,Est,Alimentation,5710.96,10,37,571.1,10
+2025,11,November,False,Oriental,Est,Electronique,110953.49,4,16,27738.37,4
+2025,11,November,False,Oriental,Est,Mode,23387.45,8,26,2923.43,8
+2025,11,November,False,Oriental,Nord-Est,Alimentation,7715.93,12,44,642.99,12
+2025,11,November,False,Oriental,Nord-Est,Electronique,342913.97,14,45,24493.86,13
+2025,11,November,False,Oriental,Nord-Est,Mode,53236.87,15,46,3549.12,15
+2025,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,31992.91,34,106,940.97,32
+2025,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,416144.0,26,79,16005.54,26
+2025,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,63772.5,18,44,3542.92,18
+2025,11,November,False,Souss-Massa,Sud,Alimentation,5663.61,13,39,435.66,13
+2025,11,November,False,Souss-Massa,Sud,Electronique,60407.06,8,20,7550.88,8
+2025,11,November,False,Souss-Massa,Sud,Mode,28817.33,8,26,3602.17,8
+2025,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,35479.23,30,83,1182.64,29
+2025,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,643880.56,28,84,22995.73,28
+2025,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,89899.01,29,90,3099.97,29
+2025,12,December,False,Casablanca-Settat,Centre-Ouest,Alimentation,54220.3,10,37,5422.03,10
+2025,12,December,False,Casablanca-Settat,Centre-Ouest,Electronique,201207.89,10,33,20120.79,9
+2025,12,December,False,Casablanca-Settat,Centre-Ouest,Mode,23990.22,11,28,2180.93,11
+2025,12,December,False,Fès-Meknès,Centre,Alimentation,14932.71,36,111,414.8,34
+2025,12,December,False,Fès-Meknès,Centre,Electronique,143625.32,19,43,7559.23,19
+2025,12,December,False,Fès-Meknès,Centre,Mode,140214.8,27,82,5193.14,26
+2025,12,December,False,Marrakech-Safi,Centre-Sud,Alimentation,28071.32,5,20,5614.26,5
+2025,12,December,False,Marrakech-Safi,Centre-Sud,Electronique,149663.44,12,34,12471.95,12
+2025,12,December,False,Marrakech-Safi,Centre-Sud,Mode,33141.72,12,37,2761.81,12
+2025,12,December,False,Oriental,Est,Alimentation,11729.62,13,35,902.28,13
+2025,12,December,False,Oriental,Est,Electronique,221569.86,17,45,13033.52,17
+2025,12,December,False,Oriental,Est,Mode,53803.12,20,47,2690.16,20
+2025,12,December,False,Oriental,Nord-Est,Alimentation,3959.05,14,42,282.79,14
+2025,12,December,False,Oriental,Nord-Est,Electronique,337274.1,12,37,28106.18,11
+2025,12,December,False,Oriental,Nord-Est,Mode,55528.66,18,48,3084.93,17
+2025,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,28225.79,21,67,1344.09,21
+2025,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,345518.45,25,75,13820.74,24
+2025,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,142103.04,28,88,5075.11,27
+2025,12,December,False,Souss-Massa,Sud,Alimentation,44419.75,10,33,4441.98,10
+2025,12,December,False,Souss-Massa,Sud,Electronique,175121.73,13,37,13470.9,13
+2025,12,December,False,Souss-Massa,Sud,Mode,51061.15,9,39,5673.46,9
+2025,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,88391.97,48,158,1841.5,47
+2025,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,416456.35,32,91,13014.26,30
+2025,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,217661.95,34,104,6401.82,34
+2026,1,January,False,Casablanca-Settat,Centre-Ouest,Alimentation,49363.89,19,49,2598.1,18
+2026,1,January,False,Casablanca-Settat,Centre-Ouest,Electronique,128758.43,9,36,14306.49,9
+2026,1,January,False,Casablanca-Settat,Centre-Ouest,Mode,50007.8,12,33,4167.32,12
+2026,1,January,False,Fès-Meknès,Centre,Alimentation,15288.29,19,54,804.65,19
+2026,1,January,False,Fès-Meknès,Centre,Electronique,438217.12,22,64,19918.96,21
+2026,1,January,False,Fès-Meknès,Centre,Mode,66749.32,16,55,4171.83,16
+2026,1,January,False,Marrakech-Safi,Centre-Sud,Alimentation,7869.69,12,36,655.81,12
+2026,1,January,False,Marrakech-Safi,Centre-Sud,Electronique,193635.14,9,30,21515.02,9
+2026,1,January,False,Marrakech-Safi,Centre-Sud,Mode,38236.4,13,43,2941.26,12
+2026,1,January,False,Oriental,Est,Alimentation,5953.78,11,32,541.25,11
+2026,1,January,False,Oriental,Est,Electronique,255095.29,9,30,28343.92,9
+2026,1,January,False,Oriental,Est,Mode,8983.09,4,8,2245.77,4
+2026,1,January,False,Oriental,Nord-Est,Alimentation,8010.15,14,41,572.15,14
+2026,1,January,False,Oriental,Nord-Est,Electronique,159289.41,10,35,15928.94,10
+2026,1,January,False,Oriental,Nord-Est,Mode,29054.49,12,32,2421.21,12
+2026,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,10012.3,23,85,435.32,23
+2026,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,293617.97,20,57,14680.9,20
+2026,1,January,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,40142.2,17,51,2361.31,17
+2026,1,January,False,Souss-Massa,Sud,Alimentation,3380.23,10,28,338.02,10
+2026,1,January,False,Souss-Massa,Sud,Electronique,208955.97,11,32,18996.0,11
+2026,1,January,False,Souss-Massa,Sud,Mode,49720.12,10,31,4972.01,9
+2026,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,10372.11,29,79,357.66,28
+2026,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,261432.44,20,57,13071.62,20
+2026,1,January,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,53411.46,20,52,2670.57,20
+2026,2,February,False,Casablanca-Settat,Centre-Ouest,Alimentation,1172.85,6,17,195.48,6
+2026,2,February,False,Casablanca-Settat,Centre-Ouest,Electronique,95500.12,4,9,23875.03,4
+2026,2,February,False,Casablanca-Settat,Centre-Ouest,Mode,6804.25,3,6,2268.08,3
+2026,2,February,False,Fès-Meknès,Centre,Alimentation,36132.81,15,49,2408.85,15
+2026,2,February,False,Fès-Meknès,Centre,Electronique,166932.08,12,34,13911.01,11
+2026,2,February,False,Fès-Meknès,Centre,Mode,31629.27,11,41,2875.39,11
+2026,2,February,False,Marrakech-Safi,Centre-Sud,Alimentation,6793.77,6,21,1132.3,6
+2026,2,February,False,Marrakech-Safi,Centre-Sud,Electronique,22704.14,5,14,4540.83,5
+2026,2,February,False,Marrakech-Safi,Centre-Sud,Mode,15046.4,4,13,3761.6,4
+2026,2,February,False,Oriental,Est,Alimentation,1491.8,4,11,372.95,4
+2026,2,February,False,Oriental,Est,Electronique,84337.75,5,14,16867.55,5
+2026,2,February,False,Oriental,Est,Mode,37360.18,8,33,4670.02,8
+2026,2,February,False,Oriental,Nord-Est,Alimentation,5381.02,12,39,448.42,12
+2026,2,February,False,Oriental,Nord-Est,Electronique,58107.36,7,21,8301.05,7
+2026,2,February,False,Oriental,Nord-Est,Mode,7569.37,4,7,1892.34,4
+2026,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,2012.94,9,29,223.66,9
+2026,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,308753.19,15,50,20583.55,15
+2026,2,February,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,20560.87,6,19,3426.81,6
+2026,2,February,False,Souss-Massa,Sud,Alimentation,2194.99,6,22,365.83,6
+2026,2,February,False,Souss-Massa,Sud,Electronique,2543.62,2,3,1271.81,2
+2026,2,February,False,Souss-Massa,Sud,Mode,9690.22,4,10,2422.56,4
+2026,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,4339.42,11,39,394.49,11
+2026,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,300844.12,12,37,25070.34,12
+2026,2,February,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,37497.6,13,35,2884.43,13
+2026,2,February,True,Casablanca-Settat,Centre-Ouest,Alimentation,18109.87,5,14,3621.97,5
+2026,2,February,True,Casablanca-Settat,Centre-Ouest,Electronique,53291.09,3,7,17763.7,3
+2026,2,February,True,Casablanca-Settat,Centre-Ouest,Mode,27224.2,4,18,6806.05,4
+2026,2,February,True,Fès-Meknès,Centre,Alimentation,40551.69,13,48,3119.36,13
+2026,2,February,True,Fès-Meknès,Centre,Electronique,73747.48,5,17,14749.5,5
+2026,2,February,True,Fès-Meknès,Centre,Mode,6259.84,5,6,1251.97,5
+2026,2,February,True,Marrakech-Safi,Centre-Sud,Alimentation,1862.9,7,16,266.13,7
+2026,2,February,True,Marrakech-Safi,Centre-Sud,Electronique,64991.42,5,10,12998.28,5
+2026,2,February,True,Marrakech-Safi,Centre-Sud,Mode,8800.56,1,5,8800.56,1
+2026,2,February,True,Oriental,Est,Alimentation,51211.07,3,7,17070.36,3
+2026,2,February,True,Oriental,Est,Electronique,27431.28,4,12,6857.82,4
+2026,2,February,True,Oriental,Est,Mode,27470.29,7,21,3924.33,7
+2026,2,February,True,Oriental,Nord-Est,Alimentation,3058.38,6,15,509.73,6
+2026,2,February,True,Oriental,Nord-Est,Electronique,63373.79,5,15,12674.76,5
+2026,2,February,True,Oriental,Nord-Est,Mode,25792.16,5,13,5158.43,5
+2026,2,February,True,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,2008.98,5,17,401.8,5
+2026,2,February,True,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,106892.18,5,15,21378.44,5
+2026,2,February,True,Rabat-Salé-Kénitra,Nord-Ouest,Mode,25150.11,8,25,3143.76,8
+2026,2,February,True,Souss-Massa,Sud,Alimentation,1347.01,2,7,673.51,2
+2026,2,February,True,Souss-Massa,Sud,Electronique,116920.85,4,13,29230.21,4
+2026,2,February,True,Souss-Massa,Sud,Mode,16421.28,4,15,4105.32,4
+2026,2,February,True,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,24544.87,16,50,1534.05,16
+2026,2,February,True,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,177598.67,11,36,16145.33,11
+2026,2,February,True,Tanger-Tétouan-Al Hoceïma,Nord,Mode,31429.13,11,33,2857.19,11
+2026,3,March,False,Casablanca-Settat,Centre-Ouest,Alimentation,2172.15,5,12,434.43,5
+2026,3,March,False,Casablanca-Settat,Centre-Ouest,Electronique,76651.67,6,20,12775.28,6
+2026,3,March,False,Casablanca-Settat,Centre-Ouest,Mode,43478.84,7,20,6211.26,7
+2026,3,March,False,Fès-Meknès,Centre,Alimentation,38847.18,21,64,1849.87,21
+2026,3,March,False,Fès-Meknès,Centre,Electronique,66162.19,6,14,11027.03,6
+2026,3,March,False,Fès-Meknès,Centre,Mode,24619.94,7,21,3517.13,7
+2026,3,March,False,Marrakech-Safi,Centre-Sud,Alimentation,3104.55,9,22,344.95,9
+2026,3,March,False,Marrakech-Safi,Centre-Sud,Electronique,68592.15,3,9,22864.05,3
+2026,3,March,False,Marrakech-Safi,Centre-Sud,Mode,42334.85,7,23,6047.84,7
+2026,3,March,False,Oriental,Est,Alimentation,73.26,1,1,73.26,1
+2026,3,March,False,Oriental,Est,Electronique,71479.74,2,5,35739.87,2
+2026,3,March,False,Oriental,Est,Mode,19288.33,5,16,3857.67,5
+2026,3,March,False,Oriental,Nord-Est,Alimentation,645.95,3,6,215.32,3
+2026,3,March,False,Oriental,Nord-Est,Electronique,54296.86,6,16,9049.48,6
+2026,3,March,False,Oriental,Nord-Est,Mode,6555.63,3,11,2185.21,3
+2026,3,March,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,2754.57,6,19,459.1,6
+2026,3,March,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,131690.24,11,30,11971.84,11
+2026,3,March,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,45380.12,6,18,7563.35,6
+2026,3,March,False,Souss-Massa,Sud,Alimentation,3548.34,9,28,394.26,9
+2026,3,March,False,Souss-Massa,Sud,Electronique,185088.72,5,20,37017.74,5
+2026,3,March,False,Souss-Massa,Sud,Mode,18250.22,4,12,4562.56,4
+2026,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,38762.62,19,56,2040.14,19
+2026,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,91867.7,9,28,10207.52,9
+2026,3,March,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,96641.53,17,50,5684.8,17
+2026,3,March,True,Casablanca-Settat,Centre-Ouest,Alimentation,1989.22,6,14,331.54,6
+2026,3,March,True,Casablanca-Settat,Centre-Ouest,Electronique,90547.94,6,16,15091.32,6
+2026,3,March,True,Casablanca-Settat,Centre-Ouest,Mode,14322.77,10,22,1432.28,10
+2026,3,March,True,Fès-Meknès,Centre,Alimentation,4659.11,9,26,517.68,9
+2026,3,March,True,Fès-Meknès,Centre,Electronique,66997.6,6,14,11166.27,6
+2026,3,March,True,Fès-Meknès,Centre,Mode,77304.17,12,34,6442.01,12
+2026,3,March,True,Marrakech-Safi,Centre-Sud,Alimentation,12403.56,7,18,1771.94,7
+2026,3,March,True,Marrakech-Safi,Centre-Sud,Electronique,98143.2,7,26,14020.46,7
+2026,3,March,True,Marrakech-Safi,Centre-Sud,Mode,13069.35,6,16,2178.23,6
+2026,3,March,True,Oriental,Est,Alimentation,23043.27,9,28,2560.36,8
+2026,3,March,True,Oriental,Est,Electronique,75035.67,5,11,15007.13,5
+2026,3,March,True,Oriental,Est,Mode,38823.19,8,21,4852.9,7
+2026,3,March,True,Oriental,Nord-Est,Alimentation,2761.08,5,20,552.22,5
+2026,3,March,True,Oriental,Nord-Est,Electronique,60932.54,1,4,60932.54,1
+2026,3,March,True,Oriental,Nord-Est,Mode,23900.24,10,21,2390.02,10
+2026,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,8397.13,10,28,839.71,10
+2026,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,118316.84,9,31,13146.32,9
+2026,3,March,True,Rabat-Salé-Kénitra,Nord-Ouest,Mode,58400.06,14,35,4171.43,14
+2026,3,March,True,Souss-Massa,Sud,Alimentation,1575.36,5,18,315.07,5
+2026,3,March,True,Souss-Massa,Sud,Electronique,106006.87,8,35,13250.86,8
+2026,3,March,True,Souss-Massa,Sud,Mode,12077.23,9,16,1341.91,9
+2026,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,31571.07,33,96,956.7,30
+2026,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,206494.41,13,39,15884.19,13
+2026,3,March,True,Tanger-Tétouan-Al Hoceïma,Nord,Mode,84963.23,20,70,4248.16,20
+2026,4,April,False,Casablanca-Settat,Centre-Ouest,Alimentation,6485.0,16,48,405.31,16
+2026,4,April,False,Casablanca-Settat,Centre-Ouest,Electronique,260216.46,9,32,28912.94,9
+2026,4,April,False,Casablanca-Settat,Centre-Ouest,Mode,3420.01,2,5,1710.01,2
+2026,4,April,False,Fès-Meknès,Centre,Alimentation,51910.09,20,60,2595.5,20
+2026,4,April,False,Fès-Meknès,Centre,Electronique,303018.83,11,37,27547.17,11
+2026,4,April,False,Fès-Meknès,Centre,Mode,104134.97,28,89,3719.11,28
+2026,4,April,False,Marrakech-Safi,Centre-Sud,Alimentation,5099.37,9,34,566.6,9
+2026,4,April,False,Marrakech-Safi,Centre-Sud,Electronique,71456.82,7,20,10208.12,7
+2026,4,April,False,Marrakech-Safi,Centre-Sud,Mode,23323.45,10,28,2332.35,10
+2026,4,April,False,Oriental,Est,Alimentation,58282.56,11,37,5298.41,11
+2026,4,April,False,Oriental,Est,Electronique,190025.65,6,26,31670.94,6
+2026,4,April,False,Oriental,Est,Mode,32147.18,8,27,4018.4,8
+2026,4,April,False,Oriental,Nord-Est,Alimentation,3024.12,13,31,232.62,13
+2026,4,April,False,Oriental,Nord-Est,Electronique,83189.74,9,23,9243.3,9
+2026,4,April,False,Oriental,Nord-Est,Mode,26044.13,13,44,2003.39,13
+2026,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,32986.47,26,70,1268.71,26
+2026,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,383758.95,19,63,20197.84,19
+2026,4,April,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,69659.16,17,59,4097.6,17
+2026,4,April,False,Souss-Massa,Sud,Alimentation,30054.97,8,19,3756.87,8
+2026,4,April,False,Souss-Massa,Sud,Electronique,409534.15,14,40,29252.44,14
+2026,4,April,False,Souss-Massa,Sud,Mode,63695.5,11,34,5790.5,11
+2026,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,117417.3,50,150,2348.35,49
+2026,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,615720.99,39,108,15787.72,38
+2026,4,April,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,99476.0,29,74,3430.21,29
+2026,5,May,False,Casablanca-Settat,Centre-Ouest,Alimentation,7135.77,5,20,1427.15,5
+2026,5,May,False,Casablanca-Settat,Centre-Ouest,Electronique,49590.38,2,7,24795.19,2
+2026,5,May,False,Casablanca-Settat,Centre-Ouest,Mode,29140.16,3,11,9713.39,3
+2026,5,May,False,Fès-Meknès,Centre,Alimentation,16463.39,18,56,914.63,18
+2026,5,May,False,Fès-Meknès,Centre,Electronique,153815.35,16,49,9613.46,16
+2026,5,May,False,Fès-Meknès,Centre,Mode,14116.12,3,10,4705.37,3
+2026,5,May,False,Marrakech-Safi,Centre-Sud,Alimentation,2617.33,4,15,654.33,4
+2026,5,May,False,Marrakech-Safi,Centre-Sud,Electronique,112285.65,10,31,11228.57,10
+2026,5,May,False,Oriental,Est,Alimentation,3940.19,5,18,788.04,5
+2026,5,May,False,Oriental,Est,Electronique,28733.64,5,10,5746.73,5
+2026,5,May,False,Oriental,Est,Mode,28764.68,8,28,3595.59,8
+2026,5,May,False,Oriental,Nord-Est,Alimentation,2715.74,6,21,452.62,6
+2026,5,May,False,Oriental,Nord-Est,Electronique,111666.38,9,23,12407.38,9
+2026,5,May,False,Oriental,Nord-Est,Mode,12374.7,4,14,3093.68,4
+2026,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,10142.24,20,57,507.11,20
+2026,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,45490.68,6,17,7581.78,6
+2026,5,May,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,37852.23,10,40,3785.22,10
+2026,5,May,False,Souss-Massa,Sud,Alimentation,20393.92,6,15,3398.99,6
+2026,5,May,False,Souss-Massa,Sud,Electronique,221410.36,9,32,24601.15,9
+2026,5,May,False,Souss-Massa,Sud,Mode,55896.35,9,28,6210.71,9
+2026,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,17285.88,15,45,1152.39,15
+2026,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,324462.52,19,55,17076.97,18
+2026,5,May,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,50431.39,19,57,2654.28,19
+2026,6,June,False,Casablanca-Settat,Centre-Ouest,Electronique,51285.69,2,5,25642.85,2
+2026,6,June,False,Casablanca-Settat,Centre-Ouest,Mode,734.96,1,1,734.96,1
+2026,6,June,False,Fès-Meknès,Centre,Alimentation,6358.79,2,3,3179.4,2
+2026,6,June,False,Fès-Meknès,Centre,Electronique,40256.77,2,7,20128.39,2
+2026,6,June,False,Marrakech-Safi,Centre-Sud,Alimentation,11631.9,3,12,3877.3,3
+2026,6,June,False,Marrakech-Safi,Centre-Sud,Mode,1665.12,1,4,1665.12,1
+2026,6,June,False,Oriental,Est,Alimentation,101.62,1,1,101.62,1
+2026,6,June,False,Oriental,Est,Electronique,89144.75,2,7,44572.38,2
+2026,6,June,False,Oriental,Est,Mode,2081.4,1,5,2081.4,1
+2026,6,June,False,Oriental,Nord-Est,Alimentation,794.48,1,3,794.48,1
+2026,6,June,False,Oriental,Nord-Est,Electronique,678.2,1,3,678.2,1
+2026,6,June,False,Oriental,Nord-Est,Mode,2304.22,1,2,2304.22,1
+2026,6,June,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,4376.58,1,5,4376.58,1
+2026,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,1110.4,2,6,555.2,2
+2026,6,June,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,79114.17,4,11,19778.54,4
+2026,7,July,False,Fès-Meknès,Centre,Alimentation,9213.65,2,7,4606.83,2
+2026,7,July,False,Fès-Meknès,Centre,Electronique,4847.96,3,3,1615.99,3
+2026,7,July,False,Fès-Meknès,Centre,Mode,1806.07,1,1,1806.07,1
+2026,7,July,False,Marrakech-Safi,Centre-Sud,Alimentation,44.35,1,1,44.35,1
+2026,7,July,False,Oriental,Nord-Est,Alimentation,200.76,1,5,200.76,1
+2026,7,July,False,Oriental,Nord-Est,Electronique,7544.02,1,4,7544.02,1
+2026,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,8453.35,6,14,1408.89,6
+2026,7,July,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,3970.51,1,3,3970.51,1
+2026,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,1059.31,1,4,1059.31,1
+2026,7,July,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,97288.17,4,9,24322.04,4
+2026,8,August,False,Casablanca-Settat,Centre-Ouest,Alimentation,513.41,1,4,513.41,1
+2026,8,August,False,Casablanca-Settat,Centre-Ouest,Electronique,1026.06,1,1,1026.06,1
+2026,8,August,False,Casablanca-Settat,Centre-Ouest,Mode,11152.76,2,7,5576.38,2
+2026,8,August,False,Fès-Meknès,Centre,Alimentation,344.95,1,2,344.95,1
+2026,8,August,False,Fès-Meknès,Centre,Electronique,44375.5,2,7,22187.75,2
+2026,8,August,False,Fès-Meknès,Centre,Mode,3456.32,1,3,3456.32,1
+2026,8,August,False,Marrakech-Safi,Centre-Sud,Alimentation,532.51,1,4,532.51,1
+2026,8,August,False,Oriental,Est,Mode,1469.93,1,2,1469.93,1
+2026,8,August,False,Oriental,Nord-Est,Electronique,8790.11,2,4,4395.06,2
+2026,8,August,False,Oriental,Nord-Est,Mode,6485.74,1,1,6485.74,1
+2026,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,448.9,2,8,224.45,2
+2026,8,August,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,2763.9,1,1,2763.9,1
+2026,8,August,False,Souss-Massa,Sud,Alimentation,221.76,1,5,221.76,1
+2026,8,August,False,Souss-Massa,Sud,Electronique,41062.77,2,3,20531.39,2
+2026,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,878.85,2,6,439.43,2
+2026,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,9188.22,2,3,4594.11,2
+2026,8,August,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,4395.36,1,4,4395.36,1
+2026,9,September,False,Casablanca-Settat,Centre-Ouest,Alimentation,47.32,1,1,47.32,1
+2026,9,September,False,Casablanca-Settat,Centre-Ouest,Mode,11622.66,2,9,5811.33,2
+2026,9,September,False,Fès-Meknès,Centre,Alimentation,156.66,2,5,78.33,2
+2026,9,September,False,Fès-Meknès,Centre,Electronique,4542.06,1,5,4542.06,1
+2026,9,September,False,Fès-Meknès,Centre,Mode,2313.48,2,4,1156.74,2
+2026,9,September,False,Marrakech-Safi,Centre-Sud,Alimentation,467.04,1,4,467.04,1
+2026,9,September,False,Marrakech-Safi,Centre-Sud,Electronique,2062.19,1,1,2062.19,1
+2026,9,September,False,Oriental,Est,Alimentation,708.59,1,3,708.59,1
+2026,9,September,False,Oriental,Est,Electronique,1323.5,1,1,1323.5,1
+2026,9,September,False,Oriental,Nord-Est,Alimentation,1078.2,2,7,539.1,2
+2026,9,September,False,Oriental,Nord-Est,Electronique,16704.58,1,4,16704.58,1
+2026,9,September,False,Oriental,Nord-Est,Mode,1871.82,1,3,1871.82,1
+2026,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,137.7,1,1,137.7,1
+2026,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,22130.34,1,5,22130.34,1
+2026,9,September,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,7380.54,1,5,7380.54,1
+2026,9,September,False,Souss-Massa,Sud,Electronique,36465.46,3,7,12155.15,3
+2026,9,September,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,17071.9,3,9,5690.63,3
+2026,10,October,False,Casablanca-Settat,Centre-Ouest,Alimentation,293.04,1,4,293.04,1
+2026,10,October,False,Casablanca-Settat,Centre-Ouest,Mode,4628.81,1,3,4628.81,1
+2026,10,October,False,Fès-Meknès,Centre,Alimentation,506.06,1,4,506.06,1
+2026,10,October,False,Fès-Meknès,Centre,Electronique,123606.3,5,19,24721.26,5
+2026,10,October,False,Marrakech-Safi,Centre-Sud,Alimentation,358.01,2,4,179.01,2
+2026,10,October,False,Marrakech-Safi,Centre-Sud,Mode,23476.73,3,8,7825.58,3
+2026,10,October,False,Oriental,Est,Alimentation,20653.39,1,2,20653.39,1
+2026,10,October,False,Oriental,Est,Electronique,9684.84,1,2,9684.84,1
+2026,10,October,False,Oriental,Est,Mode,8291.7,1,3,8291.7,1
+2026,10,October,False,Oriental,Nord-Est,Alimentation,221.9,1,4,221.9,1
+2026,10,October,False,Oriental,Nord-Est,Mode,9438.05,1,4,9438.05,1
+2026,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,1215.06,1,5,1215.06,1
+2026,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,715.56,1,5,715.56,1
+2026,10,October,False,Rabat-Salé-Kénitra,Nord-Ouest,Mode,779.34,1,1,779.34,1
+2026,10,October,False,Souss-Massa,Sud,Alimentation,47219.83,2,5,23609.92,2
+2026,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,47657.92,3,12,15885.97,3
+2026,10,October,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,1846.13,1,2,1846.13,1
+2026,11,November,False,Casablanca-Settat,Centre-Ouest,Alimentation,713.88,2,10,356.94,2
+2026,11,November,False,Casablanca-Settat,Centre-Ouest,Electronique,2215.14,1,5,2215.14,1
+2026,11,November,False,Casablanca-Settat,Centre-Ouest,Mode,4214.2,1,3,4214.2,1
+2026,11,November,False,Fès-Meknès,Centre,Electronique,47467.32,1,5,47467.32,1
+2026,11,November,False,Fès-Meknès,Centre,Mode,3966.66,3,8,1322.22,3
+2026,11,November,False,Marrakech-Safi,Centre-Sud,Alimentation,147.5,1,4,147.5,1
+2026,11,November,False,Marrakech-Safi,Centre-Sud,Electronique,2447.76,1,1,2447.76,1
+2026,11,November,False,Marrakech-Safi,Centre-Sud,Mode,2081.4,1,5,2081.4,1
+2026,11,November,False,Oriental,Est,Alimentation,835.07,2,6,417.54,2
+2026,11,November,False,Oriental,Nord-Est,Alimentation,58.75,1,3,58.75,1
+2026,11,November,False,Oriental,Nord-Est,Electronique,13594.2,1,2,13594.2,1
+2026,11,November,False,Oriental,Nord-Est,Mode,1207.99,1,1,1207.99,1
+2026,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,1970.8,2,6,985.4,2
+2026,11,November,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,41175.62,3,5,13725.21,3
+2026,11,November,False,Souss-Massa,Sud,Alimentation,479.28,1,5,479.28,1
+2026,11,November,False,Souss-Massa,Sud,Electronique,355.45,1,1,355.45,1
+2026,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,264.46,1,3,264.46,1
+2026,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,35334.15,3,13,11778.05,3
+2026,11,November,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,3518.84,4,9,879.71,4
+2026,12,December,False,Casablanca-Settat,Centre-Ouest,Mode,1210.07,1,3,1210.07,1
+2026,12,December,False,Fès-Meknès,Centre,Alimentation,776.49,2,4,388.25,2
+2026,12,December,False,Fès-Meknès,Centre,Electronique,24760.07,2,2,12380.04,2
+2026,12,December,False,Fès-Meknès,Centre,Mode,575.92,1,1,575.92,1
+2026,12,December,False,Marrakech-Safi,Centre-Sud,Alimentation,789.71,2,4,394.86,2
+2026,12,December,False,Marrakech-Safi,Centre-Sud,Mode,7807.46,1,3,7807.46,1
+2026,12,December,False,Oriental,Est,Electronique,51043.86,1,3,51043.86,1
+2026,12,December,False,Oriental,Nord-Est,Alimentation,1549.97,1,4,1549.97,1
+2026,12,December,False,Oriental,Nord-Est,Electronique,10138.46,1,2,10138.46,1
+2026,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Alimentation,1727.45,2,8,863.73,2
+2026,12,December,False,Rabat-Salé-Kénitra,Nord-Ouest,Electronique,1092.77,2,5,546.39,2
+2026,12,December,False,Souss-Massa,Sud,Alimentation,773.19,2,7,386.6,2
+2026,12,December,False,Souss-Massa,Sud,Electronique,14749.89,2,4,7374.95,2
+2026,12,December,False,Souss-Massa,Sud,Mode,6760.96,2,8,3380.48,2
+2026,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Alimentation,37715.14,2,5,18857.57,2
+2026,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Electronique,9849.7,4,14,2462.43,4
+2026,12,December,False,Tanger-Tétouan-Al Hoceïma,Nord,Mode,34510.03,2,8,17255.02,2

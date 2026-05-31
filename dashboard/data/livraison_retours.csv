@@ -1,0 +1,7 @@
+nom_livreur,type_transport,zone_couverture,nb_livraisons,delai_moyen,nb_retards,taux_retard_pct,nb_retours
+Omar Tahiri,Vélo,Marrakech,3317,17.91,2190,66.02,1083
+Youssef Chraibi,Camionnette,Casablanca,3391,18.06,2184,64.41,1157
+Salma Idrissi,Moto,Rabat,3425,18.54,2233,65.2,1167
+Amira Benali,Moto,Tanger,3248,18.97,2143,65.98,1105
+Livreur inconnu,Inconnu,Inconnue,1238,19.41,791,63.89,416
+Nadia Fassi,Camionnette,Fès,3345,19.54,2156,64.45,1159

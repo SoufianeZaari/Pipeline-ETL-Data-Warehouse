@@ -162,6 +162,7 @@ Faits charges dans PostgreSQL & \textbf{36\,203 lignes}\\
 Dimensions chargees & 5 tables (2\,557 + 898 + 300 + 12 + 6)\\
 Vues materialisees creees & 3 vues (914 + 3\,013 + 215 lignes)\\
 Anomalies d'integrite referentielle & \textbf{0}\\
+Dashboard web Streamlit & a completer apres deploiement Cloud\\
 \end{tabular}
 \end{successbox}
 \vfill
@@ -764,6 +765,38 @@ GROUP BY t.periode_ramadan;
 \textbf{Resultat :} Indice de performance Ramadan = \textbf{91,2} (base 100 hors Ramadan).
 A confirmer sur donnees reelles.
 
+\subsection{Version web deployable avec Streamlit}
+
+\textbf{Metabase} est conserve comme outil BI conforme au cahier de charge (L7).
+En complement, \textbf{Streamlit} a ete ajoute comme interface web deployable
+pour faciliter la demonstration du projet en ligne.
+
+\begin{infobox}[title=Architecture Streamlit]
+\begin{itemize}[leftmargin=*]
+  \item Les donnees sont exportees depuis PostgreSQL via
+    \texttt{scripts/export\_streamlit\_data.py} vers \texttt{dashboard/data/*.csv}.
+  \item L'application \texttt{dashboard/streamlit\_app.py} lit uniquement ces CSV :
+    aucune connexion PostgreSQL n'est requise en ligne.
+  \item Cette approche evite d'exposer une base locale a un service cloud.
+  \item Le dashboard couvre 5 pages : Vue generale, Analyse regionale, Clients,
+    Produits, Retours \& Ramadan.
+  \item \textbf{Lien Streamlit Cloud :} a completer apres deploiement sur
+    \texttt{share.streamlit.io}.
+\end{itemize}
+\end{infobox}
+
+\begin{lstlisting}[style=bash, caption=Workflow export et lancement Streamlit]
+# 1. Exporter depuis PostgreSQL
+python scripts/export_streamlit_data.py
+
+# 2. Lancer localement
+streamlit run dashboard/streamlit_app.py
+
+# 3. Deployer (Streamlit Cloud)
+# -> github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse
+# -> main file : dashboard/streamlit_app.py
+\end{lstlisting}
+
 \subsection{Insights metier cles}
 
 \begin{table}[H]
@@ -795,13 +828,16 @@ charge.
 \begin{infobox}[title=Bilan technique]
 \begin{itemize}[leftmargin=*]
   \item \textbf{Etape 1 :} Modelisation en etoile rigoureuse, 5 dimensions, granularite justifiee,
-    SCD Type 2 operationnel sur DIM\_PRODUIT et DIM\_CLIENT.
+    structure SCD Type 2 modelisee via \texttt{date\_debut}, \texttt{date\_fin},
+    \texttt{est\_actif} sur DIM\_PRODUIT et DIM\_CLIENT (historisation activable
+    dans les evolutions futures).
   \item \textbf{Etape 2 :} Pipeline Python structure \texttt{mexora\_etl/}, 14 regles documentees,
     logging complet, segmentation client automatisee, duree 12 s pour 50\,000 lignes source.
   \item \textbf{Etape 3 :} PostgreSQL 16 avec 3 schemas, 36\,203 faits charges, 3 vues
     materialisees fonctionnelles, 0 anomalie d'integrite sur 6 controles.
-  \item \textbf{Etape 4 :} Dashboard Metabase, 5 questions analytiques avec KPIs et alertes
-    visuelles (taux de retour, evolution CA, effet Ramadan).
+  \item \textbf{Etape 4 :} Dashboard Metabase (BI local conforme au CDC), 5 questions
+    analytiques avec KPIs et alertes visuelles. Complement : application Streamlit
+    deployable en ligne depuis des exports CSV du Data Warehouse.
 \end{itemize}
 \end{infobox}
 

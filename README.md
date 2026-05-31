@@ -1,115 +1,94 @@
-# Mini-Projet 1 - Pipeline ETL & Data Warehouse pour Mexora
+# Miniprojet 1 — Pipeline ETL & Data Warehouse Mexora
 
-Projet BI/Data Warehouse pour Mexora, marketplace e-commerce fictive basée à Tanger.
+Projet BI/Data Warehouse complet pour **Mexora**, marketplace e-commerce fictive basée à Tanger.
 
 ## Description
 
-Ce projet met en place une chaîne décisionnelle complète : une source transactionnelle MySQL, un pipeline ETL Python, un Data Warehouse MySQL en schéma en étoile, des requêtes analytiques MySQL et un dashboard BI Metabase.
+Ce projet implémente une chaîne décisionnelle complète :
 
-Le rendu BI peut être exploré dans Metabase via le Data Warehouse MySQL `mexora_dw`. Streamlit reste disponible comme dashboard Python complémentaire.
+1. **4 fichiers bruts académiques** intentionnellement défectueux (`data/academic_raw/`)
+2. **Pipeline ETL Python** (`mexora_etl/`) — extraction, transformation (14+ règles), chargement
+3. **Data Warehouse PostgreSQL** en schéma en étoile (5 dimensions + table de faits)
+4. **3 vues matérialisées** PostgreSQL dans le schéma `reporting_mexora`
+5. **Metabase** comme dashboard BI local (conforme au cahier de charge)
+6. **Streamlit** comme version web déployable sur Streamlit Cloud
 
-Le cahier de charge recommande PostgreSQL pour le Data Warehouse. Le choix exécuté ici est MySQL isolé, car le système transactionnel imposé est MySQL et l'environnement local validé fonctionne sur `127.0.0.1:3307`. Pour couvrir les attentes académiques strictes, le dépôt contient aussi des scripts PostgreSQL de référence dans `sql/postgres/`, un package `mexora_etl/` structuré selon l'énoncé, les quatre fichiers bruts académiques demandés et les livrables de justification.
-
-## Contexte Mexora
-
-Mexora vend des produits au Maroc dans trois catégories :
-
-- électronique ;
-- mode ;
-- alimentation.
-
-Le Directeur Général souhaite suivre rapidement le chiffre d'affaires, les meilleurs clients, les performances par catégorie, les ventes par région, les retours et les délais de livraison.
+> Le pipeline ETL académique (`mexora_etl/main.py`) cible PostgreSQL.
+> Metabase reste le dashboard BI officiel du projet.
+> Streamlit est ajouté comme interface web déployable, autonome via des exports CSV.
 
 ## Architecture
 
 ```text
-MySQL OLTP réel isolé sur 127.0.0.1:3307
-        -> Extraction Python
-        -> Zone raw CSV
-        -> Transformation Pandas
-        -> Data Warehouse MySQL mexora_dw
-        -> Requêtes analytiques MySQL
-        -> Metabase BI Dashboard
-        -> Rapport PDF + GitHub
+data/academic_raw/        (50 000 commandes, 1 000 clients, 300 produits, régions)
+        |
+        v
+mexora_etl/main.py        Extract -> Transform -> Load
+        |
+        v
+PostgreSQL dwh_mexora     (3 schémas : staging / dwh / reporting)
+        |
+        +---> Metabase           (dashboard BI local, port 3000)
+        +---> export_streamlit   (scripts/export_streamlit_data.py)
+                |
+                v
+        dashboard/data/*.csv     (exports légers, versionnés GitHub)
+                |
+                v
+        dashboard/streamlit_app.py  (déployable sur Streamlit Cloud)
 ```
-
-## Technologies
-
-- Python
-- Pandas
-- MySQL
-- SQLAlchemy
-- PyMySQL
-- python-dotenv
-- Plotly
-- Streamlit
-- Java
-- Metabase
-- SQL
-- Pandoc pour le PDF, si disponible
 
 ## Structure projet
 
 ```text
 mexora-bi-project/
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   ├── generated/
-│   └── academic_raw/
+│   ├── academic_raw/        # fichiers bruts académiques (50k commandes, etc.)
+│   ├── raw/                 # extractions MySQL OLTP
+│   └── processed/
 ├── sql/
-│   ├── 01_oltp_schema.sql
-│   ├── 02_insert_sample_data.sql
-│   ├── 03_dw_schema.sql
-│   ├── 04_analytics_queries.sql
-│   ├── 05_quality_checks.sql
-│   ├── 06_reporting_views_mysql.sql
+│   ├── postgres/
+│   │   ├── 01_create_dwh.sql
+│   │   ├── 02_check_integrity.sql
+│   │   └── 03_reporting_materialized_views.sql
 │   ├── create_dwh.sql
-│   ├── check_integrity.sql
-│   └── postgres/
-├── scripts/
-│   ├── db_utils.py
-│   ├── start_project_mysql.py
-│   ├── generate_data.py
-│   ├── generate_academic_assets.py
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│   └── run_etl.py
-├── mexora_etl/
-│   ├── config/
-│   ├── extract/
+│   └── check_integrity.sql
+├── mexora_etl/              # package ETL académique (structure CDC)
+│   ├── config/settings.py
+│   ├── extract/extractor.py
 │   ├── transform/
-│   ├── load/
-│   ├── utils/
+│   │   ├── clean_commandes.py
+│   │   ├── clean_clients.py
+│   │   ├── clean_produits.py
+│   │   └── build_dimensions.py
+│   ├── load/loader.py
+│   ├── utils/logger.py
 │   └── main.py
+├── scripts/
+│   ├── run_etl.py
+│   ├── export_streamlit_data.py   # <-- export CSV pour Streamlit
+│   └── ...
 ├── dashboard/
-│   ├── streamlit_app.py
-│   ├── dashboard_description.md
-│   └── powerbi/
-├── metabase/
-│   ├── start_metabase.sh
-│   ├── README_metabase.md
-│   ├── create_mexora_dashboard.py
-│   ├── questions_sql.md
-│   └── dashboard_plan.md
+│   ├── streamlit_app.py           # <-- dashboard Streamlit déployable
+│   └── data/                      # CSV exportés depuis PostgreSQL
+│       ├── kpis.csv
+│       ├── ca_mensuel.csv
+│       ├── ca_region.csv
+│       ├── top_produits_tanger.csv
+│       ├── segments_clients.csv
+│       ├── taux_retour_categorie.csv
+│       ├── ramadan_food.csv
+│       └── livraison_retours.csv
+├── metabase/                      # dashboard BI local (Metabase)
 ├── docs/
-│   ├── architecture.md
-│   ├── assumptions.md
-│   ├── data_dictionary.md
-│   ├── er_schema_mexora.mmd
-│   ├── modeling_justification.md
-│   ├── modeling_justification.pdf
+│   ├── er_schema_mexora.png       # L1 — schéma ER
+│   ├── modeling_justification.pdf # L2 — justification choix
 │   ├── rapport_transformations.md
-│   ├── insights_metier.md
-│   ├── insights_metier.pdf
-│   └── quality_results.md
+│   └── insights_metier.pdf        # L8 — insights métier
 ├── report/
-│   ├── assets/
-│   ├── rapport_mexora.md
-│   └── rapport_mexora.pdf
-├── .env.example
-├── README.md
+│   ├── rapport_mexora.tex         # rapport LaTeX source
+│   └── rapport_mexora.pdf         # rapport PDF (18 pages)
+├── .streamlit/config.toml
 ├── requirements.txt
 └── .gitignore
 ```
@@ -117,246 +96,158 @@ mexora-bi-project/
 ## Installation
 
 ```bash
-cd "/home/soufiane/DATAEng/Miniprojet 1/mexora-bi-project"
+cd "Miniprojet 1/mexora-bi-project"
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-## Configuration
-
-Copier le fichier d'exemple :
+## Lancer PostgreSQL local
 
 ```bash
-cp .env.example .env
+# Démarrer l'instance locale (port 5433, socket /tmp/mexora_pg_socket)
+/usr/lib/postgresql/16/bin/pg_ctl \
+  -D /tmp/mexora_pg_data \
+  -o "-p 5433 -k /tmp/mexora_pg_socket" \
+  -l /tmp/mexora_pg.log start
+
+# Vérifier
+pg_isready -h /tmp/mexora_pg_socket -p 5433
 ```
 
-Configuration validée :
-
-```text
-MYSQL_USER=mexora_user
-MYSQL_PASSWORD=mexora_pass
-MYSQL_HOST=127.0.0.1
-MYSQL_PORT=3307
-
-MEXORA_OLTP_DB=mexora_oltp
-MEXORA_DW_DB=mexora_dw
-
-MEXORA_SOURCE_URL=mysql+pymysql://mexora_user:mexora_pass@127.0.0.1:3307/mexora_oltp
-MEXORA_DW_URL=mysql+pymysql://mexora_user:mexora_pass@127.0.0.1:3307/mexora_dw
-
-MEXORA_AUTO_START_MYSQL=1
-MEXORA_PROJECT_MYSQL_DIR=/tmp/mexora_mysql_project
-MEXORA_PROJECT_MYSQL_ROOT_PASSWORD=root123
-```
-
-Ces identifiants sont des valeurs de démonstration locales. Le fichier `.env` ne doit pas être versionné.
-
-## Lancement MySQL isolé
-
-Le projet utilise une instance MySQL réelle isolée dans `/tmp/mexora_mysql_project`, sur le port `3307`.
+## Lancer le pipeline ETL (PostgreSQL)
 
 ```bash
-python scripts/start_project_mysql.py
+python -m mexora_etl.main
 ```
 
-Le helper considère MySQL prêt uniquement si `mexora_user` peut se connecter en TCP à `127.0.0.1:3307` et ouvrir `mexora_oltp` et `mexora_dw`.
+Résultat attendu :
 
-Vérification :
+```
+[EXTRACT] Commandes : 50000 lignes
+[TRANSFORM] Commandes : 50000 -> 46825 lignes
+[BUILD] fait_ventes : 36203 lignes produites
+[LOAD] dim_temps : 2557 lignes chargées
+[LOAD] fait_ventes : 36203 lignes chargées
+PIPELINE TERMINÉ EN 12 secondes
+```
+
+## Créer les vues matérialisées
 
 ```bash
-mysql -h 127.0.0.1 -P 3307 -u mexora_user -pmexora_pass mexora_oltp -e "SELECT DATABASE();"
-mysql -h 127.0.0.1 -P 3307 -u mexora_user -pmexora_pass mexora_dw -e "SELECT DATABASE();"
+psql -h /tmp/mexora_pg_socket -p 5433 -U $USER mexora_dwh \
+  -f sql/postgres/03_reporting_materialized_views.sql
 ```
 
-## Lancement ETL
+## Vérifier l'intégrité
 
 ```bash
-python scripts/run_etl.py --regenerate
+psql -h /tmp/mexora_pg_socket -p 5433 -U $USER mexora_dwh \
+  -f sql/postgres/02_check_integrity.sql
 ```
 
-Le pipeline :
+---
 
-1. génère les données réalistes et imparfaites ;
-2. charge MySQL `mexora_oltp` ;
-3. extrait les tables vers `data/raw/` ;
-4. transforme et nettoie avec Pandas ;
-5. construit les dimensions et `fact_sales` ;
-6. charge MySQL `mexora_dw`.
+## Dashboard Streamlit déployable
 
-## Livrables académiques du cahier de charge
+> **Note :** Streamlit ne remplace pas Metabase. C'est une version web déployable
+> qui consomme des exports CSV issus du Data Warehouse PostgreSQL.
 
-Les fichiers bruts demandés par l'énoncé sont générés dans `data/academic_raw/` :
-
-| Fichier | Rôle |
-|---|---|
-| `commandes_mexora.csv` | 50 000 lignes de commandes volontairement imparfaites |
-| `produits_mexora.json` | catalogue produits avec catégories hétérogènes, prix manquants et produits inactifs |
-| `clients_mexora.csv` | clients avec doublons, emails invalides et codifications hétérogènes |
-| `regions_maroc.csv` | référentiel géographique propre |
-
-Pour régénérer ces livrables, ainsi que le schéma étoile et les petits PDFs annexes :
+### 1. Générer les données depuis PostgreSQL
 
 ```bash
-python scripts/generate_academic_assets.py
+python scripts/export_streamlit_data.py
 ```
 
-Le package `mexora_etl/` reprend la structure imposée dans le cahier de charge :
+Exporte 8 fichiers CSV dans `dashboard/data/` :
+`kpis.csv`, `ca_mensuel.csv`, `ca_region.csv`, `top_produits_tanger.csv`,
+`segments_clients.csv`, `taux_retour_categorie.csv`, `ramadan_food.csv`, `livraison_retours.csv`
 
-```text
-mexora_etl/
-├── config/settings.py
-├── extract/extractor.py
-├── transform/clean_commandes.py
-├── transform/clean_clients.py
-├── transform/clean_produits.py
-├── transform/build_dimensions.py
-├── load/loader.py
-├── utils/logger.py
-└── main.py
-```
-
-L'exécution opérationnelle recommandée reste `scripts/run_etl.py`, car elle a été validée de bout en bout avec MySQL OLTP et MySQL DW.
-
-## Lancement dashboard Metabase
-
-Metabase est le dashboard BI final officiel du projet. Il est lancé depuis un dossier sans espace pour éviter l'erreur Java liée au chemin `Miniprojet 1`.
-
-```bash
-bash metabase/start_metabase.sh
-```
-
-Ouvrir ensuite :
-
-```text
-http://localhost:3000
-```
-
-Connexion Metabase à MySQL :
-
-| Champ | Valeur |
-|---|---|
-| Type | MySQL |
-| Host | `127.0.0.1` |
-| Port | `3307` |
-| Database | `mexora_dw` |
-| Username | `mexora_user` |
-| Password | `mexora_pass` |
-
-### Automatisation du dashboard Metabase
-
-Le dashboard `Mexora BI Dashboard` peut être généré via l'API Metabase, sans créer manuellement chaque question.
-
-Créer le fichier local d'identifiants Metabase :
-
-```bash
-cp metabase/.metabase_env.example metabase/.metabase_env
-```
-
-Renseigner l'email et le mot de passe du compte administrateur Metabase dans `metabase/.metabase_env`, puis lancer :
-
-```bash
-python metabase/create_mexora_dashboard.py
-```
-
-Le script crée ou met à jour la collection `Mexora BI Project`, les questions SQL et le dashboard final. Les requêtes SQL sont disponibles dans `metabase/questions_sql.md`.
-
-Si l'API Metabase retourne `Connections could not be acquired from the underlying database`, redémarrer Metabase puis relancer le script :
-
-```bash
-bash metabase/start_metabase.sh
-python metabase/create_mexora_dashboard.py
-```
-
-Si Metabase retourne une erreur interne `REPORT_DASHBOARDCARD` ou `PRIMARY KEY`, les questions ont généralement été créées mais leur placement automatique dans le dashboard a échoué à cause du stockage interne Metabase. Dans ce cas, utiliser la méthode manuelle ci-dessous pour ajouter les cartes déjà créées au dashboard.
-
-Méthode manuelle de secours :
-
-1. ouvrir `http://localhost:3000` ;
-2. créer `New > SQL Query` ;
-3. coller les requêtes de `metabase/questions_sql.md` ;
-4. sauvegarder les cartes dans la collection `Mexora BI Project` ;
-5. utiliser `Add to dashboard > Mexora BI Dashboard` ;
-6. répéter au minimum pour les cinq questions obligatoires du cahier.
-
-## Dashboard Streamlit optionnel
-
-Streamlit reste disponible comme prototype complémentaire :
+### 2. Lancer localement
 
 ```bash
 streamlit run dashboard/streamlit_app.py
 ```
 
-## Reporting matérialisé MySQL
+Ouvre `http://localhost:8501` — 5 pages :
+- 🏠 Vue générale (KPIs + CA mensuel + répartition catégories)
+- 🗺️ Analyse régionale (CA par ville, évolution mensuelle)
+- 👥 Clients & Segments (Gold/Silver/Bronze, panier moyen)
+- 📦 Produits (top Tanger, CA catégorie)
+- ↩️ Retours & Ramadan (alertes retours, effet Ramadan, livreurs)
 
-Le cahier de charge recommande des vues matérialisées PostgreSQL. MySQL ne fournit pas de `MATERIALIZED VIEW` native ; le projet crée donc des tables de reporting rafraîchissables et indexées :
+### 3. Déployer sur Streamlit Cloud
 
-- `reporting_mv_ca_mensuel`
-- `reporting_mv_top_produits`
-- `reporting_mv_performance_livreurs`
-- `dim_livreur`
+1. Vérifier que `dashboard/data/*.csv` est commité dans le repo GitHub
+2. Aller sur [share.streamlit.io](https://share.streamlit.io)
+3. Se connecter avec le compte GitHub `SoufianeZaari`
+4. Choisir le repo : `SoufianeZaari/Pipeline-ETL-Data-Warehouse`
+5. Main file path : `dashboard/streamlit_app.py`
+6. Cliquer **Deploy**
 
-```bash
-mysql -h 127.0.0.1 -P 3307 -u mexora_user -pmexora_pass mexora_dw < sql/06_reporting_views_mysql.sql
-```
+> L'app lit uniquement les CSV versionnés — aucune connexion PostgreSQL requise.
 
-Des scripts PostgreSQL de référence sont aussi disponibles pour une lecture strictement alignée avec l'énoncé :
+### 4. Important
 
-```text
-sql/postgres/01_create_dwh.sql
-sql/postgres/02_check_integrity.sql
-sql/postgres/03_reporting_materialized_views.sql
-```
+- Le dashboard Streamlit **ne remplace pas le pipeline PostgreSQL** ; il consomme
+  des exports issus du Data Warehouse.
+- **Metabase reste le dashboard BI local** conforme au cahier de charge.
+  Streamlit est la **version web déployable** de démonstration.
+- Après chaque refresh ETL, régénérer les CSV avec `export_streamlit_data.py`
+  et commit/push `dashboard/data/`.
 
-Les alias de livrables attendus sont :
+---
 
-```text
-sql/create_dwh.sql
-sql/check_integrity.sql
-```
+## Dashboard Metabase (BI local officiel)
 
-## Requêtes analytiques
-
-```bash
-mysql -h 127.0.0.1 -P 3307 -u mexora_user -pmexora_pass mexora_dw < sql/04_analytics_queries.sql
-```
-
-Le fichier contient les requêtes analytiques principales, plus les cinq questions obligatoires du cahier de charge : évolution CA région, top produits trimestriels Tanger, panier moyen par segment, taux de retour avec seuil d'alerte et effet Ramadan alimentation.
-
-## Quality checks
+Metabase est le dashboard BI final officiel du projet (conforme au cahier de charge).
 
 ```bash
-mysql -h 127.0.0.1 -P 3307 -u mexora_user -pmexora_pass mexora_dw < sql/05_quality_checks.sql
+bash metabase/start_metabase.sh
 ```
 
-Voir aussi `docs/quality_results.md`.
+Ouvrir : `http://localhost:3000`
 
-## Résultats validés
+Connexion Metabase vers PostgreSQL :
 
-Dernière validation : 30 mai 2026.
+| Champ | Valeur |
+|---|---|
+| Type | PostgreSQL |
+| Host | `/tmp/mexora_pg_socket` (ou `127.0.0.1`) |
+| Port | `5433` |
+| Database | `mexora_dwh` |
+| Username | `$USER` |
+
+---
+
+## Livrables académiques
+
+| # | Livrable | Fichier |
+|---|---|---|
+| L1 | Schéma ER annoté | `docs/er_schema_mexora.png` |
+| L2 | Justification modélisation | `docs/modeling_justification.pdf` |
+| L3 | Code Python ETL | `mexora_etl/` |
+| L4 | Rapport transformations | `docs/rapport_transformations.md` |
+| L5 | Script création DWH | `sql/postgres/01_create_dwh.sql` |
+| L6 | Script intégrité | `sql/postgres/02_check_integrity.sql` |
+| L7 | Dashboard | Metabase local + Streamlit Cloud |
+| L8 | Insights métier | `docs/insights_metier.pdf` |
+| — | Rapport complet | `report/rapport_mexora.pdf` |
+
+## Résultats validés (pipeline PostgreSQL)
 
 | Indicateur | Valeur |
 |---|---:|
-| customers | 1000 |
-| products | 300 |
-| orders | 5000 |
-| order_items | 9424 |
-| payments | 5000 |
-| deliveries | 5000 |
-| returns | 738 |
-| fact_sales | 9061 |
-| anomalies détectées | 1559 |
-| anomalies corrigées | 1196 |
-| anomalies supprimées | 363 |
-| taux de retour global | 7.87 % |
-| délai moyen livraison | 14.99 jours |
-| montants négatifs dans `fact_sales` | 0 |
-| quantités invalides dans `fact_sales` | 0 |
-| faits sans dimension correspondante | 0 |
-
+| Commandes extraites | 50 000 |
+| Faits chargés | **36 203** |
+| Clients | 898 |
+| Produits | 300 |
+| Entrées temporelles | 2 557 |
+| Anomalies d'intégrité | **0** |
+| Taux de retour global | 7,87 % |
+| Délai moyen livraison | 14,99 jours |
+| Vues matérialisées | 3 |
 
 ## Auteur
 
-Étudiant : Soufiane ZAARI  
-Module : Data Engeneer 
-Année universitaire : 2025-2026
+**Soufiane Zaari** — Module Data Engineering — 2025-2026

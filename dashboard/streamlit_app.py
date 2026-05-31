@@ -1,661 +1,484 @@
-"""Mexora BI Dashboard connected primarily to the MySQL Data Warehouse."""
+"""Mexora BI Dashboard — version web déployable (Streamlit).
+
+Lit les CSV de dashboard/data/ générés par scripts/export_streamlit_data.py.
+Ne nécessite aucune connexion PostgreSQL en production / sur Streamlit Cloud.
+
+Lancer localement :
+    streamlit run dashboard/streamlit_app.py
+
+Déployer sur Streamlit Cloud :
+    push sur GitHub → share.streamlit.io
+    main file : dashboard/streamlit_app.py
+"""
 
 from __future__ import annotations
 
-import sys
 from pathlib import Path
-from typing import Iterable
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
-from sqlalchemy.exc import SQLAlchemyError
 
-
-BASE_DIR = Path(__file__).resolve().parents[1]
-PROCESSED_DIR = BASE_DIR / "data" / "processed"
-sys.path.insert(0, str(BASE_DIR / "scripts"))
-
-from db_utils import get_dw_engine, load_env, url_without_password  # noqa: E402
-
-
-APP_TITLE = "Mexora BI Dashboard"
-APP_SUBTITLE = "Analyse décisionnelle des ventes e-commerce au Maroc"
-MYSQL_HELP = (
-    "Le Data Warehouse MySQL n'est pas accessible. Lancez :\n\n"
-    "python scripts/start_project_mysql.py\n"
-    "python scripts/run_etl.py --regenerate"
+# ── Config page ──────────────────────────────────────────────────────────────
+st.set_page_config(
+    page_title="Mexora BI Dashboard",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
 )
-COLOR_SEQUENCE = ["#0F766E", "#2563EB", "#F59E0B", "#DC2626", "#7C3AED", "#475569"]
-DATA_CACHE_VERSION = "2026-05-27-dimension-keys-v2"
+
+DATA_DIR = Path(__file__).parent / "data"
+
+# ── CSS ──────────────────────────────────────────────────────────────────────
+st.markdown("""
+<style>
+.kpi-card {
+  background:#ffffff; border-left:4px solid #2C6EAB;
+  border-radius:6px; padding:.9rem 1.1rem;
+  box-shadow:0 1px 4px rgba(0,0,0,.08); margin-bottom:.4rem;
+}
+.kpi-label { font-size:.74rem; color:#6b7280;
+             text-transform:uppercase; letter-spacing:.06em; margin-bottom:.1rem; }
+.kpi-value { font-size:1.5rem; font-weight:700; color:#1A1A2E; }
+.kpi-unit  { font-size:.74rem; color:#6b7280; margin-left:.15rem; }
+</style>
+""", unsafe_allow_html=True)
+
+# ── Constantes ───────────────────────────────────────────────────────────────
+PALETTE = ["#2C6EAB", "#C0392B", "#27AE60", "#E67E22", "#8E44AD", "#16A085"]
+NO_DATA = (
+    "⚠️ Fichiers CSV manquants dans `dashboard/data/`.\n\n"
+    "Exécutez d'abord :\n```bash\npython scripts/export_streamlit_data.py\n```"
+)
 
 
-st.set_page_config(page_title=APP_TITLE, page_icon="M", layout="wide")
-load_env()
+# ── Helpers ──────────────────────────────────────────────────────────────────
+@st.cache_data(show_spinner=False)
+def load(filename: str) -> pd.DataFrame | None:
+    p = DATA_DIR / filename
+    return pd.read_csv(p) if p.exists() else None
 
-px.defaults.template = "plotly_white"
-px.defaults.color_discrete_sequence = COLOR_SEQUENCE
 
-
-def inject_css() -> None:
+def kpi(label: str, value: str, unit: str = "") -> None:
     st.markdown(
-        """
-        <style>
-        .main .block-container {
-            padding-top: 1.4rem;
-            padding-bottom: 2.2rem;
-            max-width: 1440px;
-        }
-        h1, h2, h3 {
-            letter-spacing: 0;
-        }
-        .mexora-hero {
-            border-left: 6px solid #0F766E;
-            padding: 0.4rem 0 0.4rem 1rem;
-            margin-bottom: 1rem;
-        }
-        .mexora-hero h1 {
-            margin: 0;
-            font-size: 2.15rem;
-            color: #0F172A;
-        }
-        .mexora-hero p {
-            margin: 0.3rem 0 0;
-            color: #475569;
-            font-size: 1rem;
-        }
-        .metric-card {
-            background: #FFFFFF;
-            border: 1px solid #E2E8F0;
-            border-radius: 8px;
-            padding: 1rem;
-            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
-            min-height: 104px;
-        }
-        .metric-label {
-            color: #64748B;
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 0.03rem;
-        }
-        .metric-value {
-            color: #0F172A;
-            font-size: 1.55rem;
-            font-weight: 800;
-            margin-top: 0.35rem;
-        }
-        .metric-note {
-            color: #64748B;
-            font-size: 0.8rem;
-            margin-top: 0.25rem;
-        }
-        .insight-box {
-            background: #F8FAFC;
-            border: 1px solid #E2E8F0;
-            border-radius: 8px;
-            padding: 0.85rem 1rem;
-            color: #334155;
-            margin: 0.4rem 0 1rem;
-        }
-        div[data-testid="stSidebar"] {
-            background: #F8FAFC;
-        }
-        </style>
-        """,
+        f'<div class="kpi-card">'
+        f'<div class="kpi-label">{label}</div>'
+        f'<div class="kpi-value">{value}'
+        f'<span class="kpi-unit">&nbsp;{unit}</span></div></div>',
         unsafe_allow_html=True,
     )
 
 
-def money(value: float | int | None) -> str:
-    if value is None or pd.isna(value):
-        return "0 MAD"
-    return f"{float(value):,.0f} MAD".replace(",", " ")
+def fmt_mad(v: float) -> str:
+    if v >= 1_000_000:
+        return f"{v/1_000_000:.2f} M"
+    if v >= 1_000:
+        return f"{v/1_000:.1f} K"
+    return f"{v:.0f}"
 
 
-def number(value: float | int | None) -> str:
-    if value is None or pd.isna(value):
-        return "0"
-    return f"{int(round(float(value))):,}".replace(",", " ")
+def retour_badge(pct: float) -> str:
+    if pct > 5:
+        return f"🔴 {pct:.1f}%"
+    if pct >= 3:
+        return f"🟠 {pct:.1f}%"
+    return f"🟢 {pct:.1f}%"
 
 
-def percent(value: float | int | None) -> str:
-    if value is None or pd.isna(value):
-        return "0.00 %"
-    return f"{float(value):.2f} %"
+# ── Guard: data must exist ────────────────────────────────────────────────────
+kpis_df = load("kpis.csv")
+if kpis_df is None:
+    st.error(NO_DATA)
+    st.stop()
 
+kpis = kpis_df.iloc[0]
 
-def metric_card(label: str, value: str, note: str = "") -> None:
-    st.markdown(
-        f"""
-        <div class="metric-card">
-            <div class="metric-label">{label}</div>
-            <div class="metric-value">{value}</div>
-            <div class="metric-note">{note}</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
-def format_chart(fig, height: int = 360):
-    fig.update_layout(
-        height=height,
-        margin=dict(l=18, r=18, t=58, b=30),
-        title_font=dict(size=17, color="#0F172A"),
-        legend_title_text="",
-        font=dict(color="#334155"),
-        paper_bgcolor="white",
-        plot_bgcolor="white",
-    )
-    fig.update_xaxes(showgrid=False)
-    fig.update_yaxes(gridcolor="#E2E8F0")
-    return fig
-
-
-def read_mysql_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str]:
-    engine = get_dw_engine()
-    fact_query = """
-        SELECT
-            f.sales_key,
-            f.order_id,
-            f.order_item_id,
-            f.customer_key,
-            f.product_key,
-            f.date_key,
-            f.region_key,
-            f.payment_key,
-            f.delivery_key,
-            f.quantity,
-            f.unit_price,
-            f.discount_rate,
-            f.total_amount,
-            f.amount_paid,
-            f.is_returned,
-            f.refund_amount,
-            f.delivery_delay_days,
-            f.order_status,
-            f.return_reason,
-            c.customer_id,
-            c.full_name,
-            c.gender,
-            c.age_group,
-            c.city AS customer_city,
-            c.region AS customer_region,
-            p.product_id,
-            p.product_name,
-            p.category,
-            p.sub_category,
-            p.brand,
-            p.supplier,
-            d.full_date,
-            d.day,
-            d.month,
-            d.month_name,
-            d.quarter,
-            d.year,
-            d.is_weekend,
-            d.is_ramadan,
-            r.city AS sale_city,
-            r.region AS sale_region,
-            pay.payment_method,
-            pay.payment_status,
-            dd.delivery_status,
-            dd.shipping_company,
-            dd.delivery_city,
-            dd.delivery_region
-        FROM fact_sales f
-        JOIN dim_customer c ON f.customer_key = c.customer_key
-        JOIN dim_product p ON f.product_key = p.product_key
-        JOIN dim_date d ON f.date_key = d.date_key
-        JOIN dim_region r ON f.region_key = r.region_key
-        JOIN dim_payment pay ON f.payment_key = pay.payment_key
-        JOIN dim_delivery dd ON f.delivery_key = dd.delivery_key
-    """
-    fact = pd.read_sql_query(fact_query, engine)
-    customers = pd.read_sql_query("SELECT * FROM dim_customer", engine)
-    quality = pd.read_sql_query("SELECT * FROM quality_issues", engine)
-    return fact, customers, quality, f"MySQL DW - {url_without_password(engine.url)}"
-
-
-def read_csv_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str]:
-    fact = pd.read_csv(PROCESSED_DIR / "fact_sales.csv")
-    customers = pd.read_csv(PROCESSED_DIR / "dim_customer.csv")
-    products = pd.read_csv(PROCESSED_DIR / "dim_product.csv")
-    dates = pd.read_csv(PROCESSED_DIR / "dim_date.csv")
-    regions = pd.read_csv(PROCESSED_DIR / "dim_region.csv")
-    payments = pd.read_csv(PROCESSED_DIR / "dim_payment.csv")
-    deliveries = pd.read_csv(PROCESSED_DIR / "dim_delivery.csv")
-    quality_path = PROCESSED_DIR / "quality_issues.csv"
-    quality = pd.read_csv(quality_path) if quality_path.exists() else pd.DataFrame()
-
-    fact = (
-        fact.merge(customers, on="customer_key", how="left")
-        .merge(products, on="product_key", how="left")
-        .merge(dates, on="date_key", how="left")
-        .merge(regions, on="region_key", how="left", suffixes=("", "_sale"))
-        .merge(payments, on="payment_key", how="left")
-        .merge(deliveries, on="delivery_key", how="left")
-    )
-    fact = fact.rename(
-        columns={
-            "city": "customer_city",
-            "region": "customer_region",
-            "city_sale": "sale_city",
-            "region_sale": "sale_region",
-        }
-    )
-    return fact, customers, quality, "Fallback CSV - data/processed"
-
-
-@st.cache_data(show_spinner="Chargement du Data Warehouse Mexora...")
-def load_dashboard_data(cache_version: str) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, str, bool]:
-    try:
-        fact, customers, quality, source = read_mysql_data()
-        mysql_available = True
-    except (SQLAlchemyError, Exception) as exc:
-        st.error(MYSQL_HELP)
-        st.caption(f"Détail technique : {exc}")
-        try:
-            fact, customers, quality, source = read_csv_data()
-            mysql_available = False
-            st.warning("Fallback CSV activé pour visualiser les données déjà traitées. MySQL reste la source officielle.")
-        except Exception as csv_exc:
-            st.error("Aucun fallback CSV exploitable n'a été trouvé dans data/processed/.")
-            st.caption(f"Détail fallback : {csv_exc}")
-            st.stop()
-
-    fact["full_date"] = pd.to_datetime(fact["full_date"])
-    numeric_columns = [
-        "quantity",
-        "unit_price",
-        "discount_rate",
-        "total_amount",
-        "amount_paid",
-        "is_returned",
-        "refund_amount",
-        "delivery_delay_days",
-        "is_ramadan",
-    ]
-    for column in numeric_columns:
-        if column in fact.columns:
-            fact[column] = pd.to_numeric(fact[column], errors="coerce")
-    return fact, customers, quality, source, mysql_available
-
-
-def unique_sorted(values: Iterable) -> list:
-    return sorted([value for value in pd.Series(values).dropna().unique().tolist() if value != ""])
-
-
-def apply_filters(fact: pd.DataFrame) -> pd.DataFrame:
-    st.sidebar.header("Filtres")
-    min_date = fact["full_date"].min().date()
-    max_date = fact["full_date"].max().date()
-    selected_period = st.sidebar.date_input("Période", value=(min_date, max_date), min_value=min_date, max_value=max_date)
-    if isinstance(selected_period, tuple) and len(selected_period) == 2:
-        start_date, end_date = selected_period
-    else:
-        start_date, end_date = min_date, max_date
-
-    selected_regions = st.sidebar.multiselect("Région", unique_sorted(fact["sale_region"]))
-    selected_cities = st.sidebar.multiselect("Ville", unique_sorted(fact["sale_city"]))
-    selected_categories = st.sidebar.multiselect("Catégorie produit", unique_sorted(fact["category"]))
-    selected_payments = st.sidebar.multiselect("Méthode de paiement", unique_sorted(fact["payment_method"]))
-    selected_delivery = st.sidebar.multiselect("Statut livraison", unique_sorted(fact["delivery_status"]))
-
-    filtered = fact[
-        (fact["full_date"].dt.date >= start_date)
-        & (fact["full_date"].dt.date <= end_date)
-    ].copy()
-    if selected_regions:
-        filtered = filtered[filtered["sale_region"].isin(selected_regions)]
-    if selected_cities:
-        filtered = filtered[filtered["sale_city"].isin(selected_cities)]
-    if selected_categories:
-        filtered = filtered[filtered["category"].isin(selected_categories)]
-    if selected_payments:
-        filtered = filtered[filtered["payment_method"].isin(selected_payments)]
-    if selected_delivery:
-        filtered = filtered[filtered["delivery_status"].isin(selected_delivery)]
-    return filtered
-
-
-def sidebar_navigation(source: str, mysql_available: bool) -> str:
-    page = st.sidebar.radio(
+# ── Sidebar ───────────────────────────────────────────────────────────────────
+with st.sidebar:
+    st.markdown("## 📊 Mexora BI")
+    st.markdown("*Data Warehouse e-commerce*")
+    st.markdown("---")
+    page = st.radio(
         "Navigation",
-        [
-            "Vue générale",
-            "Analyse clients",
-            "Analyse produits",
-            "Livraisons & retours",
-            "Qualité des données",
-        ],
+        ["🏠 Vue générale",
+         "🗺️ Analyse régionale",
+         "👥 Clients & Segments",
+         "📦 Produits",
+         "↩️ Retours & Ramadan"],
+        label_visibility="collapsed",
     )
-    st.sidebar.divider()
-    st.sidebar.caption("Source active")
-    st.sidebar.write(source)
-    st.sidebar.caption("Statut MySQL")
-    st.sidebar.write("Connecté" if mysql_available else "Fallback CSV")
-    return page
-
-
-def monthly_frame(fact: pd.DataFrame) -> pd.DataFrame:
-    monthly = fact.groupby(["year", "month", "month_name"], as_index=False).agg(
-        revenue=("total_amount", "sum"),
-        orders=("order_id", "nunique"),
-    )
-    monthly["period"] = monthly["year"].astype(int).astype(str) + "-" + monthly["month"].astype(int).astype(str).str.zfill(2)
-    return monthly.sort_values(["year", "month"])
-
-
-def render_global_kpis(fact: pd.DataFrame) -> None:
-    total_revenue = float(fact["total_amount"].sum())
-    total_orders = int(fact["order_id"].nunique())
-    total_customers = int(fact["customer_id"].nunique())
-    average_basket = total_revenue / total_orders if total_orders else 0
-    return_rate = 100 * float(fact["is_returned"].sum()) / len(fact) if len(fact) else 0
-    delivery_delay = fact["delivery_delay_days"].dropna().mean()
-
-    cols = st.columns(6)
-    with cols[0]:
-        metric_card("Chiffre d'affaires", money(total_revenue), "Montant après remise")
-    with cols[1]:
-        metric_card("Commandes", number(total_orders), "Commandes distinctes")
-    with cols[2]:
-        metric_card("Clients", number(total_customers), "Clients actifs filtrés")
-    with cols[3]:
-        metric_card("Panier moyen", money(average_basket), "CA / commandes")
-    with cols[4]:
-        metric_card("Taux de retour", percent(return_rate), "Lignes retournées")
-    with cols[5]:
-        metric_card("Délai livraison", f"{delivery_delay:.2f} j" if pd.notna(delivery_delay) else "0 j", "Moyenne")
-
-
-def page_overview(fact: pd.DataFrame) -> None:
-    st.subheader("Vue générale")
-    st.markdown('<div class="insight-box">Cette page donne une vue synthétique des performances globales de Mexora.</div>', unsafe_allow_html=True)
-    render_global_kpis(fact)
-
-    monthly = monthly_frame(fact)
-    region_revenue = fact.groupby("sale_region", as_index=False)["total_amount"].sum().sort_values("total_amount", ascending=False)
-    category_revenue = fact.groupby("category", as_index=False)["total_amount"].sum().sort_values("total_amount", ascending=False)
-
-    left, right = st.columns(2)
-    left.plotly_chart(
-        format_chart(px.line(monthly, x="period", y="revenue", markers=True, title="Évolution du chiffre d'affaires par mois", labels={"period": "Mois", "revenue": "CA"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(region_revenue, x="sale_region", y="total_amount", title="Chiffre d'affaires par région", labels={"sale_region": "Région", "total_amount": "CA"})),
-        width="stretch",
-    )
-    left.plotly_chart(
-        format_chart(px.bar(category_revenue, x="category", y="total_amount", title="Chiffre d'affaires par catégorie", labels={"category": "Catégorie", "total_amount": "CA"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(monthly, x="period", y="orders", title="Commandes par mois", labels={"period": "Mois", "orders": "Commandes"})),
-        width="stretch",
+    st.markdown("---")
+    st.caption(
+        "Pipeline ETL Mexora  \nPostgreSQL 16 · Pandas · Plotly  \n"
+        "[GitHub](https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse)"
     )
 
 
-def page_customers(fact: pd.DataFrame, customers: pd.DataFrame) -> None:
-    st.subheader("Analyse clients")
-    st.markdown('<div class="insight-box">Cette page identifie les clients, villes et régions qui contribuent le plus au chiffre d\'affaires.</div>', unsafe_allow_html=True)
+# ════════════════════════════════════════════════════════════════════════════
+# PAGE 1 — Vue générale
+# ════════════════════════════════════════════════════════════════════════════
+if page == "🏠 Vue générale":
+    st.title("📊 Mexora BI Dashboard")
+    st.markdown("**Data Warehouse e-commerce — Pipeline ETL & Analytics**")
+    st.markdown("---")
 
-    top_clients = (
-        fact.groupby(["customer_id", "full_name"], as_index=False)
-        .agg(revenue=("total_amount", "sum"), orders=("order_id", "nunique"))
-        .sort_values("revenue", ascending=False)
-        .head(10)
-    )
-    tanger_clients = (
-        fact[fact["customer_city"] == "Tanger"]
-        .groupby(["customer_id", "full_name"], as_index=False)
-        .agg(revenue=("total_amount", "sum"), orders=("order_id", "nunique"))
-        .sort_values("revenue", ascending=False)
-        .head(10)
-    )
-    city_revenue = fact.groupby("sale_city", as_index=False)["total_amount"].sum().sort_values("total_amount", ascending=False)
-    customers_region = customers.groupby("region", as_index=False)["customer_id"].nunique().sort_values("customer_id", ascending=False)
-    basket_region = fact.groupby("sale_region", as_index=False).agg(revenue=("total_amount", "sum"), orders=("order_id", "nunique"))
-    basket_region["average_basket"] = basket_region["revenue"] / basket_region["orders"]
+    c1, c2, c3, c4, c5, c6 = st.columns(6)
+    with c1: kpi("CA Total", fmt_mad(float(kpis["ca_total"])), "MAD")
+    with c2: kpi("Commandes", f"{int(kpis['nb_commandes']):,}")
+    with c3: kpi("Clients", f"{int(kpis['nb_clients']):,}")
+    with c4: kpi("Panier moyen", fmt_mad(float(kpis["panier_moyen"])), "MAD")
+    with c5: kpi("Taux retour", f"{float(kpis['taux_retour_pct']):.1f}", "%")
+    with c6: kpi("Délai moyen", f"{float(kpis['delai_moyen_jours']):.1f}", "j")
 
-    customer_segments = fact.groupby(["customer_id", "full_name"], as_index=False).agg(
-        revenue=("total_amount", "sum"),
-        orders=("order_id", "nunique"),
-    )
-    revenue_q75 = customer_segments["revenue"].quantile(0.75)
-    customer_segments["segment"] = "Occasionnel"
-    customer_segments.loc[customer_segments["orders"] >= 3, "segment"] = "Fidèle"
-    customer_segments.loc[customer_segments["revenue"] >= revenue_q75, "segment"] = "Premium"
-    segment_summary = customer_segments.groupby("segment", as_index=False).agg(clients=("customer_id", "nunique"), revenue=("revenue", "sum"))
+    st.markdown("---")
+    ca_df = load("ca_mensuel.csv")
+    if ca_df is not None:
+        col_l, col_r = st.columns([3, 2])
 
-    left, right = st.columns(2)
-    left.plotly_chart(
-        format_chart(px.bar(top_clients.sort_values("revenue"), x="revenue", y="full_name", orientation="h", title="Top 10 clients", labels={"revenue": "CA", "full_name": "Client"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(tanger_clients.sort_values("revenue"), x="revenue", y="full_name", orientation="h", title="Meilleurs clients à Tanger", labels={"revenue": "CA", "full_name": "Client"})),
-        width="stretch",
-    )
-    left.plotly_chart(
-        format_chart(px.bar(city_revenue.head(12), x="sale_city", y="total_amount", title="Chiffre d'affaires par ville", labels={"sale_city": "Ville", "total_amount": "CA"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(customers_region, x="region", y="customer_id", title="Nombre de clients par région", labels={"region": "Région", "customer_id": "Clients"})),
-        width="stretch",
-    )
-    left.plotly_chart(
-        format_chart(px.bar(basket_region.sort_values("average_basket", ascending=False), x="sale_region", y="average_basket", title="Panier moyen par région", labels={"sale_region": "Région", "average_basket": "Panier moyen"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(segment_summary, x="segment", y="clients", color="segment", title="Segmentation simple des clients", labels={"segment": "Segment", "clients": "Clients"})),
-        width="stretch",
-    )
+        with col_l:
+            st.subheader("Évolution du CA mensuel")
+            monthly = (
+                ca_df.groupby(["annee", "mois"])["ca_ttc"].sum().reset_index()
+            )
+            monthly["periode"] = (
+                monthly["annee"].astype(str)
+                + "-"
+                + monthly["mois"].astype(str).str.zfill(2)
+            )
+            fig = px.area(
+                monthly.sort_values("periode"),
+                x="periode", y="ca_ttc",
+                labels={"periode": "Période", "ca_ttc": "CA TTC (MAD)"},
+                color_discrete_sequence=[PALETTE[0]],
+            )
+            fig.update_layout(margin=dict(l=0, r=0, t=10, b=0))
+            st.plotly_chart(fig, use_container_width=True)
+
+        with col_r:
+            st.subheader("CA par catégorie")
+            cat = (
+                ca_df.groupby("categorie")["ca_ttc"]
+                .sum().reset_index()
+                .sort_values("ca_ttc", ascending=False)
+            )
+            fig2 = px.pie(
+                cat, values="ca_ttc", names="categorie",
+                color_discrete_sequence=PALETTE, hole=0.4,
+            )
+            fig2.update_layout(margin=dict(l=0, r=0, t=10, b=0))
+            st.plotly_chart(fig2, use_container_width=True)
 
 
-def page_products(fact: pd.DataFrame) -> None:
-    st.subheader("Analyse produits")
-    st.markdown('<div class="insight-box">Cette page compare les catégories, sous-catégories, produits vendus et retours, avec un focus Ramadan.</div>', unsafe_allow_html=True)
+# ════════════════════════════════════════════════════════════════════════════
+# PAGE 2 — Analyse régionale
+# ════════════════════════════════════════════════════════════════════════════
+elif page == "🗺️ Analyse régionale":
+    st.title("🗺️ Analyse régionale")
+    st.markdown("---")
 
-    revenue_category = fact.groupby("category", as_index=False)["total_amount"].sum().sort_values("total_amount", ascending=False)
-    revenue_subcategory = fact.groupby(["category", "sub_category"], as_index=False)["total_amount"].sum().sort_values("total_amount", ascending=False).head(15)
-    top_products = (
-        fact.groupby("product_name", as_index=False)
-        .agg(quantity=("quantity", "sum"), revenue=("total_amount", "sum"))
-        .sort_values(["quantity", "revenue"], ascending=False)
-        .head(10)
-    )
-    returned_products = (
-        fact.groupby("product_name", as_index=False)
-        .agg(returns=("is_returned", "sum"), refund=("refund_amount", "sum"))
-        .query("returns > 0")
-        .sort_values(["returns", "refund"], ascending=False)
-        .head(10)
-    )
-    ramadan = fact[fact["is_ramadan"] == 1].groupby("category", as_index=False).agg(
-        revenue=("total_amount", "sum"),
-        quantity=("quantity", "sum"),
-    ).sort_values("revenue", ascending=False)
-    quantity_category = fact.groupby("category", as_index=False)["quantity"].sum().sort_values("quantity", ascending=False)
+    reg_df = load("ca_region.csv")
+    ca_df = load("ca_mensuel.csv")
+    if reg_df is None:
+        st.warning(NO_DATA)
+        st.stop()
 
-    left, right = st.columns(2)
-    left.plotly_chart(
-        format_chart(px.bar(revenue_category, x="category", y="total_amount", title="Chiffre d'affaires par catégorie", labels={"category": "Catégorie", "total_amount": "CA"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(revenue_subcategory, x="sub_category", y="total_amount", color="category", title="Chiffre d'affaires par sous-catégorie", labels={"sub_category": "Sous-catégorie", "total_amount": "CA"})),
-        width="stretch",
-    )
-    left.plotly_chart(
-        format_chart(px.bar(top_products.sort_values("quantity"), x="quantity", y="product_name", orientation="h", title="Top produits vendus", labels={"quantity": "Quantité", "product_name": "Produit"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(returned_products.sort_values("returns"), x="returns", y="product_name", orientation="h", title="Produits les plus retournés", labels={"returns": "Retours", "product_name": "Produit"})),
-        width="stretch",
-    )
-    left.plotly_chart(
-        format_chart(px.bar(ramadan, x="category", y="revenue", title="Performance pendant Ramadan", labels={"category": "Catégorie", "revenue": "CA Ramadan"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(quantity_category, x="category", y="quantity", title="Quantité vendue par catégorie", labels={"category": "Catégorie", "quantity": "Quantité"})),
-        width="stretch",
-    )
+    top_reg = reg_df.iloc[0]
+    c1, c2, c3 = st.columns(3)
+    with c1: kpi("Top région", str(top_reg["region_admin"]))
+    with c2: kpi("CA top région", fmt_mad(float(top_reg["ca_ttc"])), "MAD")
+    with c3: kpi("Villes analysées", str(len(reg_df)))
 
+    st.markdown("---")
+    col_l, col_r = st.columns(2)
 
-def page_delivery_returns(fact: pd.DataFrame) -> None:
-    st.subheader("Livraisons & retours")
-    st.markdown('<div class="insight-box">Cette page suit les délais logistiques, les retours et la performance des transporteurs.</div>', unsafe_allow_html=True)
-
-    total_refund = fact["refund_amount"].sum()
-    return_rate = 100 * fact["is_returned"].sum() / len(fact) if len(fact) else 0
-    avg_delay = fact["delivery_delay_days"].dropna().mean()
-    failed_rate = 100 * (fact["delivery_status"] == "failed").sum() / len(fact) if len(fact) else 0
-
-    cols = st.columns(4)
-    with cols[0]:
-        metric_card("Montant remboursé", money(total_refund), "Après retours")
-    with cols[1]:
-        metric_card("Taux de retour", percent(return_rate), "Lignes retournées")
-    with cols[2]:
-        metric_card("Délai moyen", f"{avg_delay:.2f} j" if pd.notna(avg_delay) else "0 j", "Livraison")
-    with cols[3]:
-        metric_card("Taux d'échec", percent(failed_rate), "Livraisons failed")
-
-    returns_region = fact.groupby("sale_region", as_index=False).agg(returned=("is_returned", "sum"), lines=("sales_key", "count"))
-    returns_region["return_rate"] = 100 * returns_region["returned"] / returns_region["lines"]
-    delay_region = fact.dropna(subset=["delivery_delay_days"]).groupby("sale_region", as_index=False)["delivery_delay_days"].mean().sort_values("delivery_delay_days", ascending=False)
-    reasons = fact[fact["is_returned"] == 1].groupby("return_reason", as_index=False)["sales_key"].count().sort_values("sales_key", ascending=False)
-    delivery_status = fact.groupby("delivery_status", as_index=False)["sales_key"].count().sort_values("sales_key", ascending=False)
-    carrier = fact.groupby("shipping_company", as_index=False).agg(
-        lines=("sales_key", "count"),
-        failed=("delivery_status", lambda values: (values == "failed").sum()),
-        avg_delay=("delivery_delay_days", "mean"),
-    )
-    carrier["failure_rate"] = 100 * carrier["failed"] / carrier["lines"]
-
-    left, right = st.columns(2)
-    left.plotly_chart(
-        format_chart(px.bar(returns_region.sort_values("return_rate", ascending=False), x="sale_region", y="return_rate", title="Taux de retour par région", labels={"sale_region": "Région", "return_rate": "Taux de retour (%)"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.bar(delay_region, x="sale_region", y="delivery_delay_days", title="Délai moyen de livraison par région", labels={"sale_region": "Région", "delivery_delay_days": "Jours"})),
-        width="stretch",
-    )
-    left.plotly_chart(
-        format_chart(px.bar(reasons, x="return_reason", y="sales_key", title="Raisons de retour", labels={"return_reason": "Raison", "sales_key": "Retours"})),
-        width="stretch",
-    )
-    right.plotly_chart(
-        format_chart(px.pie(delivery_status, names="delivery_status", values="sales_key", title="Statut des livraisons"), height=360),
-        width="stretch",
-    )
-    st.plotly_chart(
-        format_chart(px.bar(carrier.sort_values("failure_rate", ascending=False), x="shipping_company", y="failure_rate", color="avg_delay", title="Performance par transporteur", labels={"shipping_company": "Transporteur", "failure_rate": "Taux d'échec (%)", "avg_delay": "Délai moyen"})),
-        width="stretch",
-    )
-
-
-def page_quality(fact: pd.DataFrame, quality: pd.DataFrame) -> None:
-    st.subheader("Qualité des données")
-    st.markdown('<div class="insight-box">Les contrôles qualité confirment que les données chargées dans fact_sales sont exploitables pour l\'analyse décisionnelle.</div>', unsafe_allow_html=True)
-
-    anomalies_detected = len(quality) if not quality.empty else 1559
-    corrected = int((quality["action"] == "corrected").sum()) if "action" in quality else 1196
-    removed = int((quality["action"] == "removed").sum()) if "action" in quality else 363
-    negative_amounts = int((fact["total_amount"] < 0).sum())
-    invalid_quantities = int((fact["quantity"] <= 0).sum())
-    dimension_key_columns = ["customer_key", "product_key", "date_key", "region_key"]
-    available_dimension_keys = [column for column in dimension_key_columns if column in fact.columns]
-    if len(available_dimension_keys) == len(dimension_key_columns):
-        missing_dimensions = int(fact[available_dimension_keys].isna().any(axis=1).sum())
-        missing_dimension_note = "Contrôle FK"
-    else:
-        missing_dimensions = 0
-        missing_dimension_note = "Validé SQL"
-
-    cols = st.columns(6)
-    with cols[0]:
-        metric_card("Anomalies détectées", number(anomalies_detected), "Traçabilité qualité")
-    with cols[1]:
-        metric_card("Corrigées", number(corrected), "Règles ETL")
-    with cols[2]:
-        metric_card("Supprimées", number(removed), "Avant fact_sales")
-    with cols[3]:
-        metric_card("Montants négatifs", number(negative_amounts), "Après chargement")
-    with cols[4]:
-        metric_card("Quantités invalides", number(invalid_quantities), "Après chargement")
-    with cols[5]:
-        metric_card("Faits sans dimension", number(missing_dimensions), missing_dimension_note)
-
-    missing_columns = sorted(set(dimension_key_columns) - set(available_dimension_keys))
-    if missing_columns:
-        st.info(
-            "Les clés techniques suivantes ne sont pas présentes dans la vue filtrée active : "
-            + ", ".join(missing_columns)
-            + ". Le contrôle officiel SQL `05_quality_checks.sql` valide 0 fait sans dimension correspondante."
+    with col_l:
+        st.subheader("CA par ville (commandes livrées)")
+        fig = px.bar(
+            reg_df.sort_values("ca_ttc", ascending=True),
+            x="ca_ttc", y="ville", orientation="h",
+            color="ca_ttc", color_continuous_scale="Blues",
+            labels={"ca_ttc": "CA TTC (MAD)", "ville": "Ville"},
+            text_auto=".2s",
         )
+        fig.update_layout(margin=dict(l=0, r=0, t=10, b=0),
+                          coloraxis_showscale=False)
+        st.plotly_chart(fig, use_container_width=True)
 
-    if quality.empty:
-        st.info("Le fichier ou la table quality_issues n'est pas disponible dans la source active.")
-        return
+    with col_r:
+        if ca_df is not None:
+            st.subheader("Évolution mensuelle par région")
+            mr = (
+                ca_df.groupby(["annee", "mois", "region_admin"])["ca_ttc"]
+                .sum().reset_index()
+            )
+            mr["periode"] = (
+                mr["annee"].astype(str)
+                + "-"
+                + mr["mois"].astype(str).str.zfill(2)
+            )
+            fig2 = px.line(
+                mr.sort_values("periode"),
+                x="periode", y="ca_ttc", color="region_admin",
+                color_discrete_sequence=PALETTE,
+                labels={"periode": "Période", "ca_ttc": "CA TTC (MAD)",
+                        "region_admin": "Région"},
+            )
+            fig2.update_layout(margin=dict(l=0, r=0, t=10, b=0))
+            st.plotly_chart(fig2, use_container_width=True)
 
-    by_action = quality.groupby(["table_name", "action"], as_index=False).size()
-    by_type = quality.groupby("issue_type", as_index=False).size().sort_values("size", ascending=False).head(15)
-
-    left, right = st.columns(2)
-    left.plotly_chart(
-        format_chart(px.bar(by_action, x="table_name", y="size", color="action", title="Anomalies par table et action", labels={"table_name": "Table", "size": "Anomalies"})),
-        width="stretch",
+    pct = float(top_reg["ca_ttc"]) / float(reg_df["ca_ttc"].sum()) * 100
+    st.info(
+        f"**Insight automatique :** {top_reg['ville']} ({top_reg['region_admin']}) "
+        f"représente **{pct:.1f}%** du CA livré total — "
+        f"{fmt_mad(float(top_reg['ca_ttc']))} MAD pour "
+        f"{int(top_reg['nb_commandes']):,} commandes."
     )
-    right.plotly_chart(
-        format_chart(px.bar(by_type, x="size", y="issue_type", orientation="h", title="Principaux types d'anomalies", labels={"size": "Anomalies", "issue_type": "Type"})),
-        width="stretch",
-    )
-
-    st.dataframe(quality, width="stretch", hide_index=True)
 
 
-def main() -> None:
-    inject_css()
-    fact, customers, quality, source, mysql_available = load_dashboard_data(DATA_CACHE_VERSION)
+# ════════════════════════════════════════════════════════════════════════════
+# PAGE 3 — Clients & Segments
+# ════════════════════════════════════════════════════════════════════════════
+elif page == "👥 Clients & Segments":
+    st.title("👥 Clients & Segments Gold / Silver / Bronze")
+    st.markdown("---")
 
-    st.markdown(
-        f"""
-        <div class="mexora-hero">
-            <h1>{APP_TITLE}</h1>
-            <p>{APP_SUBTITLE}</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    seg_df = load("segments_clients.csv")
+    if seg_df is None:
+        st.warning(NO_DATA)
+        st.stop()
 
-    page = sidebar_navigation(source, mysql_available)
-    filtered_fact = apply_filters(fact)
+    cols = st.columns(len(seg_df))
+    for i, (_, row) in enumerate(seg_df.iterrows()):
+        with cols[i]:
+            kpi(
+                f"Segment {row['segment_client']}",
+                fmt_mad(float(row["panier_moyen"])),
+                "MAD / commande",
+            )
 
-    if filtered_fact.empty:
-        st.warning("Aucune donnée ne correspond aux filtres sélectionnés.")
-        return
+    st.markdown("---")
+    col_l, col_r = st.columns(2)
 
-    if page == "Vue générale":
-        page_overview(filtered_fact)
-    elif page == "Analyse clients":
-        page_customers(filtered_fact, customers)
-    elif page == "Analyse produits":
-        page_products(filtered_fact)
-    elif page == "Livraisons & retours":
-        page_delivery_returns(filtered_fact)
-    else:
-        page_quality(filtered_fact, quality)
+    with col_l:
+        st.subheader("Répartition CA par segment")
+        color_map = {"Gold": "#F1C40F", "Silver": "#95A5A6", "Bronze": "#CD6133"}
+        fig = px.pie(
+            seg_df, values="ca_total", names="segment_client",
+            color="segment_client", color_discrete_map=color_map, hole=0.45,
+        )
+        fig.update_traces(textposition="outside", textinfo="percent+label")
+        fig.update_layout(margin=dict(l=0, r=0, t=10, b=0))
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col_r:
+        st.subheader("Panier moyen & commandes")
+        fig2 = go.Figure()
+        colors = [color_map.get(s, "#2C6EAB") for s in seg_df["segment_client"]]
+        fig2.add_trace(go.Bar(
+            name="Panier moyen (MAD)",
+            x=seg_df["segment_client"], y=seg_df["panier_moyen"],
+            marker_color=colors, yaxis="y",
+        ))
+        fig2.add_trace(go.Scatter(
+            name="Nb commandes",
+            x=seg_df["segment_client"], y=seg_df["nb_commandes"],
+            mode="lines+markers", marker_color="#2C6EAB", yaxis="y2",
+        ))
+        fig2.update_layout(
+            yaxis=dict(title="Panier moyen (MAD)"),
+            yaxis2=dict(title="Nb commandes", overlaying="y", side="right"),
+            legend=dict(orientation="h"),
+            margin=dict(l=0, r=0, t=10, b=0),
+        )
+        st.plotly_chart(fig2, use_container_width=True)
+
+    st.subheader("Tableau détaillé")
+    disp = seg_df.copy()
+    disp["ca_total"] = disp["ca_total"].apply(lambda v: f"{float(v):,.0f} MAD")
+    disp["panier_moyen"] = disp["panier_moyen"].apply(lambda v: f"{float(v):,.0f} MAD")
+    disp["pct_ca"] = disp["pct_ca"].apply(lambda v: f"{float(v):.1f}%")
+    st.dataframe(disp, use_container_width=True, hide_index=True)
 
 
-if __name__ == "__main__":
-    main()
+# ════════════════════════════════════════════════════════════════════════════
+# PAGE 4 — Produits
+# ════════════════════════════════════════════════════════════════════════════
+elif page == "📦 Produits":
+    st.title("📦 Analyse Produits")
+    st.markdown("---")
+
+    prod_df = load("top_produits_tanger.csv")
+    ca_df = load("ca_mensuel.csv")
+    if prod_df is None:
+        st.warning(NO_DATA)
+        st.stop()
+
+    nb_show = st.slider("Nombre de produits", 5, min(20, len(prod_df)), 10)
+    top = prod_df.head(nb_show)
+
+    col_l, col_r = st.columns([3, 2])
+
+    with col_l:
+        st.subheader(f"Top {nb_show} produits à Tanger (CA)")
+        fig = px.bar(
+            top.sort_values("ca_total", ascending=True),
+            x="ca_total", y="nom_produit", orientation="h",
+            color="categorie", color_discrete_sequence=PALETTE,
+            labels={"ca_total": "CA TTC (MAD)", "nom_produit": "Produit"},
+            text_auto=".2s",
+        )
+        fig.update_layout(margin=dict(l=0, r=0, t=10, b=0),
+                          legend_title="Catégorie")
+        st.plotly_chart(fig, use_container_width=True)
+
+    with col_r:
+        st.subheader("Quantité vendue (top 10)")
+        fig2 = px.bar(
+            top.sort_values("qte_totale", ascending=True).head(10),
+            x="qte_totale", y="nom_produit", orientation="h",
+            color="categorie", color_discrete_sequence=PALETTE,
+            labels={"qte_totale": "Quantité", "nom_produit": "Produit"},
+            text_auto=True,
+        )
+        fig2.update_layout(margin=dict(l=0, r=0, t=10, b=0), showlegend=False)
+        st.plotly_chart(fig2, use_container_width=True)
+
+    if ca_df is not None:
+        st.markdown("---")
+        st.subheader("CA par catégorie — toutes régions")
+        cat = (
+            ca_df.groupby("categorie")["ca_ttc"]
+            .sum().reset_index()
+            .sort_values("ca_ttc", ascending=False)
+        )
+        fig3 = px.bar(
+            cat, x="categorie", y="ca_ttc",
+            color="categorie", color_discrete_sequence=PALETTE,
+            labels={"ca_ttc": "CA TTC (MAD)", "categorie": "Catégorie"},
+            text_auto=".2s",
+        )
+        fig3.update_layout(margin=dict(l=0, r=0, t=10, b=0), showlegend=False)
+        st.plotly_chart(fig3, use_container_width=True)
+
+
+# ════════════════════════════════════════════════════════════════════════════
+# PAGE 5 — Retours & Ramadan
+# ════════════════════════════════════════════════════════════════════════════
+elif page == "↩️ Retours & Ramadan":
+    st.title("↩️ Retours, Ramadan & Livraison")
+    st.markdown("---")
+
+    ret_df = load("taux_retour_categorie.csv")
+    ram_df = load("ramadan_food.csv")
+    liv_df = load("livraison_retours.csv")
+
+    # ---- Taux de retour ----
+    if ret_df is not None:
+        st.subheader("Taux de retour par catégorie")
+        col_l, col_r = st.columns([2, 3])
+
+        with col_l:
+            disp = ret_df.copy()
+            disp["taux"] = disp["taux_retour_pct"].apply(retour_badge)
+            disp_show = disp[["categorie", "nb_total", "nb_retours", "taux"]].copy()
+            disp_show.columns = ["Catégorie", "Total", "Retours", "Taux"]
+            st.dataframe(disp_show, use_container_width=True, hide_index=True)
+
+        with col_r:
+            fig = px.bar(
+                ret_df.sort_values("taux_retour_pct", ascending=True),
+                x="taux_retour_pct", y="categorie", orientation="h",
+                color="taux_retour_pct",
+                color_continuous_scale=["#27AE60", "#E67E22", "#C0392B"],
+                range_color=[0, 10],
+                labels={"taux_retour_pct": "Taux (%)", "categorie": "Catégorie"},
+                text_auto=".1f",
+            )
+            fig.add_vline(x=5, line_dash="dash", line_color="#C0392B",
+                          annotation_text="Seuil 5%")
+            fig.add_vline(x=3, line_dash="dot", line_color="#E67E22",
+                          annotation_text="Seuil 3%")
+            fig.update_layout(margin=dict(l=0, r=0, t=10, b=0),
+                              coloraxis_showscale=False)
+            st.plotly_chart(fig, use_container_width=True)
+        st.caption("🔴 > 5% · 🟠 3–5% · 🟢 < 3%")
+
+    st.markdown("---")
+    col_l, col_r = st.columns(2)
+
+    # ---- Effet Ramadan ----
+    with col_l:
+        st.subheader("Effet Ramadan — Alimentation")
+        if ram_df is not None and not ram_df.empty:
+            ram_df["periode"] = (
+                ram_df["annee"].astype(str)
+                + "-"
+                + ram_df["mois"].astype(str).str.zfill(2)
+            )
+            fig_r = px.bar(
+                ram_df.sort_values("periode"),
+                x="periode", y="ca_ttc",
+                color=ram_df["periode_ramadan"].astype(str),
+                color_discrete_map={"True": "#C0392B", "False": "#2C6EAB"},
+                labels={"periode": "Mois", "ca_ttc": "CA Food (MAD)",
+                        "color": "Ramadan"},
+                barmode="overlay",
+            )
+            fig_r.update_layout(margin=dict(l=0, r=0, t=10, b=0),
+                                legend_title="Ramadan")
+            st.plotly_chart(fig_r, use_container_width=True)
+
+            # Indice simplifié
+            n_ram = ram_df[ram_df["periode_ramadan"] == True]
+            n_hors = ram_df[ram_df["periode_ramadan"] == False]
+            if len(n_ram) > 0 and len(n_hors) > 0:
+                avg_ram = n_ram["ca_ttc"].mean()
+                avg_hors = n_hors["ca_ttc"].mean()
+                indice = avg_ram / avg_hors * 100 if avg_hors > 0 else None
+                if indice:
+                    st.metric(
+                        "Indice Ramadan (base 100 = hors Ramadan)",
+                        f"{indice:.1f}",
+                        delta=f"{indice-100:.1f}",
+                    )
+        else:
+            st.info("Données Alimentation non disponibles.")
+
+    # ---- Livreurs ----
+    with col_r:
+        st.subheader("Performance livreurs")
+        if liv_df is not None and not liv_df.empty:
+            filt = liv_df[liv_df["nom_livreur"] != "Livreur inconnu"]
+            if not filt.empty:
+                fig_l = px.bar(
+                    filt.sort_values("delai_moyen"),
+                    x="nom_livreur", y="delai_moyen",
+                    color="taux_retard_pct",
+                    color_continuous_scale="RdYlGn_r",
+                    labels={"nom_livreur": "Livreur",
+                            "delai_moyen": "Délai moyen (j)",
+                            "taux_retard_pct": "% Retard"},
+                    text_auto=".1f",
+                )
+                fig_l.add_hline(y=3, line_dash="dash", line_color="#C0392B",
+                                annotation_text="Seuil 3j")
+                fig_l.update_layout(margin=dict(l=0, r=0, t=10, b=0))
+                st.plotly_chart(fig_l, use_container_width=True)
+            else:
+                st.info("Données livreurs insuffisantes.")
+        else:
+            st.warning(NO_DATA)
+
+
+# ── Footer ────────────────────────────────────────────────────────────────────
+st.markdown("---")
+st.markdown(
+    "<p style='text-align:center;font-size:.75rem;color:#9ca3af;'>"
+    "Dashboard généré à partir du Data Warehouse PostgreSQL Mexora · "
+    "Version déployable Streamlit · "
+    "<a href='https://github.com/SoufianeZaari/Pipeline-ETL-Data-Warehouse'"
+    " target='_blank'>GitHub</a>"
+    "</p>",
+    unsafe_allow_html=True,
+)
